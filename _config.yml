@@ -162,10 +162,10 @@ site-js:
 # --- Web Analytics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-gtag: "G-4WKRRBWPLW"
+gtag: "G-TRDES2Y11Y"
 
 # Fill in your Google Analytics ID to track your website using Google Analytics
-google_analytics: "G-4WKRRBWPLW"
+google_analytics: "G-TRDES2Y11Y"
 
 # Google Tag Manager ID
 #gtm: ""
