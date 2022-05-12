@@ -60,7 +60,7 @@ sudo apt-get install libscotch-dev libcgal-dev
 cd $WM_PROJECT_DIR
 ./Allwmake
 ```
-6. Change working directory and clone the hyStrath Github repository  
+6. Change working directory and clone the hyStrath Github repository   
 ```sh
 cd $WM_PROJECT_USER_DIR
 git clone https://github.com/vincentcasseau/hyStrath.git --branch master --single-branch && cd hyStrath/
