@@ -26,7 +26,7 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
     <div class="text">Espinoza et al. (2015) - Sod shock tube simulation with Adaptive Mesh Refinement (AMR)</div>
   </div>
 
-  <div class="mySlides fade">
+  <div class="mySlides">
     <div class="numbertext">2 / 3</div>
     <img src="/docs/img/gallery/Capon17-TempContours.png" style="width:50%">
     <div class="text">Capon et al. (2017) - Mach 10 flow of Argon around a 2-D cylinder</div>
