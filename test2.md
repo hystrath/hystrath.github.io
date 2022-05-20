@@ -24,7 +24,7 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
   <!-- Full-width images with number and caption text -->
   <div class="hyStrathSlides">
     <div class="solvernametext">rhoCentralFoam</div>
-    <img src="/docs/img/gallery/Espinoza15-SodShockTube.png" style="width:100%; vertical-align:middle">
+    <img src="/docs/img/gallery/Espinoza15-SodShockTube.png" style="width:100%">
     <div class="text">Espinoza et al. (2015) - Sod shock tube simulation with Adaptive Mesh Refinement (AMR)</div>
   </div>
 
