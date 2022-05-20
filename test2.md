@@ -80,10 +80,10 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
     <div class="solvernametext">dsmcFoam+</div>
     <div class="row">
       <div class="column">
-        <img src="/docs/img/gallery/Casseau18-PorousMediaPlot.png" style="height:350px">
+        <img src="/docs/img/gallery/Casseau18-PorousMediaPlot.png" style="height:275px">
       </div>
       <div class="column">
-        <img src="/docs/img/gallery/Casseau18-PorousMediaDeff.png" style="height:350px">
+        <img src="/docs/img/gallery/Casseau18-PorousMediaDeff.png" style="height:275px">
       </div>
     </div>
   </div>
