@@ -32,14 +32,15 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
      <div>Capon et al. (2017) - Ion Orbital Motion Structures in LEO</div>
     </div>
   </div>
+</div>   
   
-  <br>
+<br>
   
+<div class="row">  
   <div class="content_img">
    <img src='/docs/img/gallery/Espinoza15-SodShockTube.png' width='100%'>
    <div>Espinoza et al. (2015) - Sod shock tube simulation with Adaptive Mesh Refinement (AMR)</div>
   </div>
-
 </div> 
 
 
