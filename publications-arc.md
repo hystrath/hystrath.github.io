@@ -56,7 +56,7 @@ howpublished = {\url{https://github.com/vincentcasseau/hyStrath/}}
 ##### Filter solvers
 
 <p>
-  <a class="btn btn-dark" href="https://hystrath.github.io/publications/" role="button"><i>All solvers</a>
+  <a class="btn btn-dark" href="https://hystrath.github.io/publications/" role="button"><i>All solvers</i></a>
 </p>
 
 <p>
