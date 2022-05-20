@@ -87,7 +87,7 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
 <div class="row">  
   <div class="content_img">
    <img src='/docs/img/gallery/Casseau18-PorousMedia.png' width='100%'>
-   <div>Casseau and White (2018) - </div>
+   <div>Casseau and White (2018) - Porous media generation</div>
   </div>
 </div> 
 

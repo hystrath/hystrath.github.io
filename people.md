@@ -11,8 +11,6 @@ nav-short: true
   <a href="https://hystrath.github.io/people/#ablation-module--arc-not-released">Ablation module</a>
   <a href="https://hystrath.github.io/people/#dsmc-module--dsmcfoam">DSMC module</a>
   <a href="https://hystrath.github.io/people/#hybrid-modules--hyperfoam-pdfoam">Hybrid modules</a>
-<!--  <a href="https://hystrath.github.io/people/#cfd-dsmc-not-released-yet"><span style="font-size:13px">&nbsp;&nbsp; CFD-DSMC</span></a>-->
-<!--  <a href="https://hystrath.github.io/people/#pic-dsmc"><span style="font-size:13px">&nbsp;&nbsp; PIC-DSMC</span></a>-->
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
@@ -57,7 +55,6 @@ _Contributors_:
     </span>
     <span class="sr-only">LinkedIn</span>
   </a> &nbsp; **Dr Daniel E.R. Espinoza**    
-* **Dr Alexey Ryakhovskiy**  
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/jimmy-john-hoste-17278644" target="_blank">
     <span class="fa-stack" aria-hidden="true">
       <i class="fas fa-circle fa-stack-2x" style='color:#0072B1'></i>
@@ -70,6 +67,9 @@ _Contributors_:
     </span>
     <span class="sr-only">ResearchGate</span>
   </a> &nbsp; **Dr Jimmy-John O.E. Hoste**, Aerothermodynamics Engineer at [Destinus](https://destinus.ch), Vaud, Switzerland
+* **Dr Alexey Ryakhovskiy**  
+
+_Testers_: 
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/rodrigo-palharini-59316775" target="_blank">
     <span class="fa-stack" aria-hidden="true">
       <i class="fas fa-circle fa-stack-2x" style='color:#0072B1'></i>
@@ -82,6 +82,8 @@ _Contributors_:
     </span>
     <span class="sr-only">ResearchGate</span>
   </a> &nbsp; **Dr Rodrigo C. Palharini**, Lecturer in Fluid Mechanics at [Universidad Técnica Federico de Santa María](http://www.mecanica.usm.cl/), Santiago, Chile
+
+_Advisers_: 
 * <a style="text-decoration: none" href="https://www.researchgate.net/profile/Thomas_Scanlon" target="_blank">
     <span class="fa-stack" aria-hidden="true">
       <i class="fab fa-researchgate fa-stack-2x" style='color:#00D0AF'></i>
@@ -109,15 +111,19 @@ _Lead developer_:
     </span>
     <span class="sr-only">LinkedIn</span>
   </a> &nbsp; **Dr Viola Renato**  
+  
+_Advisers_: 
+* **Dr Thomas J. Scanlon**  
+* **Dr Richard E. Brown**
 
 <br> 
 
 ---   
 ## DSMC module &nbsp;—&nbsp; __*dsmcFoam+*__        
 _Current developers_: 
-* **Dr Vincent Casseau**  
-* **Tim Teichmann**, PhD student in the [Institute for Technical Physics](http://www.itep.kit.edu/english/), Karlsruhe Institute of Technology (KIT), Eggenstein-Leopoldshafen, Germany  
+* **Dr Vincent Casseau**
 * **Dr Daniel E.R. Espinoza**  
+* **Tim Teichmann**, PhD student in the [Institute for Technical Physics](http://www.itep.kit.edu/english/), Karlsruhe Institute of Technology (KIT), Eggenstein-Leopoldshafen, Germany  
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/craig-white-53b70387" target="_blank">
     <span class="fa-stack" aria-hidden="true">
       <i class="fas fa-circle fa-stack-2x" style='color:#0072B1'></i>
@@ -126,7 +132,7 @@ _Current developers_:
     <span class="sr-only">LinkedIn</span>
   </a> &nbsp; **Dr Craig White**, Lecturer in Aerospace Sciences at the [University of Glasgow](https://www.gla.ac.uk/schools/engineering/staff/craigwhite/), Glasgow, UK
  
-_Contributors_:  
+_Past contributors_:  
 * **Dr Rodrigo C. Palharini**  
 * **Dr Thomas J. Scanlon**  
 * **Dr Richard E. Brown**  
@@ -142,8 +148,10 @@ _Contributors_:
 _Lead developer_:  
 * **Dr Daniel E.R. Espinoza** 
 
-_Contributors_:  
+_Contributor_:  
 * **Dr Vincent Casseau**  
+
+_Advisers_:    
 * **Dr Thomas J. Scanlon**  
 * **Dr Richard E. Brown** 
 
@@ -159,7 +167,7 @@ _Lead developer_:
     <span class="sr-only">LinkedIn</span>
   </a> &nbsp; **Dr Christopher J. Capon**, CEO at [Nominal Systems](https://www.nominalsys.com/) & Research Fellow at [UNSW Canberra Space](https://www.unsw.adfa.edu.au/space-research/mr-christopher-capon), Canberra, Australia
 
-_Contributors_:  
+_Contributors and/or advisors_:  
 * **Prof Russell R. Boyce**, Chair for Space Engineering at [UNSW Canberra Space](https://research.unsw.edu.au/people/professor-russell-robert-boyce), Canberra, Australia  
 * **Dr Melrose Brown**, Lecturer at [UNSW Canberra Space](https://www.unsw.adfa.edu.au/space-research/dr-melrose-brown), Canberra, Australia    
 * **Dr Craig White**  
