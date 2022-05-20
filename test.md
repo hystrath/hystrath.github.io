@@ -16,6 +16,13 @@ The <i>hyStrath</i> GitHub repository is featuring hypersonic and rarefied gas d
 The platform is meant to be collaborative: if you would like to <a href="https://hystrath.github.io/contributions/">contribute</a>, use it for educational purposes or need support in the form of consulting services, please <a href="https://hystrath.github.io/contact">get in touch</a>.
 </p>
 
+<div class="row">  
+  <div class="content_img">
+   <img src='/docs/img/gallery/Espinoza15-SodShockTube.png' width='100%'>
+   <div>Espinoza et al. (2015) - Sod shock tube simulation with Adaptive Mesh Refinement (AMR)</div>
+  </div>
+</div> 
+
 <br>
 
 <div class="row">
@@ -37,7 +44,7 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
 
 <div class="row">  
   <div class="content_img">
-   <img src='/docs/img/gallery/Casseau16-Mach20NitrogenCylinder.png' width='100%'>
+   <img src='/docs/img/gallery/Casseau16-Mach20NitrogenCylinder.png' width='60%'>
    <div>Casseau et al. (2016) - Mach 20 flow of Nitrogen around a 2-D cylinder</div>
   </div>
 </div> 
@@ -76,15 +83,6 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
 </div>   
 
 <br>
-  
-<div class="row">  
-  <div class="content_img">
-   <img src='/docs/img/gallery/Espinoza15-SodShockTube.png' width='100%'>
-   <div>Espinoza et al. (2015) - Sod shock tube simulation with Adaptive Mesh Refinement (AMR)</div>
-  </div>
-</div> 
-
-<br>
 
 <div class="row">  
   <div class="content_img">
@@ -107,3 +105,18 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
     </div>
   </div>
 </div> 
+
+<div class="row">
+  <div class="column">
+    <div class="content_img">
+     <img src='/docs/img/gallery/Hoste21-HB2FlareGeometry.png' width='100%'>
+     <div>Hoste and Casseau (2021) - HB-2 flare geometry</div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content_img">
+     <img src='/docs/img/gallery/Hoste21-HB2FlareHeatflux.png' width='100%'>
+     <div>Hoste and Casseau (2021) - HB-2 flare heat flux profile</div>
+    </div>
+  </div>
+</div>
