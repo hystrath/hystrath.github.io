@@ -28,7 +28,7 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
   </div>
   <div class="column">
     <div class="content_img">
-     <img src='/docs/img/gallery/Capon17-PotentialEnergyContours' width='100%'>
+     <img src='/docs/img/gallery/Capon17-PotentialEnergyContours.png' width='100%'>
      <div>Capon et al. (2017) - Ion Orbital Motion Structures in LEO</div>
     </div>
   </div>
