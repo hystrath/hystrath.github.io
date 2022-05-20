@@ -90,7 +90,7 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
     <div class="solvernametext">hyFoam+</div>
     <div class="row">
     <div class="column">
-    <img src="/docs/img/gallery/Hoste21-HB2FlareGeometry.png" style="height:350px">
+    <img src="/docs/img/gallery/Hoste21-HB2FlareGeometry.png" style="height:150px">
     </div>
     <div class="column">
     <img src="/docs/img/gallery/Hoste21-HB2FlareHeatflux.png" style="height:350px">
