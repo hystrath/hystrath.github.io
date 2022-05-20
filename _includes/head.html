@@ -229,39 +229,49 @@
 <style>
   /* Parent Container */
   .content_img{
-      position: relative;
-<!--      width: 200px;-->
-<!--      height: 200px;-->
-      float: left;
-<!--      margin-right: 10px;-->
+    position: relative;
+    float: left;
   }
 
   /* Child Text Container */
   .content_img div{
-      position: relative; /*absolute;*/
-      bottom: 0;
-      right: 0;
-      background: black;
-      color: white;
-      margin-bottom: 5px;
-      margin-right: 5px;
-      font-family: sans-serif;
-      opacity: 0;
-      visibility: hidden;
-      -webkit-transition: visibility 0s, opacity 0.5s linear; 
-      transition: visibility 0s, opacity 0.5s linear;
+    position: relative; /*absolute;*/
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
   }
 
   /* Hover on Parent Container */
   .content_img:hover{
-      cursor: pointer;
+    cursor: pointer;
   }
 
   .content_img:hover div{
-      width: 500px;
-      padding: 8px 15px;
-      visibility: visible;
-      opacity: 0.5; 
+    width: 500px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.5; 
+  }
+  
+  .column {
+    float: left;
+    width: 49.99%;
+    padding: 5px;
+  }
+
+    /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
   </style>
   
