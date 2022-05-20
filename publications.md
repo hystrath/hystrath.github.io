@@ -53,6 +53,18 @@ howpublished = {\url{https://github.com/vincentcasseau/hyStrath/}}
 
 <br>
 
+<p align="center">
+  <a class="btn btn-warning" href="https://hystrath.github.io/publications/" role="button"><b>All solvers</b></a>
+
+  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-hy2foam/" role="button"><i>hy2Foam</i></a>
+  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-hyfoam/" role="button"><i>hyFoam</i></a>
+  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-arc/" role="button"><i>ARC</i></a>
+
+  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-dsmcfoam/" role="button"><i>dsmcFoam+</i></a>
+  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-pdfoam/" role="button"><i>pdFoam</i></a>
+  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-hyperfoam/" role="button"><i>hyperFoam</i></a>
+</p>
+
 <h3>JOURNAL ARTICLES</h3>
 {: #journal-articles }
   <p><b><i>dsmcFoam+ MNF</i></b> &nbsp; | &nbsp; C. White, M. K. Borg, T. J. Scanlon, S. M. Longshaw, B. John, D. R. Emerson, and J. M. Reese, "dsmcFoam+: An OpenFOAM based direct simulation Monte Carlo solver," <i>Computer Physics Communications</i>, vol. 224, no. 1, pp. 22-43, <b>2018</b> &nbsp; <a href="https://pure.strath.ac.uk/portal/files/81235392/White_etal_CPC_2017_an_OpenFOAM_based_direct_simulation_Monte_Carlo_solver.pdf" target="_blank" style="color:orange"> [PDF→]</a></p>
