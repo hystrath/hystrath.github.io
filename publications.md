@@ -47,7 +47,7 @@ title = {Github repository of the hyStrath platform},
 month = {MM},  
 year = {YYYY},  
 note = {Release `Fleming', commit <commit tag>},
-howpublished={\url{https://github.com/vincentcasseau/hyStrath/}}  
+howpublished = {\url{https://github.com/vincentcasseau/hyStrath/}}  
 } 
 ```
 
