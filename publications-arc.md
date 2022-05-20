@@ -52,13 +52,19 @@ howpublished = {\url{https://github.com/vincentcasseau/hyStrath/}}
 ```
 
 <br>
- <button type="button">All solvers</button> 
- <button type="button">hy2Foam</button> 
- <button type="button">hyFoam</button>
- <button type="button">ARC</button>
- <button type="button">dsmcFoam+</button>
- <button type="button">hyperFoam</button>
- <button type="button">pdFoam</button>
+
+##### Filter solvers
+
+<p> <button type="button">All solvers</button> </p>
+
+<p> <a href="https://hystrath.github.io/publications-hy2foam/" class="button"><b><i>hy2Foam</i></b></a>
+ <button type="button"><b><i>hyFoam</i></b></button>
+ <button type="button"><b><i>ARC</i></b></button></p>
+ 
+<p> <button type="button"><b><i>dsmcFoam+</i></b></button>
+ <button type="button"><b><i>hyperFoam</i></b></button>
+ <button type="button"><b><i>pdFoam</i></b></button></p>
+<!-- <a href="https://google.com" class="button">Go to Google</a>-->
 <br> 
 
 <h3>JOURNAL ARTICLES</h3>
