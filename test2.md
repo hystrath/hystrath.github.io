@@ -53,86 +53,86 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
 
 
   
-<br>
+<!--<br>-->
 
-<div class="row">  
-  <div class="content_img">
-   <img src='/docs/img/gallery/Casseau16-Mach20NitrogenCylinder.png' width='60%'>
-   <div>Casseau et al. (2016) - Mach 20 flow of Nitrogen around a 2-D cylinder</div>
-  </div>
-</div> 
+<!--<div class="row">  -->
+<!--  <div class="content_img">-->
+<!--   <img src='/docs/img/gallery/Casseau16-Mach20NitrogenCylinder.png' width='60%'>-->
+<!--   <div>Casseau et al. (2016) - Mach 20 flow of Nitrogen around a 2-D cylinder</div>-->
+<!--  </div>-->
+<!--</div> -->
 
-<br>
+<!--<br>-->
 
-<div class="row">  
-  <div class="content_img">
-   <img src='/docs/img/gallery/Hoste17-LorrainsScramjet.png' width='100%'>
-   <div>Hoste et al. (2017) - Experimental Schlieren and CFD results for Lorrain's Scramjet</div>
-  </div>
-</div> 
+<!--<div class="row">  -->
+<!--  <div class="content_img">-->
+<!--   <img src='/docs/img/gallery/Hoste17-LorrainsScramjet.png' width='100%'>-->
+<!--   <div>Hoste et al. (2017) - Experimental Schlieren and CFD results for Lorrain's Scramjet</div>-->
+<!--  </div>-->
+<!--</div> -->
 
-<div class="row">  
-  <div class="content_img">
-   <img src='/docs/img/gallery/Hoste17-LorrainsScramjetCp.png' width='100%'>
-   <div>Hoste et al. (2017) - Pressure coefficient for Lorrain's Scramjet, fuel-off conditions</div>
-  </div>
-</div> 
+<!--<div class="row">  -->
+<!--  <div class="content_img">-->
+<!--   <img src='/docs/img/gallery/Hoste17-LorrainsScramjetCp.png' width='100%'>-->
+<!--   <div>Hoste et al. (2017) - Pressure coefficient for Lorrain's Scramjet, fuel-off conditions</div>-->
+<!--  </div>-->
+<!--</div> -->
 
-<br>
+<!--<br>-->
 
-<div class="row">
-  <div class="column">
-    <div class="content_img">
-     <img src='/docs/img/gallery/Renato17-PathfinderMesh.png' width='100%'>
-     <div>Renato and Scanlon (2017) - Multi-dimensional ablation and thermal response for the Pathfinder capsule</div>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content_img">
-     <img src='/docs/img/gallery/Renato17-PathfinderHeatFlux.png' width='100%'>
-     <div>Renato and Scanlon (2017) - Multi-dimensional ablation and thermal response for the Pathfinder capsule</div>
-    </div>
-  </div>
-</div>   
+<!--<div class="row">-->
+<!--  <div class="column">-->
+<!--    <div class="content_img">-->
+<!--     <img src='/docs/img/gallery/Renato17-PathfinderMesh.png' width='100%'>-->
+<!--     <div>Renato and Scanlon (2017) - Multi-dimensional ablation and thermal response for the Pathfinder capsule</div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="column">-->
+<!--    <div class="content_img">-->
+<!--     <img src='/docs/img/gallery/Renato17-PathfinderHeatFlux.png' width='100%'>-->
+<!--     <div>Renato and Scanlon (2017) - Multi-dimensional ablation and thermal response for the Pathfinder capsule</div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>   -->
 
-<br>
+<!--<br>-->
 
-<div class="row">  
-  <div class="content_img">
-   <img src='/docs/img/gallery/Casseau18-PorousMedia.png' width='100%'>
-   <div>Casseau and White (2018) - Porous media generation</div>
-  </div>
-</div> 
+<!--<div class="row">  -->
+<!--  <div class="content_img">-->
+<!--   <img src='/docs/img/gallery/Casseau18-PorousMedia.png' width='100%'>-->
+<!--   <div>Casseau and White (2018) - Porous media generation</div>-->
+<!--  </div>-->
+<!--</div> -->
 
-<div class="row">
-  <div class="column">
-    <div class="content_img">
-     <img src='/docs/img/gallery/Casseau18-PorousMediaPlot.png' width='100%'>
-     <div>Casseau and White (2018) - </div>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content_img">
-     <img src='/docs/img/gallery/Casseau18-PorousMediaDeff.png' width='100%'>
-     <div>Casseau and White (2018) - </div>
-    </div>
-  </div>
-</div> 
+<!--<div class="row">-->
+<!--  <div class="column">-->
+<!--    <div class="content_img">-->
+<!--     <img src='/docs/img/gallery/Casseau18-PorousMediaPlot.png' width='100%'>-->
+<!--     <div>Casseau and White (2018) - </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="column">-->
+<!--    <div class="content_img">-->
+<!--     <img src='/docs/img/gallery/Casseau18-PorousMediaDeff.png' width='100%'>-->
+<!--     <div>Casseau and White (2018) - </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div> -->
 
-<div class="row">
-  <div class="column">
-    <div class="content_img">
-     <img src='/docs/img/gallery/Hoste21-HB2FlareGeometry.png' width='100%'>
-     <div>Hoste and Casseau (2021) - HB-2 flare geometry</div>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content_img">
-     <img src='/docs/img/gallery/Hoste21-HB2FlareHeatflux.png' width='100%'>
-     <div>Hoste and Casseau (2021) - HB-2 flare heat flux profile</div>
-    </div>
-  </div>
-</div>
+<!--<div class="row">-->
+<!--  <div class="column">-->
+<!--    <div class="content_img">-->
+<!--     <img src='/docs/img/gallery/Hoste21-HB2FlareGeometry.png' width='100%'>-->
+<!--     <div>Hoste and Casseau (2021) - HB-2 flare geometry</div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="column">-->
+<!--    <div class="content_img">-->
+<!--     <img src='/docs/img/gallery/Hoste21-HB2FlareHeatflux.png' width='100%'>-->
+<!--     <div>Hoste and Casseau (2021) - HB-2 flare heat flux profile</div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
 
 
 
