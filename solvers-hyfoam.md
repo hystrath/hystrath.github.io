@@ -11,8 +11,9 @@ nav-short: true
   <a href="https://hystrath.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming/">How-tos</a>
   <a href="https://hystrath.github.io/tutos-hyfoam/">Tutorials</a>
   <a href="https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/compressible/hy2Foam">Source code</a>
-  <a href="https://hystrath.github.io/disclaimer/">Disclaimer</a>
+  <a href="https://hystrath.github.io/publications-hyfoam/">Publications</a>
   <a href="https://hystrath.github.io/people/#cfd-module--hyfoam-hy2foam">Developers</a>
+  <a href="https://hystrath.github.io/disclaimer/">Disclaimer</a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
