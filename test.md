@@ -63,13 +63,13 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
 <div class="row">
   <div class="column">
     <div class="content_img">
-     <img src='/docs/img/gallery/Renato17-PathfinderHeatFlux.png' width='100%'>
+     <img src='/docs/img/gallery/Renato17-PathfinderMesh.png' width='100%'>
      <div>Renato and Scanlon (2017) - Multi-dimensional ablation and thermal response for the Pathfinder capsule</div>
     </div>
   </div>
   <div class="column">
     <div class="content_img">
-     <img src='/docs/img/gallery/Renato17-PathfinderMesh.png' width='100%'>
+     <img src='/docs/img/gallery/Renato17-PathfinderHeatFlux.png' width='100%'>
      <div>Renato and Scanlon (2017) - Multi-dimensional ablation and thermal response for the Pathfinder capsule</div>
     </div>
   </div>
@@ -84,5 +84,26 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
   </div>
 </div> 
 
+<br>
 
+<div class="row">  
+  <div class="content_img">
+   <img src='/docs/img/gallery/Casseau18-PorousMedia.png' width='100%'>
+   <div>Casseau and White (2018) - </div>
+  </div>
+</div> 
 
+<div class="row">
+  <div class="column">
+    <div class="content_img">
+     <img src='/docs/img/gallery/Casseau18-PorousMediaPlot.png' width='100%'>
+     <div>Casseau and White (2018) - </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content_img">
+     <img src='/docs/img/gallery/Casseau18-PorousMediaDeff.png' width='100%'>
+     <div>Casseau and White (2018) - </div>
+    </div>
+  </div>
+</div> 
