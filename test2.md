@@ -28,12 +28,8 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
 
   <div class="mySlides">
     <div class="numbertext">2 / 3</div>
-    <div class="content_img">
-     <img src='/docs/img/gallery/Capon17-TempContours.png' width='100%'>
-     <div>Capon et al. (2017) - Mach 10 flow of Argon around a 2-D cylinder</div>
-    </div>
-<!--    <img src="/docs/img/gallery/Capon17-TempContours.png" style="width:50%">-->
-<!--    <div class="text">Capon et al. (2017) - Mach 10 flow of Argon around a 2-D cylinder</div>-->
+    <img src="/docs/img/gallery/Capon17-TempContours.png" style="width:50%">
+    <div class="text">Capon et al. (2017) - Mach 10 flow of Argon around a 2-D cylinder</div>
   </div>
 
   <div class="mySlides">
