@@ -10,8 +10,9 @@ nav-short: true
   <a href="https://hystrath.github.io/solvers-pdfoam/"><center><b><i>pdFoam</i></b></center></a>
   <a href="https://hystrath.github.io/tutos-pdfoam/">Tutorials</a>
   <a href="https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/hybridMethods/pdFoam">Source code</a>
-  <a href="https://hystrath.github.io/disclaimer/">Disclaimer</a>
+  <a href="https://hystrath.github.io/publications-pdfoam/">Publications</a>
   <a href="https://hystrath.github.io/people/#pic-dsmc">Developers</a>
+  <a href="https://hystrath.github.io/disclaimer/">Disclaimer</a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
