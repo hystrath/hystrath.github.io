@@ -57,7 +57,7 @@ Axially-symmetric mesh | Weakly-ionised flow
 <!--Working directory located <a href="https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/fireII/fireII_NRadia"> here</a>-->
 
 <p><img src="/docs/img/publis.png" width="40"> &nbsp; See Section 5.3. <i>RAM-C Spacecraft</i> in <br> G. Yang, "Finite Element Simulation of Weakly Ionized Hypersonic Flows," Master's thesis, McGill University, Montreal (Canada), <b>2022</b> 
-<!--&nbsp; <a href="http://www.mdpi.com/2226-4310/3/4/45/html" target="_blank" style="color:orange"> [Full HTML→]</a></p> -->
+&nbsp; <a href="https://escholarship.mcgill.ca/downloads/bc386q61m?locale=en" target="_blank" style="color:orange"> [PDF→]</a></p> 
 </p>
 
 ### 1. CASE SETUP
