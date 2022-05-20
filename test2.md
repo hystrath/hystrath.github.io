@@ -16,6 +16,8 @@ The <i>hyStrath</i> GitHub repository is featuring hypersonic and rarefied gas d
 The platform is meant to be collaborative: if you would like to <a href="https://hystrath.github.io/contributions/">contribute</a>, use it for educational purposes or need support in the form of consulting services, please <a href="https://hystrath.github.io/contact">get in touch</a>.
 </p>
 
+<br>
+
  <!-- Slideshow container -->
 <div class="slideshow-container">
 
@@ -40,7 +42,7 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
   
   <div class="hyStrathSlides">
     <div class="solvernametext">hy2Foam</div>
-    <img src="/docs/img/gallery/Casseau16-Mach20NitrogenCylinder.png" style="height:350px">
+    <img src="/docs/img/gallery/Casseau16-Mach20NitrogenCylinder.png" style="height:275px">
     <div class="text">Casseau et al. (2016) - Mach 20 flow of Nitrogen around a 2-D cylinder</div>
   </div>
   
@@ -58,13 +60,13 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
   
   <div class="hyStrathSlides">
     <div class="solvernametext">ARC</div>
-    <img src="/docs/img/gallery/Renato17-PathfinderMesh.png" style="height:350px">
+    <img src="/docs/img/gallery/Renato17-PathfinderMesh.png" style="height:275px">
     <div class="text">Renato and Scanlon (2017) - Multi-dimensional ablation and thermal response for the Pathfinder capsule</div>
   </div>
   
   <div class="hyStrathSlides">
     <div class="solvernametext">ARC</div>
-    <img src="/docs/img/gallery/Renato17-PathfinderHeatFlux.png" style="height:350px">
+    <img src="/docs/img/gallery/Renato17-PathfinderHeatFlux.png" style="height:275px">
     <div class="text">Renato and Scanlon (2017) - Multi-dimensional ablation and thermal response for the Pathfinder capsule</div>
   </div>
   
