@@ -56,19 +56,19 @@ howpublished = {\url{https://github.com/vincentcasseau/hyStrath/}}
 ##### Filter solvers
 
 <p>
-  <a class="btn btn-dark" href="https://hystrath.github.io/publications/" role="button"><i>All solvers</button>
+  <a class="btn btn-dark" href="https://hystrath.github.io/publications/" role="button"><i>All solvers</a>
 </p>
 
 <p>
   <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-hy2foam/" role="button"><i>hy2Foam</i></a>
   <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-hyfoam/" role="button"><i>hyFoam</i></a>
-  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-arc/" role="button"><i>ARC</i></button>
+  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-arc/" role="button"><i>ARC</i></a>
 </p>
  
 <p>
-  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-dsmcfoam/" role="button"><i>dsmcFoam+</i></button>
-  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-pdfoam/" role="button"><i>pdFoam</i></button>
-  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-hyperfoam/" role="button"><i>hyperFoam</i></button>
+  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-dsmcfoam/" role="button"><i>dsmcFoam+</i></a>
+  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-pdfoam/" role="button"><i>pdFoam</i></a>
+  <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-hyperfoam/" role="button"><i>hyperFoam</i></a>
 </p>
 
 <h3>JOURNAL ARTICLES</h3>
