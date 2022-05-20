@@ -86,6 +86,7 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
         <img src="/docs/img/gallery/Casseau18-PorousMediaDeff.png" style="height:275px">
       </div>
     </div>
+    <div class="text">Casseau and White (2018) - Porous media generation</div>
   </div>
   
   <div class="hyStrathSlides">
