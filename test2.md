@@ -20,81 +20,81 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides">
+  <div class="hyStrathSlides">
     <div class="solvernametext">rhoCentralFoam</div>
     <img src="/docs/img/gallery/Espinoza15-SodShockTube.png" style="width:100%">
     <div class="text">Espinoza et al. (2015) - Sod shock tube simulation with Adaptive Mesh Refinement (AMR)</div>
   </div>
 
-  <div class="mySlides">
+  <div class="hyStrathSlides">
     <div class="solvernametext">pdFoam</div>
     <img src="/docs/img/gallery/Capon17-TempContours.png" style="height:350px">
     <div class="text">Capon et al. (2017) - Mach 10 flow of Argon around a 2-D cylinder</div>
   </div>
 
-  <div class="mySlides">
+  <div class="hyStrathSlides">
     <div class="solvernametext">pdFoam</div>
     <img src="/docs/img/gallery/Capon17-PotentialEnergyContours.png" style="height:350px">
     <div class="text">Capon et al. (2017) - Ion Orbital Motion Structures in LEO</div>
   </div>
   
-  <div class="mySlides">
+  <div class="hyStrathSlides">
     <div class="solvernametext">hy2Foam</div>
     <img src="/docs/img/gallery/Casseau16-Mach20NitrogenCylinder.png" style="height:350px">
     <div class="text">Casseau et al. (2016) - Mach 20 flow of Nitrogen around a 2-D cylinder</div>
   </div>
   
-  <div class="mySlides">
+  <div class="hyStrathSlides">
     <div class="solvernametext">hyFoam</div>
     <img src="/docs/img/gallery/Hoste17-LorrainsScramjet.png" style="height:350px">
     <div class="text">Hoste et al. (2017) - Experimental Schlieren and CFD results for Lorrain's Scramjet</div>
   </div>
   
-  <div class="mySlides">
+  <div class="hyStrathSlides">
     <div class="solvernametext">hyFoam</div>
     <img src="/docs/img/gallery/Hoste17-LorrainsScramjetCp.png" style="height:350px">
     <div class="text">Hoste et al. (2017) - Pressure coefficient for Lorrain's Scramjet, fuel-off conditions</div>
   </div>
   
-  <div class="mySlides">
+  <div class="hyStrathSlides">
     <div class="solvernametext">ARC</div>
     <img src="/docs/img/gallery/Renato17-PathfinderMesh.png" style="height:350px">
     <div class="text">Renato and Scanlon (2017) - Multi-dimensional ablation and thermal response for the Pathfinder capsule</div>
   </div>
   
-  <div class="mySlides">
+  <div class="hyStrathSlides">
     <div class="solvernametext">ARC</div>
     <img src="/docs/img/gallery/Renato17-PathfinderHeatFlux.png" style="height:350px">
     <div class="text">Renato and Scanlon (2017) - Multi-dimensional ablation and thermal response for the Pathfinder capsule</div>
   </div>
   
-  <div class="mySlides">
+  <div class="hyStrathSlides">
     <div class="solvernametext">dsmcFoam+</div>
     <img src="/docs/img/gallery/Casseau18-PorousMedia.png" style="height:350px">
     <div class="text">Casseau and White (2018) - Porous media generation</div>
   </div>
   
-  <div class="mySlides">
+  <div class="hyStrathSlides">
     <div class="solvernametext">dsmcFoam+</div>
-    <img src="/docs/img/gallery/Casseau18-PorousMediaPlot.png" style="height:350px">
-    <div class="text">Casseau and White (2018) - </div>
-  </div>
-  
-  <div class="mySlides">
-    <div class="solvernametext">dsmcFoam+</div>
-    <img src="/docs/img/gallery/Casseau18-PorousMediaDeff.png" style="height:350px">
-    <div class="text">Casseau and White (2018) - </div>
-  </div>
-  
-  <div class="mySlides">
-    <div class="solvernametext">hyFoam+</div>
     <div class="row">
-    <div class="column">
-    <img src="/docs/img/gallery/Hoste21-HB2FlareGeometry.png" style="height:150px">
+      <div class="column">
+        <img src="/docs/img/gallery/Casseau18-PorousMediaPlot.png" style="height:350px">
+      </div>
+      <div class="column">
+        <img src="/docs/img/gallery/Casseau18-PorousMediaDeff.png" style="height:350px">
+      </div>
     </div>
-    <div class="column">
-    <img src="/docs/img/gallery/Hoste21-HB2FlareHeatflux.png" style="height:350px">
-    </div>
+  </div>
+  
+  <div class="hyStrathSlides">
+    <div class="solvernametext">hyFoam</div>
+    <div class="row">
+      <div class="column">
+        <img src="/docs/img/gallery/Hoste21-HB2FlareGeometry.png" style="height:150px">
+      </div>
+      <div class="column">
+        <img src="/docs/img/gallery/Hoste21-HB2FlareHeatflux.png" style="height:275px">
+      </div>
     </div>
     <div class="text">Hoste and Casseau (2021) - HB-2 flare simulation</div>
   </div>
@@ -140,7 +140,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
+  let slides = document.getElementsByClassName("hyStrathSlides");
   let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
