@@ -53,7 +53,7 @@ howpublished = {\url{https://github.com/vincentcasseau/hyStrath/}}
 
 <br>
 
-<p>
+<p align="center">
   <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications/" role="button">All solvers</a>
 
   <a class="btn btn-outline-dark" href="https://hystrath.github.io/publications-hy2foam/" role="button"><i>hy2Foam</i></a>
