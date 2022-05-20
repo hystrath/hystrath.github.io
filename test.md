@@ -63,14 +63,14 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
 <div class="row">
   <div class="column">
     <div class="content_img">
-     <img src='/docs/img/gallery/Renato17-StardustHeatFlux.png' width='100%'>
-     <div>Renato et al. (2017) - Multi-dimensional ablation and thermal response for the Stardust capsule</div>
+     <img src='/docs/img/gallery/Renato17-PathfinderHeatFlux.png' width='100%'>
+     <div>Renato and Scanlon (2017) - Multi-dimensional ablation and thermal response for the Pathfinder capsule</div>
     </div>
   </div>
   <div class="column">
     <div class="content_img">
-     <img src='/docs/img/gallery/Renato17-StardustMesh.png' width='100%'>
-     <div>Renato et al. (2017) - Multi-dimensional ablation and thermal response for the Stardust capsule</div>
+     <img src='/docs/img/gallery/Renato17-PathfinderMesh.png' width='100%'>
+     <div>Renato and Scanlon (2017) - Multi-dimensional ablation and thermal response for the Pathfinder capsule</div>
     </div>
   </div>
 </div>   
