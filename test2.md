@@ -88,8 +88,14 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
   
   <div class="mySlides">
     <div class="solvernametext">hyFoam+</div>
+    <div class="row">
+    <div class="column">
     <img src="/docs/img/gallery/Hoste21-HB2FlareGeometry.png" style="height:350px">
+    </div>
+    <div class="column">
     <img src="/docs/img/gallery/Hoste21-HB2FlareHeatflux.png" style="height:350px">
+    </div>
+    </div>
     <div class="text">Hoste and Casseau (2021) - HB-2 flare simulation</div>
   </div>
 
