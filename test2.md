@@ -119,7 +119,6 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
   <span class="dot" onclick="currentSlide(9)"></span>
   <span class="dot" onclick="currentSlide(10)"></span>
   <span class="dot" onclick="currentSlide(11)"></span>
-  <span class="dot" onclick="currentSlide(12)"></span>
 </div> 
 
 
