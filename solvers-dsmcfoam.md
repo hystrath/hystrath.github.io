@@ -11,8 +11,9 @@ nav-short: true
   <a href="https://hystrath.github.io/how-tos-dsmc-fleming/how-tos-dsmc-fleming/">How-tos</a>
   <a href="https://hystrath.github.io/tutos-dsmcfoam/">Tutorials</a>
   <a href="https://github.com/vincentcasseau/hyStrath/tree/master/applications/solvers/discreteMethods/dsmc/dsmcFoam%2B">Source code</a>
-  <a href="https://hystrath.github.io/disclaimer/">Disclaimer</a>
+  <a href="https://hystrath.github.io/publications-dsmcfoam/">Publications</a>
   <a href="https://hystrath.github.io/people/#dsmc-module--dsmcfoam">Developers</a>
+  <a href="https://hystrath.github.io/disclaimer/">Disclaimer</a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
