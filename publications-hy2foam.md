@@ -7,13 +7,13 @@ nav-short: true
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
   <header>PUBLICATIONS</header>
-  <a href="https://hystrath.github.io/publications/#guidelines">Guidelines</a>
-  <a href="https://hystrath.github.io/publications/#journal-articles">Journal articles</a>
-  <a href="https://hystrath.github.io/publications/#conference-papers">Conference papers</a>
-  <a href="https://hystrath.github.io/publications/#extended-abstracts">Extended abstracts</a>
-  <a href="https://hystrath.github.io/publications/#theses">Theses</a>
-  <a href="https://hystrath.github.io/publications/#technical-reports">Technical reports</a>
-  <a href="https://hystrath.github.io/publications/#presentation-slides">Presentation slides</a>
+  <a href="https://hystrath.github.io/publications-hy2foam/#guidelines">Guidelines</a>
+  <a href="https://hystrath.github.io/publications-hy2foam/#journal-articles">Journal articles</a>
+  <a href="https://hystrath.github.io/publications-hy2foam/#conference-papers">Conference papers</a>
+  <a href="https://hystrath.github.io/publications-hy2foam/#extended-abstracts">Extended abstracts</a>
+  <a href="https://hystrath.github.io/publications-hy2foam/#theses">Theses</a>
+  <a href="https://hystrath.github.io/publications-hy2foam/#technical-reports">Technical reports</a>
+  <a href="https://hystrath.github.io/publications-hy2foam/#presentation-slides">Presentation slides</a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
