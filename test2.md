@@ -42,7 +42,7 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
   
   <div class="hyStrathSlides">
     <div class="solvernametext">hy2Foam</div>
-    <img src="/docs/img/gallery/Casseau16-Mach20NitrogenCylinder.png" style="height:275px">
+    <img src="/docs/img/gallery/Casseau16-Mach20NitrogenCylinder.png" style="height:325px">
     <div class="text">Casseau et al. (2016) - Mach 20 flow of Nitrogen around a 2-D cylinder</div>
   </div>
   
@@ -60,13 +60,13 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
   
   <div class="hyStrathSlides">
     <div class="solvernametext">ARC</div>
-    <img src="/docs/img/gallery/Renato17-PathfinderMesh.png" style="height:275px">
+    <img src="/docs/img/gallery/Renato17-PathfinderMesh.png" style="height:325px">
     <div class="text">Renato and Scanlon (2017) - Multi-dimensional ablation and thermal response for the Pathfinder capsule</div>
   </div>
   
   <div class="hyStrathSlides">
     <div class="solvernametext">ARC</div>
-    <img src="/docs/img/gallery/Renato17-PathfinderHeatFlux.png" style="height:275px">
+    <img src="/docs/img/gallery/Renato17-PathfinderHeatFlux.png" style="height:300px">
     <div class="text">Renato and Scanlon (2017) - Multi-dimensional ablation and thermal response for the Pathfinder capsule</div>
   </div>
   
