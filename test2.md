@@ -20,19 +20,19 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-  <div class="hyStrathSlides">
+  <div class="mySlides">
     <div class="solvernametext">rhoCentralFoam</div>
-    <img src="/docs/img/gallery/Espinoza15-SodShockTube.png" style="width:80%">
+    <img src="/docs/img/gallery/Espinoza15-SodShockTube.png" style="width:100%">
     <div class="text">Espinoza et al. (2015) - Sod shock tube simulation with Adaptive Mesh Refinement (AMR)</div>
   </div>
 
-  <div class="hyStrathSlides">
+  <div class="mySlides">
     <div class="solvernametext">pdFoam</div>
     <img src="/docs/img/gallery/Capon17-TempContours.png" style="height:350px">
     <div class="text">Capon et al. (2017) - Mach 10 flow of Argon around a 2-D cylinder</div>
   </div>
 
-  <div class="hyStrathSlides">
+  <div class="mySlides">
     <div class="solvernametext">pdFoam</div>
     <img src="/docs/img/gallery/Capon17-PotentialEnergyContours.png" style="height:350px">
     <div class="text">Capon et al. (2017) - Ion Orbital Motion Structures in LEO</div>
