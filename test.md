@@ -19,7 +19,19 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
 <br>
 
 <div class="content_img">
- <img src='/docs/img/gallery/Espinoza15-SodShockTube.png' width='100%' height='100%'>
+ <img src='/docs/img/gallery/Espinoza15-SodShockTube.png' width='100%'>
  <div>Espinoza et al. (2015) - Sod shock tube simulation with Adaptive Mesh Refinement (AMR)</div>
 </div>
+
+<div class="content_img">
+ <img src='/docs/img/gallery/Capon17-TempContours.png' width='49%'>
+ <div>Capon et al. (2017) - Mach 10 flow of Argon around a 2-D cylinder</div>
+</div>
+
+<div class="content_img">
+ <img src='/docs/img/gallery/Capon17-PotentialEnergyContours.png' width='49%'>
+ <div>Capon et al. (2017) - Ion Orbital Motion Structures in LEO</div>
+</div>
+
+
 
