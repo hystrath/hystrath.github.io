@@ -20,7 +20,7 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
 
 <div data-role="tile" data-size="medium" data-effect="hover-zoom-up">
     <div class="slide-front">
-        <img src="docs/img/gallery/Espinoza15-SodShockTube.png" class="h-100 w-100">
+        <img src="/docs/img/gallery/Espinoza15-SodShockTube.png" class="h-100 w-100">
     </div>
     <div class="slide-back d-flex flex-justify-center flex-align-center p-4 op-mauve">
         <p class="text-center">
@@ -43,4 +43,40 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
     <div data-role="tile" data-size="medium"></div>
     <div data-role="tile" data-size="medium"></div>
     <div data-role="tile" data-size="wide"></div>
+</div>
+
+<br>
+
+<div class="tiles-grid tiles-group size-2" data-group-title="General">
+    <a href="https://github.com/olton/Metro-UI-CSS"
+            data-role="tile" class="bg-indigo">
+        <span class="mif-github icon"></span>
+        <span class="branding-bar">Github</span>
+        <span class="badge-bottom">30</span>
+    </a>
+    <div data-role="tile" class="bg-cyan">
+        <span class="mif-envelop icon"></span>
+        <span class="branding-bar">Email</span>
+        <span class="badge-bottom">10</span>
+    </div>
+    <div data-role="tile" class="bg-orange" data-size="wide">
+        <span class="mif-chrome icon"></span>
+        <span class="branding-bar">Chrome</span>
+    </div>
+    <div data-role="tile" data-size="small">
+        <span class="mif-apple icon"></span>
+    </div>
+    <div data-role="tile" data-size="small" class="bg-red">
+        <span class="mif-bell icon"></span>
+    </div>
+    <div data-role="tile" data-size="small" class="bg-teal col-1 row-6">
+        <span class="mif-windows icon"></span>
+    </div>
+    <div data-role="tile" data-size="small" class="bg-brown col-2 row-6">
+        <span class="mif-wind icon"></span>
+    </div>
+    <div data-role="tile" class="bg-cyan">
+        <span class="mif-table icon"></span>
+        <span class="branding-bar">Tables</span>
+    </div>
 </div>
