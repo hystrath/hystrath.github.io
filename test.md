@@ -33,6 +33,8 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
     </div>
   </div>
   
+  <br>
+  
   <div class="content_img">
    <img src='/docs/img/gallery/Espinoza15-SodShockTube.png' width='100%'>
    <div>Espinoza et al. (2015) - Sod shock tube simulation with Adaptive Mesh Refinement (AMR)</div>
