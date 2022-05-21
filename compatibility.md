@@ -40,12 +40,16 @@ The OpenFOAM versions listed below are the <strong>only ones</strong> that are s
 ### Master branch  
 + OF-v1706: [https://www.openfoam.com/releases/openfoam-v1706](https://www.openfoam.com/releases/openfoam-v1706)  
 
-&nbsp;  
+<div style="line-height:150%;">
+    <br>
+</div> 
 
 ### OF-v1612+ branch (deprecated)
 + OF-v1612+: [https://www.openfoam.com/releases/openfoam-v1612+](https://www.openfoam.com/releases/openfoam-v1612+) 
 
-&nbsp;  
+<div style="line-height:100%;">
+    <br>
+</div>  
 
 ### OF-2.4.0 branch (deprecated)   
 + OF-2.4.0-MNF: [https://github.com/MicroNanoFlows/OpenFOAM-2.4.0-MNF](https://github.com/MicroNanoFlows/OpenFOAM-2.4.0-MNF)  
