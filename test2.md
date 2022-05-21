@@ -27,37 +27,37 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
 
   <div class="hyStrathSlides">
     <div class="solvernametext">pdFoam</div>
-    <img src="/docs/img/gallery/Capon17-TempContours.png" style="height:350px">
+    <img src="/docs/img/gallery/Capon17-TempContours.png" style="height:300px">
     <div class="text">Capon et al. (2017) - Mach 10 flow of Argon around a 2-D cylinder</div>
   </div>
 
   <div class="hyStrathSlides">
     <div class="solvernametext">pdFoam</div>
-    <img src="/docs/img/gallery/Capon17-PotentialEnergyContours.png" style="height:350px">
+    <img src="/docs/img/gallery/Capon17-PotentialEnergyContours.png" style="height:300px">
     <div class="text">Capon et al. (2017) - Ion Orbital Motion Structures in LEO</div>
   </div>
   
   <div class="hyStrathSlides">
     <div class="solvernametext">hy2Foam</div>
-    <img src="/docs/img/gallery/Casseau16-Mach20NitrogenCylinder.png" style="height:325px">
+    <img src="/docs/img/gallery/Casseau16-Mach20NitrogenCylinder.png" style="height:300px">
     <div class="text">Casseau et al. (2016) - Mach 20 flow of Nitrogen around a 2-D cylinder</div>
   </div>
   
   <div class="hyStrathSlides">
     <div class="solvernametext">hyFoam</div>
-    <img src="/docs/img/gallery/Hoste17-LorrainsScramjet.png" style="height:350px">
+    <img src="/docs/img/gallery/Hoste17-LorrainsScramjet.png" style="height:300px">
     <div class="text">Hoste et al. (2017) - Experimental Schlieren and CFD results for Lorrain's Scramjet</div>
   </div>
   
   <div class="hyStrathSlides">
     <div class="solvernametext">hyFoam</div>
-    <img src="/docs/img/gallery/Hoste17-LorrainsScramjetCp.png" style="height:350px">
+    <img src="/docs/img/gallery/Hoste17-LorrainsScramjetCp.png" style="height:300px">
     <div class="text">Hoste et al. (2017) - Pressure coefficient for Lorrain's Scramjet, fuel-off conditions</div>
   </div>
   
   <div class="hyStrathSlides">
     <div class="solvernametext">ARC</div>
-    <img src="/docs/img/gallery/Renato17-PathfinderMesh.png" style="height:325px">
+    <img src="/docs/img/gallery/Renato17-PathfinderMesh.png" style="height:300px">
     <div class="text">Renato and Scanlon (2017) - 3-D ablation and thermal response for the Pathfinder capsule</div>
   </div>
   
@@ -69,36 +69,34 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
   
   <div class="hyStrathSlides">
     <div class="solvernametext">dsmcFoam+</div>
-    <img src="/docs/img/gallery/Casseau18-PorousMedia.png" style="height:350px">
+    <img src="/docs/img/gallery/Casseau18-PorousMedia.png" style="height:300px">
     <div class="text">Casseau and White (2018) - Porous media generation</div>
   </div>
   
   <div class="hyStrathSlides">
     <div class="solvernametext">dsmcFoam+</div>
-    <div class="row">
-      <div class="column">
-        <img src="/docs/img/gallery/Casseau18-PorousMediaPlot.png" style="height:275px">
-      </div>
-      <div class="column">
-        <img src="/docs/img/gallery/Casseau18-PorousMediaDeff.png" style="height:275px">
-      </div>
-    </div>
-    <div class="text">Casseau and White (2018) - Porous media generation</div>
+    <img src="/docs/img/gallery/Casseau18-PorousMediaDeff.png" style="height:300px">
+    <div class="text">Casseau and White (2018) - Relation between porosity and effective diffusivity</div>
   </div>
   
   <div class="hyStrathSlides">
-    <div class="solvernametext">hyFoam</div>
-    <div class="row">
-      <div class="column">
-        <img src="/docs/img/gallery/Hoste21-HB2FlareGeometry.png" style="height:150px">
-      </div>
-      <div class="column">
-        <img src="/docs/img/gallery/Hoste21-HB2FlareHeatflux.png" style="height:275px">
-      </div>
-    </div>
-    <div class="text">Hoste and Casseau (2021) - HB-2 flare simulation</div>
+    <div class="solvernametext">dsmcFoam+</div>
+    <img src="/docs/img/gallery/Hoste21-HB2FlareGeometry.png" style="height:300px">
+    <div class="text">Hoste and Casseau (2021) - HB-2 flare, geometry</div>
   </div>
-
+  
+  <div class="hyStrathSlides">
+    <div class="solvernametext">dsmcFoam+</div>
+    <img src="/docs/img/gallery/Hoste21-HB2FlareHeatflux.png" style="height:300px">
+    <div class="text">Casseau and White (2018) - HB-2 flare, heat flux profile</div>
+  </div>
+  
+  <div class="hyStrathSlides">
+    <div class="solvernametext">dsmcFoam+</div>
+    <p>More to come</p>
+    <div class="text"></div>
+  </div>
+  
   <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -119,6 +117,8 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
   <span class="dot" onclick="currentSlide(9)"></span>
   <span class="dot" onclick="currentSlide(10)"></span>
   <span class="dot" onclick="currentSlide(11)"></span>
+  <span class="dot" onclick="currentSlide(12)"></span>
+  <span class="dot" onclick="currentSlide(13)"></span>
 </div> 
 
 
