@@ -1,6 +1,7 @@
 ---
 layout: home
-title: test
+title: test2
+subtitle: test
 nav-short: true
 ---
 
@@ -13,7 +14,7 @@ The <i>hyStrath</i> GitHub repository is featuring hypersonic and rarefied gas d
 </p>
 
 <p>
-The platform is meant to be collaborative: if you would like to <a href="https://hystrath.github.io/contributions/">contribute</a>, use it for educational purposes or need support in the form of consulting services, please <a href="https://hystrath.github.io/contact">get in touch</a>.
+The platform is meant to be collaborative: if you would like to <a href="https://hystrath.github.io/contributions/">contribute</a>, use it for educational purposes or need support in the form of consulting services, please <a href="https://hystrath.github.io/contact">get in touch</a>. 
 </p>
 
 <br>
