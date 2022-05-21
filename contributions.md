@@ -24,26 +24,47 @@ Please [get in touch](https://hystrath.github.io/contact) if you are interested.
 
 You will need to fill a _pull request_ and this can be achieved as follows:  
 
-1. Fork your own copy of _hyStrath_ using the fork button    
+1. Fork your own copy of _hyStrath_ using the fork button  
+    <div style="line-height:50%;">
+        <br>
+    </div>  
 2. Open a terminal window and create a local copy of your _hyStrath_ repository   
-```sh
-cd $WM_PROJECT_USER_DIR  
-git clone https://github.com/USERNAME/hyStrath
-```   
+    ```sh
+    cd $WM_PROJECT_USER_DIR  
+    git clone https://github.com/USERNAME/hyStrath
+    ``` 
+    <div style="line-height:50%;">
+        <br>
+    </div>  
 3. Add/edit files in your local repository  
+    <div style="line-height:50%;">
+        <br>
+    </div>
 4. At any time, track the changes that you have made using  
-```sh
-git status
-```  
+    ```sh
+    git status
+    ```  
+    <div style="line-height:50%;">
+        <br>
+    </div>
 5. Once you are ready to commit and push your changes, type in
-```
-cd $WM_PROJECT_USER_DIR/hyStrath  
-git add PATH/TO/NEW/CONTENTS/  
-git commit -m 'SOLVER_NAME: AN_EXPLICIT_DESCRIPTION_OF_THE_CHANGES'  
-git push origin master  
-```    
+    ```
+    cd $WM_PROJECT_USER_DIR/hyStrath  
+    git add PATH/TO/NEW/CONTENTS/  
+    git commit -m 'SOLVER_NAME: AN_EXPLICIT_DESCRIPTION_OF_THE_CHANGES'  
+    git push origin master  
+    ``` 
+    <div style="line-height:50%;">
+        <br>
+    </div>       
 6. Press the [_New pull request_](https://github.com/vincentcasseau/hyStrath/compare) button in the _Pull Requests_ tab   
+    <div style="line-height:50%;">
+        <br>
+    </div>
 7. Compare the _master_ on vincentcasseau/hyStrath with your _master_ on USERNAME/hyStrath and press _Create pull request_ once you are done
+    <div style="line-height:50%;">
+        <br>
+    </div>
 8. Your contribution to _hyStrath_ will be pending for approval and will be dealt with shortly. Thank you!  
 
 <br>

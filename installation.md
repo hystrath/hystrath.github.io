@@ -58,33 +58,33 @@ if (localStorage.getItem("show_sidenav")) openNav()
         <br>
     </div>
 4. Install the [system requirements](https://www.openfoam.com/documentation/system-requirements.php) 
-```sh
-sudo apt-get update
-sudo apt-get install build-essential flex bison cmake zlib1g-dev libboost-system-dev libboost-thread-dev libopenmpi-dev openmpi-bin gnuplot libreadline-dev libncurses-dev libxt-dev
-sudo apt-get install qt4-dev-tools libqt4-dev libqt4-opengl-dev freeglut3-dev libqtwebkit-dev
-sudo apt-get install libscotch-dev libcgal-dev
-```
-<div style="line-height:20%;">
-    <br>
-</div>
+    ```sh
+    sudo apt-get update
+    sudo apt-get install build-essential flex bison cmake zlib1g-dev libboost-system-dev libboost-thread-dev libopenmpi-dev openmpi-bin gnuplot libreadline-dev libncurses-dev libxt-dev
+    sudo apt-get install qt4-dev-tools libqt4-dev libqt4-opengl-dev freeglut3-dev libqtwebkit-dev
+    sudo apt-get install libscotch-dev libcgal-dev
+    ```
+    <div style="line-height:50%;">
+        <br>
+    </div>
 5. Install OpenFOAM    
-```sh
-cd $WM_PROJECT_DIR
-./Allwmake
-```
-<div style="line-height:20%;">
-    <br>
-</div>
+    ```sh
+    cd $WM_PROJECT_DIR
+    ./Allwmake
+    ```
+    <div style="line-height:50%;">
+        <br>
+    </div>
 6. Change working directory and clone the hyStrath Github repository   
-```sh
-cd $WM_PROJECT_USER_DIR
-git clone https://github.com/vincentcasseau/hyStrath.git --branch master --single-branch && cd hyStrath/
-```
-<div style="line-height:20%;">
-    <br>
-</div>
+    ```sh
+    cd $WM_PROJECT_USER_DIR
+    git clone https://github.com/vincentcasseau/hyStrath.git --branch master --single-branch && cd hyStrath/
+    ```
+    <div style="line-height:50%;">
+        <br>
+    </div>
 7. Decide which module(s) you wish to install
-```sh 
-./install.sh 8 2>/dev/null
-```
+    ```sh 
+    ./install.sh 8 2>/dev/null
+    ```
 where _8_ is the number of processors to be used during the installation (it can be edited).
