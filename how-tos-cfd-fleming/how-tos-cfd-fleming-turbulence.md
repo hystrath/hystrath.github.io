@@ -66,7 +66,7 @@ nav-short: true
 function openNav() {
   document.getElementById("mySidenav").style.width = "225px";
   document.getElementById("mySidenav").style.transition = "0s";
-  document.getElementById('mySidenav').scrollTop = "600";
+  document.getElementById('mySidenav').scrollTop = "700";
 }
 
 function closeNav() {
@@ -76,7 +76,7 @@ function closeNav() {
 function reopenNav() {
   document.getElementById("mySidenav").style.width = "225px";
   document.getElementById("mySidenav").style.transition = "0.5s";
-  document.getElementById('mySidenav').scrollTop = "600";
+  document.getElementById('mySidenav').scrollTop = "700";
 }
 
 openNav()
