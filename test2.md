@@ -13,14 +13,13 @@ The <i>hyStrath</i> GitHub repository is featuring hypersonic and rarefied gas d
 The platform is meant to be collaborative: if you would like to <a href="https://hystrath.github.io/contributions/">contribute</a>, use it for educational purposes or need support in the form of consulting services, please <a href="https://hystrath.github.io/contact">get in touch</a>. 
 </p>
 
-<p>
  <!-- Slideshow container -->
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
   <div class="hyStrathSlides">
     <div class="solvernametext">rhoCentralFoam</div>
-    <img src="/docs/img/gallery/Espinoza15-SodShockTube.png" style="width:100%">
+    <img src="/docs/img/gallery/Espinoza15-SodShockTube.png" style="height:300px">
     <div class="text">Espinoza et al. (2015) - Sod shock tube simulation with Adaptive Mesh Refinement (AMR)</div>
   </div>
 
@@ -112,7 +111,6 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
   <span class="dot" onclick="currentSlide(11)"></span>
   <span class="dot" onclick="currentSlide(12)"></span>
 </div>
-</p> 
 
 
 
