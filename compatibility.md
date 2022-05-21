@@ -40,7 +40,7 @@ The OpenFOAM versions listed below are the <strong>only ones</strong> that are s
 ### Master branch  
 + OF-v1706: [https://www.openfoam.com/releases/openfoam-v1706](https://www.openfoam.com/releases/openfoam-v1706)  
 
-<div style="line-height:75%;">
+<div style="line-height:50%;">
     <br>
 </div> 
 
