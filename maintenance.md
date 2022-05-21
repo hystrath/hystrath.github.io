@@ -17,7 +17,7 @@ nav-short: true
 
 <script>
 function openNav() {
-  document.getElementById("mySidenav").style.width = "200px";
+  document.getElementById("mySidenav").style.width = "210px";
   document.getElementById("mySidenav").style.transition = "0s";
 }
 
@@ -27,7 +27,7 @@ function closeNav() {
 }
 
 function reopenNav() {
-  document.getElementById("mySidenav").style.width = "200px";
+  document.getElementById("mySidenav").style.width = "210px";
   document.getElementById("mySidenav").style.transition = "0.5s";
   localStorage.setItem("show_sidenav", true);
 }
