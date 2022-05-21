@@ -18,18 +18,6 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
 
   <!-- Full-width images with number and caption text -->
   <div class="hyStrathSlides">
-    <div class="solvernametext">rhoCentralFoam</div>
-    <img src="/docs/img/gallery/Espinoza15-SodShockTube.png" style="height:300px">
-    <div class="text">Espinoza et al. (2015) - Sod shock tube simulation with Adaptive Mesh Refinement (AMR)</div>
-  </div>
-
-  <div class="hyStrathSlides">
-    <div class="solvernametext">pdFoam</div>
-    <img src="/docs/img/gallery/Capon17-TempContours.png" style="height:300px">
-    <div class="text">Capon et al. (2017) - Mach 10 flow of Argon around a 2-D cylinder</div>
-  </div>
-
-  <div class="hyStrathSlides">
     <div class="solvernametext">pdFoam</div>
     <img src="/docs/img/gallery/Capon17-PotentialEnergyContours.png" style="height:300px">
     <div class="text">Capon et al. (2017) - Ion Orbital Motion Structures in LEO</div>
@@ -38,7 +26,7 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
   <div class="hyStrathSlides">
     <div class="solvernametext">hy2Foam</div>
     <img src="/docs/img/gallery/Casseau16-Mach20NitrogenCylinder.png" style="height:300px">
-    <div class="text">Casseau et al. (2016) - Mach 20 flow of Nitrogen around a 2-D cylinder</div>
+    <div class="text">Casseau et al. (2016) - Mach 20 flow of Nitrogen around a cylinder</div>
   </div>
   
   <div class="hyStrathSlides">
@@ -54,6 +42,12 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
   </div>
   
   <div class="hyStrathSlides">
+    <div class="solvernametext">rhoCentralFoam</div>
+    <img src="/docs/img/gallery/Espinoza15-SodShockTube.png" style="height:300px">
+    <div class="text">Espinoza et al. (2015) - Sod shock tube simulation with Adaptive Mesh Refinement (AMR)</div>
+  </div>
+
+  <div class="hyStrathSlides">
     <div class="solvernametext">ARC</div>
     <img src="/docs/img/gallery/Renato17-PathfinderMesh.png" style="height:300px">
     <div class="text">Renato and Scanlon (2017) - 3-D ablation and thermal response for the Pathfinder capsule</div>
@@ -66,9 +60,15 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
   </div>
   
   <div class="hyStrathSlides">
+    <div class="solvernametext">pdFoam</div>
+    <img src="/docs/img/gallery/Capon17-TempContours.png" style="height:300px">
+    <div class="text">Capon et al. (2017) - Mach 10 flow of Argon around a cylinder</div>
+  </div>
+  
+  <div class="hyStrathSlides">
     <div class="solvernametext">dsmcFoam+</div>
     <img src="/docs/img/gallery/Casseau18-PorousMedia.png" style="height:300px">
-    <div class="text">Casseau and White (2018) - Porous media generation</div>
+    <div class="text">Casseau and White (2018) - Random porous media generation matching a target porosity</div>
   </div>
   
   <div class="hyStrathSlides">
@@ -78,15 +78,15 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
   </div>
   
   <div class="hyStrathSlides">
-    <div class="solvernametext">dsmcFoam+</div>
+    <div class="solvernametext">hyFoam</div>
     <img src="/docs/img/gallery/Hoste21-HB2FlareGeometry.png" style="height:300px">
     <div class="text">Hoste and Casseau (2021) - HB-2 flare, geometry</div>
   </div>
   
   <div class="hyStrathSlides">
-    <div class="solvernametext">dsmcFoam+</div>
+    <div class="solvernametext">hyFoam</div>
     <img src="/docs/img/gallery/Hoste21-HB2FlareHeatflux.png" style="height:300px">
-    <div class="text">Casseau and White (2018) - HB-2 flare, heat flux profile</div>
+    <div class="text">Hoste and Casseau (2021) - HB-2 flare, heat flux profile</div>
   </div>
   
   <!-- Next and previous buttons -->
