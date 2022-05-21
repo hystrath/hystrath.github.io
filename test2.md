@@ -13,8 +13,7 @@ The <i>hyStrath</i> GitHub repository is featuring hypersonic and rarefied gas d
 The platform is meant to be collaborative: if you would like to <a href="https://hystrath.github.io/contributions/">contribute</a>, use it for educational purposes or need support in the form of consulting services, please <a href="https://hystrath.github.io/contact">get in touch</a>. 
 </p>
 
-<br>
-
+<p>
  <!-- Slideshow container -->
 <div class="slideshow-container">
 
@@ -91,19 +90,13 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
     <div class="text">Casseau and White (2018) - HB-2 flare, heat flux profile</div>
   </div>
   
-  <div class="hyStrathSlides">
-    <div class="solvernametext">dsmcFoam+</div>
-    <p>More to come</p>
-    <div class="text"></div>
-  </div>
-  
   <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
+</p>
 
-<br>
-
+<p>
 <!-- The dots/circles -->
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
@@ -118,8 +111,8 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
   <span class="dot" onclick="currentSlide(10)"></span>
   <span class="dot" onclick="currentSlide(11)"></span>
   <span class="dot" onclick="currentSlide(12)"></span>
-  <span class="dot" onclick="currentSlide(13)"></span>
-</div> 
+</div>
+</p> 
 
 
 
