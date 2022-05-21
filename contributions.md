@@ -72,6 +72,10 @@ You will need to fill a _pull request_ and this can be achieved as follows:
 --- 
 ## List of external contributions
 
+<div style="line-height:100%;">
+    <br>
+</div>
+
 | Contributor | _hyStrath_ branch | Contribution | Date |  
 |-------------|:-------------:|:-------------:|:-------------:|
 | [R.Tech Engineering](http://rtech-engineering.com/), Verniolle, France | OF-v1706 | [Update to OpenFOAM v1706](https://hystrath.github.io/maintenance/), v1706 branch created | 12 May 2018 |
@@ -80,6 +84,10 @@ You will need to fill a _pull request_ and this can be achieved as follows:
 
 --- 
 ## List of integrations
+
+<div style="line-height:100%;">
+    <br>
+</div>
 
 | Author | _hyStrath_ branch | Contribution | Date |  
 |-------------|:-------------:|:-------------:|:-------------:|
