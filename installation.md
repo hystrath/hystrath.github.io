@@ -83,8 +83,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
     <div style="line-height:50%;">
         <br>
     </div>
-7. Decide which module(s) you wish to install
+7. Decide which module(s) you wish to install (_NUMPROCS_ is the number of processors to be used)  
     ```sh 
     ./install.sh NUMPROCS 2>/dev/null
     ```
-where _NUMPROCS_ is the number of processors to be used during the installation.

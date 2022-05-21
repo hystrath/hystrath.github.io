@@ -52,8 +52,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
     <div style="line-height:50%;">
         <br>
     </div>
-3. Decide which module(s) you wish to synchronise:
+3. Decide which module(s) you wish to synchronise (_NUMPROCS_ is the number of processors to be used)  
     ```sh
     ./install.sh NUMPROCS 2>/dev/null
     ```
-where _NUMPROCS_ is the number of processors to be used during the synchronisation.
