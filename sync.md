@@ -54,6 +54,6 @@ if (localStorage.getItem("show_sidenav")) openNav()
     </div>
 3. Decide which module(s) you wish to synchronise:
     ```sh
-    ./install.sh 8 2>/dev/null
+    ./install.sh NUMPROCS 2>/dev/null
     ```
-where _8_ is the number of processors to be used during the synchronisation (it can be edited).
+where _NUMPROCS_ is the number of processors to be used during the synchronisation.

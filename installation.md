@@ -57,7 +57,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
     <div style="line-height:50%;">
         <br>
     </div>
-4. Install the [system requirements](https://www.openfoam.com/documentation/system-requirements.php) 
+4. Install the [system requirements](https://www.openfoam.com/documentation/system-requirements.php)  
     ```sh
     sudo apt-get update
     sudo apt-get install build-essential flex bison cmake zlib1g-dev libboost-system-dev libboost-thread-dev libopenmpi-dev openmpi-bin gnuplot libreadline-dev libncurses-dev libxt-dev
@@ -85,6 +85,6 @@ if (localStorage.getItem("show_sidenav")) openNav()
     </div>
 7. Decide which module(s) you wish to install
     ```sh 
-    ./install.sh 8 2>/dev/null
+    ./install.sh NUMPROCS 2>/dev/null
     ```
-where _8_ is the number of processors to be used during the installation (it can be edited).
+where _NUMPROCS_ is the number of processors to be used during the installation.
