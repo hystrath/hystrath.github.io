@@ -46,15 +46,15 @@ if (localStorage.getItem("show_sidenav")) openNav()
     sudo update-alternatives --config gcc
     sudo update-alternatives --config g++
     ```
-    <div style="line-height:20%;">
+    <div style="line-height:50%;">
         <br>
     </div>
 2. Download the source .tgz files for Ubuntu (30/06/2017: OpenFOAM v1706) for both [OpenFOAM](https://sourceforge.net/projects/openfoam/files/v1706/OpenFOAM-v1706.tgz) and the [ThirdParty](https://sourceforge.net/projects/openfoam/files/v1706/ThirdParty-v1706.tgz)  
-    <div style="line-height:20%;">
+    <div style="line-height:50%;">
         <br>
     </div>
 3. Untar them  
-    <div style="line-height:20%;">
+    <div style="line-height:50%;">
         <br>
     </div>
 4. Install the [system requirements](https://www.openfoam.com/documentation/system-requirements.php) 
