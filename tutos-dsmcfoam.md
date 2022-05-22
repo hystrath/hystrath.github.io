@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Tutorials
+subtitle: DSMC Module - Fleming release
 nav-short: true
 ---
 
@@ -13,11 +14,7 @@ nav-short: true
   <a href="https://hystrath.github.io/tutos-dsmcfoam/#3-couette-flow">Couette flow</a>
   <a href="https://hystrath.github.io/tutos-dsmcfoam/#4-orion-capsule-non-reacting-107-km">Orion capsule</a>
   <a href="https://hystrath.github.io/tutos-dsmcfoam/#5-axially-symmetric-blunt-cylinder">Axially-symmetric blunt cylinder</a>
-    <a href="https://hystrath.github.io/tutos-dsmcfoam/#6-chemically-reacting-heat-bath">Chemically-reacting heat bath</a>
-  <br>
-  <a href="https://hystrath.github.io/tutos-pdfoam"><center><b><i>pdFoam</i></b></center></a>
-  <a href="https://hystrath.github.io/tutos-pdfoam/#1-planar-sheath">Planar sheath</a>
-  <a href="https://hystrath.github.io/tutos-pdfoam/#2-two-stream-instability">Two-stream instability</a>
+  <a href="https://hystrath.github.io/tutos-dsmcfoam/#6-chemically-reacting-heat-bath">Chemically-reacting heat bath</a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
