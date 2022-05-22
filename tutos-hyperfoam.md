@@ -8,7 +8,6 @@ nav-short: true
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
   <header>TUTORIALS</header>
-  <br>
   <a href="https://hystrath.github.io/tutos-hyperfoam"><center><b><i>hyperFoam</i></b></center></a>
 <!--  <a href="https://hystrath.github.io/tutos-hyperfoam/#1-supersonic-flat-plate">Supersonic flat plate</a>-->
   <br>
