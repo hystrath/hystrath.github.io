@@ -156,7 +156,7 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
 
 
 <script>
-let slideIndex = Math.floor(Math.random() * 17) + 1;
+let slideIndex = Math.floor(Math.random() * 17);
 let timeoutms;
 let loop = true;
 
@@ -168,7 +168,8 @@ function plusSlides(n) {
     loop = false;
     slideIndex -= 1;
   }
-  showSlides(slideIndex += n);
+  slideIndex += n;
+  showSlides();
 }
 
 <!--Thumbnail image controls-->
@@ -176,26 +177,29 @@ function currentSlide(n) {
   if (loop) {
     loop = false;
   }
-  showSlides(slideIndex = n);
+  slideIndex = n;
+  showSlides();
 }
 
-function showSlides(n) {
+function showSlides() {
   let i;
   let slides = document.getElementsByClassName("hyStrathSlides");
   let dots = document.getElementsByClassName("dot");
-  if (n >= slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  
+  if (slideIndex >= slides.length) {slideIndex = 0}
+  if (slideIndex < 0) {slideIndex = slides.length - 1}
+  
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex].style.display = "block";
+  dots[slideIndex].className += " active";
   
   if (loop) {
-    timeoutms = setTimeout(showSlides, 2000, slideIndex++);
+    timeoutms = setTimeout(showSlides, 2000);
   }
   else {
     clearTimeout(timeoutms);
