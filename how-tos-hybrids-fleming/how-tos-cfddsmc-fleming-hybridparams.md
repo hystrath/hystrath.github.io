@@ -7,7 +7,7 @@ nav-short: true
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
-  <header>HOW-TOS — CFD-DSMC</header>
+  <header>HOW-TOS — HYBD</header>
   <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-folderstructure/"><b>A. FOLDER STRUCTURE</b></a>
 <!--  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-folderstructure/#1-species-thermophysical-properties"><span style="font-size:13px">&nbsp;&nbsp; 1) Species thermo props</span></a>-->
 <!--  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-folderstructure/#2-addingremoving-energy-modes" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) +/- energy modes</span></a>-->
@@ -42,7 +42,7 @@ openNav()
 
 # Hybrid parameters
 
-The hybrid parameters are provided in the <foldername>system/dsmc/<foldername><dict>hybridDict</dict> dictionary.
+The hybrid parameters are provided in the <foldername>system/dsmc/<foldername><dict>hybridDict</dict> dictionary and the meaning of its entries is explained in the following sections.
 
 ```c++
 FoamFile
@@ -80,13 +80,25 @@ zoneNoDSMC                  false;
 resetDSMC                   true;
 ```
 
-The meanings of its entries are explained in the following sections.
 
 ---  
 ## 1) Zone names
 
+```c++
+dsmcZoneName                "DSMC";
+innerBufferZoneName         "InnerBuffer";
+outerBufferZoneName         "OuterBuffer";
+cfdZoneName                 "CFD";
+mixtureName                 "Mixture";
+```
+
 ---  
 ## 2) Breakdown parameter
+
+
+```c++
+breakdown                   0.05;
+```
 
 ---  
 ## 3) Buffer layers

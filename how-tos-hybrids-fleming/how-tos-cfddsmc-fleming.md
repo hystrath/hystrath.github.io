@@ -7,7 +7,7 @@ nav-short: true
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
-  <header>HOW-TOS — CFD-DSMC</header>
+  <header>HOW-TOS — HYBD</header>
   <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-folderstructure/"><b>A. FOLDER STRUCTURE</b></a>
 <!--  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-folderstructure/#1-species-thermophysical-properties"><span style="font-size:13px">&nbsp;&nbsp; 1) Species thermo props</span></a>-->
 <!--  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-folderstructure/#2-addingremoving-energy-modes" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) +/- energy modes</span></a>-->
@@ -55,7 +55,7 @@ openNav()
 
 ---  
 ## [B. Hybrid parameters](https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/)
-### [1) Zone names](https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/#1-species-shear-viscosity-and-thermal-conductivity)
+### [1) Zone names](https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/#1-zone-names)
 <!--+ **[1.1 Inviscid simulation](https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/#11-inviscid-simulation)**  -->
 <!--+ **[1.2 Viscous simulation with constant shear viscosity and thermal conductivity](https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/#12-viscous-simulation-with-constant-shear-viscosity-and-thermal-conductivity)**  -->
 <!--+ **[1.3 Other transport models](https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/#13-other-transport-models)**  -->
