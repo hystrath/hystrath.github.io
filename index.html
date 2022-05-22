@@ -158,10 +158,9 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
 <script>
 var randNum = Math.floor(Math.random() * 17) + 1;
 let slideIndex = randNum;
-let timeOutMs = 10000;
+var timeoutms;
 
-showSlides(slideIndex);
-myTimeout = setTimeout(plusSlides, timeOutMs, 1); // Change image every 10 seconds
+showSlides(slideIndex, true);
 
 <!-- Next/previous controls-->
 function plusSlides(n) {
@@ -171,10 +170,9 @@ function plusSlides(n) {
 <!--Thumbnail image controls-->
 function currentSlide(n) {
   showSlides(slideIndex = n);
-  clearTimeout(myTimeout); // Disable timeout
 }
 
-function showSlides(n) {
+function showSlides(n, loop=false) {
   let i;
   let slides = document.getElementsByClassName("hyStrathSlides");
   let dots = document.getElementsByClassName("dot");
@@ -188,5 +186,12 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+  
+  if (loop) {
+    timeoutms = setTimeout(showSlides, 10000, 1);
+  }
+  else {
+    clearTimeout(timeoutms);
+  }
 } 
 </script>
