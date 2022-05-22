@@ -14,9 +14,9 @@ nav-short: true
 <!--  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-folderstructure/#3-choosing-a-thermodem-dictionary" style="background-color:#FFE6E6; padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 3) <i>thermoDEM</i> dictionary</span></a>-->
 
   <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/"><b>B. HYBRID PARAMETERS</b></a>
-  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/#1-zone-names"><span style="font-size:13px">&nbsp;&nbsp; 1) Zone names</span></a>
-  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/#2-breakdown-parameter"><span style="font-size:13px">&nbsp;&nbsp; 2) Breakdown parameter</span></a>
-  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/#3-buffer-layers"><span style="font-size:13px">&nbsp;&nbsp; 3) Buffer layers</span></a>
+  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/#1-zone-names" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Zone names</span></a>
+  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/#2-breakdown-parameter" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) Breakdown parameter</span></a>
+  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/#3-buffer-layers" style="padding-top:4px;"><span style="font-size:13px">&nbsp;&nbsp; 3) Buffer layers</span></a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
