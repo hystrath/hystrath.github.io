@@ -160,7 +160,7 @@ var randNum = Math.floor(Math.random() * 17) + 1;
 let slideIndex = randNum;
 var timeoutms;
 
-showSlides(slideIndex, true);
+showSlides(slideIndex);
 
 <!-- Next/previous controls-->
 function plusSlides(n) {
@@ -172,7 +172,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n, loop=true) {
+function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("hyStrathSlides");
   let dots = document.getElementsByClassName("dot");
@@ -186,10 +186,10 @@ function showSlides(n, loop=true) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  timeoutms = window.setTimeout(showSlides, 2000, 1, true);
+  timeoutms = window.setTimeout(showSlides, 2000, 1);
   
 <!--  if (loop) {-->
-<!--    timeoutms = setTimeout(showSlides, 2000, 1, true);-->
+<!--    timeoutms = setTimeout(showSlides, 2000, 1);-->
 <!--  }-->
 <!--  else {-->
 <!--    clearTimeout(timeoutms);-->
