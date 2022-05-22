@@ -184,7 +184,7 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("hyStrathSlides");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 2}
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
@@ -196,7 +196,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   
   if (loop) {
-    timeoutms = setTimeout(showSlides, 2000, slideIndex++);
+    timeoutms = setTimeout(showSlides, 2000, n++);
   }
   else {
     clearTimeout(timeoutms);
