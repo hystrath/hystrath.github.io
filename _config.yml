@@ -39,11 +39,13 @@ navbar-links:
   How-tos:
     - CFD: "how-tos-cfd-fleming/how-tos-cfd-fleming"
     - DSMC: "how-tos-dsmc-fleming/how-tos-dsmc-fleming"
+    - Hybrids: "how-tos-hybrids-fleming/how-tos-hybrids-fleming"
   Tutorials:
     - hy2Foam: "tutos-hy2foam"
     - hyFoam: "tutos-hyfoam"
     - dsmcFoam+: "tutos-dsmcfoam"
     - pdFoam: "tutos-pdfoam" 
+    - hyperFoam: "tutos-hyperfoam" 
   Publications: "publications"
   About hS:
     - People: "people"

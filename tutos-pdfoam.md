@@ -11,8 +11,8 @@ nav-short: true
   <a href="https://hystrath.github.io/tutos-pdfoam"><center><b><i>pdFoam</i></b></center></a>
   <a href="https://hystrath.github.io/tutos-pdfoam/#1-planar-sheath">Planar sheath</a>
   <a href="https://hystrath.github.io/tutos-pdfoam/#2-two-stream-instability">Two-stream instability</a>
-<!--  <br>-->
-<!--  <a href="https://hystrath.github.io/tutos-hyperfoam"><center><b><i>hyperFoam</i></b></center></a>-->
+  <br>
+  <a href="https://hystrath.github.io/tutos-hyperfoam"><center><b><i>hyperFoam</i></b></center></a>
 <!--  <a href="https://hystrath.github.io/tutos-hyperfoam/#1-supersonic-flat-plate">Supersonic flat plate</a>-->
 </div>
 
