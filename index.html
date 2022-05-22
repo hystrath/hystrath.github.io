@@ -165,14 +165,18 @@ showSlides(slideIndex, loop);
 
 <!-- Next/previous controls-->
 function plusSlides(n) {
-  loop = false;
-  slideIndex -= 1;
+  if (loop) {
+    loop = false;
+    slideIndex -= 1;
+  }
   showSlides(slideIndex += n);
 }
 
 <!--Thumbnail image controls-->
 function currentSlide(n) {
-  loop = false;
+  if (loop) {
+    loop = false;
+  }
   showSlides(slideIndex = n);
 }
 
