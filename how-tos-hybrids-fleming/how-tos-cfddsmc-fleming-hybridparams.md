@@ -42,63 +42,63 @@ openNav()
 
 # Hybrid parameters
 
-The hybrid parameters are provided in the <foldername>system/dsmc/<foldername><dict>hybridDict</dict> dictionary and the meaning of its entries is explained in the following sections.
+<!--The hybrid parameters are provided in the <foldername>system/dsmc/<foldername><dict>hybridDict</dict> dictionary and the meaning of its entries is explained in the following sections.-->
 
-```c++
-FoamFile
-{
-    version         2.0;
-    format          ascii;
-    class           dictionary;
-    object          "hybridDict";
-}
+<!--```c++-->
+<!--FoamFile-->
+<!--{-->
+<!--    version         2.0;-->
+<!--    format          ascii;-->
+<!--    class           dictionary;-->
+<!--    object          "hybridDict";-->
+<!--}-->
 
-// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+<!--// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //-->
 
-dsmcZoneName                "DSMC";
-innerBufferZoneName         "InnerBuffer";
-outerBufferZoneName         "OuterBuffer";
-cfdZoneName                 "CFD";
-mixtureName                 "Mixture";
+<!--dsmcZoneName                "DSMC";-->
+<!--innerBufferZoneName         "InnerBuffer";-->
+<!--outerBufferZoneName         "OuterBuffer";-->
+<!--cfdZoneName                 "CFD";-->
+<!--mixtureName                 "Mixture";-->
 
-dtRatioCFD                  1000000;// * 200
+<!--dtRatioCFD                  1000000;// * 200-->
 
-dtRatioDSMC                 500000;
-iterPerBufferReset          1;
+<!--dtRatioDSMC                 500000;-->
+<!--iterPerBufferReset          1;-->
 
-nFirstBufferCells           5;
-nSecondBufferCells          5;
+<!--nFirstBufferCells           5;-->
+<!--nSecondBufferCells          5;-->
 
-breakdown                   0.05;
+<!--breakdown                   0.05;-->
 
-updateZones                 false;
+<!--updateZones                 false;-->
 
-characteristicLength        1.0;
+<!--characteristicLength        1.0;-->
 
-zoneNoDSMC                  false;
+<!--zoneNoDSMC                  false;-->
 
-resetDSMC                   true;
-```
+<!--resetDSMC                   true;-->
+<!--```-->
 
 
 ---  
 ## 1) Zone names
 
-```c++
-dsmcZoneName                "DSMC";
-innerBufferZoneName         "InnerBuffer";
-outerBufferZoneName         "OuterBuffer";
-cfdZoneName                 "CFD";
-mixtureName                 "Mixture";
-```
+<!--```c++-->
+<!--dsmcZoneName                "DSMC";-->
+<!--innerBufferZoneName         "InnerBuffer";-->
+<!--outerBufferZoneName         "OuterBuffer";-->
+<!--cfdZoneName                 "CFD";-->
+<!--mixtureName                 "Mixture";-->
+<!--```-->
 
 ---  
 ## 2) Breakdown parameter
 
 
-```c++
-breakdown                   0.05;
-```
+<!--```c++-->
+<!--breakdown                   0.05;-->
+<!--```-->
 
 ---  
 ## 3) Buffer layers
