@@ -188,7 +188,7 @@ function showSlides(n, loop=false) {
   dots[slideIndex-1].className += " active";
   
   if (loop) {
-    timeoutms = setTimeout(showSlides, 2000, slideIndex++);
+    timeoutms = setTimeout(showSlides, 2000, slideIndex++, true);
   }
   else {
     clearTimeout(timeoutms);
