@@ -186,13 +186,12 @@ function showSlides(n, loop=false) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  timeoutms = setTimeout(showSlides, 2000, slideIndex++, true);
   
-<!--  if (loop) {-->
-<!--    timeoutms = setTimeout(showSlides, 2000, slideIndex++);-->
-<!--  }-->
-<!--  else {-->
-<!--    clearTimeout(timeoutms);-->
-<!--  }-->
+  if (loop) {
+    timeoutms = setTimeout(showSlides, 2000, slideIndex++);
+  }
+  else {
+    clearTimeout(timeoutms);
+  }
 } 
 </script>
