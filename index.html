@@ -156,8 +156,7 @@ The platform is meant to be collaborative: if you would like to <a href="https:/
 
 
 <script>
-var randNum = Math.floor(Math.random() * 17) + 1;
-let slideIndex = randNum;
+let slideIndex = Math.floor(Math.random() * 17) + 1;
 let timeoutms;
 let loop = true;
 
@@ -184,7 +183,7 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("hyStrathSlides");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
+  if (n >= slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
@@ -196,7 +195,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   
   if (loop) {
-    timeoutms = setTimeout(showSlides, 2000, n++);
+    timeoutms = setTimeout(showSlides, 2000, slideIndex++);
   }
   else {
     clearTimeout(timeoutms);
