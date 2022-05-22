@@ -1,13 +1,13 @@
 ---
 layout: page
 title: How-tos
-subtitle: CFD-DSMC Module - Fleming release
+subtitle: Hybrid Modules - Fleming release
 nav-short: true
 ---
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
-  <header>HOW-TOS — CFD</header>
+  <header>HOW-TOS — CFD-DSMC</header>
   <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-folderstructure/"><b>A. FOLDER STRUCTURE</b></a>
 <!--  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-folderstructure/#1-species-thermophysical-properties"><span style="font-size:13px">&nbsp;&nbsp; 1) Species thermo props</span></a>-->
 <!--  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-folderstructure/#2-addingremoving-energy-modes" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) +/- energy modes</span></a>-->
@@ -15,8 +15,8 @@ nav-short: true
 
   <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/" style="background-color:#FFCCCC"><b>B. HYBRID PARAMETERS</b></a>
   <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/#1-zone-names"  style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Zone names</span></a>
-  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/#2-breakdown-parameter" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2) Breakdown parameter</span></a>
-  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/#3-buffer-layers"  style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3) Buffer layers</span></a>
+  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/#2-breakdown-parameter" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) Breakdown parameter</span></a>
+  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-hybridparams/#3-buffer-layers"  style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 3) Buffer layers</span></a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>

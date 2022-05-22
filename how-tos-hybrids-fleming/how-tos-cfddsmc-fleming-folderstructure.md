@@ -1,13 +1,13 @@
 ---
 layout: page
 title: How-tos
-subtitle: CFD-DSMC Module - Fleming release
+subtitle: Hybrid Modules - Fleming release
 nav-short: true
 ---
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
-  <header>HOW-TOS — CFD</header>
+  <header>HOW-TOS — CFD-DSMC</header>
   <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-folderstructure/" style="background-color:#FFCCCC"><b>A. FOLDER STRUCTURE</b></a>
 <!--  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-folderstructure/#1-species-thermophysical-properties" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Species thermo props</span></a>-->
 <!--  <a href="https://hystrath.github.io/how-tos-hybrids-fleming/how-tos-cfddsmc-fleming-folderstructure/#2-addingremoving-energy-modes" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) +/- energy modes</span></a>-->
