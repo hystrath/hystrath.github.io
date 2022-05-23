@@ -382,12 +382,12 @@
   <!-- mathjax -->
   <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
-  </script>
   
   window.MathJax = {
     loader: {load: ['[tex]/color']},
     tex: {packages: {'[+]': ['color']}}
   };
+  </script>
 
   {% if page.head-extra %}
     {% for file in page.head-extra %}

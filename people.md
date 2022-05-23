@@ -167,10 +167,12 @@ _Lead developer_:
     <span class="sr-only">LinkedIn</span>
   </a> &nbsp; **Dr Christopher J. Capon**, CEO at [Nominal Systems](https://www.nominalsys.com/) & Research Fellow at [UNSW Canberra Space](https://www.unsw.adfa.edu.au/space-research/mr-christopher-capon), Canberra, Australia
 
-_Contributors and/or advisors_:  
+_Code integration_:  
+* **Dr Vincent Casseau**  
+
+_Advisors_:  
 * **Prof Russell R. Boyce**, Chair for Space Engineering at [UNSW Canberra Space](https://research.unsw.edu.au/people/professor-russell-robert-boyce), Canberra, Australia  
 * **Dr Melrose Brown**, Lecturer at [UNSW Canberra Space](https://www.unsw.adfa.edu.au/space-research/dr-melrose-brown), Canberra, Australia    
 * **Dr Craig White**  
-* **Dr Vincent Casseau**  
 * **Dr Thomas J. Scanlon**  
 * **Dr Richard E. Brown**
