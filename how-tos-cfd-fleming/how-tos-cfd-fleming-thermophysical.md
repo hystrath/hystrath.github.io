@@ -134,7 +134,7 @@ N2
 ```
 
 where the entries of the <subdict>transport</subdict> subdictionary are omitted as they will be discussed in <a href="https://hystrath.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-transport/"><b>B. TRANSPORT</b></a>.
-The following table is listing the different keys present in the <subdict>specie</subdict> subdictionary and their meanings. 
+The following Table is listing the different keys present in the <subdict>specie</subdict> subdictionary and their meanings. 
 
 <table>
   <tr>
@@ -244,7 +244,7 @@ In the following example, the electronic energy mode of the N atom is accounted 
 ---  
 ## 3) Choosing a thermoDEM dictionary
 
-Three <dict>thermoDEM</dict> dictionaries are provided in the [generic *hy2Foam* test case](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase/constant). To include  
+Three <dict>thermoDEM</dict> dictionaries are provided in the [generic *hy2Foam* test case](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase/constant). To account for  
   + the rotational energy mode only, choose <dict>thermoDEM_TR</dict>;  
   + the rotational and vibrational internal energy modes, choose <dict>thermoDEM_TRV</dict>;  
   + all internal energy modes, choose <dict>thermoDEM_TRVE</dict>.  

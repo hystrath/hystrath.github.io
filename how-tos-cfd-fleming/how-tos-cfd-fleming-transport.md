@@ -95,7 +95,7 @@ This is done in two steps:
 
 ### 1.2 Viscous simulation with constant shear viscosity and thermal conductivity
 
-Repeat the two steps presented in [§1.1](https://hystrath.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-transport/#11-inviscid-simulation) but edit <dictkey>mu</dictkey> to the desired value. The constant thermal conductivities are set using the <dictkey>kappa</dictkey> (trans-rotational energy mode) and <dictkey>kappave</dictkey> (vibro-electronic energy mode) entries.
+Repeat the two steps presented in [§1.1](https://hystrath.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-transport/#11-inviscid-simulation) but edit <dictkey>mu</dictkey> to the desired value (units: kg/m/s). The constant thermal conductivities are set using the <dictkey>kappa</dictkey> (trans-rotational energy mode) and <dictkey>kappave</dictkey> (vibro-electronic energy mode) entries (units: kg/m/s<sup>3</sup>/K).
 
 ### 1.3 Other transport models
 
@@ -111,7 +111,7 @@ The names of all other available transport models to be loaded using the <dictke
 The coefficients of these models can be found in the <dict>thermoDEM/</dict><subdict>#speciesName</subdict> dictionary. The first three models are using coefficients located in the <subdict>transport</subdict> subdictionary, while the <dictval>powerLawEucken</dictval> model requires the species diameter, <dictkey>diameter</dictkey>, and the species temperature exponent of viscosity, <dictkey>omega</dictkey>, located in the <subdict>specie</subdict> subdictionary.
 
 ### 1.4 Print species shear viscosity and thermal conductivity
-In the <dict>transportProperties/</dict><subdict>transportModels</subdict> dictionary, edit any of these two switches to <dictval>on</dictval>  
+In the <dict>transportProperties/</dict><subdict>transportModels</subdict> dictionary, edit the state of these two switches to <dictval>on</dictval>  
 
 ```c++
     writeViscositySpecies          on;  
@@ -137,6 +137,8 @@ and the dedicated entry, <dictkey>mixingRule</dictkey>, is located in the <dict>
     writeViscosityMixture          on;  
     writeThermalConducMixture      on; 
 ```
+
+<b>NB</b>: There are no reasons to use the <dictval>molar</dictval> mixing rule other than for single-species flows or zero-dimensional heat baths.
 
 <br>
 
@@ -237,7 +239,7 @@ Please refer to [§3.3](https://hystrath.github.io/how-tos-cfd-fleming/how-tos-c
 ### 3.5 Additional features (to Fick and SCEBD models)
 Results using the non-corrected forms of Fick's law and the SCEBD model can be obtained by switching on the <dictkey>useNonCorrectedForm</dictkey> boolean located in the <subdict>diffusionModelParameters</subdict> subdictionary (for comparison with the corrected form only). It is turned <dictval>off</dictval> by default, which means that the sum of the diffusive fluxes is zero.
 
-> The <dictkey>useNonCorrectedForm</dictkey> entry can be deleted from the <subdict>diffusionModelParameters</subdict> subdictionary if you wish (safer).
+> <b>NB</b>: The <dictkey>useNonCorrectedForm</dictkey> entry can be deleted from the <subdict>diffusionModelParameters</subdict> subdictionary if you wish (safer).
 
 In the same subdictionary, the <dictkey>addPressureGradientTerm</dictkey> switch allows to account for the effects of pressure gradients.
 
