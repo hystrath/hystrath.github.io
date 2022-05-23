@@ -88,7 +88,7 @@ These how-tos are based on the working folder located [here](https://github.com/
 ## 1) Species thermophysical properties
 
 The species thermophysical properties are given in the <dict>thermoDEM</dict> dictionary. Each species presents three subdictionaries: <subdict>specie</subdict>, <subdict>thermodynamics</subdict>, and <subdict>transport</subdict>.
-For the nitrogen molecule, it is defined as follows
+An example is provided below for the nitrogen molecule,
     
 ```c++
 N2
@@ -133,8 +133,8 @@ N2
 }
 ```
 
-The entries of the <subdict>transport</subdict> subdictionary are omitted as they will be discussed in <a href="https://hystrath.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-transport/"><b>B. TRANSPORT</b></a>.
-The Table below lists the meaning of the different keys present in the <subdict>specie</subdict> subdictionary. 
+where the entries of the <subdict>transport</subdict> subdictionary are omitted as they will be discussed in <a href="https://hystrath.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-transport/"><b>B. TRANSPORT</b></a>.
+The following table is listing the different keys present in the <subdict>specie</subdict> subdictionary and their meanings. 
 
 <table>
   <tr>
@@ -197,7 +197,7 @@ The Table below lists the meaning of the different keys present in the <subdict>
   </tr>
 </table>
 
-In the <subdict>thermodynamics</subdict> subdictionary, the first entry is a list of coefficients called <dictkey>decoupledCvCoeffs()</dictkey>. The heat capacity at constant volume, _Cv_, is decomposed into the contributions of the different energy modes that are translational (element \#1), rotational (element \#2), vibrational (element \#3), electronic (element \#4), and electron (element \#5). For a planar molecule,   
+In the <subdict>thermodynamics</subdict> subdictionary, the first entry is a list of coefficients called <dictkey>decoupledCvCoeffs()</dictkey>. The heat capacity at constant volume, _Cv_, is decomposed into the contributions of the different energy modes that are translational (1st element), rotational (2nd element), vibrational (3rd element), electronic (4th element), and electron (5th element). For a planar molecule,   
 <p>
 $$Cv_t = 1.5*R_m$$
 </p>
@@ -208,7 +208,7 @@ $$Cv_r = 1.0*R_m$$
  
 <p>where `R_m` is the specific gas constant of molecule `m`. Thus, the first two elements in the <dictkey>decoupledCvCoeffs()</dictkey> list are the coefficients by which `R_m` should be multiplied.</p>
 
-<p>For the vibrational and electronic modes, the expressions of `Cv_v` and `Cv_{el}` are a function of the values provided in the <dictkey>vibrationalList()</dictkey> and <dictkey>electronicList()</dictkey> lists. Hence, elements \#3 and \#4 can be regarded as switches (see <a href="https://hystrath.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-thermophysical/#21-disablingenabling-the-vibrational-mode-of-a-molecule">§2.1</a> and <a href="https://hystrath.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-thermophysical/#22-disablingenabling-the-electronic-mode-of-a-particle">§2.2</a>). The elements in these two lists are grouped by pairs with the first column being the degeneracy and the second column being the characteristic vibrational/electronic temperature, in Kelvins.</p>   
+<p>For the vibrational and electronic modes, the expressions of `Cv_v` and `Cv_{el}` are a function of the values provided in the <dictkey>vibrationalList()</dictkey> and <dictkey>electronicList()</dictkey> lists. Hence, the 3rd and 4th elements can be regarded as switches (see <a href="https://hystrath.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-thermophysical/#21-disablingenabling-the-vibrational-mode-of-a-molecule">§2.1</a> and <a href="https://hystrath.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-thermophysical/#22-disablingenabling-the-electronic-mode-of-a-particle">§2.2</a>). The elements in these two lists are grouped by pairs with the first column being the degeneracy and the second column being the characteristic vibrational/electronic temperature, in Kelvins.</p>   
 
 The 6th element of the <dictkey>decoupledCvCoeffs()</dictkey> list is the ratio of the species chemical enthalpy taken at 298 K (in J/mol) to the universal gas constant, while the 7th element is currently not used.  
 
@@ -221,7 +221,7 @@ The 6th element of the <dictkey>decoupledCvCoeffs()</dictkey> list is the ratio 
 
 In the <dict>thermoDEM/</dict><subdict>#speciesName/thermodynamics</subdict> dictionary, edit the 3rd element of the <dictkey>decoupledCvCoeffs</dictkey> list to either be <dictval>0</dictval> (disabled) or <dictval>1</dictval> (enabled).  
 
-In the following example, the vibrational energy mode of the N2 molecule is enabled  
+In the following example, the vibrational energy mode of the N2 molecule is accounted for  
 
 ```c++
         decoupledCvCoeffs    ( 1.5 1 1 0 0 0 0 );
@@ -233,7 +233,7 @@ In the following example, the vibrational energy mode of the N2 molecule is enab
 
 In the <dict>thermoDEM/</dict><subdict>#speciesName/thermodynamics</subdict> dictionary, edit the 4th element of the <dictkey>decoupledCvCoeffs()</dictkey> list to either be <dictval>0</dictval> (disabled) or <dictval>1</dictval> (enabled).  
 
-In the following example, the electronic energy mode of the N atom is enabled  
+In the following example, the electronic energy mode of the N atom is accounted for 
 
 ```c++
         decoupledCvCoeffs    ( 1.5 0 0 1 0 56852 0 );
@@ -244,9 +244,9 @@ In the following example, the electronic energy mode of the N atom is enabled
 ---  
 ## 3) Choosing a thermoDEM dictionary
 
-Three <dict>thermoDEM</dict> dictionaries are provided in the [generic *hy2Foam* test case](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase/constant)  
-  + to include the rotational energy mode only: <dict>thermoDEM_TR</dict>;
-  + to include the rotational and vibrational internal energy modes: <dict>thermoDEM_TRV</dict>;
-  + to include all internal energy modes: <dict>thermoDEM_TRVE</dict>.  
+Three <dict>thermoDEM</dict> dictionaries are provided in the [generic *hy2Foam* test case](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase/constant). Choose  
+  + <dict>thermoDEM_TR</dict> to include the rotational energy mode only;
+  + <dict>thermoDEM_TRV</dict> to include the rotational and vibrational internal energy modes;
+  + <dict>thermoDEM_TRVE</dict> to include all internal energy modes.  
 
 <b>NB</b>: All species can be left uncommented at all times.
