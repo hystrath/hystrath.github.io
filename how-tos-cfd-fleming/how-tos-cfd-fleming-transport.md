@@ -136,8 +136,11 @@ and the dedicated entry, <dictkey>mixingRule</dictkey>, is located in the <dict>
 ```c++
     writeViscosityMixture          on;  
     writeThermalConducMixture      on; 
-```
-
+```  
+<div style="line-height:50%;">
+    <br>
+</div>
+    
 > <b>NB</b>: There are no reasons to use the <dictval>molar</dictval> mixing rule other than for single-species flows or zero-dimensional heat baths.
 
 <br>
