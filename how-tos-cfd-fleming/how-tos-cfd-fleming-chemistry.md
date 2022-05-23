@@ -225,7 +225,7 @@ reactions
 &nbsp;
 
 #### 3.2.2 Reverse reaction   
-Additional coefficients entering into the calculation of the reverse reaction rate constant [Park, 1990], _k\_rev_, are given below  
+Additional coefficients entering into the calculation of the reverse reaction rate constant [1], _k\_rev_, are given below  
 
 | Extra coefficient    | Meaning | Units |
 |:-------------:|:-------------|:------:|
@@ -274,6 +274,9 @@ reactions
     }
 }
 ```
+
+<p><img src="/docs/img/publis.png" width="40">[1] C. Park. <i>Nonequilibrium Hypersonic Aerothermodynamics</i>, Wiley International, New
+York, <b>1990</b></p>
 
 &nbsp;
 
