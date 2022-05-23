@@ -199,7 +199,11 @@ In the <dict>hTCReactions#name</dict> dictionary, the <subdict>reactions</subdic
 | <dictkey>beta</dictkey>      |  temperature exponent          |   -     |
 | <dictkey>Ta</dictkey>      |  temperature of activation           |   K    |
 
-> Please pay attention to the units of the pre-exponential factor, <dictkey>A</dictkey>, when customising your own <dict>hTCReactions#name</dict> dictionary.
+<div style="line-height:50%;">
+    <br>
+</div>
+    
+> <b>NB</b>: Please pay attention to the units of the pre-exponential factor, <dictkey>A</dictkey>, when customising your own <dict>hTCReactions#name</dict> dictionary.
 
 The reaction <dictkey>type</dictkey> is defined as <dictval>irreversibleArrheniusReaction</dictval>.
 
@@ -311,10 +315,14 @@ reactions
     }
 }
 ```
-> All species present in the <dictkey>species()</dictkey> list must be present in the <dictkey>coeff()</dictkey> list, no more, no less. 
+<div style="line-height:50%;">
+    <br>
+</div>
+    
+> <b>NB</b>: All species present in the <dictkey>species()</dictkey> list must be present in the <dictkey>coeff()</dictkey> list, no more, no less. 
 
 ### 3.3  Increase robustness
-Backward reaction rates may sometimes cause problems in low-temperature regions and yield the simulation to crash. A minimum temperature value, <dictkey>Tmin</dictkey>, can be introduced into the rate calculations to increase robustness [Scalabrin, 2007]. A switch called <dictkey>modifiedTemperature</dictkey> located in the <dict>chemistryProperties</dict> dictionary is there for this purpose.
+Backward reaction rates may sometimes cause problems in low-temperature regions and yield the simulation to crash. A minimum temperature value, <dictkey>Tmin</dictkey>, can be introduced into the rate calculations to increase robustness [1]. A switch called <dictkey>modifiedTemperature</dictkey> located in the <dict>chemistryProperties</dict> dictionary is there for this purpose.
 
 ```c++
 modifiedTemperature on;
@@ -324,6 +332,8 @@ modifiedTemperatureCoeffs
     epsilon   80.0;
 }
 ```
+
+<p><img src="/docs/img/publis.png" width="40">[1] L. C. Scalabrin, "Numerical Simulation of Weakly Ionized Hypersonic Flow over Reentry Capsules," PhD thesis, University of Michigan, Ann Arbor (US), <b>2007</b> &nbsp; <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.453.3057&rep=rep1&type=pdf" target="_blank" style="color:orange"> [PDF→]</a></p>
 
 <br>
 

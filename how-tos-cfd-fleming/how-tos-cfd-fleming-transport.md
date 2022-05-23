@@ -195,7 +195,7 @@ Binary diffusion coefficients can be calculated according to any of the models p
 
 The <dictkey>constantBinaryDiffusionModelCoefficients</dictkey> and <dictkey>collisionDataModel</dictkey> entries can be found in the <subdict>diffusionModelParameters</subdict> subdictionary. <dictkey>collisionDataModel</dictkey> accepted values are <dictval>"Gupta1989D"</dictval>, <dictval>"Gupta1989O"</dictval>, <dictval>"Gupta1990D"</dictval>, <dictval>"Gupta1990O"</dictval>, and <dictval>"Wright2005O"</dictval>.
 
-Example:  
+Example for a binary Nitrogen-Oxygen mixture:  
 
 ```c++
 multiSpeciesTransport        Fick;
