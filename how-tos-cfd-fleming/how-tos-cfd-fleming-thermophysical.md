@@ -87,7 +87,8 @@ These how-tos are based on the working folder located [here](https://github.com/
 ---  
 ## 1) Species thermophysical properties
 
-The species thermophysical properties are given in the <dict>thermoDEM</dict> dictionary. For the nitrogen molecule, it is defined as follows
+The species thermophysical properties are given in the <dict>thermoDEM</dict> dictionary. Each species presents three subdictionaries: <subdict>specie</subdict>, <subdict>thermodynamics</subdict>, and <subdict>transport</subdict>.
+For the nitrogen molecule, it is defined as follows
     
 ```c++
 N2
@@ -245,6 +246,6 @@ In the following example, the electronic energy mode of the N atom is enabled
 Three <dict>thermoDEM</dict> dictionaries are provided in the [generic *hy2Foam* test case](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase/constant)  
   + to include the rotational energy mode only: <dict>thermoDEM_TR</dict>;
   + to include the rotational and vibrational internal energy modes: <dict>thermoDEM_TRV</dict>;
-  + to includes all internal energy modes: <dict>thermoDEM_TRVE</dict>.  
+  + to include all internal energy modes: <dict>thermoDEM_TRVE</dict>.  
 
-<b>NB</b>: It is safe to leave all species uncommented at all times.
+<b>NB</b>: All species can be left uncommented at all times.
