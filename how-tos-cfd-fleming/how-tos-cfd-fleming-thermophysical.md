@@ -173,7 +173,7 @@ The following table is listing the different keys present in the <subdict>specie
   <tr>
     <td align="center"><dictkey>eta_s</dictkey></td>
     <td align="center"> - </td>  
-    <td align="center">factor that enters in the calculation of the <a href="https://github.com/vincentcasseau/hyStrath/commit/f036d74297d3f91fcbeb05fa531a1c07ba71bde1">vibrational thermal conductivity</a> (this key is optional and is equal to <dictval>1.2</dictval> by default) </td>
+    <td align="center">factor that enters in the calculation of the <a href="https://github.com/vincentcasseau/hyStrath/commit/f036d74297d3f91fcbeb05fa531a1c07ba71bde1">vibrational thermal conductivity</a> (this key is optional and is equal to <dictval>1.2</dictval> by defaul) </td>
   </tr>
   <tr>
     <td align="center"><dictkey>noVibTemp</dictkey></td>
