@@ -138,7 +138,7 @@ and the dedicated entry, <dictkey>mixingRule</dictkey>, is located in the <dict>
     writeThermalConducMixture      on; 
 ```
 
-<b>NB</b>: There are no reasons to use the <dictval>molar</dictval> mixing rule other than for single-species flows or zero-dimensional heat baths.
+> <b>NB</b>: There are no reasons to use the <dictval>molar</dictval> mixing rule other than for single-species flows or zero-dimensional heat baths.
 
 <br>
 
