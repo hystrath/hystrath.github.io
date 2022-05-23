@@ -133,6 +133,7 @@ N2
 }
 ```
 
+The entries of the <subdict>transport</subdict> subdictionary are omitted as they will be discussed in <a href="https://hystrath.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-transport/"><b>B. TRANSPORT</b></a>.
 The Table below lists the meaning of the different keys present in the <subdict>specie</subdict> subdictionary. 
 
 <table>
@@ -152,7 +153,7 @@ The Table below lists the meaning of the different keys present in the <subdict>
   <tr>
     <td align="center"><dictkey>particleType</dictkey></td>
     <td align="center"> - </td>  
-    <td align="center">type of particle (<dictval>0</dictval>: electron, <dictval>1</dictval>: neutral atom, <dictval>2</dictval>: molecule, <dictval>3</dictval>: charged molecule) </td>
+    <td align="center">type of particle (<dictval>0</dictval>: electron, <dictval>1</dictval>: neutral atom, <dictval>2</dictval>: neutral molecule, <dictval>3</dictval>: positively-charged particle) </td>
   </tr>
   <tr>
     <td align="center"><dictkey>charge</dictkey></td>
@@ -196,7 +197,7 @@ The Table below lists the meaning of the different keys present in the <subdict>
   </tr>
 </table>
 
-In the <subdict>thermodynamics</subdict> subdictionary, the first entry is a list of coefficients called <dictkey>decoupledCvCoeffs()</dictkey>. The heat capacity at constant volume, _Cv_, is decomposed into the contributions of the different energy modes that are translational (element 1), rotational (element 2), vibrational (element 3), electronic (element 4), and electron (element 5). For a planar molecule,   
+In the <subdict>thermodynamics</subdict> subdictionary, the first entry is a list of coefficients called <dictkey>decoupledCvCoeffs()</dictkey>. The heat capacity at constant volume, _Cv_, is decomposed into the contributions of the different energy modes that are translational (element \#1), rotational (element \#2), vibrational (element \#3), electronic (element \#4), and electron (element \#5). For a planar molecule,   
 <p>
 $$Cv_t = 1.5*R_m$$
 </p>
@@ -205,11 +206,11 @@ $$Cv_t = 1.5*R_m$$
 $$Cv_r = 1.0*R_m$$
 </p>
  
-<p>where `R_m` is the specific gas constant. Thus, the first two elements in the <dictkey>decoupledCvCoeffs()</dictkey> list are the coefficients by which `R_m` should be multiplied.</p>
+<p>where `R_m` is the specific gas constant of molecule `m`. Thus, the first two elements in the <dictkey>decoupledCvCoeffs()</dictkey> list are the coefficients by which `R_m` should be multiplied.</p>
 
-<p>For the vibrational and electronic modes, the expressions of `Cv_v` and `Cv_{el}` are a function of the values provided in the <dictkey>vibrationalList()</dictkey> and <dictkey>electronicList()</dictkey> lists. Hence, elements 3 and 4 can be seen as switches (see <a href="https://hystrath.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-thermophysical/#21-disablingenabling-the-vibrational-mode-of-a-molecule">§2.1</a> and <a href="https://hystrath.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-thermophysical/#22-disablingenabling-the-electronic-mode-of-a-particle">§2.2</a>). Elements in the <dictkey>vibrationalList()</dictkey> and <dictkey>electronicList()</dictkey> lists are grouped by pairs with the first column being the degeneracy and the second column being the characteristic vibrational/electronic temperature, in Kelvins.</p>   
+<p>For the vibrational and electronic modes, the expressions of `Cv_v` and `Cv_{el}` are a function of the values provided in the <dictkey>vibrationalList()</dictkey> and <dictkey>electronicList()</dictkey> lists. Hence, elements \#3 and \#4 can be regarded as switches (see <a href="https://hystrath.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-thermophysical/#21-disablingenabling-the-vibrational-mode-of-a-molecule">§2.1</a> and <a href="https://hystrath.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming-thermophysical/#22-disablingenabling-the-electronic-mode-of-a-particle">§2.2</a>). The elements in these two lists are grouped by pairs with the first column being the degeneracy and the second column being the characteristic vibrational/electronic temperature, in Kelvins.</p>   
 
-The 6th element of the <dictkey>decoupledCvCoeffs()</dictkey> list is the ratio of the species chemical enthalpy taken at 298 K (in J/mol) to the universal gas constant, while the 7th element is not used.  
+The 6th element of the <dictkey>decoupledCvCoeffs()</dictkey> list is the ratio of the species chemical enthalpy taken at 298 K (in J/mol) to the universal gas constant, while the 7th element is currently not used.  
 
 &nbsp;
 
