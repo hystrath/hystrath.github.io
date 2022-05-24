@@ -57,4 +57,8 @@ The source code will be released open-source after journal publication.
 <tr>
   <td>This work was initiated at the University of Strathclyde (Glasgow, UK) and was funded by the <a href="https://www.epsrc.ac.uk/">Engineering and Physical Sciences Research Council</a> (EPSRC) from February 2014 until early 2017.</td>
 </tr>
+<tr>
+<td style="text-align:center"> Volunteering work from 2019 onwards.
+</td>
+</tr>
 </table>
