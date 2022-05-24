@@ -287,8 +287,11 @@ rarefiedParameters
     writeMfpMixture                on;  
 }
 ```
-
-> Always switch <dictkey>computeMfpBoundaries</dictkey> on when using the Smoluchowski temperature jump and the Maxwell velocity slip boundary conditions.
+<div style="line-height:50%;">
+    <br>
+</div>
+    
+> <b>NB</b>: Always switch <dictkey>computeMfpBoundaries</dictkey> on when using the Smoluchowski temperature jump and the Maxwell velocity slip boundary conditions.
 
 To compute the mfp in the entire domain, <dictkey>computeFieldAndBoundaries</dictkey> must be switched <dictval>on</dictval>.
 The species and mixture mfp can be printed using the <dictkey>writeMfpSpecies</dictkey> and <dictkey>writeMfpMixture</dictkey> switches.  
