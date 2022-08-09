@@ -112,12 +112,12 @@ dsmcGeneralBoundaries
 (
     boundary
     {
+        boundaryModel   dsmcFreeStreamInflowPatch;
+        
         generalBoundaryProperties
         {
             patchName   inlet;
         }
-
-        boundaryModel   dsmcFreeStreamInflowPatch;
 
         dsmcFreeStreamInflowPatchProperties
         {
@@ -149,12 +149,12 @@ dsmcPatchBoundaries
 (
     boundary
     {
+        boundaryModel   dsmcDeletionPatch;
+        
         patchBoundaryProperties
         {
             patchName   inlet;
         }
-
-        boundaryModel   dsmcDeletionPatch;
 
         dsmcDeletionPatchProperties
         {
@@ -164,12 +164,12 @@ dsmcPatchBoundaries
 
     boundary
     {
+        boundaryModel   dsmcDeletionPatch;
+        
         patchBoundaryProperties
         {
             patchName   outlet;
         }
-
-        boundaryModel   dsmcDeletionPatch;
 
         dsmcDeletionPatchProperties
         {
@@ -195,12 +195,12 @@ dsmcPatchBoundaries
 (
     boundary
     {
+        boundaryModel   dsmcSpecularWallPatch;
+        
         patchBoundaryProperties
         {
             patchName   plate;
         }
-
-        boundaryModel   dsmcSpecularWallPatch;
     }
 );
 ```
@@ -216,12 +216,12 @@ dsmcPatchBoundaries
 (
     boundary
     {
+        boundaryModel   dsmcDiffuseWallPatch;
+        
         patchBoundaryProperties
         {
             patchName   cylinder;
         }
-
-        boundaryModel   dsmcDiffuseWallPatch;
 
         dsmcDiffuseWallPatchProperties
         {
@@ -243,12 +243,12 @@ dsmcPatchBoundaries
 (
     boundary
     {
+        boundaryModel   dsmcDiffuseSpecularWallPatch;
+        
         patchBoundaryProperties
         {
             patchName   cone;
         }
-
-        boundaryModel   dsmcDiffuseSpecularWallPatch;
 
         dsmcDiffuseWallPatchProperties
         {
