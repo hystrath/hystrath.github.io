@@ -281,12 +281,12 @@ dsmcCyclicBoundaries
 (
     boundary
     {
+        boundaryModel   dsmcReflectiveParticleMembranePatch;
+        
         cyclicBoundaryProperties
         {
             patchName   leftPatch;
         }
-
-        boundaryModel   dsmcReflectiveParticleMembranePatch;
 
         dsmcReflectiveParticleMembranePatchProperties
         {
@@ -301,12 +301,12 @@ dsmcCyclicBoundaries
 
     boundary
     {
+        boundaryModel   dsmcReflectiveParticleMembranePatch;
+        
         cyclicBoundaryProperties
         {
             patchName   rightPatch;
         }
-
-        boundaryModel   dsmcReflectiveParticleMembranePatch;
 
         dsmcReflectiveParticleMembranePatchProperties
         {
