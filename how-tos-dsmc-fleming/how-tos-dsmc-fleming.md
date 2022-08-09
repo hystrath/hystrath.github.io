@@ -111,6 +111,7 @@ openNav()
 ### [3) Wall boundary conditions](https://hystrath.github.io/how-tos-dsmc-fleming/how-tos-dsmc-fleming-boundary-conditions/#3-wall-boundary-conditions)  
 + **[3.1 Specular wall](https://hystrath.github.io/how-tos-dsmc-fleming/how-tos-dsmc-fleming-boundary-conditions/#31-specular-wall)**  
 + **[3.2 Diffuse wall](https://hystrath.github.io/how-tos-dsmc-fleming/how-tos-dsmc-fleming-boundary-conditions/#32-diffuse-wall)**  
++ **[3.3 Diffuse-specular wall](https://hystrath.github.io/how-tos-dsmc-fleming/how-tos-dsmc-fleming-boundary-conditions/#33-diffuse-specular-wall)**  
 
 ### [4) Cyclic boundary conditions](https://hystrath.github.io/how-tos-dsmc-fleming/how-tos-dsmc-fleming-boundary-conditions/#4-cyclic-boundary-conditions) 
 
