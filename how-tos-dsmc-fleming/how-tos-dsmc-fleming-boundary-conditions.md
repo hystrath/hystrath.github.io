@@ -236,7 +236,7 @@ dsmcPatchBoundaries
 
 ### 3.3 Diffuse-Specular wall
 
-The boundary model for mixed diffuse-specular wall interactions is <dictval>dsmcDiffuseSpecularWallPatch</dictval>. The wall velocity and temperature are given in <subdict>dsmcDiffuseWallPatchProperties</subdict> (see [3.2](https://hystrath.github.io/how-tos-dsmc-fleming/how-tos-dsmc-fleming-boundary-conditions/#32-diffuse-wall)), while the fraction of wall interactions that are diffuse, <dictkey>diffuseFraction</dictkey>, is given in <subdict>dsmcDiffuseSpecularWallPatchProperties</subdict>.  
+The boundary model for mixed diffuse-specular wall interactions is <dictval>dsmcDiffuseSpecularWallPatch</dictval>. The wall velocity and temperature are given in <subdict>dsmcDiffuseWallPatchProperties</subdict> (see [3.2](https://hystrath.github.io/how-tos-dsmc-fleming/how-tos-dsmc-fleming-boundary-conditions/#32-diffuse-wall)), while the fraction of wall interactions that are diffuse, <dictkey>diffuseFraction</dictkey>, is given in <subdict>dsmcDiffuseSpecularWallPatchProperties</subdict>. For each particle-wall interaction, a random number is drawn and compared to <dictkey>diffuseFraction</dictkey> to decide on the type of reflection to perform.
 
 ```c++
 dsmcPatchBoundaries
