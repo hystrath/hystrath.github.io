@@ -38,7 +38,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
 ### OF-v1706
 {: #OF-v1706 }
 
-1. In Ubuntu 20.04 LTS or above, downgrade gcc and g++ to version 7
+1. In Ubuntu 20.04 LTS (22.04 LTS isn't supported yet), downgrade gcc and g++ to version 7
     ```sh
     sudo apt-get install g++-7 gcc-7
     sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 7
