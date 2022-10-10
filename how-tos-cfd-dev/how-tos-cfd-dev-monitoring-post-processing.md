@@ -52,8 +52,7 @@ nav-short: true
   <a href="https://hystrath.github.io/how-tos-cfd-dev/how-tos-cfd-dev-advanced/#1-local-time-stepping" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Local time stepping</span></a>
   <a href="https://hystrath.github.io/how-tos-cfd-dev/how-tos-cfd-dev-advanced/#2-on-the-fly-dictionary-editing" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) On-the-fly editing</span></a>
   <a href="https://hystrath.github.io/how-tos-cfd-dev/how-tos-cfd-dev-advanced/#3-bounding-the-temperature-field" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 3) Bounding the temperature</span></a>
-  <a href="https://hystrath.github.io/how-tos-cfd-dev/how-tos-cfd-dev-advanced/#4-the-hylight-switch" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 4) The <i>hyLight</i> switch</span></a>
-  <a href="https://hystrath.github.io/how-tos-cfd-dev/how-tos-cfd-dev-advanced/#5-adaptive-mesh-refinement" style="padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 5) Adaptive mesh refinement</span></a>
+  <a href="https://hystrath.github.io/how-tos-cfd-dev/how-tos-cfd-dev-advanced/#4-adaptive-mesh-refinement" style="background-color:#FFE6E6; padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 4) Adaptive mesh refinement</span></a>
   
   <a href="https://hystrath.github.io/how-tos-cfd-dev/how-tos-cfd-dev-monitoring-post-processing" style="background-color:#FFCCCC"><b>I. MONITORING & POST-PROCESSING</b></a>
   <a href="https://hystrath.github.io/how-tos-cfd-dev/how-tos-cfd-dev-monitoring-post-processing/#1-monitoring" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Monitoring</span></a>
