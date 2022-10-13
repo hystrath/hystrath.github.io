@@ -78,7 +78,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
 6. Change working directory and clone the hyStrath Github repository   
     ```sh
     cd $WM_PROJECT_USER_DIR
-    git clone https://github.com/vincentcasseau/hyStrath.git --branch master --single-branch && cd hyStrath/
+    git clone https://github.com/hystrath/hyStrath.git --branch master --single-branch && cd hyStrath/
     ```
     <div style="line-height:50%;">
         <br>

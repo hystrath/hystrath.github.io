@@ -45,7 +45,6 @@ _Lead developer_:
     </span>
     <span class="sr-only">LinkedIn</span>
   </a> &nbsp; **Dr Vincent Casseau** 
-<!--  &nbsp; <a href="/docs/CV-VincentCasseau.pdf" target="_blank" style="color:orange"> [CV→]</a>-->
 
 _Contributors_:  
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/daniel-espinoza-52862452" target="_blank">

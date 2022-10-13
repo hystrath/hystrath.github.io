@@ -203,4 +203,4 @@ Sampling can be resumed even when the simulation has stopped, providing that the
 
 <b>NB</b>: the same number of CPUs must be used throughout the entire simulation as the `resumeSampling_#fieldName` files located in <dirname>time/uniform/</dirname> cannot be reconstructed.
 
-For more information, please read Issue [#73](https://github.com/vincentcasseau/hyStrath/issues/73).
+For more information, please read Issue [#73](https://github.com/hystrath/hyStrath/issues/73).

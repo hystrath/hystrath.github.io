@@ -9,7 +9,7 @@ Every contribution is welcome whether that is:
 - a new/revised OpenFOAM library/solver
 - an update to a more recent version of OpenFOAM
 - an additional documented tutorial
-- a bug report/fix, using the [Issues](https://github.com/vincentcasseau/hyStrath/issues) page
+- a bug report/fix, using the [Issues](https://github.com/hystrath/hyStrath/issues) page
 - an addition to be made to the _How-tos_ 
 - etc
 
@@ -57,11 +57,11 @@ You will need to fill a _pull request_ and this can be achieved as follows:
     <div style="line-height:50%;">
         <br>
     </div>       
-6. Press the [_New pull request_](https://github.com/vincentcasseau/hyStrath/compare) button in the _Pull Requests_ tab   
+6. Press the [_New pull request_](https://github.com/hystrath/hyStrath/compare) button in the _Pull Requests_ tab   
     <div style="line-height:50%;">
         <br>
     </div>
-7. Compare the _master_ on vincentcasseau/hyStrath with your _master_ on USERNAME/hyStrath and press _Create pull request_ once you are done
+7. Compare the _master_ on hystrath/hyStrath with your _master_ on USERNAME/hyStrath and press _Create pull request_ once you are done
     <div style="line-height:50%;">
         <br>
     </div>

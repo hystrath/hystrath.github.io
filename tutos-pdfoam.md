@@ -51,7 +51,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
  
 </p>
 
-<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/pdFoam/2D_sheath"> here</a></p>
+<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/pdFoam/2D_sheath"> here</a></p>
 
 <p><img src="/docs/img/publis.png" width="40"> &nbsp; See Section 3.3.1. <i>EF Validation: Planar Sheath Structure</i>, pp. 8-9, in <br> C. J. Capon, M. Brown, C. White, T. J. Scanlon, and R. R. Boyce, "pdFOAM: A PIC-DSMC code for near-Earth plasma-body interactions," <i>Computers and Fluids</i>, vol. 149, no. 1, pp. 160-171, <b>2017</b> &nbsp; <a href="http://eprints.gla.ac.uk/138700/7/138700.pdf" target="_blank" style="color:orange"> [PDF Preprint→]</a></p>
 
@@ -65,6 +65,6 @@ if (localStorage.getItem("show_sidenav")) openNav()
 
 </p>
 
-<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/pdFoam/twoStream"> here</a></p>
+<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/pdFoam/twoStream"> here</a></p>
 
 <p><img src="/docs/img/publis.png" width="40"> &nbsp; See Appendix B, pp. 236-238, in <br> C. J. Capon, "Ionospheric Aerodynamics in Low Earth Orbit," PhD thesis, University of New South Wales, Canberra (Australia), <b>2017</b> &nbsp; <a href="http://unsworks.unsw.edu.au/fapi/datastream/unsworks:46528/SOURCE01?view=true" target="_blank" style="color:orange"> [PDF→]</a></p>

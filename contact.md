@@ -12,5 +12,5 @@ This e-mail address may be used if
   - you need support in the form of consulting services   
 
 This e-mail address should not be used to
-  - report bugs, the [Issues](https://github.com/vincentcasseau/hyStrath/issues) page is there for this purpose  
+  - report bugs, the [Issues](https://github.com/hystrath/hyStrath/issues) page is there for this purpose  
   - seek for free OpenFOAM advice, please visit [CFD-Online](https://www.cfd-online.com/Forums/openfoam/) instead

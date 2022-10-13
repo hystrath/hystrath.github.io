@@ -82,7 +82,7 @@ function reopenNav() {
 openNav()
 </script>
 
-These how-tos are based on the working folder located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase).  
+These how-tos are based on the working folder located [here](https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase).  
 
 # Non-equilibrium flow modelling
 

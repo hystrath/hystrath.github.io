@@ -55,7 +55,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
 Zero-dimensional | Thermal non-equilibrium | Chemistry-vibration coupling  
 </p>
 
-<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/heatBath"> here</a>.</p>
+<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/hy2Foam/heatBath"> here</a>.</p>
 
 <p><img src="/docs/img/publis.png" width="40"> &nbsp; See Section 3.4. <i>Relaxation of a Chemically-Reacting Mixture</i> in <br> V. Casseau, R. C. Palharini, T. J. Scanlon, and R. E. Brown, "A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part One: Zero-Dimensional Analysis," <i>Aerospace</i>, vol. 3, no. 4, p. 34, <b>2016</b> &nbsp; <a href="http://www.mdpi.com/2226-4310/3/4/34/html" target="_blank" style="color:orange"> [Full HTML→]</a></p>  
 
@@ -71,7 +71,7 @@ Zero-dimensional | Thermal non-equilibrium | Chemistry-vibration coupling
 Axially-symmetric mesh | Thermal non-equilibrium | Slip boundary conditions  
 </p>
 
-<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/bluntedCone"> here</a></p>
+<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/hy2Foam/bluntedCone"> here</a></p>
 
 <p><img src="/docs/img/publis.png" width="40"> &nbsp; See Section 3.1. <i>Mach 11.3 Blunted Cone</i> in <br> V. Casseau, D. E.R. Espinoza, T. J. Scanlon, and R. E. Brown, "A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part Two: Multi-Dimensional Analysis," <i>Aerospace</i>, vol. 3, no. 4, p. 45, <b>2016</b> &nbsp; <a href="http://www.mdpi.com/2226-4310/3/4/45/html" target="_blank" style="color:orange"> [Full HTML→]</a></p>
 
@@ -88,7 +88,7 @@ Axially-symmetric mesh | Weakly-ionised flow
 </p>
 
 <p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Will soon be available</p>
-<!--Working directory located <a href="https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/fireII/fireII_NRadia"> here</a>-->
+<!--Working directory located <a href="https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/hy2Foam/fireII/fireII_NRadia"> here</a>-->
 
 <p><img src="/docs/img/publis.png" width="40"> &nbsp; See Section 5.3. <i>RAM-C Spacecraft</i> in <br> G. Yang, "Finite Element Simulation of Weakly Ionized Hypersonic Flows," Master's thesis, McGill University, Montreal (Canada), <b>2022</b> 
 &nbsp; <a href="https://escholarship.mcgill.ca/downloads/bc386q61m?locale=en" target="_blank" style="color:orange"> [PDF→]</a></p>
@@ -106,7 +106,7 @@ Axially-symmetric mesh | Weakly-ionised flow
 Hypervelocity flow | MHD flow control 
 </p>
 
-<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/NASA_MSL_forebody/NASA_MSL_forebody_NR-MHD"> here</a></p>
+<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/hy2Foam/NASA_MSL_forebody/NASA_MSL_forebody_NR-MHD"> here</a></p>
 
 
 <!--# 4) 2D cylinder-->
@@ -115,7 +115,7 @@ Hypervelocity flow | MHD flow control
 <!--Hypervelocity flow | Thermo-chemical non-equilibrium | Adiabatic wall-->
 <!--</p>-->
 
-<!--+ The working directory for the 2D axisymmetric FireII capsule forebody is located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/fireII/fireII_NRadia).-->
+<!--+ The working directory for the 2D axisymmetric FireII capsule forebody is located [here](https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/hy2Foam/fireII/fireII_NRadia).-->
 <!--+ A description can be found in: V. Casseau _et al._, 12/2016: [A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part Two: Multi-Dimensional Analysis](http://www.mdpi.com/2226-4310/3/4/45/html), Section _3.2. Mach 20 Cylinder_.  -->
 
 <!--+ [**[View more]**](https://hystrath.github.io/tutos-hy2foam-2dcylinder/)-->

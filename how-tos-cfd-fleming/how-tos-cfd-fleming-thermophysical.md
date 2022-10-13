@@ -80,7 +80,7 @@ function reopenNav() {
 openNav()
 </script>
 
-These how-tos are based on the working folder located [here](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase).  
+These how-tos are based on the working folder located [here](https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase).  
 
 # Thermophysical modelling
 
@@ -173,7 +173,7 @@ The following Table is listing the different keys present in the <subdict>specie
   <tr>
     <td align="center"><dictkey>eta_s</dictkey></td>
     <td align="center"> - </td>  
-    <td align="center">factor that enters in the calculation of the <a href="https://github.com/vincentcasseau/hyStrath/commit/f036d74297d3f91fcbeb05fa531a1c07ba71bde1">vibrational thermal conductivity</a> (this key is optional and is equal to <dictval>1.2</dictval> by defaul) </td>
+    <td align="center">factor that enters in the calculation of the <a href="https://github.com/hystrath/hyStrath/commit/f036d74297d3f91fcbeb05fa531a1c07ba71bde1">vibrational thermal conductivity</a> (this key is optional and is equal to <dictval>1.2</dictval> by defaul) </td>
   </tr>
   <tr>
     <td align="center"><dictkey>noVibTemp</dictkey></td>
@@ -244,7 +244,7 @@ In the following example, the electronic energy mode of the N atom is accounted 
 ---  
 ## 3) Choosing a thermoDEM dictionary
 
-Three <dict>thermoDEM</dict> dictionaries are provided in the [generic *hy2Foam* test case](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase/constant). To account for  
+Three <dict>thermoDEM</dict> dictionaries are provided in the [generic *hy2Foam* test case](https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase/constant). To account for  
   + the rotational energy mode only, choose <dict>thermoDEM_TR</dict>;  
   + the rotational and vibrational internal energy modes, choose <dict>thermoDEM_TRV</dict>;  
   + all internal energy modes, choose <dict>thermoDEM_TRVE</dict>.  

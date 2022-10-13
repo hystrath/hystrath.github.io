@@ -56,7 +56,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
 Scramjet flow-field | RAS turbulence modelling  
 </p>
 
-<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/hyFoam/LorrainStageI"> here</a></p>
+<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/hyFoam/LorrainStageI"> here</a></p>
 
 <p><img src="/docs/img/publis.png" width="40"> &nbsp; J.-J. O.E. Hoste, V. Casseau, M. Fossati, I. J. Taylor, and R. Gollan, "Numerical Modeling and Simulation of Supersonic Reacting Flows in Propulsion Systems by Open-Source Solvers," <i>21st AIAA International Space Planes and Hypersonic Systems and Technologies Conference</i> (Xiamen, China, 6-9 March 2017), AIAA Paper 2017-2411, <b>2017</b> &nbsp; <a href="http://eprints.gla.ac.uk/140369/1/140369.pdf" target="_blank" style="color:orange"> [PDF Preprint→]</a></p>
 
@@ -193,7 +193,7 @@ Close-up view of the pressure coefficient in the combustor section
 
 <p><img src="/docs/img/publis.png" width="40"> Additional references</p>
 <p><b><i>Eilmer3</i></b> is a research and educational simulation code for 2D and 3D gas dynamics designed by Dr Peter Jacobs, Dr Rowan Gollan, Dr Daniel Potter and others (University of Queensland, Australia) &nbsp; <a href="http://cfcfd.mechmining.uq.edu.au/docs/tools/eilmer/" target="_blank" style="color:orange"> [Eilmer3 Website→]</a></p>
-<p><b><i>Eilmer3</i></b>, <b><i>Eilmer4</i></b> &nbsp; | &nbsp; J.-J. O.E. Hoste, "Scramjet Combustion Modeling using Eddy Dissipation Model," PhD thesis, University of Strathclyde, Glasgow (UK), <b>2018</b> &nbsp; <a href="https://github.com/vincentcasseau/hyStrath/blob/master/doc/PhDthesis-jimmyjohnhoste.pdf" target="_blank" style="color:orange"> [PDF→]</a></p>
+<p><b><i>Eilmer3</i></b>, <b><i>Eilmer4</i></b> &nbsp; | &nbsp; J.-J. O.E. Hoste, "Scramjet Combustion Modeling using Eddy Dissipation Model," PhD thesis, University of Strathclyde, Glasgow (UK), <b>2018</b> &nbsp; <a href="https://github.com/hystrath/hyStrath/blob/master/doc/PhDthesis-jimmyjohnhoste.pdf" target="_blank" style="color:orange"> [PDF→]</a></p>
 <p><b><i>rhoCentralFoam</i></b>, <b><i>Eilmer3</i></b>, <b><i>hyFoam</i></b> &nbsp; | &nbsp; D. Puorto, "Suitability of rhoCentralFoam for Scramjet Internal Flows," Master's thesis, University of Naples Federico II, Naples (Italy), <b>2017</b></p>
 
 <br>

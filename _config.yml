@@ -57,7 +57,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-#avatar: "https://github.com/vincentcasseau/hyStrath/blob/master/doc/images/satelliteMachLogo.png"
+#avatar: "https://github.com/hystrath/hyStrath/blob/master/doc/images/satelliteMachLogo.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -73,28 +73,13 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "hystrath@gmail.com"
-  github: "vincentcasseau/hyStrath"
-#  linkedin: "vincentcasseau"
-#  facebook: deanattali   
-#  twitter: daattali
+  github: "hystrath/hyStrath"
+#  linkedin: "yourname"
+#  twitter: yourname
 #  rss: true
 #  reddit: yourname   
-#  patreon: DeanAttali
-#  youtube: c/daattali
-#  reddit: yourname
-#  linkedin: daattali
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
+#  patreon: yourname
+#  youtube: c/yourname
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
 

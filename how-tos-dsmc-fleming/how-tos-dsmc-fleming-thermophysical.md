@@ -210,7 +210,7 @@ If a <dictkey>key</dictkey> is omitted, then a <dictval>default value</dictval> 
 </table>
 
 
-<b>NB</b>: An example for 5-species air is given in the [chemically-reacting heat bath tutorial](https://hystrath.github.io/tutos-dsmcfoam/#6-chemically-reacting-heat-bath), [on this page](https://github.com/vincentcasseau/hyStrath/tree/master/run/hyStrath/dsmcFoam%2B/heatBath-5species/constant/dsmcProperties).
+<b>NB</b>: An example for 5-species air is given in the [chemically-reacting heat bath tutorial](https://hystrath.github.io/tutos-dsmcfoam/#6-chemically-reacting-heat-bath), [on this page](https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/dsmcFoam%2B/heatBath-5species/constant/dsmcProperties).
 
 &nbsp;
 
