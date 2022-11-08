@@ -205,23 +205,14 @@ Attempt to use rho2ReactionThermo out of temperature range 3197 times during thi
 ---  
 ## 4) Adaptive mesh refinement
 
-The <dict>dynamicMeshDict</dict> dictionary needs to be added to the standard _hy2Foam_ working directory: please refer to the official OpenFOAM tutorials and copy-paste the most appropriate one in the <dirname>constant/</dirname> folder. For instance, the following command line will list all <dict>dynamicMeshDict</dict> available
+When added to the <dirname>constant/</dirname> folder, the optional <dict>dynamicMeshDict</dict> dictionary will be read. In this section, we are interested in two types of <dictkey>dynamicFvMesh</dictkey>es: <dictval>staticFvmesh</dictval> and <dictval>dynamicRefineFvMesh</dictval>.
 
-```sh
-tut
-find . -type f -name "dynamicMeshDict"
-```
-
-and the one located here
-
-```sh
-./multiphase/interDyMFoam/RAS/motorBike/constant/dynamicMeshDict
-```
-
-is suitable. In the <subdict>dynamicRefineFvMeshCoeffs</subdict> subdictionary, the field on which refinement/coarsening is based is given by the key <dictkey>field</dictkey>.
-You can either provide the name of an existing field or input any of three hardcoded fields: <dictval>MachGradient</dictval>, <dictval>normalisedDensityGradient</dictval> or <dictval>normalisedPressureGradient</dictval>. If you choose one of these three hardcoded adaptation fields, it will be printed in the results folders. Finally, an example is given below:
+In the <subdict>dynamicRefineFvMeshCoeffs</subdict> subdictionary given below, the field on which refinement/coarsening is based is given by the key <dictkey>field</dictkey>.
+You can either provide the name of an existing scalar field or input any of three hardcoded fields in hy2Foam: <dictval>MachGradient</dictval>, <dictval>normalisedDensityGradient</dictval> or <dictval>normalisedPressureGradient</dictval>. If you choose one of these three adaptation fields, it will be printed in the results folders.
 
 ```c++
+dynamicFvMesh   dynamicRefineFvMesh; // Write staticFvmesh to disable AMR
+
 dynamicRefineFvMeshCoeffs
 {
     // How often to refine
@@ -231,7 +222,7 @@ dynamicRefineFvMeshCoeffs
     field normalisedDensityGradient;
     
     // Refine field inbetween lower..upper
-    lowerRefineLevel 1.0;
+    lowerRefineLevel 2.0;
     upperRefineLevel 1e6;
     
     // Unrefine field inbetween 0..unrefine
@@ -252,20 +243,8 @@ dynamicRefineFvMeshCoeffs
         (neg none)
         (phi none)
         (phiEp none)
-        (phiEvk none)
+        (phiEv none)
         (amaxSf none)
-        (rho_pos none)
-        (rho_neg none)
-        (cSf_pos none)
-        (cSf_neg none)
-        (e_pos none)
-        (e_neg none)
-        (ev_pos none)
-        (ev_neg none)
-        (p_pos none)
-        (p_neg none)
-        (rPsi_pos none)
-        (rPsi_neg none)
     );
     
     // Write the refinement level as a volScalarField
@@ -273,16 +252,18 @@ dynamicRefineFvMeshCoeffs
 }
 ```
 
-The command line to run _hy2Foam_ with adaptive mesh refinement, is  
-
-```sh
-hy2DyMFoam > log.hy2DyMFoam 2>&1 &
-```
-
-In the logfile, the number of adaptation cycles that the mesh has undergone at any time is given before the '/' symbol, that is 2 in the following example:
+In the logfile, the number of adaptation cycles that the mesh has undergone is given before the execution time:
 
 ```c++
-Phase no 2/1.0  ExecutionTime = 153.02 s  ClockTime = 157 s  Iteration no 9074 (0.03 s)
+AdaptationCycle = 2
+ExecutionTime = 153.02 s  ClockTime = 157 s  Iteration no 9074 (0.03 s)
 ```
 
 <b>NB</b>: In Paraview, on the left-hand side panel, _Properties_ tab, untick _Decompose Polyhedra_ and then set _Representation_ to _Surface With Edges_.
+
+For further information on AMR, please refer to the official OpenFOAM tutorials. Typing the following command line will list all <dict>dynamicMeshDict</dict> available
+
+```sh
+tut
+find . -type f -name "dynamicMeshDict"
+```
