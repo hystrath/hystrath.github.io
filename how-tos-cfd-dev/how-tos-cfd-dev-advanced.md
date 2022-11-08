@@ -229,7 +229,7 @@ dynamicRefineFvMeshCoeffs
     unrefineLevel 0.5;
     
     // Have slower than 2:1 refinement
-    nBufferLayers   1;
+    nBufferLayers   4;
     // Refine cells only up to maxRefinement levels
     maxRefinement   3;
     // Stop refinement if maxCells reached
