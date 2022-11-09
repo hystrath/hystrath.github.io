@@ -216,9 +216,10 @@ Use <dictval>dynamicRefineFvMesh</dictval> otherwise and implement the <subdict>
 - <dictval>normalisedViscosityGradient</dictval>  
 - <dictval>MachGradient</dictval>  
 - <dictval>massFractionGradient</dictval>  
-- <dictval>normalisedGradients</dictval>  
+- <dictval>normalisedGradients</dictval>
 
-<dictval>normalisedTemperatureGradient</dictval> and <dictval>normalisedGradients</dictval> are based on the gradients of more than one field and each can be weighted using coefficients (defaulted to 1) located in the <subdict>gradientWeights</subdict> subdictionary. These coefficients can also be used as 0/1 switches. 
+
+<dictval>normalisedGradients</dictval> and <dictval>normalisedTemperatureGradient</dictval> are based on the gradients of more than one field and each can be weighted using coefficients (defaulted to 1) located in the <subdict>gradientWeights</subdict> subdictionary. These coefficients can also be used as 0/1 switches. 
  
 If you choose one of these adaptation fields, it will be printed in the results folders.
 
