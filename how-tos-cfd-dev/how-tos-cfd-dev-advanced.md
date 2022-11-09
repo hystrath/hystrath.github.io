@@ -205,10 +205,20 @@ Attempt to use rho2ReactionThermo out of temperature range 3197 times during thi
 ---  
 ## 4) Adaptive mesh refinement
 
-When added to the <dirname>constant/</dirname> folder, the optional <dict>dynamicMeshDict</dict> dictionary will be read. In this section, we are interested in two types of <dictkey>dynamicFvMesh</dictkey>es: <dictval>staticFvmesh</dictval> and <dictval>dynamicRefineFvMesh</dictval>.
+When added to the <dirname>constant/</dirname> folder, the optional <dict>dynamicMeshDict</dict> dictionary will be read. In this section, we are interested in two types of <dictkey>dynamicFvMesh</dictkey>es: <dictval>staticFvmesh</dictval> and <dictval>dynamicRefineFvMesh</dictval>. Use <dictval>staticFvmesh</dictval> or delete <dirname>constant/</dirname><dict>dynamicMeshDict</dict> if 
 
-In the <subdict>dynamicRefineFvMeshCoeffs</subdict> subdictionary given below, the field on which refinement/coarsening is based is given by the key <dictkey>field</dictkey>.
-You can either provide the name of an existing scalar field or input any of three hardcoded fields in hy2Foam: <dictval>MachGradient</dictval>, <dictval>normalisedDensityGradient</dictval> or <dictval>normalisedPressureGradient</dictval>. If you choose one of these three adaptation fields, it will be printed in the results folders.
+To adapt the grid, use <dictval>dynamicRefineFvMesh</dictval> and define a <subdict>dynamicRefineFvMeshCoeffs</subdict> subdictionary as shown below. The field on which refinement/coarsening is based is given by the key <dictkey>field</dictkey>. You can either provide the name of an existing scalar field or input any of hy2Foam's hardcoded adaptation fields:
+- <dictval>normalisedDensityGradient</dictval>
+- <dictval>normalisedPressureGradient</dictval>  
+- <dictval>normalisedTemperatureGradient</dictval>  
+- <dictval>normalisedViscosityGradient</dictval>  
+- <dictval>MachGradient</dictval>  
+- <dictval>massFractionGradient</dictval>  
+- <dictval>normalisedGradients</dictval>  
+
+<dictval>normalisedTemperatureGradient</dictval> and <dictval>normalisedGradients</dictval> are based on the gradients of more than one field and each can be weighted using coefficients (defaulted to 1) located in the <subdict>gradientWeights</subdict> subdictionary. These coefficients can also be used as 0/1 switches. 
+ 
+If you choose one of these adaptation fields, it will be printed in the results folders.
 
 ```c++
 dynamicFvMesh   dynamicRefineFvMesh; // Write staticFvmesh to disable AMR
@@ -220,6 +230,18 @@ dynamicRefineFvMeshCoeffs
     
     // Field to base refinement on
     field normalisedDensityGradient;
+    
+    // Weighting factors when there is more than one field to base refinement on
+    gradientWeights
+    {
+        rho    1.0;
+        p      1.0;
+        Ttr    1.0;
+        Tve    1.0;
+        Mach   1.0;
+        mu     1.0;
+        Y      1.0;
+    }
     
     // Refine field inbetween lower..upper
     lowerRefineLevel 2.0;
@@ -259,7 +281,9 @@ AdaptationCycle = 2
 ExecutionTime = 153.02 s  ClockTime = 157 s  Iteration no 9074 (0.03 s)
 ```
 
-<b>NB</b>: In Paraview, on the left-hand side panel, _Properties_ tab, untick _Decompose Polyhedra_ and then set _Representation_ to _Surface With Edges_.
+<b>NB1</b>: If your results look off, please check that there aren't any _empty_ patches defined and if there are, redefine them as _symmetry_ patches.  
+
+<b>NB2</b>: In Paraview, on the left-hand side panel, _Properties_ tab, untick _Decompose Polyhedra_ and then set _Representation_ to _Surface With Edges_.
 
 For further information on AMR, please refer to the official OpenFOAM tutorials. Typing the following command line will list all <dict>dynamicMeshDict</dict> available
 
