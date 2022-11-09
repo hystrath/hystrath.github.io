@@ -207,7 +207,7 @@ Attempt to use rho2ReactionThermo out of temperature range 3197 times during thi
 
 When added to the <dirname>constant/</dirname> folder, the optional <dict>dynamicMeshDict</dict> dictionary will be read. In this section, we are interested in two types of dynamicFvMeshes: staticFvmesh and dynamicRefineFvMesh.
 
-Use <dictval>staticFvmesh</dictval> or delete <dirname>constant/</dirname><dict>dynamicMeshDict</dict> if the mesh should not be adapted.
+Use <dictval>staticFvmesh</dictval> or delete <dirname>constant/</dirname><dict>dynamicMeshDict</dict> when the mesh should not be adapted.
 
 Use <dictval>dynamicRefineFvMesh</dictval> otherwise and implement the <subdict>dynamicRefineFvMeshCoeffs</subdict> subdictionary as shown below. The field on which refinement/coarsening is based on is given by the key <dictkey>field</dictkey>. You can either provide the name of an existing scalar field or input any of hy2Foam's hardcoded adaptation fields:
 - <dictval>normalisedDensityGradient</dictval>
