@@ -16,13 +16,11 @@ nav-short: true
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-collision-dynamics/#1-collision-partner-selection"  style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Collision partner selection</span></a>
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-collision-dynamics/#2-binary-collision"  style="padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) Binary collision</span></a>
 
-  <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-boundary-conditions"><b>D. BOUNDARY CONDITIONS</b></a>
+  <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-boundary-conditions"><b>C. BOUNDARY CONDITIONS</b></a>
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-boundary-conditions/#1-generalities"  style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Generalities</span></a>
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-boundary-conditions/#2-inflow--outflow-boundary-conditions"  style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) Inflow & Outflow</span></a>
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-boundary-conditions/#3-wall-boundary-conditions"  style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 3) Wall</span></a>
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-boundary-conditions/#4-cyclic-boundary-conditions"  style="padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 4) Cyclic</span></a>
-  
-  <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-coordinate-system/"><b>E. COORDINATE SYSTEM</b></a>
   
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-initialisation/"><b>F. INITIALISATION</b></a>
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-initialisation/#1-the-dsmcinitialisedict-dictionary"  style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) <i>dsmcInitialiseDict</i></span></a>
@@ -36,8 +34,6 @@ nav-short: true
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-sampling/#4-mean-free-path-computation"  style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 4) MFP computation</span></a>
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-sampling/#5-resume-sampling" style="padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 5) Resume sampling</span></a>
   
-  <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-load-balancing/"><b>H. LOAD BALANCING</b></a>
-  <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming/#i-adaptive-mesh-refinement"><b>I. ADAPTIVE MESH REFINEMENT</b></a>
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming/#j-monitoring--post-processing"><b>J. MONITORING & POST-PROCESSING</b></a>
 </div>
 
@@ -99,50 +95,50 @@ N2
 The Table below lists the meaning of the different keys present in the <subdict>#speciesName</subdict> subdictionary. 
 If a <dictkey>key</dictkey> is omitted, then a <dictval>default value</dictval> is used whenever possible.
 
-<!--<table>-->
-<!--  <tr>-->
-<!--    <td align="center" colspan="3"><b><subdict>#speciesName</subdict> subdictionary</b></td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td align="center"><b>Key</b></td>-->
-<!--    <td align="center"><b>Units</b></td>-->
-<!--    <td align="center"><b>Meaning</b></td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td align="center"><dictkey>mass</dictkey></td>-->
-<!--    <td align="center"> kg </td>-->
-<!--    <td align="center">mass of a single particle</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td align="center"><dictkey>diameter</dictkey></td>-->
-<!--    <td align="center"> m </td>  -->
-<!--    <td align="center">particle diameter </td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td align="center"><dictkey>omega</dictkey></td>-->
-<!--    <td align="center"> - </td>  -->
-<!--    <td align="center">temperature exponent of viscosity</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td align="center"><dictkey>alpha</dictkey></td>-->
-<!--    <td align="center"> - </td>  -->
-<!--    <td align="center">soft-sphere scattering parameter (default is <dictval>1.0</dictval>, <i>i.e.</i>, hard-sphere gas)</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td align="center"><dictkey>rotationalDegreesOfFreedom</dictkey></td>-->
-<!--    <td align="center"> - </td>  -->
-<!--    <td align="center">number of rotational degrees of freedom (default is <dictval>0</dictval>)</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td align="center"><dictkey>vibrationalModes</dictkey></td>-->
-<!--    <td align="center"> - </td>  -->
-<!--    <td align="center">number of vibrational energy modes (default is <dictval>0</dictval>)</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td align="center"><dictkey>characteristicVibrationalTemperature</dictkey></td>-->
-<!--    <td align="center"> K </td>  -->
-<!--    <td align="center">characteristic vibrational temperature (default is <dictval>0</dictval>)</td>-->
-<!--  </tr>-->
+<table>
+  <tr>
+    <td align="center" colspan="3"><b><subdict>#speciesName</subdict> subdictionary</b></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Key</b></td>
+    <td align="center"><b>Units</b></td>
+    <td align="center"><b>Meaning</b></td>
+  </tr>
+  <tr>
+    <td align="center"><dictkey>mass</dictkey></td>
+    <td align="center"> kg </td>
+    <td align="center">mass of a single particle</td>
+  </tr>
+  <tr>
+    <td align="center"><dictkey>diameter</dictkey></td>
+    <td align="center"> m </td>  
+    <td align="center">particle diameter </td>
+  </tr>
+  <tr>
+    <td align="center"><dictkey>omega</dictkey></td>
+    <td align="center"> - </td>  
+    <td align="center">temperature exponent of viscosity</td>
+  </tr>
+  <tr>
+    <td align="center"><dictkey>alpha</dictkey></td>
+    <td align="center"> - </td>  
+    <td align="center">soft-sphere scattering parameter (default is <dictval>1.0</dictval>, <i>i.e.</i>, hard-sphere gas)</td>
+  </tr>
+  <tr>
+    <td align="center"><dictkey>rotationalDegreesOfFreedom</dictkey></td>
+    <td align="center"> - </td>  
+    <td align="center">number of rotational degrees of freedom (default is <dictval>0</dictval>)</td>
+  </tr>
+  <tr>
+    <td align="center"><dictkey>vibrationalModes</dictkey></td>
+    <td align="center"> - </td>  
+    <td align="center">number of vibrational energy modes (default is <dictval>0</dictval>)</td>
+  </tr>
+  <tr>
+    <td align="center"><dictkey>characteristicVibrationalTemperature</dictkey></td>
+    <td align="center"> K </td>  
+    <td align="center">characteristic vibrational temperature (default is <dictval>0</dictval>)</td>
+  </tr>
 <!--  <tr>-->
 <!--    <td align="center"><dictkey>dissociationTemperature</dictkey></td>-->
 <!--    <td align="center"> K </td>  -->
@@ -163,7 +159,7 @@ If a <dictkey>key</dictkey> is omitted, then a <dictval>default value</dictval> 
 <!--    <td align="center"> - </td>  -->
 <!--    <td align="center">charge of the particle (<dictval>-1</dictval>: electron, <dictval>0</dictval>: neutral atom and molecule, <dictval>+1</dictval>: charged atom and molecule, default is <dictval>0</dictval>) </td>-->
 <!--  </tr>-->
-<!--</table>-->
+</table>
 
 
 ---  
