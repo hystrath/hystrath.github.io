@@ -90,8 +90,8 @@ The `pdFields()` list should be left empty when there is no need to reconstruct 
 
 
 For the O+ species, the macroscopic fields printed by default are:
-- `pdN_O+`: instantaneous number of parcels
-- `pdNMean_O+`: sampled number of parcels
+- `pdRhoN_O+`: instantaneous number of parcels
+- `pdRhoNMean_O+`: sampled number of parcels
 - `rhoN_O+`: number density
 - `rhoM_O+`: density
 - `U_O+`: velocity vector
