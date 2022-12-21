@@ -40,7 +40,7 @@ navbar-links:
     - CFD: "how-tos-cfd-fleming/how-tos-cfd-fleming"
     - DSMC: "how-tos-dsmc-fleming/how-tos-dsmc-fleming"
     - PIC-DSMC: "how-tos-picdsmc-fleming/how-tos-picdsmc-fleming"
-    - Hybrids: "how-tos-hybrids-fleming/how-tos-hybrids-fleming"
+    - CFD-DSMC: "how-tos-cfddsmc-fleming/how-tos-cfddsmc-fleming"
   Tutorials:
     - hy2Foam: "tutos-hy2foam"
     - hyFoam: "tutos-hyfoam"
