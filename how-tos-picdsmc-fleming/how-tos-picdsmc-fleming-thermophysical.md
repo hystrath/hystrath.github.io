@@ -180,7 +180,7 @@ In the following example, the rotational energy mode of the N2 molecule is enabl
 
 ### 2.2 Disabling/enabling the vibrational mode of a molecule 
 
-In the <dict>dsmcProperties</dict>/<subdict>moleculesProperties/#speciesName</subdict> dictionary, remove the <dictkey>vibrationalModes</dictkey>, <dictkey>Zref</dictkey>, <dictkey>referenceTempForZref</dictkey> and <dictkey>characteristicVibrationalTemperature</dictkey> keys.  
+In the <dict>dsmcProperties</dict>/<subdict>moleculesProperties/#speciesName</subdict> dictionary, remove the <dictkey>vibrationalModes</dictkey>, <dictkey>characteristicVibrationalTemperature</dictkey>, <dictkey>Zref</dictkey> and <dictkey>referenceTempForZref</dictkey> keys.  
 
 In the following example, the vibrational energy mode of the N2 molecule is enabled  
 

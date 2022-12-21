@@ -91,7 +91,7 @@ openNav()
 ### [3) Wall boundary conditions](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-boundary-conditions/#3-wall-boundary-conditions)  
 + **[3.1 Specular wall](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-boundary-conditions/#31-specular-wall)**  
 + **[3.2 Diffuse wall](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-boundary-conditions/#32-diffuse-wall)**  
-+ **[3.3 Diffuse-specular wall](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-boundary-conditions/#33-diffuse-specular-wall)**  
++ **[3.3 Diffuse-neutralising wall](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-boundary-conditions/#33-diffuse-neutralising-wall)**  
 
 ### [4) Cyclic boundary conditions](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-boundary-conditions/#4-cyclic-boundary-conditions) 
 
@@ -100,7 +100,7 @@ openNav()
 
 ---  
 ## [D. Initialisation](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-initialisation/)
-### [1) The _dsmcInitialiseDict_ dictionary](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-initialisation/#1-the-dsmcinitialisedict-dictionary) 
+### [1) The _pdInitialiseDict_ dictionary](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-initialisation/#1-the-pdinitialisedict-dictionary) 
 ### [2) DSMC parcel vs. real particles](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-initialisation/#2-dsmc-parcel-vs-real-particles) 
 ### [3) Creating the _0/_ folder](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-initialisation/#3-creating-the-0-folder)  
 + **[3.1 Simulators data](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-initialisation/#31-simulators-data)**  
