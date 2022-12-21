@@ -80,7 +80,7 @@ _Contributors_:
       <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
     </span>
     <span class="sr-only">LinkedIn</span>
-  </a> &nbsp; **Valentina Pessina**, Researcher at Bundeswehr University Munich  
+  </a> &nbsp; **Valentina Pessina**, Researcher at Bundeswehr University Munich 
 
 _Testers_: 
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/rodrigo-palharini-59316775" target="_blank">
@@ -137,15 +137,16 @@ _Current developers_:
 * **Dr Vincent Casseau**
 * **Dr Daniel E.R. Espinoza**  
 * **Tim Teichmann**, PhD student in the [Institute for Technical Physics](http://www.itep.kit.edu/english/), Karlsruhe Institute of Technology (KIT), Eggenstein-Leopoldshafen, Germany  
-* **Maximilian Maigler**  
-* **Valentina Pessina**  
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/craig-white-53b70387" target="_blank">
     <span class="fa-stack" aria-hidden="true">
       <i class="fas fa-circle fa-stack-2x" style='color:#0072B1'></i>
       <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
     </span>
     <span class="sr-only">LinkedIn</span>
-  </a> &nbsp; **Dr Craig White**, Lecturer in Aerospace Sciences at the [University of Glasgow](https://www.gla.ac.uk/schools/engineering/staff/craigwhite/), Glasgow, UK  
+  </a> &nbsp; **Dr Craig White**, Lecturer in Aerospace Sciences at the [University of Glasgow](https://www.gla.ac.uk/schools/engineering/staff/craigwhite/), Glasgow, UK
+* **Maximilian Maigler**  
+* **Valentina Pessina**  
+ 
  
 _Past contributors_:  
 * **Dr Rodrigo C. Palharini**  
