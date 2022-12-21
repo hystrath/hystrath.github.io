@@ -139,14 +139,9 @@ If a <dictkey>key</dictkey> is omitted, then a <dictval>default value</dictval> 
     <td align="center">number of vibrational energy modes (default is <dictval>0</dictval>)</td>
   </tr>
   <tr>
-    <td align="center"><dictkey>vibrationalDegeneracyList</dictkey></td>
-    <td align="center"> - </td>  
-    <td align="center">degeneracy of each vibrational energy mode (default is <dictval>1</dictval>, list of size <dictkey>nVibrationalModes</dictkey>)</td>
-  </tr>
-  <tr>
     <td align="center"><dictkey>characteristicVibrationalTemperature</dictkey></td>
     <td align="center"> K </td>  
-    <td align="center">characteristic vibrational temperature (list of size <dictkey>nVibrationalModes</dictkey>)</td>
+    <td align="center">characteristic vibrational temperature (default is <dictval>0</dictval>)</td>
   </tr>
   <tr>
     <td align="center"><dictkey>dissociationTemperature</dictkey></td>
