@@ -133,7 +133,7 @@ _Advisers_:
 
 ---   
 ## DSMC module &nbsp;—&nbsp; __*dsmcFoam+*__        
-_Current contributors_: 
+_Current developers_: 
 * **Dr Vincent Casseau**
 * **Dr Daniel E.R. Espinoza**  
 * **Tim Teichmann**, PhD student in the [Institute for Technical Physics](http://www.itep.kit.edu/english/), Karlsruhe Institute of Technology (KIT), Eggenstein-Leopoldshafen, Germany  
