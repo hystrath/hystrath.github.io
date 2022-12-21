@@ -72,74 +72,36 @@ openNav()
 # Collision dynamics
 
 ---  
-<!--## 1) Collision partner selection-->
+## 1) Collision partner selection
 
-<!--The No-Time-Counter of Bird is the only recommended collision partner selection model (others haven't been throughly tested). It is implemented as follows in <dirname>constant/</dirname><dict>dsmcProperties</dict>-->
-<!--    -->
-<!--```c++-->
-<!--// Collision Partner Selection Model-->
-<!--// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+The No-Time-Counter of Bird is the only recommended collision partner selection model (others haven't been throughly tested). It is implemented as follows in <dirname>constant/</dirname><dict>dsmcProperties</dict>
+    
+```c++
+// Collision Partner Selection Model
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-<!--collisionPartnerSelectionModel        noTimeCounter;-->
-<!--```-->
+collisionPartnerSelectionModel        noTimeCounter;
+```
 
-<!--In this model, each cell have 8 subcells (2 in each direction) to reduce the mean collision separation.-->
+In this model, each cell have 8 subcells (2 in each direction) to reduce the mean collision separation.
 
-<!--<br>-->
+<br>
 
-<!-----  -->
-<!--## 2) Binary collision-->
+---  
+## 2) Binary collision
 
-<!--The available binary collision models are:  -->
-<!--  - <dictval>VariableHardSphere</dictval>  -->
-<!--  - <dictval>VariableSoftSphere</dictval>  -->
-<!--  - <dictval>LarsenBorgnakkeVariableHardSphere</dictval>   -->
-<!--  - <dictval>LarsenBorgnakkeVariableSoftSphere</dictval>   -->
+The available binary collision models are:  
+  - <dictval>NoBinaryCollision</dictval>  
+  - <dictval>VariableHardSphere</dictval>  
+  - <dictval>VariableSoftSphere</dictval>  
 
-<!--The selected model is defined for the entry <dictkey>BinaryCollisionModel</dictkey> and its parameters are given in the subsequent <subdict>#modelCoeffs</subdict> subdictionary. Here is an example for the <dictval>LarsenBorgnakkeVariableHardSphere</dictval> model, using constant collision numbers-->
+The selected model is defined for the entry <dictkey>BinaryCollisionModel</dictkey> and its parameters are given in the subsequent <subdict>#modelCoeffs</subdict> subdictionary. Here is an example for the <dictval>VariableHardSphere</dictval> model, using constant collision numbers
 
-<!--```c++-->
-<!--// Binary Collision Model-->
-<!--// ~~~~~~~~~~~~~~~~~~~~~~-->
+```c++
+// Binary Collision Model
+// ~~~~~~~~~~~~~~~~~~~~~~
 
-<!--BinaryCollisionModel        LarsenBorgnakkeVariableHardSphere;-->
+BinaryCollisionModel        VariableHardSphere;
+```
 
-<!--LarsenBorgnakkeVariableHardSphereCoeffs-->
-<!--{-->
-<!--    rotationalRelaxationCollisionNumber   5.0;-->
-<!--    vibrationalRelaxationCollisionNumber  50.0;-->
-<!--    electronicRelaxationCollisionNumber   500.0;-->
-<!--}-->
-<!--```-->
-
-<!--<b>NB</b>: the reference temperature $$T_{ref}$$ is set to 273 K by default.-->
-
-<!--The vibrational collision number can be set to be a function of temperature, in which case the line -->
-
-<!--```c++-->
-<!--    vibrationalRelaxationCollisionNumber  50.0;-->
-<!--```-->
-
-<!--should be deleted and replaced by another entry. The available options for a variable vibrational collision number are as follows: -->
-
-<!--```c++-->
-<!--    inverseZvFormulation           "pre-2008"; // (uses the collision temperature)-->
-<!--    inverseZvFormulation               "2008"; // (uses the overall temperature)-->
-<!--```-->
-
-<!--and if the entry <dictkey>inverseZvFormulation</dictkey> is not specified, then $$Z_{vib}$$ will be defined as in Bird's 2013 book.  The `"pre-2008"` and `2013` models differ by a coefficient 1/5 and are both using the collision temperature. This is the recommended option and it is shown below-->
-
-<!--```c++-->
-<!--// Binary Collision Model-->
-<!--// ~~~~~~~~~~~~~~~~~~~~~~-->
-
-<!--BinaryCollisionModel        LarsenBorgnakkeVariableHardSphere;-->
-
-<!--LarsenBorgnakkeVariableHardSphereCoeffs-->
-<!--{-->
-<!--    rotationalRelaxationCollisionNumber   5.0;-->
-<!--    electronicRelaxationCollisionNumber   500.0;-->
-<!--}-->
-<!--```-->
-
-<!--Please also refer to [A.1 Species thermophysical properties](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-thermophysical/#1-species-thermophysical-properties) for the definitions of $$Z_{ref}$$ and $$T_{ref, Z_{ref}}$$. -->
+<b>NB</b>: the reference temperature $$T_{ref}$$ is set to 273 K by default.
