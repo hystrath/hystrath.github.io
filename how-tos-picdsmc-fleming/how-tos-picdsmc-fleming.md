@@ -74,8 +74,9 @@ openNav()
 
 ---  
 ## [B. Collision dynamics](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-collision-dynamics)
-### [1) Collision partner selection](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-collision-dynamics/#1-collision-partner-selection)
-### [2) Binary collision](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-collision-dynamics/#2-binary-collision)
+### [1) Binary collision model](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-collision-dynamics/#1-binary-collision-model)
+### [2) Collision partner selection](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-collision-dynamics/#2-collision-partner-selection)
+
 
 <div class="paragraph"><p><br>
 <br></p></div>
