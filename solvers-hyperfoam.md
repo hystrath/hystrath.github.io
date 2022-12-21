@@ -10,6 +10,7 @@ nav-short: true
   <a href="#"><center><b><i>hyperFoam</i></b></center></a>
   <a href="https://hystrath.github.io/how-tos-cfd-fleming/how-tos-cfd-fleming/">How-tos CFD</a>
   <a href="https://hystrath.github.io/how-tos-dsmc-fleming/how-tos-dsmc-fleming/">How-tos DSMC</a>
+  <a href="https://hystrath.github.io/how-tos-cfddsmc-fleming/how-tos-cfddsmc-fleming/">How-tos HYBD</a>
   <a href="https://hystrath.github.io/publications-hyperfoam/">Publications</a>
   <a href="https://hystrath.github.io/people/#cfd-dsmc-not-released-yet">Developers</a>
   <a href="https://hystrath.github.io/disclaimer/">Disclaimer</a>

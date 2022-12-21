@@ -8,6 +8,8 @@ nav-short: true
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
   <header>FLOW SOLVERS</header>
   <a href="https://hystrath.github.io/solvers-pdfoam/"><center><b><i>pdFoam</i></b></center></a>
+  <a href="https://hystrath.github.io/how-tos-dsmc-fleming/how-tos-dsmc-fleming/">How-tos DSMC</a>
+  <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming/">How-tos HYBD</a>
   <a href="https://hystrath.github.io/tutos-pdfoam/">Tutorials</a>
   <a href="https://github.com/hystrath/hyStrath/tree/master/applications/solvers/hybridMethods/pdFoam">Source code</a>
   <a href="https://hystrath.github.io/publications-pdfoam/">Publications</a>
