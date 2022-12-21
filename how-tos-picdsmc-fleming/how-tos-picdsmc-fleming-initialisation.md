@@ -94,13 +94,13 @@ where the <dictkey>type</dictkey> <dictval>pdMeshFill</dictval> indicates that t
 ---
 ## 2) Parcel vs. real particles
  
-The number of real particles represented by a single DSMC parcel is set in the <dirname>constant/</dirname><dict>dsmcProperties</dict> dictionary
+The number of real particles represented by a single parcel is set in the <dirname>constant/</dirname><dict>pdProperties</dict> dictionary
 
 ```c++
 nEquivalentParticles            2e7;
 ```
 
-There should be a minimum of 20 DSMC parcels per cell whenever possible and <dictkey>nEquivalentParticles</dictkey> should be set accordingly.
+There should be a minimum of 20 parcels per cell whenever possible and <dictkey>nEquivalentParticles</dictkey> should be set accordingly.
 
 
 <br>
@@ -110,32 +110,33 @@ There should be a minimum of 20 DSMC parcels per cell whenever possible and <dic
  
 In the working directory, type in:  
 ```sh
-dsmcInitialise+
+pdInitialise
 ```
-This command line will create the <dirname>0/</dirname> folder. Simulators data is stored into the <dirname>0/lagrangian/dsmc/</dirname> subfolder and two volume fields, _cellLevel_ and _dsmcSigmaTcRMax_, are printed. The main DSMC executable will always look for these information in the time folder corresponding to the starting time. 
+This command line will create the <dirname>0/</dirname> folder. Simulators data is stored into the <dirname>0/lagrangian/pd/</dirname> subfolder and a volume field, _pdSigmaTcRMax_, is printed. The main executable will always look for these information in the time folder corresponding to the starting time. 
 
 &nbsp;
 
 ### 3.1 Simulators data 
 
-In the <dirname>0/lagrangian/dsmc/</dirname> folder, the files listed in the Table below are created. Each of them contains a dataset of size _number of DSMC parcels_.    
+In the <dirname>0/lagrangian/pd/</dirname> folder, the files listed in the Table below are created. Each of them contains a dataset of size _number of parcels_.    
 
 | File    | Meaning          |
 |:-------------:|-------------|
 | _positions_      | positions in Cartesian space |
 | _U_      | velocity vector |
-| _typeId_ | species index, cf. species list given in the _dsmcProperties_ dictionary |
+| _A_      | acceleration vector |
+| _typeId_ | species index, cf. species list given in the _pdProperties_ dictionary |
 | _newParcel_      | -1 if seeded at t = 0 or index of the patch the simulator entered the domain |
 | _origProcId_ | index of the processor dealing with the simulator |
 | _origId_ | local particle index in processor _origProcId_ |
 | _classification_      | not used, to be revised |
 |   |  |
 | _ERot_      | rotational energy |
-| _vibLevel_      | vibrational energy level for each vibrational energy mode |
-| _ELevel_      | electronic energy level |
+| _EVib_      | vibrational energy |
+| _EPot_      | potential energy |
 
 &nbsp;
 
 ### 3.2 Initial volume fields 
  
-+ _dsmcSigmaTcRMax_ is a first estimate of the maximum value taken by the product of the collision cross-section by the relative speed. For a gas mixture, it is usually obtained by considering the properties (diameter, omega, alpha) of the most abundant species. As the simulation proceeds, this field is updated as soon as a new local maximum is found. It requires no user intervention.
++ _pdSigmaTcRMax_ is a first estimate of the maximum value taken by the product of the collision cross-section by the relative speed. For a gas mixture, it is usually obtained by considering the properties (diameter, omega, alpha) of the most abundant species. As the simulation proceeds, this field is updated as soon as a new local maximum is found. It requires no user intervention.

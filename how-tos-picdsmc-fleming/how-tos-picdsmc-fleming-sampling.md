@@ -64,10 +64,10 @@ openNav()
 ---
 ## 1) The _fieldPropertiesDict_ dictionary
 
-This dictionary located in the <dirname>system</dirname> folder is responsible for computing macroscopic quantities from microscopic particle information and for sampling species and mixture properties to obtain a statistical average. It is composed a list called `pdFields()` inside which a <dict>field</dict> dictionary can be repeated as many times as desired. The single field model available is <dictval>dsmcVolFields</dictval> to average volume and boundary fields in the entire domain. Other models are deprecated at present (WIP).
+This dictionary located in the <dirname>system</dirname> folder is responsible for computing macroscopic quantities from microscopic particle information and for sampling species and mixture properties to obtain a statistical average. It is composed a list called `pdFields()` inside which a <dict>field</dict> dictionary can be repeated as many times as desired. The single field model available is <dictval>pdVolFields</dictval> to average volume and boundary fields in the entire domain. Other models are deprecated at present (WIP).
 
 ```c++
-dsmcFields
+pdFields
 (
     field
     {
@@ -178,4 +178,4 @@ pdFields
 ---
 ## 3) Transient simulations
  
-&nbsp; <dictkey>resetAtOutput</dictkey> must be <dictval>on</dictval> for all <dict>field</dict> dictionaries.
+&nbsp; <dictkey>resetAtOutput</dictkey> must be <dictval>on</dictval> for all <dict>field</dict> dictionaries at all times.

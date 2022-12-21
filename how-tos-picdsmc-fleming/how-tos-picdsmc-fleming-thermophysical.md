@@ -62,7 +62,7 @@ openNav()
 ---  
 ## 1) Species thermophysical properties
 
-The gas composition is given in the <dirname>constant/</dirname><dict>dsmcProperties</dict> dictionary in the form of a list.
+The gas composition is given in the <dirname>constant/</dirname><dict>pdProperties</dict> dictionary in the form of a list.
 
 ```c++
 // Molecular species
@@ -71,7 +71,7 @@ The gas composition is given in the <dirname>constant/</dirname><dict>dsmcProper
 typeIdList           (N2 O2);
 ```
 
-The species thermophysical properties are given in the <dict>dsmcProperties</dict>/<subdict>moleculesProperties</subdict> dictionary. For the nitrogen molecule, it is defined as follows
+The species thermophysical properties are given in the <dict>pdProperties</dict>/<subdict>moleculesProperties</subdict> dictionary. For the nitrogen molecule, it is defined as follows
     
 ```c++
 N2
@@ -166,7 +166,7 @@ If a <dictkey>key</dictkey> is omitted, then a <dictval>default value</dictval> 
 
 ### 2.1 Disabling/enabling the rotational mode of a molecule 
 
-In the <dict>dsmcProperties</dict>/<subdict>moleculesProperties/#speciesName</subdict> dictionary, either edit  <dictkey>rotationalDegreesOfFreedom</dictkey> to be <dictval>0</dictval> or remove this key from the dictionary.  
+In the <dict>pdProperties</dict>/<subdict>moleculesProperties/#speciesName</subdict> dictionary, either edit  <dictkey>rotationalDegreesOfFreedom</dictkey> to be <dictval>0</dictval> or remove this key from the dictionary.  
 
 In the following example, the rotational energy mode of the N2 molecule is enabled  
 
@@ -178,7 +178,7 @@ In the following example, the rotational energy mode of the N2 molecule is enabl
 
 ### 2.2 Disabling/enabling the vibrational mode of a molecule 
 
-In the <dict>dsmcProperties</dict>/<subdict>moleculesProperties/#speciesName</subdict> dictionary, remove the <dictkey>vibrationalModes</dictkey>, <dictkey>characteristicVibrationalTemperature</dictkey>, <dictkey>Zref</dictkey> and <dictkey>referenceTempForZref</dictkey> keys.  
+In the <dict>pdProperties</dict>/<subdict>moleculesProperties/#speciesName</subdict> dictionary, remove the <dictkey>vibrationalModes</dictkey>, <dictkey>characteristicVibrationalTemperature</dictkey>, <dictkey>Zref</dictkey> and <dictkey>referenceTempForZref</dictkey> keys.  
 
 In the following example, the vibrational energy mode of the N2 molecule is enabled  
 
