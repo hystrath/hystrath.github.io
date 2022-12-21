@@ -114,16 +114,16 @@ If a <dictkey>key</dictkey> is omitted, then a <dictval>default value</dictval> 
     <td align="center"> m </td>  
     <td align="center">particle diameter </td>
   </tr>
-<!--  <tr>-->
-<!--    <td align="center"><dictkey>omega</dictkey></td>-->
-<!--    <td align="center"> - </td>  -->
-<!--    <td align="center">temperature exponent of viscosity</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td align="center"><dictkey>alpha</dictkey></td>-->
-<!--    <td align="center"> - </td>  -->
-<!--    <td align="center">soft-sphere scattering parameter (default is <dictval>1.0</dictval>, <i>i.e.</i>, hard-sphere gas)</td>-->
-<!--  </tr>-->
+  <tr>
+    <td align="center"><dictkey>omega</dictkey></td>
+    <td align="center"> - </td>  
+    <td align="center">temperature exponent of viscosity</td>
+  </tr>
+  <tr>
+    <td align="center"><dictkey>alpha</dictkey></td>
+    <td align="center"> - </td>  
+    <td align="center">soft-sphere scattering parameter (default is <dictval>1.0</dictval>, <i>i.e.</i>, hard-sphere gas)</td>
+  </tr>
 <!--  <tr>-->
 <!--    <td align="center"><dictkey>rotationalDegreesOfFreedom</dictkey></td>-->
 <!--    <td align="center"> - </td>  -->
