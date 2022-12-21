@@ -129,11 +129,11 @@ If a <dictkey>key</dictkey> is omitted, then a <dictval>default value</dictval> 
     <td align="center"> - </td>  
     <td align="center">number of rotational degrees of freedom (default is <dictval>0</dictval>)</td>
   </tr>
-<!--  <tr>-->
-<!--    <td align="center"><dictkey>vibrationalModes</dictkey></td>-->
-<!--    <td align="center"> - </td>  -->
-<!--    <td align="center">number of vibrational energy modes (default is <dictval>0</dictval>)</td>-->
-<!--  </tr>-->
+  <tr>
+    <td align="center"><dictkey>vibrationalModes</dictkey></td>
+    <td align="center"> - </td>  
+    <td align="center">number of vibrational energy modes (default is <dictval>0</dictval>)</td>
+  </tr>
   <tr>
     <td align="center"><dictkey>characteristicVibrationalTemperature</dictkey></td>
     <td align="center"> K </td>  
@@ -161,6 +161,7 @@ If a <dictkey>key</dictkey> is omitted, then a <dictval>default value</dictval> 
   </tr>
 </table>
 
+&nbsp;
 
 ---  
 ## 2) Adding/removing energy modes
