@@ -31,8 +31,6 @@ nav-short: true
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-sampling/#1-the-fieldpropertiesdict-dictionary"  style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) <i>fieldPropertiesDict</i></span></a>
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-sampling/#2-steady-state-simulations"  style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) Steady-state simulations</span></a>
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-sampling/#3-transient-simulations" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 3) Transient simulations</span></a>
-  <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-sampling/#4-mean-free-path-computation"  style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 4) MFP computation</span></a>
-  <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-sampling/#5-resume-sampling" style="background-color:#FFE6E6; padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 5) Resume sampling</span></a>
   
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming/#f-monitoring--post-processing"><b>F. MONITORING & POST-PROCESSING</b></a>
 </div>
@@ -64,133 +62,120 @@ openNav()
 # Sampling
 
 ---
-<!--## 1) The _fieldPropertiesDict_ dictionary-->
+## 1) The _fieldPropertiesDict_ dictionary
 
-<!--This dictionary located in the <dirname>system</dirname> folder is responsible for computing macroscopic quantities from microscopic particle information and for sampling species and mixture properties to obtain a statistical average. It is composed a list called `dsmcFields()` inside which a <dict>field</dict> dictionary can be repeated as many times as desired. The single field model available is <dictval>dsmcVolFields</dictval> to average volume and boundary fields in the entire domain. Other models are deprecated at present (WIP).-->
+This dictionary located in the <dirname>system</dirname> folder is responsible for computing macroscopic quantities from microscopic particle information and for sampling species and mixture properties to obtain a statistical average. It is composed a list called `pdFields()` inside which a <dict>field</dict> dictionary can be repeated as many times as desired. The single field model available is <dictval>dsmcVolFields</dictval> to average volume and boundary fields in the entire domain. Other models are deprecated at present (WIP).
 
-<!--```c++-->
-<!--dsmcFields-->
-<!--(-->
-<!--    field-->
-<!--    {-->
-<!--        fieldModel          	dsmcVolFields;-->
+```c++
+dsmcFields
+(
+    field
+    {
+        fieldModel          	pdVolFields;
 
-<!--        [...]-->
-<!--    }-->
+        [...]
+    }
 
-<!--    field-->
-<!--    {-->
-<!--        fieldModel          	dsmcVolFields;-->
-<!--        -->
-<!--        [...]-->
-<!--    }-->
-<!--     -->
-<!--);-->
-<!--```-->
+    field
+    {
+        fieldModel          	pdVolFields;
+        
+        [...]
+    }
+     
+);
+```
 
-<!--The `dsmcFields()` list should be left empty when there is no need to reconstruct macroscopic fields.-->
+The `pdFields()` list should be left empty when there is no need to reconstruct macroscopic fields.
 
 
-<!--For the N2 species, the macroscopic fields printed by default are:-->
-<!--- `dsmcN_N2`: instantaneous number of DSMC parcels-->
-<!--- `dsmcNMean_N2`: sampled number of DSMC parcels-->
-<!--- `rhoN_N2`: number density-->
-<!--- `rhoM_N2`: density-->
-<!--- `U_N2`: velocity vector-->
-<!--- `Ma_N2`: mach number-->
-<!--- `p_N2`: pressure (or partial pressure for a mixture)-->
-<!--- `Ttra_N2`: translational temperature-->
-<!--- `Trot_N2`: rotational temperature-->
-<!--- `Tvib_N2`: vibrational temperature-->
-<!--- `Telec_N2`: electronic temperature-->
-<!--- `Tov_N2`: overall temperature-->
-<!--- `fD_N2`: force density-->
-<!--- `wallShearStress_N2`: wall shear stress-->
-<!--- `wallHeatFlux_N2`: wall heat flux-->
+For the O+ species, the macroscopic fields printed by default are:
+- `pdN_O+`: instantaneous number of parcels
+- `pdNMean_O+`: sampled number of parcels
+- `rhoN_O+`: number density
+- `rhoM_O+`: density
+- `U_O+`: velocity vector
+- `Ma_O+`: mach number
+- `p_O+`: pressure (or partial pressure for a mixture)
+- `translationalT_O+`: translational temperature
+- `rotationalT_O+`: rotational temperature
+- `vibrational_O+`: vibrational temperature
+- `overallT_O+`: overall temperature
+- `fD_O+`: force density
+- `wallShearStress_O+`: wall shear stress
+- `wallHeatFlux_O+`: wall heat flux
 
-<!--The fields `cellLevel` and `dsmcSigmaTcRMax` have already been introduced in [F.2.2 Initial volume fields](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-initialisation/#22-initial-volume-fields).-->
+The field `pdSigmaTcRMax` has already been introduced in [D.2.2 Initial volume fields](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-initialisation/#22-initial-volume-fields).
 
-<!--<br>-->
+<br>
 
-<!------->
-<!--## 2) Steady-state simulations-->
+---
+## 2) Steady-state simulations
 
-<!--In the example below, macroscopic quantities are computed for the N2 species (see the <subdict>dsmcVolFieldsProperties</subdict>/<dictkey>typeIds()</dictkey> list) and are given the suffix `_N2` (<subdict>dsmcVolFieldsProperties</subdict>/<dictkey>fieldName</dictkey>) in the results folders. The same operation is repeated for the mixture `(N2 O2 NO N O)`, providing that these species are the ones defined in [A.1 Species thermophysical properties](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-thermophysical/#1-species-thermophysical-properties). The suffix is set to be `_mixture`.-->
+In the example below, macroscopic quantities are computed for the O+ and O species (see the <subdict>pdVolFieldsProperties</subdict>/<dictkey>typeIds()</dictkey> list) and are given the suffix `_O+` and `_O` (<subdict>pdVolFieldsProperties</subdict>/<dictkey>fieldName</dictkey>) in the results folders. The same operation is repeated for the mixture `(O+ O)`, providing that these species are the ones defined in [A.1 Species thermophysical properties](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-thermophysical/#1-species-thermophysical-properties). The suffix is set to be `_mixture`.
 
-<!--```c++-->
-<!--dsmcFields-->
-<!--(-->
-<!--    field-->
-<!--    {-->
-<!--        fieldModel          	dsmcVolFields;-->
+```c++
+pdFields
+(
+    field
+    {
+        fieldModel          	pdVolFields;
 
-<!--        timeProperties-->
-<!--        {-->
-<!--            timeOption               write;-->
-<!--            resetAtOutput               on;-->
-<!--            resetAtOutputUntilTime    1e-3;-->
-<!--        }-->
+        timeProperties
+        {
+            timeOption               write;
+            resetAtOutput               on;
+        }
 
-<!--        dsmcVolFieldsProperties-->
-<!--        {-->
-<!--            fieldName           N2;-->
-<!--            typeIds             (N2);-->
-<!--        }-->
-<!--    }-->
+        pdVolFieldsProperties
+        {
+            fieldName           O+;
+            typeIds             (O+);
+        }
+    }
+    
+    field
+    {
+        fieldModel          	pdVolFields;
 
-<!--    field-->
-<!--    {-->
-<!--        fieldModel          	dsmcVolFields;-->
+        timeProperties
+        {
+            timeOption               write;
+            resetAtOutput               on;
+        }
 
-<!--        timeProperties-->
-<!--        {-->
-<!--            timeOption               write;-->
-<!--            resetAtOutput               on;-->
-<!--            resetAtOutputUntilTime    1e-3;-->
-<!--        }-->
+        pdVolFieldsProperties
+        {
+            fieldName           O;
+            typeIds             (O);
+        }
+    }
 
-<!--        dsmcVolFieldsProperties-->
-<!--        {-->
-<!--            fieldName           mixture;-->
-<!--            typeIds             (N2 O2 NO N O);-->
-<!--        }-->
-<!--    }-->
-<!--     -->
-<!--);-->
-<!--```-->
+    field
+    {
+        fieldModel          	pdVolFields;
 
-<!--There are two important parameters in <dict>field</dict>/<subdict>timeProperties</subdict> to control sampling: <dictkey>resetAtOutput</dictkey> and <dictkey>resetAtOutputUntilTime</dictkey>. The former is a switch that indicates whether or not cumulative fields recording microscopic information are reset at the end of each iteration. If it is <dictval>on</dictval>, the instantaneous solution is printed. <dictkey>resetAtOutputUntilTime</dictkey> controls the time when sampling starts, in seconds, and for times greater than this value cumulative fields will not be reset to 0.-->
+        timeProperties
+        {
+            timeOption               write;
+            resetAtOutput               on;
+        }
 
-<!--<br>-->
+        pdVolFieldsProperties
+        {
+            fieldName           mixture;
+            typeIds             (O+ O);
+        }
+    }
+     
+);
+```
 
-<!------->
-<!--## 3) Transient simulations-->
-<!-- -->
-<!--&nbsp; <dictkey>resetAtOutput</dictkey> must be <dictval>on</dictval> for all <dict>field</dict> dictionaries and the entry <dictkey>resetAtOutputUntilTime</dictkey> should either be deleted or set to a value greater than the end simulation time.-->
+<dictkey>resetAtOutput</dictkey> is the key parameter controlling sampling: it is a switch that indicates whether or not cumulative fields recording microscopic information are reset at the end of each iteration. If it is <dictval>on</dictval>, the instantaneous solution is printed.
 
-<!--<br>-->
+<br>
 
-<!------->
-<!--## 4) Mean free path computation-->
-<!-- -->
-<!--To compute the mean free path and related fields, the <dictkey>measureMeanFreePath</dictkey> entry must be added to <dict>field</dict>/<subdict>dsmcVolFieldsProperties</subdict> and be swiched <dictval>on</dictval> for all <dict>field</dict> dictionaries. Here is the list of additional fields that are printed in the results folders when this switch is activated:-->
-
-<!--- mean free path: `mfp`-->
-<!--- mean free path to cell size ratio: `mfpToDx`-->
-<!--- mean free path to mean collision separation ratio: `SOFP`-->
-<!--- mean collision time: `mct`-->
-<!--- mean collision time to time-step ratio: `mctToDt`-->
-
-<!--<br>-->
-
-<!------->
-<!--## 5) Resume sampling-->
-<!-- -->
-<!--Sampling can be resumed even when the simulation has stopped, providing that the <dictkey>averagingAcrossManyRuns</dictkey> switch had been defined in <subdict>dsmcVolFieldsProperties</subdict> and set to <dictval>true</dictval> before launching the first run. Here are the steps to follow at the end of the first run:-->
-<!--- `reconstrucPar -latestTime`-->
-<!--- delete everything but the <dirname>time/uniform/</dirname> sub-folder in the processors directories and store them in <dirname>backup-processors</dirname>-->
-<!--- prior to resuming the simulation: `cp -r backup-processors/processor* . && decomposePar -force -latestTime`-->
-
-<!--<b>NB</b>: the same number of CPUs must be used throughout the entire simulation as the `resumeSampling_#fieldName` files located in <dirname>time/uniform/</dirname> cannot be reconstructed.-->
-
-<!--For more information, please read Issue [#73](https://github.com/hystrath/hyStrath/issues/73).-->
+---
+## 3) Transient simulations
+ 
+&nbsp; <dictkey>resetAtOutput</dictkey> must be <dictval>on</dictval> for all <dict>field</dict> dictionaries.
