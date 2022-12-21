@@ -67,6 +67,20 @@ _Contributors_:
     <span class="sr-only">ResearchGate</span>
   </a> &nbsp; **Dr Jimmy-John O.E. Hoste**, Aerothermodynamics Engineer at [Destinus](https://destinus.ch), Vaud, Switzerland
 * **Dr Alexey Ryakhovskiy**  
+* <a style="text-decoration: none" href="https://de.linkedin.com/in/maximilian-maigler-262bb6114" target="_blank">
+    <span class="fa-stack" aria-hidden="true">
+      <i class="fas fa-circle fa-stack-2x" style='color:#0072B1'></i>
+      <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+    </span>
+    <span class="sr-only">LinkedIn</span>
+  </a> &nbsp; **Maximilian Maigler**  
+* <a style="text-decoration: none" href="https://it.linkedin.com/in/valentina-pessina" target="_blank">
+    <span class="fa-stack" aria-hidden="true">
+      <i class="fas fa-circle fa-stack-2x" style='color:#0072B1'></i>
+      <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+    </span>
+    <span class="sr-only">LinkedIn</span>
+  </a> &nbsp; **Valentina Pesssina**  
 
 _Testers_: 
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/rodrigo-palharini-59316775" target="_blank">
@@ -123,13 +137,15 @@ _Current developers_:
 * **Dr Vincent Casseau**
 * **Dr Daniel E.R. Espinoza**  
 * **Tim Teichmann**, PhD student in the [Institute for Technical Physics](http://www.itep.kit.edu/english/), Karlsruhe Institute of Technology (KIT), Eggenstein-Leopoldshafen, Germany  
+* **Maximilian Maigler**  
+* **Valentina Pesssina**  
 * <a style="text-decoration: none" href="https://uk.linkedin.com/in/craig-white-53b70387" target="_blank">
     <span class="fa-stack" aria-hidden="true">
       <i class="fas fa-circle fa-stack-2x" style='color:#0072B1'></i>
       <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
     </span>
     <span class="sr-only">LinkedIn</span>
-  </a> &nbsp; **Dr Craig White**, Lecturer in Aerospace Sciences at the [University of Glasgow](https://www.gla.ac.uk/schools/engineering/staff/craigwhite/), Glasgow, UK
+  </a> &nbsp; **Dr Craig White**, Lecturer in Aerospace Sciences at the [University of Glasgow](https://www.gla.ac.uk/schools/engineering/staff/craigwhite/), Glasgow, UK  
  
 _Past contributors_:  
 * **Dr Rodrigo C. Palharini**  
