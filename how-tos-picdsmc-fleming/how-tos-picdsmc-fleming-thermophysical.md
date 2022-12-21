@@ -144,21 +144,21 @@ If a <dictkey>key</dictkey> is omitted, then a <dictval>default value</dictval> 
 <!--    <td align="center"> K </td>  -->
 <!--    <td align="center">dissociation temperature (default is <dictval>0.0</dictval>)</td>-->
 <!--  </tr>-->
-<!--  <tr>-->
-<!--    <td align="center"><dictkey>Zref</dictkey></td>-->
-<!--    <td align="center"> - </td>  -->
-<!--    <td align="center"> reference vibrational collision number (default is <dictval>0.0</dictval>)</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td align="center"><dictkey>referenceTempForZref</dictkey></td>-->
-<!--    <td align="center"> K </td>  -->
-<!--    <td align="center"> reference temperature in the vibrational collision number calculation (default is <dictval>0.0</dictval>)</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td align="center"><dictkey>Ze</dictkey></td>-->
-<!--    <td align="center"> - </td>  -->
-<!--    <td align="center">charge of the particle (<dictval>-1</dictval>: electron, <dictval>0</dictval>: neutral atom and molecule, <dictval>+1</dictval>: charged atom and molecule, default is <dictval>0</dictval>) </td>-->
-<!--  </tr>-->
+  <tr>
+    <td align="center"><dictkey>Zref</dictkey></td>
+    <td align="center"> - </td>  
+    <td align="center"> reference vibrational collision number (default is <dictval>0.0</dictval>)</td>
+  </tr>
+  <tr>
+    <td align="center"><dictkey>referenceTempForZref</dictkey></td>
+    <td align="center"> K </td>  
+    <td align="center"> reference temperature in the vibrational collision number calculation (default is <dictval>0.0</dictval>)</td>
+  </tr>
+  <tr>
+    <td align="center"><dictkey>Ze</dictkey></td>
+    <td align="center"> - </td>  
+    <td align="center">charge of the particle (<dictval>-1</dictval>: electron, <dictval>0</dictval>: neutral atom and molecule, <dictval>+1</dictval>: charged atom and molecule, default is <dictval>0</dictval>) </td>
+  </tr>
 </table>
 
 
