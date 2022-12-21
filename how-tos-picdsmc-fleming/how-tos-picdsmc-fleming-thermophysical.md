@@ -162,6 +162,7 @@ If a <dictkey>key</dictkey> is omitted, then a <dictval>default value</dictval> 
     <td align="center"><dictkey>referenceTempForZref</dictkey></td>
     <td align="center"> K </td>  
     <td align="center"> reference temperature in the vibrational collision number calculation (default is <dictval>0.0</dictval>)</td>
+  </tr>
   <tr>
     <td align="center"><dictkey>Ze</dictkey></td>
     <td align="center"> - </td>  
