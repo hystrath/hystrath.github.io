@@ -7,7 +7,7 @@ nav-short: true
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
-  <header>HOW-TOS — PIC-DSMC</header>
+  <header>HOW-TOS — HYBD</header>
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-thermophysical/"><b>A. THERMOPHYSICAL</b></a>
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-thermophysical/#1-species-thermophysical-properties" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Species properties</span></a>
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-thermophysical/#2-addingremoving-energy-modes"  style="padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) +/- energy modes</span></a>
@@ -121,16 +121,15 @@ pdGeneralBoundaries
 
         pdFreeStreamInflowPatchProperties
         {
-            typeIds                       (N2 O2);
-            velocity                 (6053.4 0 0);
-            translationalTemperature       217.63;
-            rotationalTemperature          217.63;
-            vibrationalTemperature         217.63;
-            electronicTemperature               0;
+            typeIds                        (O+ O);
+            velocity                   (7768 0 0);
+            translationalTemperature         2000;
+            rotationalTemperature               0;
+            vibrationalTemperature              0;
             numberDensities
             {
-                N2      2.318e18;
-                O2      6.161e17;
+                O+      2.318e12;
+                O              0;
             };
         }
     }
@@ -236,7 +235,7 @@ pdPatchBoundaries
 
 ### 3.3 Diffuse-Neutralising wall
 
-The boundary model for mixed diffuse-specular wall interactions is <dictval>dsmcDiffuseSpecularWallPatch</dictval>. The wall velocity and temperature are given in <subdict>pdDiffuseWallPatchProperties</subdict> (see [3.2](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-boundary-conditions/#32-diffuse-wall)), while the fraction of wall interactions that are diffuse, <dictkey>diffuseFraction</dictkey>, is given in <subdict>dsmcDiffuseSpecularWallPatchProperties</subdict>. For each particle-wall interaction, a random number is drawn and compared to <dictkey>diffuseFraction</dictkey> to decide on the type of reflection to perform.
+<!--The boundary model for mixed diffuse-specular wall interactions is <dictval>dsmcDiffuseSpecularWallPatch</dictval>. The wall velocity and temperature are given in <subdict>pdDiffuseWallPatchProperties</subdict> (see [3.2](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-boundary-conditions/#32-diffuse-wall)), while the fraction of wall interactions that are diffuse, <dictkey>diffuseFraction</dictkey>, is given in <subdict>dsmcDiffuseSpecularWallPatchProperties</subdict>. For each particle-wall interaction, a random number is drawn and compared to <dictkey>diffuseFraction</dictkey> to decide on the type of reflection to perform.-->
 
 ```c++
 pdPatchBoundaries
@@ -245,22 +244,15 @@ pdPatchBoundaries
     {
         boundaryModel   pdDiffuseNeutralisingWallPatch;
         
-        patchBoundaryProperties
+        pdDiffuseNeutralisingWallPatchProperties
         {
-            patchName   cone;
-        }
+		        typeElec 			                0;
+		        
+		        velocity 			          (0 0 0);
+		        temperature 			          350;
 
-        pdDiffuseWallPatchProperties
-        {
-            velocity      (0 0 0);
-            temperature      1000;
-        }
-        
-        pdSpecularWallPatchProperties {}
-        
-        dsmcDiffuseSpecularWallPatchProperties
-        {
-            diffuseFraction   0.5;
+		        ionsToNeutralise		       (O+);
+		        productsOfNeutralisation	((O));
         }
     }
 );
@@ -274,7 +266,7 @@ pdPatchBoundaries
 Cyclic boundary conditions are set in the `pdCyclicBoundaries()` list.
 
 They are defined using the <dictval>pdReflectiveParticleMembranePatch</dictval> boundary model, and that for both patches.
-An example is given hereafter where all Argon DSMC parcels hitting the membrane are mapped onto the corresponding cyclic patch. The species-dependent reflection probabilities can be controlled using <dictkey>reflectionProbabilities </dictkey> in the boundary model's properties dictionary, and a value of <dictval>1</dictval> would correspond to a specular wall.
+An example is given hereafter where all Argon parcels hitting the membrane are mapped onto the corresponding cyclic patch. The species-dependent reflection probabilities can be controlled using <dictkey>reflectionProbabilities </dictkey> in the boundary model's properties dictionary, and a value of <dictval>1</dictval> would correspond to a specular wall.
 
 ```c++
 pdCyclicBoundaries
