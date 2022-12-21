@@ -243,16 +243,16 @@ pdPatchBoundaries
     boundary
     {
         boundaryModel   pdDiffuseNeutralisingWallPatch;
-        
+
         pdDiffuseNeutralisingWallPatchProperties
         {
-		        typeElec 			                0;
-		        
-		        velocity 			          (0 0 0);
-		        temperature 			          350;
+            typeElec 			                0;
+            
+            velocity 			          (0 0 0);
+            temperature 			          350;
 
-		        ionsToNeutralise		       (O+);
-		        productsOfNeutralisation	((O));
+            ionsToNeutralise		       (O+);
+            productsOfNeutralisation	((O));
         }
     }
 );

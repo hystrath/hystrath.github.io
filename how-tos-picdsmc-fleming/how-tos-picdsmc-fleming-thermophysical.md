@@ -99,71 +99,71 @@ N2
 The Table below lists the meaning of the different keys present in the <subdict>#speciesName</subdict> subdictionary. 
 If a <dictkey>key</dictkey> is omitted, then a <dictval>default value</dictval> is used whenever possible.
 
-<table>
-  <tr>
-    <td align="center" colspan="3"><b><subdict>#speciesName</subdict> subdictionary</b></td>
-  </tr>
-  <tr>
-    <td align="center"><b>Key</b></td>
-    <td align="center"><b>Units</b></td>
-    <td align="center"><b>Meaning</b></td>
-  </tr>
-  <tr>
-    <td align="center"><dictkey>mass</dictkey></td>
-    <td align="center"> kg </td>
-    <td align="center">mass of a single particle</td>
-  </tr>
-  <tr>
-    <td align="center"><dictkey>diameter</dictkey></td>
-    <td align="center"> m </td>  
-    <td align="center">particle diameter </td>
-  </tr>
-  <tr>
-    <td align="center"><dictkey>omega</dictkey></td>
-    <td align="center"> - </td>  
-    <td align="center">temperature exponent of viscosity</td>
-  </tr>
-  <tr>
-    <td align="center"><dictkey>alpha</dictkey></td>
-    <td align="center"> - </td>  
-    <td align="center">soft-sphere scattering parameter (default is <dictval>1.0</dictval>, <i>i.e.</i>, hard-sphere gas)</td>
-  </tr>
-  <tr>
-    <td align="center"><dictkey>rotationalDegreesOfFreedom</dictkey></td>
-    <td align="center"> - </td>  
-    <td align="center">number of rotational degrees of freedom (default is <dictval>0</dictval>)</td>
-  </tr>
-  <tr>
-    <td align="center"><dictkey>vibrationalModes</dictkey></td>
-    <td align="center"> - </td>  
-    <td align="center">number of vibrational energy modes (default is <dictval>0</dictval>)</td>
-  </tr>
-  <tr>
-    <td align="center"><dictkey>characteristicVibrationalTemperature</dictkey></td>
-    <td align="center"> K </td>  
-    <td align="center">characteristic vibrational temperature (default is <dictval>0</dictval>)</td>
-  </tr>
-  <tr>
-    <td align="center"><dictkey>dissociationTemperature</dictkey></td>
-    <td align="center"> K </td>  
-    <td align="center">dissociation temperature (default is <dictval>0.0</dictval>)</td>
-  </tr>
-  <tr>
-    <td align="center"><dictkey>Zref</dictkey></td>
-    <td align="center"> - </td>  
-    <td align="center"> reference vibrational collision number (default is <dictval>0.0</dictval>)</td>
-  </tr>
-  <tr>
-    <td align="center"><dictkey>referenceTempForZref</dictkey></td>
-    <td align="center"> K </td>  
-    <td align="center"> reference temperature in the vibrational collision number calculation (default is <dictval>0.0</dictval>)</td>
-  </tr>
-  <tr>
-    <td align="center"><dictkey>Ze</dictkey></td>
-    <td align="center"> - </td>  
-    <td align="center">charge of the particle (<dictval>-1</dictval>: electron, <dictval>0</dictval>: neutral atom and molecule, <dictval>+1</dictval>: charged atom and molecule, default is <dictval>0</dictval>) </td>
-  </tr>
-</table>
+<!--<table>-->
+<!--  <tr>-->
+<!--    <td align="center" colspan="3"><b><subdict>#speciesName</subdict> subdictionary</b></td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td align="center"><b>Key</b></td>-->
+<!--    <td align="center"><b>Units</b></td>-->
+<!--    <td align="center"><b>Meaning</b></td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td align="center"><dictkey>mass</dictkey></td>-->
+<!--    <td align="center"> kg </td>-->
+<!--    <td align="center">mass of a single particle</td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td align="center"><dictkey>diameter</dictkey></td>-->
+<!--    <td align="center"> m </td>  -->
+<!--    <td align="center">particle diameter </td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td align="center"><dictkey>omega</dictkey></td>-->
+<!--    <td align="center"> - </td>  -->
+<!--    <td align="center">temperature exponent of viscosity</td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td align="center"><dictkey>alpha</dictkey></td>-->
+<!--    <td align="center"> - </td>  -->
+<!--    <td align="center">soft-sphere scattering parameter (default is <dictval>1.0</dictval>, <i>i.e.</i>, hard-sphere gas)</td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td align="center"><dictkey>rotationalDegreesOfFreedom</dictkey></td>-->
+<!--    <td align="center"> - </td>  -->
+<!--    <td align="center">number of rotational degrees of freedom (default is <dictval>0</dictval>)</td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td align="center"><dictkey>vibrationalModes</dictkey></td>-->
+<!--    <td align="center"> - </td>  -->
+<!--    <td align="center">number of vibrational energy modes (default is <dictval>0</dictval>)</td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td align="center"><dictkey>characteristicVibrationalTemperature</dictkey></td>-->
+<!--    <td align="center"> K </td>  -->
+<!--    <td align="center">characteristic vibrational temperature (default is <dictval>0</dictval>)</td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td align="center"><dictkey>dissociationTemperature</dictkey></td>-->
+<!--    <td align="center"> K </td>  -->
+<!--    <td align="center">dissociation temperature (default is <dictval>0.0</dictval>)</td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td align="center"><dictkey>Zref</dictkey></td>-->
+<!--    <td align="center"> - </td>  -->
+<!--    <td align="center"> reference vibrational collision number (default is <dictval>0.0</dictval>)</td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td align="center"><dictkey>referenceTempForZref</dictkey></td>-->
+<!--    <td align="center"> K </td>  -->
+<!--    <td align="center"> reference temperature in the vibrational collision number calculation (default is <dictval>0.0</dictval>)</td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td align="center"><dictkey>Ze</dictkey></td>-->
+<!--    <td align="center"> - </td>  -->
+<!--    <td align="center">charge of the particle (<dictval>-1</dictval>: electron, <dictval>0</dictval>: neutral atom and molecule, <dictval>+1</dictval>: charged atom and molecule, default is <dictval>0</dictval>) </td>-->
+<!--  </tr>-->
+<!--</table>-->
 
 
 ---  
