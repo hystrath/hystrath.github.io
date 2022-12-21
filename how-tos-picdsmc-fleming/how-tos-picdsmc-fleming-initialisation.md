@@ -24,7 +24,7 @@ nav-short: true
   
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-initialisation/" style="background-color:#FFCCCC"><b>D. INITIALISATION</b></a>
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-initialisation/#1-the-pdinitialisedict-dictionary"  style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) <i>pdInitialiseDict</i></span></a>
-  <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-initialisation/#2-dsmc-parcel-vs-real-particles"  style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) Parcel vs. particles</span></a>
+  <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-initialisation/#2-parcel-vs-real-particles"  style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) Parcel vs. particles</span></a>
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-initialisation/#3-creating-the-0-folder"  style="background-color:#FFE6E6; padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 3) Creating the <i>0/</i> folder</span></a>
   
   <a href="https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-sampling/"><b>E. SAMPLING</b></a>
@@ -61,83 +61,80 @@ openNav()
 # Initialisation
 
 ---
-<!--## 1) The _pdInitialiseDict_ dictionary-->
+## 1) The _pdInitialiseDict_ dictionary
 
-<!--The <dict>pdInitialiseDict</dict> dictionary is located in the <dirname>system/</dirname> folder. The initial number density of all species present in the gas mixture (see [A.1 Species thermophysical properties](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-thermophysical/#1-species-thermophysical-properties)), modal temperatures and velocity are given in the following subdictionary-->
+The <dict>pdInitialiseDict</dict> dictionary is located in the <dirname>system/</dirname> folder. The initial number density of all species present in the gas mixture (see [A.1 Species thermophysical properties](https://hystrath.github.io/how-tos-picdsmc-fleming/how-tos-picdsmc-fleming-thermophysical/#1-species-thermophysical-properties)), modal temperatures and velocity are given in the following subdictionary
 
-<!--```c++-->
-<!--configurations-->
-<!--(-->
-<!--    configuration-->
-<!--    {-->
-<!--        type    dsmcMeshFill;-->
+```c++
+configurations
+(
+    configuration
+    {
+        type    pdMeshFill;
 
-<!--        numberDensities-->
-<!--        {-->
-<!--             Ar            1.4e20;-->
-<!--        };-->
+        numberDensities
+        {
+             Ar            1.4e20;
+        };
 
-<!--        translationalTemperature     273.0;-->
-<!--        rotationalTemperature        0.0; -->
-<!--        vibrationalTemperature       0.0;-->
-<!--        electronicTemperature        0.0;-->
+        translationalTemperature     273.0;
+        rotationalTemperature        0.0; 
+        vibrationalTemperature       0.0;
 
-<!--        velocity        (100 0 0);-->
-<!--    }-->
-<!--);-->
-<!--```-->
+        velocity        (100 0 0);
+    }
+);
+```
 
-<!--where the <dictkey>type</dictkey> <dictval>dsmcMeshFill</dictval> indicates that the entire grid is going to be populated with particles. To start with a grid free of DSMC parcels, leave the `configurations()` list empty.-->
+where the <dictkey>type</dictkey> <dictval>pdMeshFill</dictval> indicates that the entire grid is going to be populated with particles. To start with a grid free of parcels, leave the `configurations()` list empty.
 
-<!--<br>-->
+<br>
 
-<!------->
-<!--## 2) DSMC parcel vs. real particles-->
-<!-- -->
-<!--The number of real particles represented by a single DSMC parcel is set in the <dirname>constant/</dirname><dict>dsmcProperties</dict> dictionary-->
+---
+## 2) Parcel vs. real particles
+ 
+The number of real particles represented by a single DSMC parcel is set in the <dirname>constant/</dirname><dict>dsmcProperties</dict> dictionary
 
-<!--```c++-->
-<!--nEquivalentParticles            2e7;-->
-<!--```-->
+```c++
+nEquivalentParticles            2e7;
+```
 
-<!--There should be a minimum of 20 DSMC parcels per cell whenever possible and <dictkey>nEquivalentParticles</dictkey> should be set accordingly.-->
+There should be a minimum of 20 DSMC parcels per cell whenever possible and <dictkey>nEquivalentParticles</dictkey> should be set accordingly.
 
 
-<!--<br>-->
+<br>
 
-<!------->
-<!--## 3) Creating the _0/_ folder-->
-<!-- -->
-<!--In the working directory, type in:  -->
-<!--```sh-->
-<!--dsmcInitialise+-->
-<!--```-->
-<!--This command line will create the <dirname>0/</dirname> folder. Simulators data is stored into the <dirname>0/lagrangian/dsmc/</dirname> subfolder and two volume fields, _cellLevel_ and _dsmcSigmaTcRMax_, are printed. The main DSMC executable will always look for these information in the time folder corresponding to the starting time. -->
+---
+## 3) Creating the _0/_ folder
+ 
+In the working directory, type in:  
+```sh
+dsmcInitialise+
+```
+This command line will create the <dirname>0/</dirname> folder. Simulators data is stored into the <dirname>0/lagrangian/dsmc/</dirname> subfolder and two volume fields, _cellLevel_ and _dsmcSigmaTcRMax_, are printed. The main DSMC executable will always look for these information in the time folder corresponding to the starting time. 
 
-<!--&nbsp;-->
+&nbsp;
 
-<!--### 3.1 Simulators data -->
+### 3.1 Simulators data 
 
-<!--In the <dirname>0/lagrangian/dsmc/</dirname> folder, the files listed in the Table below are created. Each of them contains a dataset of size _number of DSMC parcels_.    -->
+In the <dirname>0/lagrangian/dsmc/</dirname> folder, the files listed in the Table below are created. Each of them contains a dataset of size _number of DSMC parcels_.    
 
-<!--| File    | Meaning          |-->
-<!--|:-------------:|-------------|-->
-<!--| _positions_      | positions in Cartesian space |-->
-<!--| _U_      | velocity vector |-->
-<!--| _typeId_ | species index, cf. species list given in the _dsmcProperties_ dictionary |-->
-<!--| _newParcel_      | -1 if seeded at t = 0 or index of the patch the simulator entered the domain |-->
-<!--| _origProcId_ | index of the processor dealing with the simulator |-->
-<!--| _origId_ | local particle index in processor _origProcId_ |-->
-<!--| _classification_      | not used, to be revised |-->
-<!--|   |  |-->
-<!--| _ERot_      | rotational energy |-->
-<!--| _vibLevel_      | vibrational energy level for each vibrational energy mode |-->
-<!--| _ELevel_      | electronic energy level |-->
+| File    | Meaning          |
+|:-------------:|-------------|
+| _positions_      | positions in Cartesian space |
+| _U_      | velocity vector |
+| _typeId_ | species index, cf. species list given in the _dsmcProperties_ dictionary |
+| _newParcel_      | -1 if seeded at t = 0 or index of the patch the simulator entered the domain |
+| _origProcId_ | index of the processor dealing with the simulator |
+| _origId_ | local particle index in processor _origProcId_ |
+| _classification_      | not used, to be revised |
+|   |  |
+| _ERot_      | rotational energy |
+| _vibLevel_      | vibrational energy level for each vibrational energy mode |
+| _ELevel_      | electronic energy level |
 
-<!--&nbsp;-->
+&nbsp;
 
-<!--### 3.2 Initial volume fields -->
-<!-- -->
-<!--+ _dsmcSigmaTcRMax_ is a first estimate of the maximum value taken by the product of the collision cross-section by the relative speed. For a gas mixture, it is usually obtained by considering the properties (diameter, omega, alpha) of the most abundant species. As the simulation proceeds, this field is updated as soon as a new local maximum is found. It requires no user intervention.-->
-
-<!--+ _cellLevel_ represents the level of refinement of each cell. At _t_ = 0, it is equal to 0 which means that all cells are root cells (they cannot be further coarsened). This field will only be used when the AMR flag is passed as an argument to the main DSMC executable.-->
+### 3.2 Initial volume fields 
+ 
++ _dsmcSigmaTcRMax_ is a first estimate of the maximum value taken by the product of the collision cross-section by the relative speed. For a gas mixture, it is usually obtained by considering the properties (diameter, omega, alpha) of the most abundant species. As the simulation proceeds, this field is updated as soon as a new local maximum is found. It requires no user intervention.
