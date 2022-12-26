@@ -10,7 +10,7 @@ Every contribution is welcome whether that is:
 - an update to a more recent version of OpenFOAM
 - an additional documented tutorial
 - a bug report/fix, using the [Issues](https://github.com/hystrath/hyStrath/issues) page
-- an addition to be made to the _How-tos_ 
+- an addition to be made to the _Guides_ 
 - etc
 
 Please [get in touch](https://hystrath.github.io/contact) if you are interested.

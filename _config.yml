@@ -26,28 +26,28 @@ author: hyStrath
 
 navbar-links:
   Flow Solvers:
-    - hy2Foam: "solvers-hy2foam"
-    - hyFoam: "solvers-hyfoam"
-    - dsmcFoam+: "solvers-dsmcfoam"
-    - pdFoam: "solvers-pdfoam"
-    - hyperFoam: "solvers-hyperfoam"
+    - hy2Foam: "solvers/hy2foam"
+    - hyFoam: "solvers/hyfoam"
+    - dsmcFoam+: "solvers/dsmcfoam"
+    - pdFoam: "solvers/pdfoam"
+    - hyperFoam: "solvers/hyperfoam"
   Download:
     - Compatibility: "compatibility"
     - Maintenance: "maintenance"
     - Installation: "installation"
     - Sync: "sync"
-  How-tos:
-    - CFD: "how-tos-cfd-fleming/how-tos-cfd-fleming"
-    - DSMC: "how-tos-dsmc-fleming/how-tos-dsmc-fleming"
-    - PIC-DSMC: "how-tos-picdsmc-fleming/how-tos-picdsmc-fleming"
-    - CFD-DSMC: "how-tos-cfddsmc-fleming/how-tos-cfddsmc-fleming"
+  Guides:
+    - CFD: "guides/fleming/cfd/toc"
+    - DSMC: "guides/fleming/dsmc/toc"
+    - PIC-DSMC: "guides/fleming/picdsmc/toc"
+    - CFD-DSMC: "guides/fleming/cfddsmc/toc"
   Tutorials:
-    - hy2Foam: "tutos-hy2foam"
-    - hyFoam: "tutos-hyfoam"
-    - dsmcFoam+: "tutos-dsmcfoam"
-    - pdFoam: "tutos-pdfoam" 
-    - hyperFoam: "tutos-hyperfoam" 
-  Publications: "publications"
+    - hy2Foam: "tutos/hy2foam/toc"
+    - hyFoam: "tutos/hyfoam/toc"
+    - dsmcFoam+: "tutos/dsmcfoam/toc"
+    - pdFoam: "tutos/pdfoam/toc" 
+    - hyperFoam: "tutos/hyperfoam/toc" 
+  Publications: "publications/main"
   About hS:
     - People: "people"
     - Contact: "contact"
