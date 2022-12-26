@@ -37,10 +37,13 @@ navbar-links:
     - Installation: "installation"
     - Sync: "sync"
   Guides:
-    - CFD: "guides/fleming/cfd/toc"
-    - DSMC: "guides/fleming/dsmc/toc"
-    - PIC-DSMC: "guides/fleming/picdsmc/toc"
-    - CFD-DSMC: "guides/fleming/cfddsmc/toc"
+    - Fleming:
+        - CFD: "guides/fleming/cfd/toc"
+        - DSMC: "guides/fleming/dsmc/toc"
+        - PIC-DSMC: "guides/fleming/picdsmc/toc"
+        - CFD-DSMC: "guides/fleming/cfddsmc/toc"
+    - Dev:
+        - CFD: "guides/dev/cfd/toc"
   Tutorials:
     - hy2Foam: "tutos/hy2foam/toc"
     - hyFoam: "tutos/hyfoam/toc"
