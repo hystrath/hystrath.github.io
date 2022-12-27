@@ -8,17 +8,17 @@ nav-short: true
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
   <header>TUTORIALS</header>
-  <a href="https://hystrath.github.io/tutos/hyfoam/toc/"><center><img src="/docs/img/logos/hyFoamLogo.png" width="50"></center></a>
-  <a href="https://hystrath.github.io/tutos/hyfoam/laminarflatplatelts"><b>Mach 2 laminar flat plate (LTS)</b></a>
-  <a href="https://hystrath.github.io/tutos/hyfoam/axisymmetrichb2" style="background-color:#FFCCCC"><b>Mach 9.59 HB2 configuration</b></a>
-  <a href="https://hystrath.github.io/tutos/hyfoam/axisymmetrichb2/#1-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
-  <a href="https://hystrath.github.io/tutos/hyfoam/axisymmetrichb2/#2-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
-  <a href="https://hystrath.github.io/tutos/hyfoam/axisymmetrichb2/#3-monitoring" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Monitoring</a>
-  <a href="https://hystrath.github.io/tutos/hyfoam/axisymmetrichb2/#4-flow-visualisations-in-paraview" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 4. Flow visualisations</a>
-  <a href="https://hystrath.github.io/tutos/hyfoam/axisymmetrichb2/#5-post-processing" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 5. Post-processing</a>
-  <a href="https://hystrath.github.io/tutos/hyfoam/axisymmetrichb2/#6-solution" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 6. Solution</a>
-  <a href="https://hystrath.github.io/tutos/hyfoam/lorrainscramjet"><b>Lorrain's scramjet</b></a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/toc/#5-running-your-own-case"><b>Running your own case</b></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/toc/"><center><img src="/docs/img/logos/hyFoamLogo.png" width="50"></center></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/laminarflatplatelts"><b>Mach 2 laminar flat plate (LTS)</b></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/axisymmetrichb2" style="background-color:#FFCCCC"><b>Mach 9.59 HB2 configuration</b></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/axisymmetrichb2/#1-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/axisymmetrichb2/#2-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/axisymmetrichb2/#3-monitoring" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Monitoring</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/axisymmetrichb2/#4-flow-visualisations-in-paraview" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 4. Flow visualisations</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/axisymmetrichb2/#5-post-processing" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 5. Post-processing</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/axisymmetrichb2/#6-solution" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 6. Solution</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/lorrainscramjet"><b>Lorrain's scramjet</b></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/toc/#5-running-your-own-case"><b>Running your own case</b></a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
@@ -66,14 +66,14 @@ Axially-symmetric flow-field | Cold hypersonics
 Geometry of the HB-2 flare (_D_ is equal 0.1 m)
 
 <p align="center">
-<img src="/docs/img/tutos/hyFoam/tutorial-axisymmetricHB2-HB2_geom.png" width="500">  
+<img src="/docs/img/tutos/fleming/hyFoam/tutorial-axisymmetricHB2-HB2_geom.png" width="500">  
 </p>
 
 Views of the 2-D axisymmetric mesh (entire domain and magnified view of the nose region) modelled as a wedge
 
 <p align="center">
-<img src="/docs/img/tutos/hyFoam/tutorial-axisymmetricHB2-meshFull.png" width="400">  
-<img style="margin-top:50px;" src="/docs/img/tutos/hyFoam/tutorial-axisymmetricHB2-meshNose.png" width="370">
+<img src="/docs/img/tutos/fleming/hyFoam/tutorial-axisymmetricHB2-meshFull.png" width="400">  
+<img style="margin-top:50px;" src="/docs/img/tutos/fleming/hyFoam/tutorial-axisymmetricHB2-meshNose.png" width="370">
 </p>
 
 The structured mesh is aligned with the bow shock in the nose region, has 141,100 cells, and the first layer height is equal to 1 x 10<sup>-5</sup> m.
@@ -133,8 +133,8 @@ gnuplot gnuplot/monitorResiduals
 ### 4. FLOW VISUALISATIONS IN PARAVIEW 
 
 <p align="center">
-<img src="/docs/img/tutos/hyFoam/tutorial-axisymmetricHB2-fieldMach.png" width="600">
-<img style="margin-top:50px;" src="/docs/img/tutos/hyFoam/tutorial-axisymmetricHB2-fieldTt.png" width="600">
+<img src="/docs/img/tutos/fleming/hyFoam/tutorial-axisymmetricHB2-fieldMach.png" width="600">
+<img style="margin-top:50px;" src="/docs/img/tutos/fleming/hyFoam/tutorial-axisymmetricHB2-fieldTt.png" width="600">
 </p>
 
 &nbsp;
@@ -151,7 +151,7 @@ gnuplot gnuplot/monitorIntegratedWallHeatFlux
 Wall heat flux along the HB2 surface (_L_ is the body length that is equal to 0.49 m)
 
 <p align="center">
-<img src="/docs/img/tutos/hyFoam/tutorial-axisymmetricHB2-wallHeatFlux.png" width="550">
+<img src="/docs/img/tutos/fleming/hyFoam/tutorial-axisymmetricHB2-wallHeatFlux.png" width="550">
 </p>
 
 

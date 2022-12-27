@@ -7,9 +7,9 @@ nav-short: true
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
   <header>FLOW SOLVERS</header>
-  <a href="https://hystrath.github.io/solvers/hyfoam/"><center><img src="/docs/img/logos/hyFoamLogo.png" width="50"></center></a>
+  <a href="https://hystrath.github.io/solvers/fleming/hyfoam/"><center><img src="/docs/img/logos/hyFoamLogo.png" width="50"></center></a>
   <a href="https://hystrath.github.io/guides/fleming/cfd/toc/">Guide</a>
-  <a href="https://hystrath.github.io/tutos/hyfoam/toc/">Tutorials</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/toc/">Tutorials</a>
   <a href="https://github.com/hystrath/hyStrath/tree/master/applications/solvers/compressible/hy2Foam">Source code</a>
   <a href="https://hystrath.github.io/publications/hyfoam/">Publications</a>
   <a href="https://hystrath.github.io/people/#cfd-module--hyfoam-hy2foam">Developers</a>
@@ -47,7 +47,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
 </p>
 
 _hyFoam_ is an open-source computational fluid dynamics (CFD)
-solver that derives from [_hy2Foam_](https://hystrath.github.io/solvers/hy2foam/). The trans-rotational and vibro-electronic energy modes are considered to be in thermal equilibrium, thus producing a single-temperature CFD solver with capabilities to model the high-speed chemically-reacting environment inside a scramjet. Most of _hy2Foam_ features remain accessible and _hyFoam_ further receives the addition of
+solver that derives from [_hy2Foam_](https://hystrath.github.io/solvers/fleming/hy2foam/). The trans-rotational and vibro-electronic energy modes are considered to be in thermal equilibrium, thus producing a single-temperature CFD solver with capabilities to model the high-speed chemically-reacting environment inside a scramjet. Most of _hy2Foam_ features remain accessible and _hyFoam_ further receives the addition of
 
 <h5>CHEMICAL NON-EQUILIBRIUM</h5>
 * customizable chemistry databases: Evans & Schexnayder 1980, Jachimowski 1992

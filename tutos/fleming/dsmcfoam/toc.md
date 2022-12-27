@@ -8,13 +8,13 @@ nav-short: true
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
   <header>TUTORIALS</header>
-  <a href="https://hystrath.github.io/tutos/dsmcfoam/toc/"><center><b><i>dsmcFoam+</i></b></center></a>
-  <a href="https://hystrath.github.io/tutos/dsmcfoam/toc/#1-supersonic-flat-plate">Supersonic flat plate</a>
-  <a href="https://hystrath.github.io/tutos/dsmcfoam/toc/#2-hypersonic-corner">Hypersonic corner</a>
-  <a href="https://hystrath.github.io/tutos/dsmcfoam/toc/#3-couette-flow">Couette flow</a>
-  <a href="https://hystrath.github.io/tutos/dsmcfoam/toc/#4-orion-capsule-non-reacting-107-km">Orion capsule</a>
-  <a href="https://hystrath.github.io/tutos/dsmcfoam/toc/#5-axially-symmetric-blunt-cylinder">Axially-symmetric blunt cylinder</a>
-  <a href="https://hystrath.github.io/tutos/dsmcfoam/toc/#6-chemically-reacting-heat-bath">Chemically-reacting heat bath</a>
+  <a href="https://hystrath.github.io/tutos/fleming/dsmcfoam/toc/"><center><b><i>dsmcFoam+</i></b></center></a>
+  <a href="https://hystrath.github.io/tutos/fleming/dsmcfoam/toc/#1-supersonic-flat-plate">Supersonic flat plate</a>
+  <a href="https://hystrath.github.io/tutos/fleming/dsmcfoam/toc/#2-hypersonic-corner">Hypersonic corner</a>
+  <a href="https://hystrath.github.io/tutos/fleming/dsmcfoam/toc/#3-couette-flow">Couette flow</a>
+  <a href="https://hystrath.github.io/tutos/fleming/dsmcfoam/toc/#4-orion-capsule-non-reacting-107-km">Orion capsule</a>
+  <a href="https://hystrath.github.io/tutos/fleming/dsmcfoam/toc/#5-axially-symmetric-blunt-cylinder">Axially-symmetric blunt cylinder</a>
+  <a href="https://hystrath.github.io/tutos/fleming/dsmcfoam/toc/#6-chemically-reacting-heat-bath">Chemically-reacting heat bath</a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>

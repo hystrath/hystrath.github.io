@@ -102,7 +102,7 @@ The four primitive models can also be used to isolate a specific reaction and co
 
 The dissociation and ionisation temperatures, given in the <subdict>moleculesProperties</subdict>/<subdict>#speciesName</subdict> subdictionary of the <dirname>constant/</dirname><dict>dsmcProperties</dict> dictionary, have already been introduced in [A.1 Species thermophysical properties](https://hystrath.github.io/guides/dev/dsmc/thermophysical/#1-species-thermophysical-properties).  
 
-<b>NB</b>: An example for 5-species air is given in the [chemically-reacting heat bath tutorial](https://hystrath.github.io/tutos/dsmcfoam/toc/#6-chemically-reacting-heat-bath), [on this page](https://github.com/hystrath/hyStrath/blob/master/run/hyStrath/dsmcFoam%2B/heatBath-5species/system/chemReactDict).
+<b>NB</b>: An example for 5-species air is given in the [chemically-reacting heat bath tutorial](https://hystrath.github.io/tutos/fleming/dsmcfoam/toc/#6-chemically-reacting-heat-bath), [on this page](https://github.com/hystrath/hyStrath/blob/master/run/hyStrath/dsmcFoam%2B/heatBath-5species/system/chemReactDict).
 
 &nbsp;
 

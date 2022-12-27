@@ -8,16 +8,16 @@ nav-short: true
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
   <header>TUTORIALS</header>
-  <a href="https://hystrath.github.io/tutos/hy2foam/toc/"><center><img src="/docs/img/logos/hy2FoamLogo.png" width="60"></center></a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/heatbath" style="background-color:#FFCCCC"><b>Adiabatic heat bath</b></a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/heatbath/#1-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/heatbath/#2-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/heatbath/#3-solution" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Solution</a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/heatbath/#4-regression-testing" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 4. Regression testing</a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/bluntedcone"><b>Blunted cone</b></a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/ramcii/"><b>RAM C-II spacecraft</b></a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/toc/#4-nasa-msl-forebody"><b>NASA MSL forebody</b></a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/toc/#5-running-your-own-case"><b>Running your own case</b></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/toc/"><center><img src="/docs/img/logos/hy2FoamLogo.png" width="60"></center></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/heatbath" style="background-color:#FFCCCC"><b>Adiabatic heat bath</b></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/heatbath/#1-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/heatbath/#2-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/heatbath/#3-solution" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Solution</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/heatbath/#4-regression-testing" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 4. Regression testing</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/bluntedcone"><b>Blunted cone</b></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/ramcii/"><b>RAM C-II spacecraft</b></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/toc/#4-nasa-msl-forebody"><b>NASA MSL forebody</b></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/toc/#5-running-your-own-case"><b>Running your own case</b></a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>

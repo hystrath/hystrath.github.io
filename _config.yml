@@ -26,11 +26,11 @@ author: hyStrath
 
 navbar-links:
   Flow Solvers:
-    - hy2Foam: "solvers/hy2foam"
-    - hyFoam: "solvers/hyfoam"
-    - dsmcFoam+: "solvers/dsmcfoam"
-    - pdFoam: "solvers/pdfoam"
-    - hyperFoam: "solvers/hyperfoam"
+    - hy2Foam: "solvers/fleming/hy2foam"
+    - hyFoam: "solvers/fleming/hyfoam"
+    - dsmcFoam+: "solvers/fleming/dsmcfoam"
+    - pdFoam: "solvers/fleming/pdfoam"
+    - hyperFoam: "solvers/fleming/hyperfoam"
   Download:
     - Compatibility: "compatibility"
     - Maintenance: "maintenance"
@@ -42,11 +42,11 @@ navbar-links:
     - PIC-DSMC: "guides/fleming/picdsmc/toc"
     - CFD-DSMC: "guides/fleming/cfddsmc/toc"
   Tutorials:
-    - hy2Foam: "tutos/hy2foam/toc"
-    - hyFoam: "tutos/hyfoam/toc"
-    - dsmcFoam+: "tutos/dsmcfoam/toc"
-    - pdFoam: "tutos/pdfoam/toc" 
-    - hyperFoam: "tutos/hyperfoam/toc" 
+    - hy2Foam: "tutos/fleming/hy2foam/toc"
+    - hyFoam: "tutos/fleming/hyfoam/toc"
+    - dsmcFoam+: "tutos/fleming/dsmcfoam/toc"
+    - pdFoam: "tutos/fleming/pdfoam/toc" 
+    - hyperFoam: "tutos/fleming/hyperfoam/toc" 
   Publications: "publications/main"
   About hS:
     - People: "people"

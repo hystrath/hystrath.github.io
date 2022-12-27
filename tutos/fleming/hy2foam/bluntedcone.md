@@ -8,19 +8,19 @@ nav-short: true
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
   <header>TUTORIALS</header>
-  <a href="https://hystrath.github.io/tutos/hy2foam/toc/"><center><img src="/docs/img/logos/hy2FoamLogo.png" width="60"></center></a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/heatbath"><b>Adiabatic heat bath</b></a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/bluntedcone" style="background-color:#FFCCCC"><b>Blunted cone</b></a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/bluntedcone/#1-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/bluntedcone/#2-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/bluntedcone/#3-monitoring" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Monitoring</a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/bluntedcone/#4-flow-visualisations-in-paraview" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 4. Flow visualisations</a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/bluntedcone/#5-post-processing" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 5. Post-processing</a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/bluntedcone/#6-solution" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 6. Solution</a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/bluntedcone/#7-regression-testing" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 7. Regression testing</a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/ramcii/"><b>RAM C-II spacecraft</b></a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/toc/#4-nasa-msl-forebody"><b>NASA MSL forebody</b></a>
-  <a href="https://hystrath.github.io/tutos/hy2foam/toc/#5-running-your-own-case"><b>Running your own case</b></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/toc/"><center><img src="/docs/img/logos/hy2FoamLogo.png" width="60"></center></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/heatbath"><b>Adiabatic heat bath</b></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/bluntedcone" style="background-color:#FFCCCC"><b>Blunted cone</b></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/bluntedcone/#1-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/bluntedcone/#2-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/bluntedcone/#3-monitoring" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Monitoring</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/bluntedcone/#4-flow-visualisations-in-paraview" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 4. Flow visualisations</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/bluntedcone/#5-post-processing" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 5. Post-processing</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/bluntedcone/#6-solution" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 6. Solution</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/bluntedcone/#7-regression-testing" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 7. Regression testing</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/ramcii/"><b>RAM C-II spacecraft</b></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/toc/#4-nasa-msl-forebody"><b>NASA MSL forebody</b></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/toc/#5-running-your-own-case"><b>Running your own case</b></a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
@@ -126,16 +126,16 @@ gnuplot gnuplot/monitorResiduals
 ```   
 
 <p align="center">
-  <img src="/docs/img/tutos/hy2Foam/tutorial-bluntedCone-residuals.png" width="400">
+  <img src="/docs/img/tutos/fleming/hy2Foam/tutorial-bluntedCone-residuals.png" width="400">
 </p>
 
 &nbsp;
 ### 4. FLOW VISUALISATIONS IN PARAVIEW
 
 <p align="center">
-<img src="/docs/img/tutos/hy2Foam/tutorial-bluntedCone-fieldTt.gif" width="400">  
-<img style="margin-top:50px;" src="/docs/img/tutos/hy2Foam/tutorial-bluntedCone-fieldTv.gif" width="400">  
-<img style="margin-top:50px;" src="/docs/img/tutos/hy2Foam/tutorial-bluntedCone-fieldMach.gif" width="400">  
+<img src="/docs/img/tutos/fleming/hy2Foam/tutorial-bluntedCone-fieldTt.gif" width="400">  
+<img style="margin-top:50px;" src="/docs/img/tutos/fleming/hy2Foam/tutorial-bluntedCone-fieldTv.gif" width="400">  
+<img style="margin-top:50px;" src="/docs/img/tutos/fleming/hy2Foam/tutorial-bluntedCone-fieldMach.gif" width="400">  
 </p>
 
 &nbsp;
@@ -147,8 +147,8 @@ gnuplot gnuplot/monitorIntegratedWallHeatFlux
 ```  
 
 <p align="center">
-<img src="/docs/img/tutos/hy2Foam/tutorial-bluntedCone-dragCoefficient.png" width="400">
-<img style="margin-top:20px;" src="/docs/img/tutos/hy2Foam/tutorial-bluntedCone-integratedWallHeatFlux.png" width="400">
+<img src="/docs/img/tutos/fleming/hy2Foam/tutorial-bluntedCone-dragCoefficient.png" width="400">
+<img style="margin-top:20px;" src="/docs/img/tutos/fleming/hy2Foam/tutorial-bluntedCone-integratedWallHeatFlux.png" width="400">
 </p>
 
 &nbsp;

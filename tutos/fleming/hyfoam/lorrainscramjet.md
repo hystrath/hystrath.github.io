@@ -8,18 +8,18 @@ nav-short: true
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
   <header>TUTORIALS</header>
-  <a href="https://hystrath.github.io/tutos/hyfoam/toc/"><center><img src="/docs/img/logos/hyFoamLogo.png" width="50"></center></a>
-  <a href="https://hystrath.github.io/tutos/hyfoam/laminarflatplatelts"><b>Mach 2 laminar flat plate (LTS)</b></a>
-  <a href="https://hystrath.github.io/tutos/hyfoam/axisymmetrichb2"><b>Mach 9.59 HB2 configuration</b></a>
-  <a href="https://hystrath.github.io/tutos/hyfoam/lorrainscramjet" style="background-color:#FFCCCC"><b>Lorrain's scramjet</b></a>
-  <a href="https://hystrath.github.io/tutos/hyfoam/lorrainscramjet/#stage-1---fuel-off" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><center><u>Stage 1 - Fuel-off</u></center></a>
-  <a href="https://hystrath.github.io/tutos/hyfoam/lorrainscramjet/#1-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp;&nbsp;&nbsp; 1. Case setup</a>
-  <a href="https://hystrath.github.io/tutos/hyfoam/lorrainscramjet/#2-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp;&nbsp;&nbsp; 2. Running</a>
-  <a href="https://hystrath.github.io/tutos/hyfoam/lorrainscramjet/#3-flow-visualisations-in-paraview" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp;&nbsp;&nbsp; 3. Flow visualisations</a>
-  <a href="https://hystrath.github.io/tutos/hyfoam/lorrainscramjet/#4-solution" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp;&nbsp;&nbsp; 4. Solution</a>
-<!--  <a href="https://hystrath.github.io/tutos/hyfoam/lorrainscramjet/#stage-2---frozen">&nbsp;&nbsp; Stage 2 - Frozen</a>-->
-<!--  <a href="https://hystrath.github.io/tutos/hyfoam/lorrainscramjet/#stage-3---reacting-flow-field">&nbsp;&nbsp; Stage 2 - Reacting flow-field</a>-->
-  <a href="https://hystrath.github.io/tutos/hy2foam/toc/#5-running-your-own-case"><b>Running your own case</b></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/toc/"><center><img src="/docs/img/logos/hyFoamLogo.png" width="50"></center></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/laminarflatplatelts"><b>Mach 2 laminar flat plate (LTS)</b></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/axisymmetrichb2"><b>Mach 9.59 HB2 configuration</b></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/lorrainscramjet" style="background-color:#FFCCCC"><b>Lorrain's scramjet</b></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/lorrainscramjet/#stage-1---fuel-off" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><center><u>Stage 1 - Fuel-off</u></center></a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/lorrainscramjet/#1-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp;&nbsp;&nbsp; 1. Case setup</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/lorrainscramjet/#2-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp;&nbsp;&nbsp; 2. Running</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/lorrainscramjet/#3-flow-visualisations-in-paraview" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp;&nbsp;&nbsp; 3. Flow visualisations</a>
+  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/lorrainscramjet/#4-solution" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp;&nbsp;&nbsp; 4. Solution</a>
+<!--  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/lorrainscramjet/#stage-2---frozen">&nbsp;&nbsp; Stage 2 - Frozen</a>-->
+<!--  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/lorrainscramjet/#stage-3---reacting-flow-field">&nbsp;&nbsp; Stage 2 - Reacting flow-field</a>-->
+  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/toc/#5-running-your-own-case"><b>Running your own case</b></a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
@@ -70,7 +70,7 @@ Scramjet flow-field | RAS turbulence modelling
 Lorrain's scamjet geometry
 
 <p align="center">
-  <img src="/docs/img/tutos/hyFoam/tutorial-hyfoam-lorrainscramjet-geom.png" width="700">
+  <img src="/docs/img/tutos/fleming/hyFoam/tutorial-hyfoam-lorrainscramjet-geom.png" width="700">
 </p>
 
 The mesh is composed of 322080 hexahedra, and the maximum first cell distance to physical walls is less than 5 x 10<sup>-6</sup> m ensuring that the first cell is located inside the viscous sublayer.
@@ -132,19 +132,19 @@ To run <i>hyFoam</i> in parallel (say on 4 CPUs), please first edit the <dictkey
 Contour plots of pressure for _hyFoam_ and Eilmer show a similar shock structure
 
 <p align="center">
-  <img src="/docs/img/tutos/hyFoam/tutorial-hyfoam-lorrainscramjet-pressure.png" width="700">
+  <img src="/docs/img/tutos/fleming/hyFoam/tutorial-hyfoam-lorrainscramjet-pressure.png" width="700">
 </p>
 
 Shock induced boundary layer separation with contours of velocity and turbulent kinetic energy for both solvers
 
 <p align="center">
-  <img src="/docs/img/tutos/hyFoam/tutorial-hyfoam-lorrainscramjet-siblsep.png" width="700">
+  <img src="/docs/img/tutos/fleming/hyFoam/tutorial-hyfoam-lorrainscramjet-siblsep.png" width="700">
 </p>
 
 A comparison between the experimental Schlieren and CFD results (gradient of density) for the fuel-off conditions (scales do not match perfectly).
 
 <p align="center">
-  <img src="/docs/img/tutos/hyFoam/tutorial-hyfoam-lorrainscramjet-schlieren.png" width="500">
+  <img src="/docs/img/tutos/fleming/hyFoam/tutorial-hyfoam-lorrainscramjet-schlieren.png" width="500">
 </p>
 
 
@@ -154,25 +154,25 @@ A comparison between the experimental Schlieren and CFD results (gradient of den
 Static pressure along a streamline starting 1.5 mm from the combustor's entrance wall
 
 <p align="center">
-  <img src="/docs/img/tutos/hyFoam/tutorial-hyfoam-lorrainscramjet-pressurestreamline.png" width="500">
+  <img src="/docs/img/tutos/fleming/hyFoam/tutorial-hyfoam-lorrainscramjet-pressurestreamline.png" width="500">
 </p>
 
 Temperature and velocity profiles at the entrance of the combustor section for Eilmer and _hyFoam_
 
 <p align="center">
-  <img src="/docs/img/tutos/hyFoam/tutorial-hyfoam-lorrainscramjet-tempvel.png" width="500">
+  <img src="/docs/img/tutos/fleming/hyFoam/tutorial-hyfoam-lorrainscramjet-tempvel.png" width="500">
 </p>
 
 Pressure coefficient along the wall
 
 <p align="center">
-  <img src="/docs/img/tutos/hyFoam/tutorial-hyfoam-lorrainscramjet-cp.png" width="500">
+  <img src="/docs/img/tutos/fleming/hyFoam/tutorial-hyfoam-lorrainscramjet-cp.png" width="500">
 </p>
 
 Close-up view of the pressure coefficient in the combustor section
 
 <p align="center">
-  <img src="/docs/img/tutos/hyFoam/tutorial-hyfoam-lorrainscramjet-cpcombustor.png" width="500">
+  <img src="/docs/img/tutos/fleming/hyFoam/tutorial-hyfoam-lorrainscramjet-cpcombustor.png" width="500">
 </p>
 
 <!--<br>-->

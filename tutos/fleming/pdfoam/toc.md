@@ -8,12 +8,12 @@ nav-short: true
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
   <header>TUTORIALS</header>
-  <a href="https://hystrath.github.io/tutos/pdfoam/toc/"><center><b><i>pdFoam</i></b></center></a>
-  <a href="https://hystrath.github.io/tutos/pdfoam/toc/#1-planar-sheath">Planar sheath</a>
-  <a href="https://hystrath.github.io/tutos/pdfoam/toc/#2-two-stream-instability">Two-stream instability</a>
+  <a href="https://hystrath.github.io/tutos/fleming/pdfoam/toc/"><center><b><i>pdFoam</i></b></center></a>
+  <a href="https://hystrath.github.io/tutos/fleming/pdfoam/toc/#1-planar-sheath">Planar sheath</a>
+  <a href="https://hystrath.github.io/tutos/fleming/pdfoam/toc/#2-two-stream-instability">Two-stream instability</a>
   <br>
-  <a href="https://hystrath.github.io/tutos/hyperfoam/toc/"><center><b><i>hyperFoam</i></b></center></a>
-<!--  <a href="https://hystrath.github.io/tutos/hyperfoam/toc/#1-supersonic-flat-plate">Supersonic flat plate</a>-->
+  <a href="https://hystrath.github.io/tutos/fleming/hyperfoam/toc/"><center><b><i>hyperFoam</i></b></center></a>
+<!--  <a href="https://hystrath.github.io/tutos/fleming/hyperfoam/toc/#1-supersonic-flat-plate">Supersonic flat plate</a>-->
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
