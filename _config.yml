@@ -39,7 +39,9 @@ navbar-links:
   Guides:
     - CFD: "guides/fleming/cfd/toc"
     - DSMC: "guides/fleming/dsmc/toc"
-    - PIC-DSMC: "guides/fleming/picdsmc/toc"
+    - PIC-DSMC:
+        - dev1: "guides/fleming/picdsmc/toc"
+        - dev2: "guides/fleming/picdsmc/toc"
     - CFD-DSMC: "guides/fleming/cfddsmc/toc"
   Tutorials:
     - hy2Foam: "tutos/fleming/hy2foam/toc"
