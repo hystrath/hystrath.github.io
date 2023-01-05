@@ -67,7 +67,7 @@ Attached shock wave | Laminar flow  | Local Time Stepping
 View of the structured mesh created using _blockMesh_   
 
 <p align="center">
-<img src="/docs/img/tutos/fleming/hyFoam/tutorial-laminarFlatPlateLTS-mesh.png" width="400">
+<img src="/docs/img/tutos/fleming/hyFoam/laminarFlatPlateLTS/mesh.png" width="400">
 </p>
 
 It is composed of 128,136 hexahedra and has a geometric progression ratio of 2 in both directions. 
@@ -130,15 +130,15 @@ gnuplot gnuplot/monitorResiduals
 ```   
 
 <p align="center">
-<img src="/docs/img/tutos/fleming/hyFoam/tutorial-laminarFlatPlateLTS-residuals.png" width="400">
+<img src="/docs/img/tutos/fleming/hyFoam/laminarFlatPlateLTS/residuals.png" width="400">
 </p>
 
 &nbsp;
 ### 4. FLOW VISUALISATIONS IN PARAVIEW
 
 <p align="center">
-<img src="/docs/img/tutos/fleming/hyFoam/tutorial-laminarFlatPlateLTS-fieldTt.gif" width="600">
-<img style="margin-top:50px;" src="/docs/img/tutos/fleming/hyFoam/tutorial-laminarFlatPlateLTS-fieldMach.gif" width="600">  
+<img src="/docs/img/tutos/fleming/hyFoam/laminarFlatPlateLTS/fieldTt.gif" width="600">
+<img style="margin-top:50px;" src="/docs/img/tutos/fleming/hyFoam/laminarFlatPlateLTS/fieldMach.gif" width="600">  
 </p>
 
 &nbsp;
@@ -150,8 +150,8 @@ gnuplot gnuplot/monitorIntegratedWallHeatFlux
 ```
 
 <p align="center">
-<img src="/docs/img/tutos/fleming/hyFoam/tutorial-laminarFlatPlateLTS-dragCoefficient.png" width="450">
-<img style="margin-top:20px;" src="/docs/img/tutos/fleming/hyFoam/tutorial-laminarFlatPlateLTS-integratedWallHeatFlux.png" width="450">
+<img src="/docs/img/tutos/fleming/hyFoam/laminarFlatPlateLTS/dragCoefficient.png" width="450">
+<img style="margin-top:20px;" src="/docs/img/tutos/fleming/hyFoam/laminarFlatPlateLTS/integratedWallHeatFlux.png" width="450">
 </p>
 
 &nbsp;
@@ -160,9 +160,9 @@ gnuplot gnuplot/monitorIntegratedWallHeatFlux
 Sampling temperature, pressure, and velocity along a line normal to the plate and located at _x_ = 0.01 m away from the leading edge (_h_ is the boundary layer height, set to 4 mm)  
 
 <p align="center">
-<img src="/docs/img/tutos/fleming/hyFoam/tutorial-laminarFlatPlateLTS-temperature.png" width="450">
-<img style="margin-top:20px;" src="/docs/img/tutos/fleming/hyFoam/tutorial-laminarFlatPlateLTS-pressure.png" width="450">  
-<img style="margin-top:20px;" src="/docs/img/tutos/fleming/hyFoam/tutorial-laminarFlatPlateLTS-velocity.png" width="450">
+<img src="/docs/img/tutos/fleming/hyFoam/laminarFlatPlateLTS/temperature.png" width="450">
+<img style="margin-top:20px;" src="/docs/img/tutos/fleming/hyFoam/laminarFlatPlateLTS/pressure.png" width="450">  
+<img style="margin-top:20px;" src="/docs/img/tutos/fleming/hyFoam/laminarFlatPlateLTS/velocity.png" width="450">
 </p>
 
 The small shift in normalised pressure is the result of having 2 distinct species (N2 and O2) as opposed to modelling air as being a single species.

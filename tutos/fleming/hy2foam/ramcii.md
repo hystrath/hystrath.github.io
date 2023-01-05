@@ -67,14 +67,14 @@ Axially-symmetric mesh | Weakly-ionised flow
 Geometry of the RAM C-II spacecraft
 
 <p align="center">
-  <img src="/docs/img/tutos/fleming/hy2Foam/tutorial-ramcii-geom.png" width="400">
+  <img src="/docs/img/tutos/fleming/hy2Foam/ramcii/geom.png" width="400">
 </p>
 
 Views of the structured mesh (entire domain and magnified view of the nose region) composed of 11,613 hexahedra with a first layer height equal to 1 x 10<sup>-5</sup> m.
 
 <p align="center">
-  <img src="/docs/img/tutos/fleming/hy2Foam/tutorial-ramcii-mesh2.png" width="100">
-  <img src="/docs/img/tutos/fleming/hy2Foam/tutorial-ramcii-mesh1.png" width="500">
+  <img src="/docs/img/tutos/fleming/hy2Foam/ramcii/mesh2.png" width="100">
+  <img src="/docs/img/tutos/fleming/hy2Foam/ramcii/mesh1.png" width="500">
 </p>
 
 #### 1.2 Case conditions
@@ -136,11 +136,11 @@ To run <i>hy2Foam</i> in parallel (say on 8 CPUs), please first edit the <dictke
 ### 3. FLOW VISUALISATIONS IN PARAVIEW
 
 <p align="center">
-<img src="/docs/img/tutos/fleming/hy2Foam/tutorial-ramcii-umag.png" width="400">  
+<img src="/docs/img/tutos/fleming/hy2Foam/ramcii/umag.png" width="400">  
 </p>
 
 <p align="center">
-<img src="/docs/img/tutos/fleming/hy2Foam/tutorial-ramcii-Ttr.png" width="400">  
+<img src="/docs/img/tutos/fleming/hy2Foam/ramcii/Ttr.png" width="400">  
 </p>
 
 &nbsp;
@@ -149,7 +149,7 @@ To run <i>hy2Foam</i> in parallel (say on 8 CPUs), please first edit the <dictke
 On the following graphs, the tutorial case results are given by the red solid lines:
 
 <p align="center">
-<img src="/docs/img/tutos/fleming/hy2Foam/tutorial-ramcii-surfne.png" width="500">
+<img src="/docs/img/tutos/fleming/hy2Foam/ramcii/surfne.png" width="500">
 </p>
 
 <br>

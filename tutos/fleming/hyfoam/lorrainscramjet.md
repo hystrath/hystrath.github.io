@@ -70,7 +70,7 @@ Scramjet flow-field | RAS turbulence modelling
 Lorrain's scamjet geometry
 
 <p align="center">
-  <img src="/docs/img/tutos/fleming/hyFoam/tutorial-hyfoam-lorrainscramjet-geom.png" width="700">
+  <img src="/docs/img/tutos/fleming/hyFoam/lorrainscramjet/geom.png" width="700">
 </p>
 
 The mesh is composed of 322080 hexahedra, and the maximum first cell distance to physical walls is less than 5 x 10<sup>-6</sup> m ensuring that the first cell is located inside the viscous sublayer.
@@ -132,19 +132,19 @@ To run <i>hyFoam</i> in parallel (say on 4 CPUs), please first edit the <dictkey
 Contour plots of pressure for _hyFoam_ and Eilmer show a similar shock structure
 
 <p align="center">
-  <img src="/docs/img/tutos/fleming/hyFoam/tutorial-hyfoam-lorrainscramjet-pressure.png" width="700">
+  <img src="/docs/img/tutos/fleming/hyFoam/lorrainscramjet/pressure.png" width="700">
 </p>
 
 Shock induced boundary layer separation with contours of velocity and turbulent kinetic energy for both solvers
 
 <p align="center">
-  <img src="/docs/img/tutos/fleming/hyFoam/tutorial-hyfoam-lorrainscramjet-siblsep.png" width="700">
+  <img src="/docs/img/tutos/fleming/hyFoam/lorrainscramjet/siblsep.png" width="700">
 </p>
 
 A comparison between the experimental Schlieren and CFD results (gradient of density) for the fuel-off conditions (scales do not match perfectly).
 
 <p align="center">
-  <img src="/docs/img/tutos/fleming/hyFoam/tutorial-hyfoam-lorrainscramjet-schlieren.png" width="500">
+  <img src="/docs/img/tutos/fleming/hyFoam/lorrainscramjet/schlieren.png" width="500">
 </p>
 
 
@@ -154,25 +154,25 @@ A comparison between the experimental Schlieren and CFD results (gradient of den
 Static pressure along a streamline starting 1.5 mm from the combustor's entrance wall
 
 <p align="center">
-  <img src="/docs/img/tutos/fleming/hyFoam/tutorial-hyfoam-lorrainscramjet-pressurestreamline.png" width="500">
+  <img src="/docs/img/tutos/fleming/hyFoam/lorrainscramjet/pressurestreamline.png" width="500">
 </p>
 
 Temperature and velocity profiles at the entrance of the combustor section for Eilmer and _hyFoam_
 
 <p align="center">
-  <img src="/docs/img/tutos/fleming/hyFoam/tutorial-hyfoam-lorrainscramjet-tempvel.png" width="500">
+  <img src="/docs/img/tutos/fleming/hyFoam/lorrainscramjet/tempvel.png" width="500">
 </p>
 
 Pressure coefficient along the wall
 
 <p align="center">
-  <img src="/docs/img/tutos/fleming/hyFoam/tutorial-hyfoam-lorrainscramjet-cp.png" width="500">
+  <img src="/docs/img/tutos/fleming/hyFoam/lorrainscramjet/cp.png" width="500">
 </p>
 
 Close-up view of the pressure coefficient in the combustor section
 
 <p align="center">
-  <img src="/docs/img/tutos/fleming/hyFoam/tutorial-hyfoam-lorrainscramjet-cpcombustor.png" width="500">
+  <img src="/docs/img/tutos/fleming/hyFoam/lorrainscramjet/cpcombustor.png" width="500">
 </p>
 
 <!--<br>-->

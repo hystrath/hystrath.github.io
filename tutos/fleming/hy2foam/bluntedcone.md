@@ -126,16 +126,16 @@ gnuplot gnuplot/monitorResiduals
 ```   
 
 <p align="center">
-  <img src="/docs/img/tutos/fleming/hy2Foam/tutorial-bluntedCone-residuals.png" width="400">
+  <img src="/docs/img/tutos/fleming/hy2Foam/bluntedCone/residuals.png" width="400">
 </p>
 
 &nbsp;
 ### 4. FLOW VISUALISATIONS IN PARAVIEW
 
 <p align="center">
-<img src="/docs/img/tutos/fleming/hy2Foam/tutorial-bluntedCone-fieldTt.gif" width="400">  
-<img style="margin-top:50px;" src="/docs/img/tutos/fleming/hy2Foam/tutorial-bluntedCone-fieldTv.gif" width="400">  
-<img style="margin-top:50px;" src="/docs/img/tutos/fleming/hy2Foam/tutorial-bluntedCone-fieldMach.gif" width="400">  
+<img src="/docs/img/tutos/fleming/hy2Foam/bluntedCone/fieldTt.gif" width="400">  
+<img style="margin-top:50px;" src="/docs/img/tutos/fleming/hy2Foam/bluntedCone/fieldTv.gif" width="400">  
+<img style="margin-top:50px;" src="/docs/img/tutos/fleming/hy2Foam/bluntedCone/fieldMach.gif" width="400">  
 </p>
 
 &nbsp;
@@ -147,8 +147,8 @@ gnuplot gnuplot/monitorIntegratedWallHeatFlux
 ```  
 
 <p align="center">
-<img src="/docs/img/tutos/fleming/hy2Foam/tutorial-bluntedCone-dragCoefficient.png" width="400">
-<img style="margin-top:20px;" src="/docs/img/tutos/fleming/hy2Foam/tutorial-bluntedCone-integratedWallHeatFlux.png" width="400">
+<img src="/docs/img/tutos/fleming/hy2Foam/bluntedCone/dragCoefficient.png" width="400">
+<img style="margin-top:20px;" src="/docs/img/tutos/fleming/hy2Foam/bluntedCone/integratedWallHeatFlux.png" width="400">
 </p>
 
 &nbsp;

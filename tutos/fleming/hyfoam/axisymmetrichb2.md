@@ -66,14 +66,14 @@ Axially-symmetric flow-field | Cold hypersonics
 Geometry of the HB-2 flare (_D_ is equal 0.1 m)
 
 <p align="center">
-<img src="/docs/img/tutos/fleming/hyFoam/tutorial-axisymmetricHB2-HB2_geom.png" width="500">  
+<img src="/docs/img/tutos/fleming/hyFoam/axisymmetricHB2/HB2_geom.png" width="500">  
 </p>
 
 Views of the 2-D axisymmetric mesh (entire domain and magnified view of the nose region) modelled as a wedge
 
 <p align="center">
-<img src="/docs/img/tutos/fleming/hyFoam/tutorial-axisymmetricHB2-meshFull.png" width="400">  
-<img style="margin-top:50px;" src="/docs/img/tutos/fleming/hyFoam/tutorial-axisymmetricHB2-meshNose.png" width="370">
+<img src="/docs/img/tutos/fleming/hyFoam/axisymmetricHB2/meshFull.png" width="400">  
+<img style="margin-top:50px;" src="/docs/img/tutos/fleming/hyFoam/axisymmetricHB2/meshNose.png" width="370">
 </p>
 
 The structured mesh is aligned with the bow shock in the nose region, has 141,100 cells, and the first layer height is equal to 1 x 10<sup>-5</sup> m.
@@ -133,8 +133,8 @@ gnuplot gnuplot/monitorResiduals
 ### 4. FLOW VISUALISATIONS IN PARAVIEW 
 
 <p align="center">
-<img src="/docs/img/tutos/fleming/hyFoam/tutorial-axisymmetricHB2-fieldMach.png" width="600">
-<img style="margin-top:50px;" src="/docs/img/tutos/fleming/hyFoam/tutorial-axisymmetricHB2-fieldTt.png" width="600">
+<img src="/docs/img/tutos/fleming/hyFoam/axisymmetricHB2/fieldMach.png" width="600">
+<img style="margin-top:50px;" src="/docs/img/tutos/fleming/hyFoam/axisymmetricHB2/fieldTt.png" width="600">
 </p>
 
 &nbsp;
@@ -151,7 +151,7 @@ gnuplot gnuplot/monitorIntegratedWallHeatFlux
 Wall heat flux along the HB2 surface (_L_ is the body length that is equal to 0.49 m)
 
 <p align="center">
-<img src="/docs/img/tutos/fleming/hyFoam/tutorial-axisymmetricHB2-wallHeatFlux.png" width="550">
+<img src="/docs/img/tutos/fleming/hyFoam/axisymmetricHB2/wallHeatFlux.png" width="550">
 </p>
 
 
