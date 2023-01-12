@@ -8,7 +8,7 @@ nav-short: true
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
   <header>DOWNLOAD</header>
   <a href="https://hystrath.github.io/compatibility/">Compatibility</a>
-  <a href="https://hystrath.github.io/maintenance/">Maintenance</a>
+  <a href="https://hystrath.github.io/maintenance/" style="background-color:#FFCCCC">Maintenance</a>
   <a href="https://hystrath.github.io/installation/">Installation</a>
   <a href="https://hystrath.github.io/sync/">Sync</a>
 </div>

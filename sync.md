@@ -10,7 +10,7 @@ nav-short: true
   <a href="https://hystrath.github.io/compatibility/">Compatibility</a>
   <a href="https://hystrath.github.io/maintenance/">Maintenance</a>
   <a href="https://hystrath.github.io/installation/">Installation</a>
-  <a href="https://hystrath.github.io/sync/">Sync</a>
+  <a href="https://hystrath.github.io/sync/" style="background-color:#FFCCCC">Sync</a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
