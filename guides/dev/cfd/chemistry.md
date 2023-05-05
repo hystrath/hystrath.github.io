@@ -51,7 +51,7 @@ nav-short: true
   <a href="https://hystrath.github.io/guides/dev/cfd/numerics/"><b>H. NUMERICS</b></a>
   <a href="https://hystrath.github.io/guides/dev/cfd/numerics/#1-time-schemes" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Time schemes</span></a>
   <a href="https://hystrath.github.io/guides/dev/cfd/numerics/#2-flux-schemes" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) Flux schemes</span></a>
-  <a href="https://hystrath.github.io/guides/dev/cfd/numerics/#3-other-schemes" style="padding-top:4px;"><span style="font-size:13px">&nbsp;&nbsp; 3) Other schemes</span></a>
+  <a href="https://hystrath.github.io/guides/dev/cfd/numerics/#3-other-spatial-schemes" style="padding-top:4px;"><span style="font-size:13px">&nbsp;&nbsp; 3) Other spatial schemes</span></a>
   
   <a href="https://hystrath.github.io/guides/dev/cfd/advanced/"><b>I. ADVANCED</b></a>
   <a href="https://hystrath.github.io/guides/dev/cfd/advanced/#1-on-the-fly-dictionary-editing" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) On-the-fly editing</span></a>
