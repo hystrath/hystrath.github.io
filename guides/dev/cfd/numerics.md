@@ -92,7 +92,7 @@ These guidelines are based on the working folder located [here](https://github.c
   
 In the <dirname>system/</dirname> directory, open the <dict>fvSchemes</dict> dictionary and edit the default <dictkey>ddtSchemes</dictkey> entry to <dictval>localEuler rDeltaT</dictval>.
 
-The [Lorrain scramjet tutorial](https://hystrath.github.io/tutos/dev/hyfoam/toc/#3-lorrain-scramjet) is a suitable case to employ LTS and the aforementioned time discretisation scheme is the only modification to be made.  
+The [Lorrain scramjet tutorial](https://hystrath.github.io/tutos/dev/hyfoam/toc/#3-lorrains-scramjet) is a suitable case to employ LTS and the aforementioned time discretisation scheme is the only modification to be made.  
 
 > Local time stepping is currently inappropriate for axisymmetric and chemically-reacting simulations. 
 
