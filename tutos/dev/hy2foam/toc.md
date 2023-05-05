@@ -48,8 +48,8 @@ if (localStorage.getItem("show_sidenav")) openNav()
 </p>
 
 <p align="center">
-  <a class="btn btn-warning" href="https://hystrath.github.io/tutos/fleming/hy2foam/toc/" role="button"><b>Fleming release</b></a>
-  <a class="btn btn-outline-dark" href="https://hystrath.github.io/tutos/dev/hy2foam/toc/" role="button"><i>Dev release</i></a>
+  <a class="btn btn-outline-dark" href="https://hystrath.github.io/tutos/fleming/hy2foam/toc/" role="button"><b>Fleming release</b></a>
+  <a class="btn btn-warning" href="https://hystrath.github.io/tutos/dev/hy2foam/toc/" role="button"><i>Dev release</i></a>
 </p>
 
 ---  

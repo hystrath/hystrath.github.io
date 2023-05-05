@@ -47,6 +47,11 @@ if (localStorage.getItem("show_sidenav")) openNav()
   <img src="/docs/img/logos/hyFoamLogo.png" width="200">
 </p>
 
+<p align="center">
+  <a class="btn btn-outline-dark" href="https://hystrath.github.io/tutos/fleming/hyfoam/toc/" role="button"><b>Fleming release</b></a>
+  <a class="btn btn-warning" href="https://hystrath.github.io/tutos/dev/hyfoam/toc/" role="button"><i>Dev release</i></a>
+</p>
+
 ---  
 
 # 1) Mach 2 laminar flat plate (LTS)

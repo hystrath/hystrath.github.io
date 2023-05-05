@@ -1,25 +1,25 @@
 ---
 layout: page
 title: Tutorials
-subtitle: CFD Module - Fleming release
+subtitle: CFD Module - Dev release
 nav-short: true
 ---
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class='fa fa-times'></i></a>
   <header>TUTORIALS</header>
-  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/toc/"><center><img src="/docs/img/logos/hyFoamLogo.png" width="50"></center></a>
-  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/laminarflatplatelts" style="background-color:#FFCCCC"><b>Mach 2 laminar flat plate (LTS)</b></a>
-  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/laminarflatplatelts/#1-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
-  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/laminarflatplatelts/#2-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
-  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/laminarflatplatelts/#3-monitoring" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Monitoring</a>
-  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/laminarflatplatelts/#4-flow-visualisations-in-paraview" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 4. Flow visualisations</a>
-  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/laminarflatplatelts/#5-post-processing" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 5. Post-processing</a>
-  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/laminarflatplatelts/#6-solution" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 6. Solution</a>
-  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/laminarflatplatelts/#7-regression-testing" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 7. Regression testing</a>
-  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/axisymmetrichb2"><b>Mach 9.59 HB2 configuration</b></a>
-  <a href="https://hystrath.github.io/tutos/fleming/hyfoam/lorrainscramjet"><b>Lorrain's scramjet</b></a>
-  <a href="https://hystrath.github.io/tutos/fleming/hy2foam/toc/#5-running-your-own-case"><b>Running your own case</b></a>
+  <a href="https://hystrath.github.io/tutos/dev/hyfoam/toc/"><center><img src="/docs/img/logos/hyFoamLogo.png" width="50"></center></a>
+  <a href="https://hystrath.github.io/tutos/dev/hyfoam/laminarflatplatelts" style="background-color:#FFCCCC"><b>Mach 2 laminar flat plate (LTS)</b></a>
+  <a href="https://hystrath.github.io/tutos/dev/hyfoam/laminarflatplatelts/#1-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
+  <a href="https://hystrath.github.io/tutos/dev/hyfoam/laminarflatplatelts/#2-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
+  <a href="https://hystrath.github.io/tutos/dev/hyfoam/laminarflatplatelts/#3-monitoring" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Monitoring</a>
+  <a href="https://hystrath.github.io/tutos/dev/hyfoam/laminarflatplatelts/#4-flow-visualisations-in-paraview" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 4. Flow visualisations</a>
+  <a href="https://hystrath.github.io/tutos/dev/hyfoam/laminarflatplatelts/#5-post-processing" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 5. Post-processing</a>
+  <a href="https://hystrath.github.io/tutos/dev/hyfoam/laminarflatplatelts/#6-solution" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 6. Solution</a>
+  <a href="https://hystrath.github.io/tutos/dev/hyfoam/laminarflatplatelts/#7-regression-testing" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 7. Regression testing</a>
+  <a href="https://hystrath.github.io/tutos/dev/hyfoam/axisymmetrichb2"><b>Mach 9.59 HB2 configuration</b></a>
+  <a href="https://hystrath.github.io/tutos/dev/hyfoam/lorrainscramjet"><b>Lorrain's scramjet</b></a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#5-running-your-own-case"><b>Running your own case</b></a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
