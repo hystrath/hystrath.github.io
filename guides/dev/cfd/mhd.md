@@ -81,7 +81,7 @@ function reopenNav() {
 openNav()
 </script>
 
-These guidelines are based on the working folder located [here](https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/hy2Foam/NASA_MSL_forebody/NASA_MSL_forebody_NR-MHD).  
+These guidelines are based on the working folder located [here](https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/NASA_MSL_forebody/NASA_MSL_forebody_NR-MHD).  
 
 # MHD modelling
 

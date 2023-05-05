@@ -79,7 +79,7 @@ function reopenNav() {
 openNav()
 </script>
 
-These guidelines are based on the working folder located [here](https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase).  
+These guidelines are based on the working folder located [here](https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/genericCase).  
 
 # Thermophysical modelling
 
@@ -243,7 +243,7 @@ In the following example, the electronic energy mode of the N atom is accounted 
 ---  
 ## 3) Choosing a thermoDEM dictionary
 
-Three <dict>thermoDEM</dict> dictionaries are provided in the [generic *hy2Foam* test case](https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase/constant). To account for  
+Three <dict>thermoDEM</dict> dictionaries are provided in the [generic *hy2Foam* test case](https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/genericCase/constant). To account for  
   + the rotational energy mode only, choose <dict>thermoDEM_TR</dict>;  
   + the rotational and vibrational internal energy modes, choose <dict>thermoDEM_TRV</dict>;  
   + all internal energy modes, choose <dict>thermoDEM_TRVE</dict>.  

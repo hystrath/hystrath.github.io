@@ -57,7 +57,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
 Axially-symmetric mesh | Thermal non-equilibrium | Slip boundary conditions  
 </p>
 
-<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/hy2Foam/bluntedCone"> here</a></p>
+<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/bluntedCone"> here</a></p>
 
 <p><img src="/docs/img/publis.png" width="40"> &nbsp; See Section 3.1. <i>Mach 11.3 Blunted Cone</i> in <br> V. Casseau, D. E.R. Espinoza, T. J. Scanlon, and R. E. Brown, "A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part Two: Multi-Dimensional Analysis," <i>Aerospace</i>, vol. 3, no. 4, p. 45, <b>2016</b> &nbsp; <a href="http://www.mdpi.com/2226-4310/3/4/45/html" target="_blank" style="color:orange"> [Full HTML→]</a></p> 
 

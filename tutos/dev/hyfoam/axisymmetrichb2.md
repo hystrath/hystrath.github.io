@@ -55,7 +55,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
 Axially-symmetric flow-field | Cold hypersonics
 </p>
 
-<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/hyFoam/axisymmetric-HB2"> here</a></p>
+<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hyFoam/axisymmetric-HB2"> here</a></p>
 
 <p><img src="/docs/img/publis.png" width="40"> &nbsp; J.-J. O.E. Hoste and V. Casseau, "Verification and Validation of <i>hyFoam</i> for Supersonic External Flows," TechReport-HS1, <b>05/2021</b> &nbsp; <a href="https://github.com/hystrath/hyStrath/blob/master/doc/TechReport-HS1-hostecasseau.pdf" target="_blank" style="color:orange"> [PDF→]</a></p>
 

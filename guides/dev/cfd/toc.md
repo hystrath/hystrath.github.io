@@ -84,7 +84,7 @@ openNav()
   <a class="btn btn-warning" href="https://hystrath.github.io/guides/dev/cfd/toc/" role="button"><b>Dev release</b></a>
 </p>
 
-These guidelines are based on the working folder located [here](https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase).  
+These guidelines are based on the working folder located [here](https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/genericCase).  
 
 # Table of contents
 
