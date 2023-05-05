@@ -45,7 +45,7 @@ The OpenFOAM versions listed below are the <strong>only ones</strong> that are s
 </div> 
 
 ### OF-v2112 branch (coming soon)
-+ OF-v2112: [https://www.openfoam.com/news/main-news/openfoam-v1706](https://www.openfoam.com/news/main-news/openfoam-v2112)  
++ OF-v2112: [https://www.openfoam.com/news/main-news/openfoam-v2112](https://www.openfoam.com/news/main-news/openfoam-v2112)  
 
 <div style="line-height:50%;">
     <br>
