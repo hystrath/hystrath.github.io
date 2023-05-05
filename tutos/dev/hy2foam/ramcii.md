@@ -10,14 +10,15 @@ nav-short: true
   <header>TUTORIALS</header>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/"><center><img src="/docs/img/logos/hy2FoamLogo.png" width="60"></center></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/heatbath"><b>Adiabatic heat bath</b></a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod"><b>Sod's shock tube</b></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/bluntedcone"><b>Blunted cone</b></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/ramcii" style="background-color:#FFCCCC"><b>RAM C-II spacecraft</b></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/ramcii/#1-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/ramcii/#2-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/ramcii/#3-flow-visualisations-in-paraview" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Flow visualisations</a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/ramcii/#4-solution" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 4. Solution</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#4-nasa-msl-forebody"><b>NASA MSL forebody</b></a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#5-running-your-own-case"><b>Running your own case</b></a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#5-nasa-msl-forebody"><b>NASA MSL forebody</b></a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#6-running-your-own-case"><b>Running your own case</b></a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>

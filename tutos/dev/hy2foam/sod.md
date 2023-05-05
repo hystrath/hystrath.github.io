@@ -10,15 +10,15 @@ nav-short: true
   <header>TUTORIALS</header>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/"><center><img src="/docs/img/logos/hy2FoamLogo.png" width="60"></center></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/heatbath"><b>Adiabatic heat bath</b></a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod"><b>Sod's shock tube</b></a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/bluntedcone" style="background-color:#FFCCCC"><b>Blunted cone</b></a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/bluntedcone/#1-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/bluntedcone/#2-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/bluntedcone/#3-monitoring" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Monitoring</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/bluntedcone/#4-flow-visualisations-in-paraview" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 4. Flow visualisations</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/bluntedcone/#5-post-processing" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 5. Post-processing</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/bluntedcone/#6-solution" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 6. Solution</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/bluntedcone/#7-regression-testing" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 7. Regression testing</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod" style="background-color:#FFCCCC"><b>Sod's shock tube</b></a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#1-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#2-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#3-monitoring" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Monitoring</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#4-flow-visualisations-in-paraview" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 4. Flow visualisations</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#5-post-processing" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 5. Post-processing</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#6-solution" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 6. Solution</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#7-regression-testing" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 7. Regression testing</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/bluntedcone"><b>Blunted cone</b></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/ramcii/"><b>RAM C-II spacecraft</b></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#5-nasa-msl-forebody"><b>NASA MSL forebody</b></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#6-running-your-own-case"><b>Running your own case</b></a>
@@ -52,10 +52,10 @@ if (localStorage.getItem("show_sidenav")) openNav()
 
 ---
 
-# Blunted cone
+# Sod's shock tube
 
 <p align="center">
-Axially-symmetric mesh | Thermal non-equilibrium | Slip boundary conditions  
+One-dimensional | Thermal non-equilibrium | AUSM<sup>+</sup>up flux scheme  
 </p>
 
 <p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/bluntedCone"> here</a></p>

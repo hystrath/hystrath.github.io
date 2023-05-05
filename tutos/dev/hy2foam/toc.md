@@ -10,10 +10,11 @@ nav-short: true
   <header>TUTORIALS</header>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/"><center><img src="/docs/img/logos/hy2FoamLogo.png" width="60"></center></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/heatbath">Adiabatic heat bath</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod">Sod's shock tube</a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/bluntedcone">Blunted cone</a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/ramcii">RAM C-II spacecraft</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#4-nasa-msl-forebody">NASA MSL forebody</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#5-running-your-own-case">Running your own case</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#5-nasa-msl-forebody">NASA MSL forebody</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#6-running-your-own-case">Running your own case</a>
   <br>
   <a href="https://hystrath.github.io/tutos/dev/hyfoam/toc/"><center><img src="/docs/img/logos/hyFoamLogo.png" width="50"></center></a>
   <a href="https://hystrath.github.io/tutos/dev/hyfoam/laminarflatplatelts">Mach 2 laminar flat plate (LTS)</a>
@@ -70,7 +71,23 @@ Zero-dimensional | Thermal non-equilibrium | Chemistry-vibration coupling
 
 ---  
 
-# 2) Blunted cone
+# 2) Sod's shock tube
+
+<p align="center">
+One-dimensional | Thermal non-equilibrium | AUSM<sup>+</sup>up flux scheme  
+</p>
+
+<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/sod"> here</a></p>
+
+<!--<p><img src="/docs/img/publis.png" width="40"> &nbsp; See Section 3.1. <i>Mach 11.3 Blunted Cone</i> in <br> V. Casseau, D. E.R. Espinoza, T. J. Scanlon, and R. E. Brown, "A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part Two: Multi-Dimensional Analysis," <i>Aerospace</i>, vol. 3, no. 4, p. 45, <b>2016</b> &nbsp; <a href="http://www.mdpi.com/2226-4310/3/4/45/html" target="_blank" style="color:orange"> [Full HTML→]</a></p>-->
+
+[**[View more]**](https://hystrath.github.io/tutos/dev/hy2foam/sod/)
+
+<br>
+
+---  
+
+# 3) Blunted cone
 
 <p align="center">
 Axially-symmetric mesh | Thermal non-equilibrium | Slip boundary conditions  
@@ -86,7 +103,7 @@ Axially-symmetric mesh | Thermal non-equilibrium | Slip boundary conditions
 
 ---  
 
-# 3) RAM C-II spacecraft
+# 4) RAM C-II spacecraft
 
 <p align="center">
 Axially-symmetric mesh | Weakly-ionised flow
@@ -105,7 +122,7 @@ Axially-symmetric mesh | Weakly-ionised flow
 
 ---
 
-# 4) NASA MSL forebody
+# 5) NASA MSL forebody
 
 <p align="center">
 Hypervelocity flow | MHD flow control 
@@ -130,7 +147,7 @@ Hypervelocity flow | MHD flow control
 
 --- 
 
-# 5) Running your own case 
+# 6) Running your own case 
 
 When simulating the complex physics around a re-entry body, it is often necessary to break down the full problem into a sequence of stages and gradually build the case up in complexity. Indeed, convergence can become difficult because of the presence of steep gradients, flow chemistry, thermal non-equilibrium effects, etc, and different strategies must then be adopted to get the desired simulation setup to run.  
 Some of these strategies are listed hereafter:  

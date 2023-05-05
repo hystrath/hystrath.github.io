@@ -15,10 +15,11 @@ nav-short: true
   <br>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/"><center><img src="/docs/img/logos/hy2FoamLogo.png" width="60"></center></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/heatbath">Adiabatic heat bath</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod">Sod's shock tube</a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/bluntedcone">Blunted cone</a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/ramcii">RAM C-II spacecraft</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#4-nasa-msl-forebody">NASA MSL forebody</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#5-running-your-own-case">Running your own case</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#5-nasa-msl-forebody">NASA MSL forebody</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#6-running-your-own-case">Running your own case</a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>

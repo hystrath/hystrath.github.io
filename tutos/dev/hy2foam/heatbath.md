@@ -14,10 +14,11 @@ nav-short: true
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/heatbath/#2-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/heatbath/#3-solution" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Solution</a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/heatbath/#4-regression-testing" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 4. Regression testing</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod"><b>Sod's shock tube</b></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/bluntedcone"><b>Blunted cone</b></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/ramcii/"><b>RAM C-II spacecraft</b></a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#4-nasa-msl-forebody"><b>NASA MSL forebody</b></a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#5-running-your-own-case"><b>Running your own case</b></a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#5-nasa-msl-forebody"><b>NASA MSL forebody</b></a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#6-running-your-own-case"><b>Running your own case</b></a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>

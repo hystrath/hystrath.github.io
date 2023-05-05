@@ -18,7 +18,7 @@ nav-short: true
   <a href="https://hystrath.github.io/tutos/dev/hyfoam/axisymmetrichb2/#5-post-processing" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 5. Post-processing</a>
   <a href="https://hystrath.github.io/tutos/dev/hyfoam/axisymmetrichb2/#6-solution" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 6. Solution</a>
   <a href="https://hystrath.github.io/tutos/dev/hyfoam/lorrainscramjet"><b>Lorrain's scramjet</b></a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#5-running-your-own-case"><b>Running your own case</b></a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#6-running-your-own-case"><b>Running your own case</b></a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>

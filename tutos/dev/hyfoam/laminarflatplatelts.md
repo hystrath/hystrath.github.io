@@ -19,7 +19,7 @@ nav-short: true
   <a href="https://hystrath.github.io/tutos/dev/hyfoam/laminarflatplatelts/#7-regression-testing" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 7. Regression testing</a>
   <a href="https://hystrath.github.io/tutos/dev/hyfoam/axisymmetrichb2"><b>Mach 9.59 HB2 configuration</b></a>
   <a href="https://hystrath.github.io/tutos/dev/hyfoam/lorrainscramjet"><b>Lorrain's scramjet</b></a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#5-running-your-own-case"><b>Running your own case</b></a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#6-running-your-own-case"><b>Running your own case</b></a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>

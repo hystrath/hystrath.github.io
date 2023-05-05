@@ -19,7 +19,7 @@ nav-short: true
   <a href="https://hystrath.github.io/tutos/dev/hyfoam/lorrainscramjet/#4-solution" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp;&nbsp;&nbsp; 4. Solution</a>
 <!--  <a href="https://hystrath.github.io/tutos/dev/hyfoam/lorrainscramjet/#stage-2---frozen">&nbsp;&nbsp; Stage 2 - Frozen</a>-->
 <!--  <a href="https://hystrath.github.io/tutos/dev/hyfoam/lorrainscramjet/#stage-3---reacting-flow-field">&nbsp;&nbsp; Stage 2 - Reacting flow-field</a>-->
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#5-running-your-own-case"><b>Running your own case</b></a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#6-running-your-own-case"><b>Running your own case</b></a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
