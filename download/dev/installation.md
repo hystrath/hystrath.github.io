@@ -39,26 +39,15 @@ if (localStorage.getItem("show_sidenav")) openNav()
 ### OF-v2112
 {: #OF-v2112 }
 
-1. In Ubuntu 20.04 LTS (22.04 LTS isn't supported yet), downgrade gcc and g++ to version 7
-    ```sh
-    sudo apt-get install g++-7 gcc-7
-    sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 7
-    sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 7
-    sudo update-alternatives --config gcc
-    sudo update-alternatives --config g++
-    ```
+1. Download the source .tgz files for Ubuntu (22/12/2021: OpenFOAM v2112) for both [OpenFOAM](https://sourceforge.net/projects/openfoam/files/v2112/OpenFOAM-v2112.tgz) and the [ThirdParty](https://sourceforge.net/projects/openfoam/files/v2112/ThirdParty-v2112.tgz)  
     <div style="line-height:50%;">
         <br>
     </div>
-2. Download the source .tgz files for Ubuntu (22/12/2021: OpenFOAM v2112) for both [OpenFOAM](https://sourceforge.net/projects/openfoam/files/v2112/OpenFOAM-v2112.tgz) and the [ThirdParty](https://sourceforge.net/projects/openfoam/files/v2112/ThirdParty-v2112.tgz)  
+2. Untar them  
     <div style="line-height:50%;">
         <br>
     </div>
-3. Untar them  
-    <div style="line-height:50%;">
-        <br>
-    </div>
-4. Install the [system requirements](https://www.openfoam.com/documentation/system-requirements.php)  
+3. Install the [system requirements](https://www.openfoam.com/documentation/system-requirements.php)  
     ```sh
     sudo apt-get update
     sudo apt-get install build-essential flex bison cmake zlib1g-dev libboost-system-dev libboost-thread-dev libopenmpi-dev openmpi-bin gnuplot libreadline-dev libncurses-dev libxt-dev
@@ -68,7 +57,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
     <div style="line-height:50%;">
         <br>
     </div>
-5. Install OpenFOAM    
+4. Install OpenFOAM    
     ```sh
     cd $WM_PROJECT_DIR
     ./Allwmake
@@ -76,7 +65,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
     <div style="line-height:50%;">
         <br>
     </div>
-6. Change working directory and clone the hyStrath Github repository   
+5. Change working directory and clone the hyStrath Github repository   
     ```sh
     cd $WM_PROJECT_USER_DIR
     git clone https://github.com/hystrath/hyStrath.git --branch OF-v2112 --single-branch && cd hyStrath/
@@ -84,7 +73,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
     <div style="line-height:50%;">
         <br>
     </div>
-7. Decide which module(s) you wish to install  
+6. Decide which module(s) you wish to install  
     ```sh 
     ./install.sh 2>/dev/null
     ```
