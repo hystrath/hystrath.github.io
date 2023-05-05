@@ -44,7 +44,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
   <a class="btn btn-warning" href="https://hystrath.github.io/download/dev/installation/" role="button"><b>Dev release</b></a>
 </p>
 
-### OF-v2112, From Source
+### From Source
 {: #OF-v2112-from-source }
 
 1. Download the source .tgz files for Ubuntu (22/12/2021: OpenFOAM v2112) for both [OpenFOAM](https://sourceforge.net/projects/openfoam/files/v2112/OpenFOAM-v2112.tgz) and the [ThirdParty](https://sourceforge.net/projects/openfoam/files/v2112/ThirdParty-v2112.tgz)  
@@ -88,10 +88,10 @@ if (localStorage.getItem("show_sidenav")) openNav()
 
 <br>
     
-### OF-v2112, Docker
+### Docker
 {: #OF-v2112-docker }
 
 <br>
 
-### OF-v2112, Singularity
+### Singularity
 {: #OF-v2112-singularity }
