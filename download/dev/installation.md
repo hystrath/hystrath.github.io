@@ -11,6 +11,9 @@ nav-short: true
   <a href="https://hystrath.github.io/download/compatibility/">Compatibility</a>
   <a href="https://hystrath.github.io/download/maintenance/">Maintenance</a>
   <a href="https://hystrath.github.io/download/dev/installation/" style="background-color:#FFCCCC">Installation</a>
+  <a href="https://hystrath.github.io/download/dev/installation/#OF-v2112-from-source" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; From Source</a>
+  <a href="https://hystrath.github.io/download/dev/installation/#OF-v2112-docker" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; Docker</a>
+  <a href="https://hystrath.github.io/download/dev/installation/#OF-v2112-singularity" style="background-color:#FFE6E6; padding-top:4px;">&nbsp;&nbsp; Singularity</a>
   <a href="https://hystrath.github.io/download/dev/sync/">Sync</a>
 </div>
 
@@ -41,8 +44,8 @@ if (localStorage.getItem("show_sidenav")) openNav()
   <a class="btn btn-warning" href="https://hystrath.github.io/download/dev/installation/" role="button"><b>Dev release</b></a>
 </p>
 
-### OF-v2112
-{: #OF-v2112 }
+### OF-v2112, From Source
+{: #OF-v2112-from-source }
 
 1. Download the source .tgz files for Ubuntu (22/12/2021: OpenFOAM v2112) for both [OpenFOAM](https://sourceforge.net/projects/openfoam/files/v2112/OpenFOAM-v2112.tgz) and the [ThirdParty](https://sourceforge.net/projects/openfoam/files/v2112/ThirdParty-v2112.tgz)  
     <div style="line-height:50%;">
@@ -82,3 +85,13 @@ if (localStorage.getItem("show_sidenav")) openNav()
     ```sh 
     ./install.sh 2>/dev/null
     ```
+
+<br>
+    
+### OF-v2112, Docker
+{: #OF-v2112-docker }
+
+<br>
+
+### OF-v2112, Singularity
+{: #OF-v2112-singularity }

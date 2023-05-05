@@ -13,11 +13,8 @@ nav-short: true
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod" style="background-color:#FFCCCC"><b>Sod's shock tube</b></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#1-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#2-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#3-monitoring" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Monitoring</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#4-flow-visualisations-in-paraview" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 4. Flow visualisations</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#5-post-processing" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 5. Post-processing</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#6-solution" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 6. Solution</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#7-regression-testing" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 7. Regression testing</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#3-solution" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Solution</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#4-regression-testing" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 4. Regression testing</a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/bluntedcone"><b>Blunted cone</b></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/ramcii/"><b>RAM C-II spacecraft</b></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#5-nasa-msl-forebody"><b>NASA MSL forebody</b></a>
@@ -55,21 +52,16 @@ if (localStorage.getItem("show_sidenav")) openNav()
 # Sod's shock tube
 
 <p align="center">
-One-dimensional | Thermal non-equilibrium | AUSM<sup>+</sup>up flux scheme  
+One-dimensional | AUSM<sup>+</sup>-up flux scheme  
 </p>
 
-<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/bluntedCone"> here</a></p>
+<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/sod"> here</a></p>
 
-<p><img src="/docs/img/publis.png" width="40"> &nbsp; See Section 3.1. <i>Mach 11.3 Blunted Cone</i> in <br> V. Casseau, D. E.R. Espinoza, T. J. Scanlon, and R. E. Brown, "A Two-Temperature Open-Source CFD Model for Hypersonic Reacting Flows, Part Two: Multi-Dimensional Analysis," <i>Aerospace</i>, vol. 3, no. 4, p. 45, <b>2016</b> &nbsp; <a href="http://www.mdpi.com/2226-4310/3/4/45/html" target="_blank" style="color:orange"> [Full HTML→]</a></p> 
 
 ### 1. CASE SETUP
 
 #### 1.1 Mesh
 View of the structured _gmsh_ mesh provided in the <dirname>constant/backup-polyMesh</dirname> folder (each 5th line is represented in each direction). It is aligned with the bow shock, has 120,000 hexahedra, and the first layer height is equal to 2 x 10<sup>-6</sup> m.
-
-<p align="center">
-  <img src="https://www.mdpi.com/aerospace/aerospace-03-00045/article_deploy/html/images/aerospace-03-00045-g001.png" width="400">
-</p>
 
 #### 1.2 Case conditions
 
@@ -102,72 +94,37 @@ This test case is using the following thermo-chemical and transport models:
 The initial time-step is set to 1 x 10<sup>-10</sup> s and the maximum CFL number is 0.5.
 The simulation end time is equal to 0.0002 s.
 
+#### 1.5 Time and flux schemes
+
+The initial time-step is set to 1 x 10<sup>-10</sup> s and the maximum CFL number is 0.5.
+The simulation end time is equal to 0.0002 s.
+
 &nbsp;
 ### 2. RUNNING 
 
-The following commands will execute <i>gmshToFoam</i>, <i>checkMesh</i> and <i>hy2Foam</i> in serial
+The following commands will execute <i>blockMesh</i>, <i>checkMesh</i> and <i>hy2Foam</i> in serial
 
 ```sh
 ./Allclean  
 ./Allrun
 ``` 
 
-To run <i>hy2Foam</i> in parallel (say on 4 CPUs), please first edit the <dictkey>numberOfSubdomains</dictkey> in the <dirname>system/</dirname><dict>decomposeParDict</dict> dictionary and type in
-
-```sh
-./Allclean  
-./Allrun 4
-``` 
-
 &nbsp;
-### 3. MONITORING
-
-```sh
-gnuplot gnuplot/monitorResiduals
-```   
-
-<p align="center">
-  <img src="/docs/img/tutos/fleming/hy2Foam/bluntedCone/residuals.png" width="400">
-</p>
-
-&nbsp;
-### 4. FLOW VISUALISATIONS IN PARAVIEW
-
-<p align="center">
-<img src="/docs/img/tutos/fleming/hy2Foam/bluntedCone/fieldTt.gif" width="400">  
-<img style="margin-top:50px;" src="/docs/img/tutos/fleming/hy2Foam/bluntedCone/fieldTv.gif" width="400">  
-<img style="margin-top:50px;" src="/docs/img/tutos/fleming/hy2Foam/bluntedCone/fieldMach.gif" width="400">  
-</p>
-
-&nbsp;
-### 5. POST-PROCESSING
-
-```sh
-gnuplot gnuplot/monitorCd 
-gnuplot gnuplot/monitorIntegratedWallHeatFlux
-```  
-
-<p align="center">
-<img src="/docs/img/tutos/fleming/hy2Foam/bluntedCone/dragCoefficient.png" width="400">
-<img style="margin-top:20px;" src="/docs/img/tutos/fleming/hy2Foam/bluntedCone/integratedWallHeatFlux.png" width="400">
-</p>
-
-&nbsp;
-### 6. SOLUTION
+### 3. SOLUTION
 
 On the following graphs, the tutorial case results are given by the black solid lines:
 
-<p align="center">
-<img src="https://www.mdpi.com/aerospace/aerospace-03-00045/article_deploy/html/images/aerospace-03-00045-g002.png" width="800">
-</p>
+<!--<p align="center">-->
+<!--<img src="https://www.mdpi.com/aerospace/aerospace-03-00045/article_deploy/html/images/aerospace-03-00045-g002.png" width="800">-->
+<!--</p>-->
 
-Stagnation line data (a–c) and surface coefficients (d–f) along the blunted cone:<br>
-(a) normalised temperature, (b) normalised mass density, (c) normalised velocity, (d) pressure coefficient, (e) friction coefficient, and (f) Stanton number.
+<!--Stagnation line data (a–c) and surface coefficients (d–f) along the blunted cone:<br>-->
+<!--(a) normalised temperature, (b) normalised mass density, (c) normalised velocity, (d) pressure coefficient, (e) friction coefficient, and (f) Stanton number.-->
 
 &nbsp;
-### 7. REGRESSION TESTING
+### 4. REGRESSION TESTING
 
-Check that the results are matching the solution stored in <dirname>gnuplot/solution/</dirname> within a given tolerance:
+Check that the results are matching the solution stored in <dirname>gnuplot/solution/</dirname>:
 
 ```sh
 ./Alltest
@@ -177,4 +134,4 @@ Check that the results are matching the solution stored in <dirname>gnuplot/solu
 
 ---  
 
-Contributors: Dr Vincent Casseau and Dr Daniel E.R. Espinoza
+Contributor: Dr Vincent Casseau
