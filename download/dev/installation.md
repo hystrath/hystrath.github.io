@@ -37,7 +37,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
 </script>
 
 <p align="center">
-  <a class="btn btn-outline-dark" href="https://hystrath.github.io/download/fleming/installation/" role="button"><i>Fleming release</i></a>
+  <a class="btn btn-outline-dark" href="https://hystrath.github.io/download/fleming/installation/" role="button">Fleming release</a>
   <a class="btn btn-warning" href="https://hystrath.github.io/download/dev/installation/" role="button"><b>Dev release</b></a>
 </p>
 
