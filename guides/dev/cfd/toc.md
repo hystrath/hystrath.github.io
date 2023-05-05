@@ -49,7 +49,9 @@ nav-short: true
   <a href="https://hystrath.github.io/guides/dev/cfd/initial-conditions/#4-velocity-field" style="padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 4) Velocity field</span></a>
   
   <a href="https://hystrath.github.io/guides/dev/cfd/numerics/"><b>H. NUMERICS</b></a>
-  <a href="https://hystrath.github.io/guides/dev/cfd/numerics/#1-local-time-stepping" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Local time stepping</span></a>
+  <a href="https://hystrath.github.io/guides/dev/cfd/numerics/#1-time-schemes" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Time schemes</span></a>
+  <a href="https://hystrath.github.io/guides/dev/cfd/numerics/#2-flux-schemes" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) Flux schemes</span></a>
+  <a href="https://hystrath.github.io/guides/dev/cfd/numerics/#3-other-schemes" style="padding-top:4px;"><span style="font-size:13px">&nbsp;&nbsp; 3) Other schemes</span></a>
   
   <a href="https://hystrath.github.io/guides/dev/cfd/advanced/"><b>I. ADVANCED</b></a>
   <a href="https://hystrath.github.io/guides/dev/cfd/advanced/#1-on-the-fly-dictionary-editing" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) On-the-fly editing</span></a>
@@ -215,9 +217,16 @@ These guidelines are based on the working folder located [here](https://github.c
 ---  
 ## [H. Numerics](https://hystrath.github.io/guides/dev/cfd/numerics/)
 
-### [1) Local time stepping](https://hystrath.github.io/guides/dev/cfd/numerics/#1-local-time-stepping)  
+### [1) Time schemes](https://hystrath.github.io/guides/dev/cfd/numerics/#1-local-time-stepping)  
++ **[1.1 Euler time scheme](https://hystrath.github.io/guides/dev/cfd/numerics/#11-euler-time-scheme)**  
++ **[1.2 Local time stepping](https://hystrath.github.io/guides/dev/cfd/numerics/#12-local-time-stepping-scheme)**  
++ **[1.3 Other time schemes](https://hystrath.github.io/guides/dev/cfd/numerics/#13-other-time-schemes)**  
 
-### [2) Advection schemes](https://hystrath.github.io/guides/dev/cfd/numerics/#2-advection-schemes)  
+### [2) Flux schemes](https://hystrath.github.io/guides/dev/cfd/numerics/#2-flux-schemes)  
++ **[1.1 Kurganov and Tadmor](https://hystrath.github.io/guides/dev/cfd/numerics/#21-kurganov-and-tadmor)**  
++ **[1.2 AUSM+up](https://hystrath.github.io/guides/dev/cfd/numerics/#22-ausm-up)** 
+
+### [3) Other schemes](https://hystrath.github.io/guides/dev/cfd/numerics/#3-other-schemes)  
 
 <br>
 

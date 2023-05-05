@@ -49,7 +49,9 @@ nav-short: true
   <a href="https://hystrath.github.io/guides/dev/cfd/initial-conditions/#4-velocity-field" style="padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 4) Velocity field</span></a>
   
   <a href="https://hystrath.github.io/guides/dev/cfd/numerics/" style="background-color:#FFCCCC"><b>H. NUMERICS</b></a>
-  <a href="https://hystrath.github.io/guides/dev/cfd/numerics/#1-local-time-stepping" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Local time stepping</span></a>
+  <a href="https://hystrath.github.io/guides/dev/cfd/numerics/#1-time-schemes" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Time schemes</span></a>
+  <a href="https://hystrath.github.io/guides/dev/cfd/numerics/#2-flux-schemes" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) Flux schemes</span></a>
+  <a href="https://hystrath.github.io/guides/dev/cfd/numerics/#3-other-schemes" style="background-color:#FFE6E6; padding-top:4px;"><span style="font-size:13px">&nbsp;&nbsp; 3) Other schemes</span></a>
   
   <a href="https://hystrath.github.io/guides/dev/cfd/advanced/"><b>I. ADVANCED</b></a>
   <a href="https://hystrath.github.io/guides/dev/cfd/advanced/#1-on-the-fly-dictionary-editing" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) On-the-fly editing</span></a>
@@ -88,59 +90,86 @@ These guidelines are based on the working folder located [here](https://github.c
 # Numerics
 
 ---  
-## 1) Local time stepping
-  
-In the <dirname>system/</dirname> directory, open the <dict>fvSchemes</dict> dictionary and edit the default <dictkey>ddtSchemes</dictkey> entry to <dictval>localEuler rDeltaT</dictval>.
+## 1) Time schemes
 
-The [Lorrain scramjet tutorial](https://hystrath.github.io/tutos/dev/hyfoam/toc/#3-lorrains-scramjet) is a suitable case to employ LTS and the aforementioned time discretisation scheme is the only modification to be made.  
+### 1.1 Euler time scheme  
 
-> Local time stepping is currently inappropriate for axisymmetric and chemically-reacting simulations. 
+The implicit first-order Euler time scheme can be selected in <dirname>system/</dirname><dict>fvSchemes</dict> as follows
+
+```c++
+ddtSchemes
+{
+    default           Euler;
+}
+```
+
+For more information, please check the [official documentation](https://www.openfoam.com/documentation/guides/v2112/doc/guide-schemes-time-euler.html).
+
+&nbsp;  
+
+### 1.2 Local time stepping scheme  
+
+To select the first-order local time stepping scheme, open the <dirname>system/</dirname><dict>fvSchemes</dict> dictionary and set
+
+```c++
+ddtSchemes
+{
+    default           localEuler rDeltaT;
+}
+```
+
+The [Lorrain scramjet tutorial](https://hystrath.github.io/tutos/dev/hyfoam/toc/#3-lorrains-scramjet) is a suitable case to use LTS and the aforementioned time discretisation scheme is the only modification to be made.  
+
+> Local time stepping is currently inappropriate for axisymmetric and chemically-reacting simulations.
+
+For more information, please check the [official documentation](https://www.openfoam.com/documentation/guides/v2112/doc/guide-schemes-time-local-euler.html).
+
+&nbsp;
+
+### 1.3 Other time schemes
+
+For other time schemes, please refer to the [official documention](https://www.openfoam.com/documentation/guides/v2112/doc/guide-schemes-time.html). 
 
 <br>
 
 ---  
-## 2) Advection schemes  
+## 2) Flux schemes  
 
-<!--On-the-fly editing was made available primarily for computations on a high-performance computer where days can be lost waiting in a priority queue. The different steps to follow are explained below depending on the dictionary that is affected by the changes.-->
-
-<!--For the <u><dict>fvSchemes</dict> dictionary</u>:  -->
-<!--  + Open the <dict>transportProperties</dict> dictionary  -->
-<!--  + Edit one or several entries inside the <subdict>rarefiedParameters</subdict> or <subdict>transportModels</subdict> subdictionaries  -->
-<!--  + <i>NB: if you save the file at this point, nothing will happen</i> -->
-<!--  + Add a new key to the modified subdictionary-->
-<!--```c++-->
-<!--    applyChanges        true;-->
-<!--```-->
-<!--  + Save the file  -->
-<!--  + <i>NB: For safety, once the modification has taken effect, the file can be re-opened and the <dictkey>applyChanges</dictkey> entry can be removed. Save again.</i> -->
-<!--  + If this operation worked, then your simulation should have entered into a second sub-phase of the run, as shown in the log file-->
-
-<!--Before:  -->
-
-<!--```c++-->
-<!--Phase no 1.0  ExecutionTime = 72.29 s  ClockTime = 74 s  Iteration no 4504 (0.04 s)-->
-<!--```-->
-
-<!--After:-->
-
-<!--```c++-->
-<!--Phase no 1.1  ExecutionTime = 72.32 s  ClockTime = 74 s  Iteration no 4505 (0.03 s)-->
-<!--```-->
-
-<!--For the <u><dict>thermo2TModel</dict> dictionary</u>:  -->
-<!--  + The steps to follow are similar to the <dict>transportProperties</dict> dictionary: add the <dictkey>applyChanges</dictkey> key after editing the desired subdictionary and save.  -->
+### 2.1 Kurganov and Tadmor
 
 
-<!--For <u>boundary conditions</u>:  -->
-<!--  + Open the <dict>hTCProperties</dict> dictionary   -->
-<!--  + Add the key-->
-<!--```c++-->
-<!--    applyChangesAtWriteTimeAndWait        #numberOfSeconds;-->
-<!--``` -->
-<!--where <dictval>#numberOfSeconds</dictval> is an integer value prescribing the time during which the simulation will be paused (give yourself enough time!).  -->
-<!--  + Save the <dict>hTCProperties</dict> dictionary   -->
-<!--  + Type in: _tail -f log.hy2Foam_ into the terminal window and wait until the next write time  -->
-<!--  + Once the simulation is sleeping, _reconstructPar_ can be used (for a parallel job)  -->
-<!--  + Edit the desired boundary condition and save  -->
-<!--  + Delete the _processors#ID_ folders and run: _decomposePar -latestTime_ -->
-<!--  + Monitor the log file as the simulation restarts to make sure everything went well  -->
+```c++
+fluxScheme            Kurganov;
+```
+
+```c++
+fluxScheme            Tadmor;
+``` 
+
+&nbsp;
+
+### 2.2 AUSM+up
+
+```c++
+fluxScheme            AUSM+up;
+
+fluxSchemeCoefficients
+{
+    AUSM+upCoefficients
+    {
+        MachInf          1.0;
+/*        scalingFactor    1.0;*/
+        
+        alpha         0.1875;
+        beta           0.125;
+        sigma            1.0;
+        Kp              0.25;
+        Ku              0.75;
+    }
+}
+```
+
+<br>
+
+---  
+## 3) Other schemes  
