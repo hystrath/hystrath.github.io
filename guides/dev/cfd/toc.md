@@ -224,7 +224,7 @@ These guidelines are based on the working folder located [here](https://github.c
 
 ### [2) Flux schemes](https://hystrath.github.io/guides/dev/cfd/numerics/#2-flux-schemes)  
 + **[1.1 Kurganov and Tadmor](https://hystrath.github.io/guides/dev/cfd/numerics/#21-kurganov-and-tadmor)**  
-+ **[1.2 AUSM+up](https://hystrath.github.io/guides/dev/cfd/numerics/#22-ausm-up)** 
++ **[1.2 AUSM+up](https://hystrath.github.io/guides/dev/cfd/numerics/#22-ausmup)** 
 
 ### [3) Other spatial schemes](https://hystrath.github.io/guides/dev/cfd/numerics/#3-other-spatial-schemes)  
 
