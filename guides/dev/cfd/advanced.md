@@ -48,13 +48,15 @@ nav-short: true
   <a href="https://hystrath.github.io/guides/dev/cfd/initial-conditions/#3-temperature-fields" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 3) Temperature fields</span></a>
   <a href="https://hystrath.github.io/guides/dev/cfd/initial-conditions/#4-velocity-field" style="padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 4) Velocity field</span></a>
   
-  <a href="https://hystrath.github.io/guides/dev/cfd/advanced/" style="background-color:#FFCCCC"><b>H. ADVANCED</b></a>
-  <a href="https://hystrath.github.io/guides/dev/cfd/advanced/#1-local-time-stepping" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Local time stepping</span></a>
-  <a href="https://hystrath.github.io/guides/dev/cfd/advanced/#2-on-the-fly-dictionary-editing" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) On-the-fly editing</span></a>
-  <a href="https://hystrath.github.io/guides/dev/cfd/advanced/#3-bounding-the-temperature-field" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 3) Bounding the temperature</span></a>
-  <a href="https://hystrath.github.io/guides/dev/cfd/advanced/#4-adaptive-mesh-refinement" style="background-color:#FFE6E6; padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 4) Adaptive mesh refinement</span></a>
+  <a href="https://hystrath.github.io/guides/dev/cfd/numerics/"><b>H. NUMERICS</b></a>
+  <a href="https://hystrath.github.io/guides/dev/cfd/numerics/#1-local-time-stepping" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Local time stepping</span></a>
   
-  <a href="https://hystrath.github.io/guides/dev/cfd/monitoring-post-processing"><b>I. MONITORING & POST-PROCESSING</b></a>
+  <a href="https://hystrath.github.io/guides/dev/cfd/advanced/" style="background-color:#FFCCCC"><b>I. ADVANCED</b></a>
+  <a href="https://hystrath.github.io/guides/dev/cfd/advanced/#1-on-the-fly-dictionary-editing" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) On-the-fly editing</span></a>
+  <a href="https://hystrath.github.io/guides/dev/cfd/advanced/#2-bounding-the-temperature-field" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) Bounding the temperature</span></a>
+  <a href="https://hystrath.github.io/guides/dev/cfd/advanced/#3-adaptive-mesh-refinement" style="background-color:#FFE6E6; padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 3) Adaptive mesh refinement</span></a>
+  
+  <a href="https://hystrath.github.io/guides/dev/cfd/monitoring-post-processing"><b>J. MONITORING & POST-PROCESSING</b></a>
   <a href="https://hystrath.github.io/guides/dev/cfd/monitoring-post-processing/#1-monitoring" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Monitoring</span></a>
   <a href="https://hystrath.github.io/guides/dev/cfd/monitoring-post-processing/#2-post-processing" style="padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) Post-processing</span></a>
 </div>
@@ -86,18 +88,7 @@ These guidelines are based on the working folder located [here](https://github.c
 # Advanced features
 
 ---  
-## 1) Local time stepping
-  
-In the <dirname>system/</dirname> directory, open the <dict>fvSchemes</dict> dictionary and edit the default <dictkey>ddtSchemes</dictkey> entry to <dictval>localEuler rDeltaT</dictval>.
-
-The [Lorrain scramjet tutorial](https://hystrath.github.io/tutos/fleming/hyfoam/toc/#3-lorrain-scramjet) is a suitable case to employ LTS and the aforementioned time discretisation scheme is the only modification to be made.  
-
-> Local time stepping is currently inappropriate for axisymmetric and chemically-reacting simulations. 
-
-<br>
-
----  
-## 2) On-the-fly dictionary editing  
+## 1) On-the-fly dictionary editing  
 
 On-the-fly editing was made available primarily for computations on a high-performance computer where days can be lost waiting in a priority queue. The different steps to follow are explained below depending on the dictionary that is affected by the changes.
 
@@ -181,7 +172,7 @@ where <dictval>#numberOfSeconds</dictval> is an integer value prescribing the ti
 <br>
 
 ---  
-## 3) Bounding the temperature field
+## 2) Bounding the temperature field
 
 In the <dict>thermophysicalProperties</dict> dictionary, the <subdict>temperatureBounds</subdict> subdictionary shown below can be copy-pasted to bound the temperature field and increase robustness. After stopping the simulation, please make sure that the minimum and maximum temperature values are <b>strictly</b> within these bounds.
 
@@ -203,7 +194,7 @@ Attempt to use rho2ReactionThermo out of temperature range 3197 times during thi
 <br>
 
 ---  
-## 4) Adaptive mesh refinement
+## 3) Adaptive mesh refinement
 
 When added to the <dirname>constant/</dirname> folder, the optional <dict>dynamicMeshDict</dict> dictionary will be read. In this section, we are interested in two types of dynamicFvMeshes: staticFvmesh and dynamicRefineFvMesh.
 

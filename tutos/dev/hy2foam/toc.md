@@ -137,7 +137,7 @@ Some of these strategies are listed hereafter:
   1- different levels of mesh refinement as the simulation progresses;  
   2- [non-reacting vs. reacting](https://hystrath.github.io/guides/dev/cfd/chemistry/#2-non-reacting-flow);  
   3- [continuum vs. rarefied boundary conditions](https://hystrath.github.io/guides/dev/cfd/initial-conditions/#3-temperature-fields);   
-  4- [bounding the temperature field](https://hystrath.github.io/guides/dev/cfd/advanced/#3-bounding-the-temperature-field);  
+  4- [bounding the temperature field](https://hystrath.github.io/guides/dev/cfd/advanced/#2-bounding-the-temperature-field);  
   5- [Mach ramp](https://hystrath.github.io/guides/dev/cfd/initial-conditions/#42-linear-inlet-ramp) at the inlet;  
   6- [inviscid vs. viscous flow](https://hystrath.github.io/guides/dev/cfd/transport/#transport-modelling);  
   7- [no diffusion vs. species diffusion](https://hystrath.github.io/guides/dev/cfd/transport/#3-mass-diffusion);  

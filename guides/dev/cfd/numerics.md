@@ -30,9 +30,9 @@ nav-short: true
   <a href="https://hystrath.github.io/guides/dev/cfd/nonequilibrium/#3-mean-free-path-and-breakdown-parameter" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 3) MFP & Breakdown</span></a>
   <a href="https://hystrath.github.io/guides/dev/cfd/nonequilibrium/#4-chemistry-vibration-coupling" style="padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 4) Chem.-vib. coupling</span></a>
   
-  <a href="https://hystrath.github.io/guides/dev/cfd/turbulence/" style="background-color:#FFCCCC"><b>E. TURBULENCE</b></a>
-  <a href="https://hystrath.github.io/guides/dev/cfd/turbulence/#1-laminar-flow-simulation" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Laminar</span></a>
-  <a href="https://hystrath.github.io/guides/dev/cfd/turbulence/#2-turbulent-flow-simulation" style="background-color:#FFE6E6; padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) Turbulent</span></a>
+  <a href="https://hystrath.github.io/guides/dev/cfd/turbulence/"><b>E. TURBULENCE</b></a>
+  <a href="https://hystrath.github.io/guides/dev/cfd/turbulence/#1-laminar-flow-simulation" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Laminar</span></a>
+  <a href="https://hystrath.github.io/guides/dev/cfd/turbulence/#2-turbulent-flow-simulation" style="padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 2) Turbulent</span></a>
   
   <a href="https://hystrath.github.io/guides/dev/cfd/mhd/"><b>F. MHD</b></a>
   <a href="https://hystrath.github.io/guides/dev/cfd/mhd/#1-enablingdisabling-mhd" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Enabling/disabling MHD</span></a>
@@ -48,8 +48,8 @@ nav-short: true
   <a href="https://hystrath.github.io/guides/dev/cfd/initial-conditions/#3-temperature-fields" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 3) Temperature fields</span></a>
   <a href="https://hystrath.github.io/guides/dev/cfd/initial-conditions/#4-velocity-field" style="padding-top:4px"><span style="font-size:13px">&nbsp;&nbsp; 4) Velocity field</span></a>
   
-  <a href="https://hystrath.github.io/guides/dev/cfd/numerics/"><b>H. NUMERICS</b></a>
-  <a href="https://hystrath.github.io/guides/dev/cfd/numerics/#1-local-time-stepping" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Local time stepping</span></a>
+  <a href="https://hystrath.github.io/guides/dev/cfd/numerics/" style="background-color:#FFCCCC"><b>H. NUMERICS</b></a>
+  <a href="https://hystrath.github.io/guides/dev/cfd/numerics/#1-local-time-stepping" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) Local time stepping</span></a>
   
   <a href="https://hystrath.github.io/guides/dev/cfd/advanced/"><b>I. ADVANCED</b></a>
   <a href="https://hystrath.github.io/guides/dev/cfd/advanced/#1-on-the-fly-dictionary-editing" style="padding-top:4px; padding-bottom:4px"><span style="font-size:13px">&nbsp;&nbsp; 1) On-the-fly editing</span></a>
@@ -67,7 +67,7 @@ nav-short: true
 function openNav() {
   document.getElementById("mySidenav").style.width = "225px";
   document.getElementById("mySidenav").style.transition = "0s";
-  document.getElementById('mySidenav').scrollTop = "720";
+  document.getElementById('mySidenav').scrollTop = "1100";
 }
 
 function closeNav() {
@@ -77,7 +77,7 @@ function closeNav() {
 function reopenNav() {
   document.getElementById("mySidenav").style.width = "225px";
   document.getElementById("mySidenav").style.transition = "0.5s";
-  document.getElementById('mySidenav').scrollTop = "720";
+  document.getElementById('mySidenav').scrollTop = "1100";
 }
 
 openNav()
@@ -85,17 +85,62 @@ openNav()
 
 These guidelines are based on the working folder located [here](https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/genericCase).  
 
-# Turbulence modelling
+# Numerics
 
----
-## 1) Laminar flow simulation 
+---  
+## 1) Local time stepping
   
-In the <dict>turbulenceProperties</dict> dictionary, edit the <dictkey>simulationType</dictkey> entry to <dictval>laminar</dictval>.
+In the <dirname>system/</dirname> directory, open the <dict>fvSchemes</dict> dictionary and edit the default <dictkey>ddtSchemes</dictkey> entry to <dictval>localEuler rDeltaT</dictval>.
+
+The [Lorrain scramjet tutorial](https://hystrath.github.io/tutos/dev/hyfoam/toc/#3-lorrain-scramjet) is a suitable case to employ LTS and the aforementioned time discretisation scheme is the only modification to be made.  
+
+> Local time stepping is currently inappropriate for axisymmetric and chemically-reacting simulations. 
 
 <br>
 
----
-## 2) Turbulent flow simulation
+---  
+## 2) Advection schemes  
 
-In the <dict>turbulenceProperties</dict> dictionary, edit the <dictkey>simulationType</dictkey> entry to <dictval>RAS</dictval>.  
-Then, in the <subdict>RAS</subdict> sub-dictionary, edit the <dictkey>RASModel</dictkey> to the desired turbulence model and the <dictkey>turbulence</dictkey> switch to <dictval>on</dictval>. Depending on which model is chosen, some fields may have to be added to the <dirname>0/</dirname> directory. Please refer to the official OpenFOAM tutorials for further information.
+<!--On-the-fly editing was made available primarily for computations on a high-performance computer where days can be lost waiting in a priority queue. The different steps to follow are explained below depending on the dictionary that is affected by the changes.-->
+
+<!--For the <u><dict>fvSchemes</dict> dictionary</u>:  -->
+<!--  + Open the <dict>transportProperties</dict> dictionary  -->
+<!--  + Edit one or several entries inside the <subdict>rarefiedParameters</subdict> or <subdict>transportModels</subdict> subdictionaries  -->
+<!--  + <i>NB: if you save the file at this point, nothing will happen</i> -->
+<!--  + Add a new key to the modified subdictionary-->
+<!--```c++-->
+<!--    applyChanges        true;-->
+<!--```-->
+<!--  + Save the file  -->
+<!--  + <i>NB: For safety, once the modification has taken effect, the file can be re-opened and the <dictkey>applyChanges</dictkey> entry can be removed. Save again.</i> -->
+<!--  + If this operation worked, then your simulation should have entered into a second sub-phase of the run, as shown in the log file-->
+
+<!--Before:  -->
+
+<!--```c++-->
+<!--Phase no 1.0  ExecutionTime = 72.29 s  ClockTime = 74 s  Iteration no 4504 (0.04 s)-->
+<!--```-->
+
+<!--After:-->
+
+<!--```c++-->
+<!--Phase no 1.1  ExecutionTime = 72.32 s  ClockTime = 74 s  Iteration no 4505 (0.03 s)-->
+<!--```-->
+
+<!--For the <u><dict>thermo2TModel</dict> dictionary</u>:  -->
+<!--  + The steps to follow are similar to the <dict>transportProperties</dict> dictionary: add the <dictkey>applyChanges</dictkey> key after editing the desired subdictionary and save.  -->
+
+
+<!--For <u>boundary conditions</u>:  -->
+<!--  + Open the <dict>hTCProperties</dict> dictionary   -->
+<!--  + Add the key-->
+<!--```c++-->
+<!--    applyChangesAtWriteTimeAndWait        #numberOfSeconds;-->
+<!--``` -->
+<!--where <dictval>#numberOfSeconds</dictval> is an integer value prescribing the time during which the simulation will be paused (give yourself enough time!).  -->
+<!--  + Save the <dict>hTCProperties</dict> dictionary   -->
+<!--  + Type in: _tail -f log.hy2Foam_ into the terminal window and wait until the next write time  -->
+<!--  + Once the simulation is sleeping, _reconstructPar_ can be used (for a parallel job)  -->
+<!--  + Edit the desired boundary condition and save  -->
+<!--  + Delete the _processors#ID_ folders and run: _decomposePar -latestTime_ -->
+<!--  + Monitor the log file as the simulation restarts to make sure everything went well  -->

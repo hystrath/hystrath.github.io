@@ -211,20 +211,27 @@ These guidelines are based on the working folder located [here](https://github.c
 <br>
 
 ---  
-## [H. Advanced](https://hystrath.github.io/guides/dev/cfd/advanced/)
+## [H. Numerics](https://hystrath.github.io/guides/dev/cfd/numerics/)
 
-### [1) Local time stepping](https://hystrath.github.io/guides/dev/cfd/advanced/#1-local-time-stepping)  
+### [1) Local time stepping](https://hystrath.github.io/guides/dev/cfd/numerics/#1-local-time-stepping)  
 
-### [2) On-the-fly dictionary editing](https://hystrath.github.io/guides/dev/cfd/advanced/#2-on-the-fly-dictionary-editing)  
-
-### [3) Bounding the temperature field](https://hystrath.github.io/guides/dev/cfd/advanced/#3-bounding-the-temperature-field) 
-
-### [4) Adaptive mesh refinement](https://hystrath.github.io/guides/dev/cfd/advanced/#4-adaptive-mesh-refinement)  
+### [2) Advection schemes](https://hystrath.github.io/guides/dev/cfd/numerics/#2-advection-schemes)  
 
 <br>
 
 ---  
-## [I. Monitoring & Post-processing](https://hystrath.github.io/guides/dev/cfd/monitoring-post-processing)
+## [I. Advanced](https://hystrath.github.io/guides/dev/cfd/advanced/)
+
+### [1) On-the-fly dictionary editing](https://hystrath.github.io/guides/dev/cfd/advanced/#1-on-the-fly-dictionary-editing)  
+
+### [2) Bounding the temperature field](https://hystrath.github.io/guides/dev/cfd/advanced/#2-bounding-the-temperature-field) 
+
+### [3) Adaptive mesh refinement](https://hystrath.github.io/guides/dev/cfd/advanced/#3-adaptive-mesh-refinement)  
+
+<br>
+
+---  
+## [J. Monitoring & Post-processing](https://hystrath.github.io/guides/dev/cfd/monitoring-post-processing)
 
 ### [1) Monitoring](https://hystrath.github.io/guides/dev/cfd/monitoring-post-processing/#1-monitoring)  
 + **[1.1 Wall heat flux](https://hystrath.github.io/guides/dev/cfd/monitoring-post-processing/#11-wall-heat-flux)**  
