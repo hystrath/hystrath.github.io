@@ -12,7 +12,7 @@ nav-short: true
   <a href="https://hystrath.github.io/guides/fleming/dsmc/toc/">DSMC Guide</a>
   <a href="https://hystrath.github.io/guides/fleming/cfddsmc/toc/">HYBD Guide</a>
   <a href="https://hystrath.github.io/publications/hyperfoam/">Publications</a>
-  <a href="https://hystrath.github.io/people/#cfd-dsmc-not-released-yet">Developers</a>
+  <a href="https://hystrath.github.io/about/people/#cfd-dsmc-not-released-yet">Developers</a>
   <a href="https://hystrath.github.io/download/disclaimer/">Disclaimer</a>
 </div>
 

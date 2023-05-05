@@ -13,7 +13,7 @@ nav-short: true
   <a href="https://hystrath.github.io/tutos/fleming/pdfoam/toc/">Tutorials</a>
   <a href="https://github.com/hystrath/hyStrath/tree/master/applications/solvers/hybridMethods/pdFoam">Source code</a>
   <a href="https://hystrath.github.io/publications/pdfoam/">Publications</a>
-  <a href="https://hystrath.github.io/people/#pic-dsmc">Developers</a>
+  <a href="https://hystrath.github.io/about/people/#pic-dsmc">Developers</a>
   <a href="https://hystrath.github.io/download/disclaimer/">Disclaimer</a>
 </div>
 

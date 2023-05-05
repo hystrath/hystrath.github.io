@@ -12,7 +12,7 @@ nav-short: true
   <a href="https://hystrath.github.io/tutos/fleming/dsmcfoam/toc/">Tutorials</a>
   <a href="https://github.com/hystrath/hyStrath/tree/master/applications/solvers/discreteMethods/dsmc/dsmcFoam%2B">Source code</a>
   <a href="https://hystrath.github.io/publications/dsmcfoam/">Publications</a>
-  <a href="https://hystrath.github.io/people/#dsmc-module--dsmcfoam">Developers</a>
+  <a href="https://hystrath.github.io/about/people/#dsmc-module--dsmcfoam">Developers</a>
   <a href="https://hystrath.github.io/download/disclaimer/">Disclaimer</a>
 </div>
 

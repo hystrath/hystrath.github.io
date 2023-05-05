@@ -58,7 +58,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
     <td style="text-align:center">30 Nov 2019</td>
   </tr>
   <tr>  
-    <td >OF-v1706<a href="https://hystrath.github.io/contributions/#list-of-external-contributions">*</a></td>
+    <td >OF-v1706<a href="https://hystrath.github.io/about/contributions/#list-of-external-contributions">*</a></td>
     <td style="text-align:center">OF-v1706</td>
     <td style="text-align:center">12 May 2018</td>
     <td style="text-align:center" colspan="2">29 Aug 2018, merged into Master</td>
