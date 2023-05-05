@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Installation
-subtitle: Fleming release
+subtitle: Dev release
 nav-short: true
 --- 
 
