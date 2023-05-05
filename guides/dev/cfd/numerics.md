@@ -109,7 +109,7 @@ For more information, please check the [official documentation](https://www.open
 
 ### 1.2 Local time stepping scheme  
 
-To select the first-order local time stepping scheme, open the <dirname>system/</dirname><dict>fvSchemes</dict> dictionary and set
+To select the first-order local time stepping (LTS) scheme, open the <dirname>system/</dirname><dict>fvSchemes</dict> dictionary and set
 
 ```c++
 ddtSchemes
