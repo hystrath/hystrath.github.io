@@ -64,6 +64,13 @@ if (localStorage.getItem("show_sidenav")) openNav()
     <td style="text-align:center" colspan="2">29 Aug 2018, merged into Master</td>
   </tr>
   <tr>
+    <td >OF-v2112</td>
+    <td style="text-align:center">OF-v2112</td>
+    <td style="text-align:center">Coming soon</td>
+    <td style="text-align:center"></td>
+    <td style="text-align:center"></td>
+  </tr>
+  <tr>
     <td ><b>Master</b></td>
     <td style="text-align:center">OF-v1706</td>
     <td style="text-align:center" colspan="3"> </td>
