@@ -79,6 +79,11 @@ function reopenNav() {
 openNav()
 </script>
 
+<p align="center">
+  <a class="btn btn-warning" href="https://hystrath.github.io/guides/dev/cfd/" role="button"><b>Dev release</b></a>
+  <a class="btn btn-outline-dark" href="https://hystrath.github.io/guides/fleming/cfd/" role="button"><i>Fleming release</i></a>
+</p>
+
 These guidelines are based on the working folder located [here](https://github.com/hystrath/hyStrath/tree/master/run/hyStrath/hy2Foam/genericCase).  
 
 # Table of contents
