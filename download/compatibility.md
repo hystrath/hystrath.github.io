@@ -38,21 +38,21 @@ if (localStorage.getItem("show_sidenav")) openNav()
 The OpenFOAM versions listed below are the <strong>only ones</strong> that are supported by this platform.  
 
 ### Master branch  
-+ OF-v1706: [https://www.openfoam.com/releases/openfoam-v1706](https://www.openfoam.com/releases/openfoam-v1706)  
++ OF-v1706: [https://www.openfoam.com/news/main-news/openfoam-v1706](https://www.openfoam.com/news/main-news/openfoam-v1706)  
 
 <div style="line-height:50%;">
     <br>
 </div> 
 
 ### OF-v2112 branch (coming soon)
-+ OF-v2112: [https://www.openfoam.com/releases/openfoam-v2112](https://www.openfoam.com/releases/openfoam-v2112)  
++ OF-v2112: [https://www.openfoam.com/news/main-news/openfoam-v1706](https://www.openfoam.com/news/main-news/openfoam-v2112)  
 
 <div style="line-height:50%;">
     <br>
 </div> 
 
 ### OF-v1612+ branch (deprecated)
-+ OF-v1612+: [https://www.openfoam.com/releases/openfoam-v1612+](https://www.openfoam.com/releases/openfoam-v1612+) 
++ OF-v1612+: [https://www.openfoam.com/news/main-news/openfoam-v1612](https://www.openfoam.com/news/main-news/openfoam-v1612) 
 
 <div style="line-height:50%;">
     <br>
