@@ -174,4 +174,4 @@ fluxSchemeCoefficients
 ---  
 ## 3) Other spatial schemes  
 
-For other spatial schemes, please refer to the [official documention](https://www.openfoam.com/documentation/guides/v2112/doc/guide-schemes-time.html). 
+For other spatial schemes, please refer to the [official documention](https://www.openfoam.com/documentation/guides/v2112/doc/guide-schemes.html#sec-schemes-spatial). 
