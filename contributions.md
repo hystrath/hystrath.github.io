@@ -78,7 +78,7 @@ You will need to fill a _pull request_ and this can be achieved as follows:
 
 | Contributor | _hyStrath_ branch | Contribution | Date |  
 |-------------|:-------------:|:-------------:|:-------------:|
-| [R.Tech Engineering](http://rtech-engineering.com/), Verniolle, France | OF-v1706 | [Update to OpenFOAM v1706](https://hystrath.github.io/maintenance/), v1706 branch created | 12 May 2018 |
+| [R.Tech Engineering](http://rtech-engineering.com/), Verniolle, France | OF-v1706 | [Update to OpenFOAM v1706](https://hystrath.github.io/download/maintenance/), v1706 branch created | 12 May 2018 |
 
 <br>
 

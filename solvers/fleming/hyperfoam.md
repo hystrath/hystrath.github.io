@@ -13,7 +13,7 @@ nav-short: true
   <a href="https://hystrath.github.io/guides/fleming/cfddsmc/toc/">HYBD Guide</a>
   <a href="https://hystrath.github.io/publications/hyperfoam/">Publications</a>
   <a href="https://hystrath.github.io/people/#cfd-dsmc-not-released-yet">Developers</a>
-  <a href="https://hystrath.github.io/disclaimer/">Disclaimer</a>
+  <a href="https://hystrath.github.io/download/disclaimer/">Disclaimer</a>
 </div>
 
 <span style="position: fixed;font-size:30px;cursor:pointer; margin:0px; top:60px;left:30px;" onclick="reopenNav()">&#9776;</span>
