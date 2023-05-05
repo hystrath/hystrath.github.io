@@ -38,7 +38,6 @@ navbar-links:
     - Sync: "download/fleming/sync"
   Guides:
     - CFD: "guides/fleming/cfd/toc"
-    - CFD (dev): "guides/dev/cfd/toc"
     - DSMC: "guides/fleming/dsmc/toc"
     - PIC-DSMC: "guides/fleming/picdsmc/toc"
     - CFD-DSMC: "guides/fleming/cfddsmc/toc"

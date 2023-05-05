@@ -36,6 +36,11 @@ function reopenNav() {
 if (localStorage.getItem("show_sidenav")) openNav()
 </script>
 
+<p align="center">
+  <a class="btn btn-warning" href="https://hystrath.github.io/download/fleming/installation/" role="button"><b>Fleming release</b></a>
+  <a class="btn btn-outline-dark" href="https://hystrath.github.io/download/dev/installation/" role="button"><i>Dev release</i></a>
+</p>
+
 ### OF-v1706
 {: #OF-v1706 }
 
