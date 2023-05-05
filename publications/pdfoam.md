@@ -46,7 +46,7 @@ Please cite the publication(s) related to the solver(s) that are used and make a
 title = {Github repository of the hyStrath platform},  
 month = {MM},  
 year = {YYYY},  
-note = {Release `Fleming', commit <commit tag>},
+note = {Release <release name>, commit <commit tag>},
 howpublished = {\url{https://github.com/hystrath/hyStrath/}}  
 } 
 ```
