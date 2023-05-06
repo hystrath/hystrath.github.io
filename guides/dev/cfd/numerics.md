@@ -172,7 +172,7 @@ where `a_{1&#8725;2}` is the interface speed of sound defined as
 with
 
 <p style="text-align:center">
-    `a&#770;_L = \frac{a^&#10033;}{max\left(a^&#10033;, u_L\right)}`,
+    `a&#770;_L = \frac{a^&#8727;}{max\left(a^&#8727;, u_L\right)}`,
 </p>
 
 
