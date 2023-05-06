@@ -74,14 +74,14 @@ View of the structured _gmsh_ mesh provided in the <dirname>constant/backup-poly
 
 #### 1.2 Case conditions
 
-A one-dimensional subsonic Sod tube of length `L` = 10 m is considered with initial conditions for the left (L) and right (R) states chosen to match the normalised values presented in the following Table. These conditions should yield from left to right an expansion wave (E), a contact discontinuity (C) and a shock wave (S).
+A one-dimensional subsonic Sod tube of length <i>L</i> = 10 m is considered with initial conditions for the left (L) and right (R) states chosen to match the normalised values presented in the following Table. These conditions should yield from left to right an expansion wave (E), a contact discontinuity (C) and a shock wave (S).
 
 | **State** | **Normalised density** | **Normalised pressure** | **Mach number** |
 |---|:---:|:---:|:---:|
 | Left (L) | 1 | 1 | 0 |
 | Right (R) | 0.125 | 0.1 | 0 |
 
-The diaphragm located in the middle of the tube breaks at `t` = 0 s.
+The diaphragm located in the middle of the tube breaks at <i>t</i> = 0 s.
 
 
 #### 1.3 Thermo-chemical and transport models
@@ -98,7 +98,7 @@ This test case is using the following thermo-chemical and transport models:
 
 #### 1.4 Time controls
 
-The constant time-step is set to 1 x 10<sup>-6</sup> s and the simulation is run until `t` = 5 ms.
+The constant time-step is set to 1 x 10<sup>-6</sup> s and the simulation is run until <i>t</i> = 5 ms.
 
 #### 1.5 Time and flux schemes
 
@@ -127,7 +127,7 @@ fluxSchemeCoefficients
 ### 2. RUNNING 
 {: 2-running-subso}
 
-The following commands will execute <i>blockMesh</i>, <i>checkMesh</i> and <i>hy2Foam</i> in serial
+The following commands will execute <i>blockMesh</i>, <i>checkMesh</i>, <i>setFields</i> and <i>hy2Foam</i> in serial
 
 ```sh
 ./Allclean  
@@ -145,7 +145,7 @@ Length, density, pressure, and temperature are normalised as follows:
 </p>
 
 <p style="text-align:center">
-    ρ* = \frac{ρ - ρ_R}{\rho_L - ρ_R}`,
+    `ρ* = \frac{ρ - ρ_R}{ρ_L - ρ_R}`,
 </p>
 
 <p style="text-align:center">
@@ -187,6 +187,13 @@ Check that the results are matching the solution stored in <dirname>gnuplot/solu
 &nbsp;
 ### 2. RUNNING 
 {: 2-running-superso}
+
+The following commands will execute <i>blockMesh</i>, <i>checkMesh</i>, <i>setFields</i> and <i>hy2Foam</i> in serial
+
+```sh
+./Allclean  
+./Allrun
+``` 
 
 &nbsp;
 ### 3. SOLUTION
