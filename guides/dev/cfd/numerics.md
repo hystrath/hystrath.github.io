@@ -192,12 +192,9 @@ where `a_{1/2}` is the interface speed of sound defined as
 with
 
 <p style="text-align:center">
-    `a&#770;_L = \frac{{a^&#10033;}^2}{max\left(a^&#10033;, u_L\right)}`,
+    `a&#770;_L = \frac{a^&#10033;}{max\left(a^&#10033;, u_L\right)}`,
 </p>
 
-<p style="text-align:center">
-    `a&#770;_R = \frac{{a^&#10033;}^2}{max\left(a^&#10033;, -u_R\right)}`,
-</p>
 
 
 
