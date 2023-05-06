@@ -202,7 +202,7 @@ with
 and
 
 <p style="text-align:center">
-    `{a^&#10033;}^2 = \frac{2 \left(\gamma - 1\right)}{\gamma + 1} h`.
+    `{a^&#10033;}^2 = \frac{2 \left(&#947; - 1\right)}{&#947; + 1} h`.
 </p>
 
 <p style="text-align:center">
