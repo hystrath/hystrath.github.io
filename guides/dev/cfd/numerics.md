@@ -180,13 +180,13 @@ The final algorithm given by Liou (2006) is recalled hereafter.
 The left and right states Mach number is equal to
 
 <p style="text-align:center">
-    `M_{L/R} = \frac{u_{L/R}}{a_{1/2}}`,
+    `M_{L\/R} = \frac{u_{L\/R}}{a_{1\/2}}`,
 </p>
 
 where `a_{1/2}` is the interface speed of sound defined as
 
 <p style="text-align:center">
-    `a_{1/2} = \text{min} \left(a&#770;_L, a&#770;_R\right)`,
+    `a_{1\/2} = \text{min} \left(a&#770;_L, a&#770;_R\right)`,
 </p>
 
 with
