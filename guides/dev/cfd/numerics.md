@@ -186,10 +186,35 @@ The left and right states Mach number is equal to
 where `a_{1/2}` is the interface speed of sound defined as
 
 <p style="text-align:center">
-    `a_{1/2} = \text{min} \left(\hat{a}_L, \hat{a}_R\right)`,
+    `a_{1/2} = \text{min} \left(a&#770;_L, a&#770;_R\right)`,
 </p>
 
 with
+
+<p style="text-align:center">
+    `a&#770;_L = \frac{{a^&#10033;}^2}{\text{max}\left(a^&#10033;, u_L\right)}`,
+</p>
+
+<p style="text-align:center">
+    `a&#770;_R = \frac{{a^&#10033;}^2}{\text{max}\left(a^&#10033;, -u_R\right)}`,
+</p>
+
+and
+
+<p style="text-align:center">
+    `{a^&#10033;}^2 = \frac{2 \left(\gamma - 1\right)}{\gamma + 1} h`.
+</p>
+
+<p style="text-align:center">
+    `M_o^2 = \text{min} \left(1, \text{max}\left(\bar{M}^2, M^2_&infin;\right)\right)`.
+</p>
+
+The scaling factor, `f_a`, can either be set to a value between 0 and 1 or according to the following formula:
+<p style="text-align:center">
+    `f_a = M_o \left(2 - M_o\right)`.
+</p>
+
+The interface Mach number, `Ma_{1/2}`, is expressed as
 
 
 
