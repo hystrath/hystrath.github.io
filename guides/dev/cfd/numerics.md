@@ -179,6 +179,18 @@ fluxSchemeCoefficients
 The final algorithm given by Liou (2006) is recalled hereafter.
 The left and right states Mach number is equal to
 
+<p style="text-align:center">
+    `M_{L/R} = \frac{u_{L/R}}{a_{1/2}}`,
+</p>
+
+where `a_{1/2}` is the interface speed of sound defined as
+
+<p style="text-align:center">
+    `a_{1/2} = \text{min} \left(\hat{a}_L, \hat{a}_R\right)`,
+</p>
+
+with
+
 
 
 <p><img src="/docs/img/publis.png" width="40"> &nbsp; M.-S. Liou, "A Sequel to AUSM, Part II: AUSM<sup>+</sup>-up for All Speeds," <i>Journal of Computational Physics</i>, Vol. 214, No. 1, pp. 137-170, <b>2006</b> &nbsp; <a href="https://www.sciencedirect.com/science/article/abs/pii/S0021999105004274" style="color:red"> [ScienceDirect Portal→]</a></p>
