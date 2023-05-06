@@ -217,13 +217,18 @@ where
     `\mathcal{M}_{(4)}^&plusmn;(M) = \mathcal{M}_{(2)}^&plusmn; (1 &mnplus; 16 &#946; \mathcal{M}_{(2)}^&mnplus;)^2`,
 </p>
 
-and with `σ &#8804; 1`.
+and 
 
 <p style="text-align:center">
-    `\dot{m}_{1&#8725;2} = a_{1&#8725;2} M_{1&#8725;2}` 
+    `σ &#8804; 1`.
+</p>
+
+The interface mass flux is given by
+
+<p style="text-align:center">
 <ul>
-  <li>`ρ_L` if `M_{1&#8725;2} > 0`</li>
-  <li>`ρ_R` otherwise</li>
+    <li>`\dot{m}_{1&#8725;2} = a_{1&#8725;2} M_{1&#8725;2} ρ_L` if `M_{1&#8725;2} > 0`</li> 
+    <li>`\dot{m}_{1&#8725;2} = a_{1&#8725;2} M_{1&#8725;2} ρ_R` otherwise</li>
 </ul>
 </p>
 
