@@ -165,8 +165,7 @@ fluxSchemeCoefficients
 {
     AUSM+upCoefficients
     {
-        MachInf          1.0;
-/*        scalingFactor    1.0;*/
+        MachInf       1.0e-6;
         
         alpha         0.1875;
         beta           0.125;
