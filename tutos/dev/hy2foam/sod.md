@@ -102,7 +102,7 @@ The constant time-step is set to 1 x 10<sup>-6</sup> s and the simulation is run
 
 #### 1.5 Time and flux schemes
 
-The temporal and flux schemes used are the first-order implicit Euler time scheme and the AUSM<sup>+</sup>-up, respectively.
+The temporal and flux schemes used are the first-order implicit Euler time scheme and the AUSM<sup>+</sup>-up flux scheme, respectively.
 The AUSM<sup>+</sup>-up model coefficients are given below.
 
 ```c++
@@ -141,19 +141,19 @@ The following commands will execute <i>blockMesh</i>, <i>checkMesh</i>, <i>setFi
 Length, density, pressure, and temperature are normalised as follows:
 
 <p style="text-align:center">
-    `x* = \frac{x}{L}`
+    `x^\* = \frac{x}{L}`
 </p>
 
 <p style="text-align:center">
-    `ρ* = \frac{ρ - ρ_R}{ρ_L - ρ_R}`,
+    `ρ^* = \frac{ρ - ρ_R}{ρ_L - ρ_R}`,
 </p>
 
 <p style="text-align:center">
-    `p* = \frac{p - p_R}{p_L - p_R}`,
+    `p^* = \frac{p - p_R}{p_L - p_R}`,
 </p>
 
 <p style="text-align:center">
-    `T* = \frac{T - T_R}{T_L - T_R}`.
+    `T^* = \frac{T - T_R}{T_L - T_R}`.
 </p>
 
 On the following graphs, the tutorial case results are given by the black solid lines:
@@ -177,6 +177,7 @@ Check that the results are matching the solution stored in <dirname>gnuplot/solu
 
 <br>
 
+---
 ## Supersonic case
 
 <p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/sod_superso"> here</a></p>
@@ -214,7 +215,7 @@ The following commands will execute <i>blockMesh</i>, <i>checkMesh</i>, <i>setFi
 Because the left and right temperatures are equal, the normalised temperature is computed as
 
 <p style="text-align:center">
-    `T* = \frac{T - T_R}{T_R}`.
+    `T^* = \frac{T - T_R}{T_R}`.
 </p>
 
 
