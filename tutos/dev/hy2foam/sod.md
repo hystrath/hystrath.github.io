@@ -70,7 +70,7 @@ One-dimensional | AUSM<sup>+</sup>-up flux scheme
 {: 1-case-setup-subso}
 
 #### 1.1 Mesh
-{: 1-mesh-subso}
+{: 11-mesh-subso}
 The mesh is one-dimensional (`empty` patches for walls in the <i>y</i> and <i>z</i> directions) and a resolution of 10 mesh points per meter is used along <i>x</i>. 
 
 #### 1.2 Case conditions
@@ -86,23 +86,22 @@ The diaphragm located in the middle of the tube breaks at <i>t</i> = 0 s.
 
 
 #### 1.3 Thermo-chemical and transport models
+{: 13-thermo-models-subso}
 
 This test case is using the following thermo-chemical and transport models:  
 
-* thermally-perfect gas (excluding the electronic energy contribution)
+* calorically-perfect nitrogen gas  
+* inviscid fluid
 * no chemical reactions
-* two-temperature model
-  + V—T energy transfer: Landau-Teller, tabulated Millikan-White coefficients, Park's correction
-* species viscosity: power law
-* species thermal conductivity: Eucken
+* single-temperature model
 * laminar flow
 
 #### 1.4 Time controls
-
+{: 14-time-controls-subso}
 The constant time-step is set to 1 x 10<sup>-6</sup> s and the simulation is run until <i>t</i> = 5 ms.
 
 #### 1.5 Time and flux schemes
-
+{: 15-time-flux-schemes-subso}
 The temporal and flux schemes used are the first-order implicit Euler time scheme and the AUSM<sup>+</sup>-up flux scheme, respectively.
 The AUSM<sup>+</sup>-up model coefficients are given below.
 
@@ -197,7 +196,7 @@ Check that the results are matching the solution stored in <dirname>gnuplot/solu
 {: 1-case-setup-superso}
 
 #### 1.1 Mesh
-The mesh is the same as that presented in #1-mesh-subso
+The mesh is the same as that presented in #11-mesh-subso.
 
 #### 1.2 Case conditions
 
@@ -207,6 +206,15 @@ The shock tube case introduced in the previous section is simulated again for a 
 |---|:---:|:---:|:---:|
 | Left (L) | 1 | 1 | 0 |
 | Right (R) | 0.01 | 0.01 | 0 |
+
+#### 1.3 Thermo-chemical and transport models
+The thermo-chemical and transport models are the same as that presented in #13-thermo-models-subso.
+
+#### 1.4 Time controls
+See #14-time-controls-subso.
+
+#### 1.5 Time and flux schemes
+See #15-time-flux-schemes-subso.
 
 &nbsp;
 ### 2. RUNNING 
