@@ -57,6 +57,10 @@ if (localStorage.getItem("show_sidenav")) openNav()
         <br>
     </div>
 2. Untar them  
+    ```sh
+    tar -zxvf OpenFOAM-v2112.tgz
+    tar -zxvf ThirdParty-v2112.tgz
+    ```
     <div style="line-height:50%;">
         <br>
     </div>
