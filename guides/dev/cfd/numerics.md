@@ -137,18 +137,26 @@ For other time schemes, please refer to the [official documention](https://www.o
 
 ### 2.1 Kurganov and Tadmor
 
+Kurganov-Noelle-Petrova (KNP) and Kurganov-Tadmor (KT) flux schemes do not have any model coefficients.
+In <dirname>system/</dirname><dict>fvSchemes</dict>, they can be selected as follows
 
 ```c++
 fluxScheme            Kurganov;
 ```
 
+and
+
 ```c++
 fluxScheme            Tadmor;
 ``` 
 
+<!--<p><img src="/docs/img/publis.png" width="40"> &nbsp; E. Farbar, I. D. Boyd, M. Kim, and A. Martin, "Investigation of the Effects of Electron Translational Nonequilibrium on Numerical Predictions of Hypersonic Flow Fields," <i>42nd AIAA Thermophysics Conference</i> (Honolulu, Hawaii, US, 27-30 June 2011), AIAA Paper 2011-3136, <b>2011</b> &nbsp; <a href="https://arc.aiaa.org/doi/10.2514/6.2011-3136" style="color:red"> [AIAA Portal→]</a></p>-->
+
 &nbsp;
 
 ### 2.2 AUSM+up
+
+A flux scheme dictionary is created in <dirname>system/</dirname><dict>fvSchemes</dict> to store the AUSM<sup>+</sup>-up coefficients, whose default values are shown in the following listing
 
 ```c++
 fluxScheme            AUSM+up;
@@ -168,6 +176,84 @@ fluxSchemeCoefficients
     }
 }
 ```
+
+The final algorithm given by Liou (2006) is recalled hereafter.
+The left and right states Mach number is equal to
+
+<p style="text-align:center">
+    `M_{L/R} = \frac{u_{L/R}}{a_{1/2}}`,
+</p>
+
+where `a_{1/2}` is the interface speed of sound defined as
+
+<p style="text-align:center">
+    `a_{1/2} = \text{min} \left(\hat{a}_L, \hat{a}_R\right)`,
+</p>
+
+with
+
+<p style="text-align:center">
+    `\hat{a}_L = \frac{{a^*}^2}{\text{max}\left(a^*, u_L\right)}`,
+</p>
+
+<p style="text-align:center">
+    `\hat{a}_R = \frac{{a^*}^2}{\text{max}\left(a^*, -u_R\right)}`,
+</p>
+
+and
+
+<p style="text-align:center">
+    `{a^*}^2 = \frac{2 \left(\gamma - 1\right)}{\gamma + 1} h`.
+</p>
+
+<p style="text-align:center">
+    `M_o^2 = \text{min} \left(1, \text{max}\left(\bar{M}^2, M^2_\infty\right)\right)`.
+</p>
+
+The scaling factor, `f_a`, can either be set to a value between 0 and 1 or according to the following formula:
+<p style="text-align:center">
+    `f_a = M_o \left(2 - M_o\right)`.
+</p>
+
+The interface Mach number, `Ma_{1/2}`, is expressed as
+
+<p style="text-align:center">
+    `\mathcal{M}^&plusmn;_{(1)}(M) = \frac{1}{2}\left(M &plusmn; |M|\right)`,
+</p>
+
+<p style="text-align:center">
+    `\mathcal{M}^&plusmn;_{(2)}(M) = &plusmn;\frac{1}{4}\left(M &plusmn; 1\right)^2`,
+</p>
+
+<p style="text-align:center">
+    `\mathcal{M}^&plusmn;_{(4)}(M) = \mathcal{M}^&plusmn;_{(2)}\left(1 &mnplus; 16 &#946; \mathcal{M}^&mnplus;_{(2)} \right)^2`,
+</p>
+
+<p style="text-align:center">
+    `Ma_{1/2} = \mathcal{M}^+_{(4)}(Ma_L) + \mathcal{M}^-_{(4)}(Ma_R) - \frac{K_p}{f_a}\,\text{max}\left(1 - σ \bar{M}^2\right)\mathcal{M}^+_{(4)}\,\frac{p_R - p_L}{\rho_{1/2}a^2_{1/2}}`.
+</p>
+
+with `σ &le; 1`
+
+<!--\begin{equation}-->
+<!--\dot{m}_{1/2} = a_{1/2} M_{1/2} -->
+<!--    \begin{cases}-->
+<!--      \rho_L & \text{if $M_{1/2} > 0$}\\-->
+<!--      \rho_R & \text{otherwise}-->
+<!--    \end{cases}-->
+<!--\end{equation}-->
+
+<p style="text-align:center">
+    `\mathcal{P}^&plusmn;_{(5)}(M) = \mathcal{M}^&plusmn;_{(2)}\left [\left(&plusmn; 2 - M\right) &mnplus; 16 &#945; M \mathcal{M}^&mnplus;_{(2)} \right]`
+</p>
+
+The pressure flux at the interface, `p_{1/2}`, can be written as
+
+<p style="text-align:center">
+    `p_{1/2} = \mathcal{P}^+_{(5)}\,p_L + \mathcal{P}^-_{(5)}\,p_R - K_u\,\mathcal{P}^+_{(5)}\,\mathcal{P}^-_{(5)} \left(f_a + a_{1/2}\right) \times \left(u_L + u_R\right)`.
+</p>
+
+<p><img src="/docs/img/publis.png" width="40"> &nbsp; M.-S. Liou, "A sequel to AUSM, Part II: AUSM<sup>+</sup>-up for all speeds," <i>Journal of Computational Physics</i>, Vol. 214, No. 1, pp. 137-170, <b>2006</b> &nbsp; <a href="https://www.sciencedirect.com/science/article/abs/pii/S0021999105004274" style="color:red"> [ScienceDirect Portal→]</a></p>
 
 <br>
 

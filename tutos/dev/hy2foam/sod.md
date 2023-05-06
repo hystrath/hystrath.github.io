@@ -62,6 +62,11 @@ One-dimensional | AUSM<sup>+</sup>-up flux scheme
 </p>
 
 
+<p><img src="/docs/img/publis.png" width="40"> Reference</p>
+G. A. Sod, "A Survey of Several Finite Difference Methods for Systems of Nonlinear Hyperbolic
+Conservation Laws", J. Comput. Phys., vol. 27, pp. 1-31, <b>1978</b>.
+
+
 ## Subsonic case
 
 <p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/sod_subso"> here</a></p>
@@ -137,7 +142,7 @@ The following commands will execute <i>blockMesh</i>, <i>checkMesh</i>, <i>setFi
 Length, density, pressure, and temperature are normalised as follows:
 
 <p style="text-align:center">
-    `x^&#10033; = \frac{x}{L}`
+    `x^&#10033; = \frac{x}{L}`,
 </p>
 
 <p style="text-align:center">
