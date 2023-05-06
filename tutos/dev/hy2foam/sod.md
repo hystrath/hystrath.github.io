@@ -71,7 +71,7 @@ One-dimensional | AUSM<sup>+</sup>-up flux scheme
 
 #### 1.1 Mesh
 {: 11-mesh-subso}
-The mesh is one-dimensional (`empty` patches for walls in the <i>y</i> and <i>z</i> directions) and a resolution of 10 mesh points per meter is used along <i>x</i>. 
+The mesh is one-dimensional (`empty` patches for walls in the <i>y</i> and <i>z</i> directions) and a resolution of 10 mesh points per meter is used along <i>x</i>. Zero-gradients boundary conditions are implemented at both ends of the tube.
 
 #### 1.2 Case conditions
 
