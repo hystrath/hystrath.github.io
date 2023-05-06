@@ -141,19 +141,19 @@ The following commands will execute <i>blockMesh</i>, <i>checkMesh</i> and <i>hy
 Length, density, pressure, and temperature are normalised as follows:
 
 <p style="text-align:center">
-    `x^* = \frac{x}{L}`
+    `x* = \frac{x}{L}`
 </p>
 
 <p style="text-align:center">
-    \rho^* = \frac{\rho - \rho_R}{\rho_L - \rho_R}`,
+    ρ* = \frac{ρ - ρ_R}{\rho_L - ρ_R}`,
 </p>
 
 <p style="text-align:center">
-    `p^* = \frac{p - p_R}{p_L - p_R}`,
+    `p* = \frac{p - p_R}{p_L - p_R}`,
 </p>
 
 <p style="text-align:center">
-    `T^* = \frac{T - T_R}{T_L - T_R}`.
+    `T* = \frac{T - T_R}{T_L - T_R}`.
 </p>
 
 On the following graphs, the tutorial case results are given by the black solid lines:
