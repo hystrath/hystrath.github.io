@@ -192,21 +192,21 @@ The left and right states Mach number is equal to
 <!--with-->
 
 <!--<p style="text-align:center">-->
-<!--    `\hat{a}_L = \frac{{a^*}^2}{\text{max}\left(a^*, u_L\right)}`,-->
+<!--    `\hat{a}_L = \frac{{a^&#10033;}^2}{\text{max}\left(a^&#10033;, u_L\right)}`,-->
 <!--</p>-->
 
 <!--<p style="text-align:center">-->
-<!--    `\hat{a}_R = \frac{{a^*}^2}{\text{max}\left(a^*, -u_R\right)}`,-->
+<!--    `\hat{a}_R = \frac{{a^&#10033;}^2}{\text{max}\left(a^&#10033;, -u_R\right)}`,-->
 <!--</p>-->
 
 <!--and-->
 
 <!--<p style="text-align:center">-->
-<!--    `{a^*}^2 = \frac{2 \left(\gamma - 1\right)}{\gamma + 1} h`.-->
+<!--    `{a^&#10033;}^2 = \frac{2 \left(\gamma - 1\right)}{\gamma + 1} h`.-->
 <!--</p>-->
 
 <!--<p style="text-align:center">-->
-<!--    `M_o^2 = \text{min} \left(1, \text{max}\left(\bar{M}^2, M^2_\infty\right)\right)`.-->
+<!--    `M_o^2 = \text{min} \left(1, \text{max}\left(\bar{M}^2, M^2_&infin;\right)\right)`.-->
 <!--</p>-->
 
 <!--The scaling factor, `f_a`, can either be set to a value between 0 and 1 or according to the following formula:-->
