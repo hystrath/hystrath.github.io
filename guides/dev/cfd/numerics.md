@@ -172,16 +172,11 @@ where <i>a<sub>1&#8725;2</sub></i> is the interface speed of sound defined as
 with
 
 <p style="text-align:center">
-    `a&#770;_L = \frac{a^&#8727;}{max(a^&#8727;, u_L)}`,
-</p>
-
-
-<p style="text-align:center">
-    `a&#770;_L = \frac{a^&#8727;^2}{max(a^&#8727;, u_L)}`,
+    `a&#770;_L = \frac{(a^&#8727;)^2}{max(a^&#8727;, u_L)}`,
 </p>
 
 <p style="text-align:center">
-    `a&#770;_R = \frac{a^&#8727;^2}{max(a^&#8727;, -u_R)}`,
+    `a&#770;_R = \frac{(a^&#8727;)^2}{max(a^&#8727;, -u_R)}`,
 </p>
 
 and
@@ -218,15 +213,15 @@ The interface Mach number, <i>Ma<sub>1&#8725;2</sub></i>, is expressed as
     `Ma_{1&#8725;2} = \mathcal{M}_{(4)}^{+}(Ma_L) + \mathcal{M}_{(4)}^{-}(Ma_R) - \frac{K_p}{f_a} max (1 - σ \bar{M}^2)\mathcal{M}_{(4)}^{+}\,\frac{p_R - p_L}{ρ_{1&#8725;2}a_{1&#8725;2}^2}`.
 </p>
 
-with `σ &le; 1`
+with `σ &#8804; 1`
 
-<!--\begin{equation}-->
-<!--\dot{m}_{1/2} = a_{1/2} M_{1/2} -->
-<!--    \begin{cases}-->
-<!--      ρ_L & \text{if $M_{1/2} > 0$}\\-->
-<!--      ρ_R & \text{otherwise}-->
-<!--    \end{cases}-->
-<!--\end{equation}-->
+<p style="text-align:center">
+    `\dot{m}_{1&#8725;2} = a_{1&#8725;2} M_{1&#8725;2}` 
+<ul>
+  <li>`ρ_L` if `M_{1&#8725;2} > 0`</li>
+  <li>`ρ_R` otherwise</li>
+</ul>
+</p>
 
 <p style="text-align:center">
     `\mathcal{P}_{(5)}^&plusmn;(M) = \mathcal{M}_{(2)}^&plusmn;  [ (&plusmn; 2 - M) &mnplus; 16 &#945; M \mathcal{M}_{(2)}^&mnplus; ]`
