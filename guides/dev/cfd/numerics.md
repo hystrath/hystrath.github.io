@@ -227,8 +227,8 @@ The interface mass flux is given by
 
 <p style="text-align:center">
 <ul>
-    <li>`\dot{m}_{1&#8725;2} = a_{1&#8725;2} M_{1&#8725;2} ρ_L` if `M_{1&#8725;2} > 0`</li> 
-    <li>`\dot{m}_{1&#8725;2} = a_{1&#8725;2} M_{1&#8725;2} ρ_R` otherwise</li>
+    <li>`\dot{m}_{1&#8725;2} = a_{1&#8725;2} M_{1&#8725;2} ρ_L` &nbsp; if `M_{1&#8725;2} > 0`</li> 
+    <li>`\dot{m}_{1&#8725;2} = a_{1&#8725;2} M_{1&#8725;2} ρ_R` &nbsp; otherwise</li>
 </ul>
 </p>
 
