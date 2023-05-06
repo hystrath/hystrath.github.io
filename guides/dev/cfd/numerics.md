@@ -194,7 +194,7 @@ The interface Mach number, `Ma_{1&#8725;2}`, is expressed as
 <!--\end{equation}-->
 
 <p style="text-align:center">
-    `\mathcal{P}_{(5)}(M)^&plusmn; = \mathcal{M}^&plusmn; _{(2)} \left [ \left(&plusmn; 2 - M \right) &mnplus; 16 &#945; M \mathcal{M}^&mnplus;_{(2)} \right]`
+    `\mathcal{P}^&plusmn_{(5)}(M) = \mathcal{M}^&plusmn; _{(2)} \left [ \left(&plusmn; 2 - M \right) &mnplus; 16 &#945; M \mathcal{M}^&mnplus;_{(2)} \right]`
 </p>
 
 The pressure flux at the interface, `p_{1&#8725;2}`, can be written as
