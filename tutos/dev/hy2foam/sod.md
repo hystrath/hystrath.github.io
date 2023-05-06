@@ -98,7 +98,7 @@ This test case is using the following thermo-chemical and transport models:
 
 #### 1.4 Time controls
 {: 14-time-controls-subso}
-The constant time-step is set to 1 x 10<sup>-6</sup> s and the simulation is run until <i>t</i> = 5 ms.
+The constant time-step is set to 1 µs and the simulation is run until <i>t</i> = 5 ms.
 
 #### 1.5 Time and flux schemes
 {: 15-time-flux-schemes-subso}
