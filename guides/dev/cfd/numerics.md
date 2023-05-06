@@ -166,18 +166,33 @@ The left and right Mach number states are equal to
 where <i>a<sub>1&#8725;2</sub></i> is the interface speed of sound defined as
 
 <p style="text-align:center">
-    `a_{1&#8725;2} = \text{min} \left(a&#770;_L, a&#770;_R\right)`,
+    `a_{1&#8725;2} = min \left(a&#770;_L, a&#770;_R\right)`,
 </p>
 
 with
 
 <p style="text-align:center">
-    `a&#770;_L = \frac{a^&#8727;}{max\left(a^&#8727;, u_L\right)}`,
+    `a&#770;_L = \frac{a^&#8727;}{max(a^&#8727;, u_L)}`,
 </p>
 
 
+<p style="text-align:center">
+    `a&#770;_L = \frac{a^&#8727;^2}{max(a^&#8727;, u_L)}`,
+</p>
 
+<p style="text-align:center">
+    `a&#770;_R = \frac{a^&#8727;^2}{max(a^&#8727;, -u_R)}`,
+</p>
 
+and
+
+<p style="text-align:center">
+    `{a^&#8727;}^2 = \frac{2 (&#947; - 1)}{&#947; + 1} h`.
+</p>
+
+<p style="text-align:center">
+    `M_o^2 = min (1, max(\bar{M}^2, M_&infin;^2))`.
+</p>
 
 
 The scaling factor, <i>f<sub>a</sub></i>, can either be set to a value between 0 and 1 or according to the following formula:
