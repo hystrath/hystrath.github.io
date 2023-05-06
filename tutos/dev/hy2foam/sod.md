@@ -11,16 +11,16 @@ nav-short: true
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/"><center><img src="/docs/img/logos/hy2FoamLogo.png" width="60"></center></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/heatbath"><b>Adiabatic heat bath</b></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod" style="background-color:#FFCCCC"><b>Sod's shock tube</b></a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#1-subsonic-case" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><center><u>Subsonic case</u></center></a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#11-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#12-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#13-solution" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Solution</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#14-regression-testing" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 4. Regression testing</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#2-subsonic-case" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><center><u>Supersonic case</u></center></a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#21-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#22-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#23-solution" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Solution</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#24-regression-testing" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 4. Regression testing</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#subsonic-case" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><center><u>Subsonic case</u></center></a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#1-case-setup-subso" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#2-running-subso" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#3-solution-subso" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Solution</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#4-regression-testing-subso" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 4. Regression testing</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#supersonic-case" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><center><u>Supersonic case</u></center></a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#1-case-setup-superso" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#2-running-superso" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#3-solution-superso" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Solution</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#4-regression-testing-superso" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 4. Regression testing</a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/bluntedcone"><b>Blunted cone</b></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/ramcii/"><b>RAM C-II spacecraft</b></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#5-nasa-msl-forebody"><b>NASA MSL forebody</b></a>
@@ -61,12 +61,13 @@ if (localStorage.getItem("show_sidenav")) openNav()
 One-dimensional | AUSM<sup>+</sup>-up flux scheme  
 </p>
 
-<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/sod"> here</a></p>
-
 
 ## Subsonic case
 
+<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/sod_subso"> here</a></p>
+
 ### 1. CASE SETUP
+{: case-setup-subso}
 
 #### 1.1 Mesh
 View of the structured _gmsh_ mesh provided in the <dirname>constant/backup-polyMesh</dirname> folder (each 5th line is represented in each direction). It is aligned with the bow shock, has 120,000 hexahedra, and the first layer height is equal to 2 x 10<sup>-6</sup> m.
@@ -109,6 +110,7 @@ The simulation end time is equal to 0.0002 s.
 
 &nbsp;
 ### 2. RUNNING 
+{: running-subso}
 
 The following commands will execute <i>blockMesh</i>, <i>checkMesh</i> and <i>hy2Foam</i> in serial
 
@@ -119,6 +121,7 @@ The following commands will execute <i>blockMesh</i>, <i>checkMesh</i> and <i>hy
 
 &nbsp;
 ### 3. SOLUTION
+{: solution-subso}
 
 On the following graphs, the tutorial case results are given by the black solid lines:
 
@@ -131,6 +134,7 @@ On the following graphs, the tutorial case results are given by the black solid 
 
 &nbsp;
 ### 4. REGRESSION TESTING
+{: regression-testing-subso}
 
 Check that the results are matching the solution stored in <dirname>gnuplot/solution/</dirname>:
 
@@ -142,17 +146,23 @@ Check that the results are matching the solution stored in <dirname>gnuplot/solu
 
 ## Supersonic case
 
+<p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/sod_superso"> here</a></p>
+
 ### 1. CASE SETUP
+{: case-setup-superso}
 
 &nbsp;
 ### 2. RUNNING 
+{: running-superso}
 
 &nbsp;
 ### 3. SOLUTION
+{: solution-superso}
 
 
 &nbsp;
 ### 4. REGRESSION TESTING
+{: regression-testing-superso}
 
 Check that the results are matching the solution stored in <dirname>gnuplot/solution/</dirname>:
 
