@@ -184,6 +184,18 @@ Check that the results are matching the solution stored in <dirname>gnuplot/solu
 ### 1. CASE SETUP
 {: 1-case-setup-superso}
 
+#### 1.1 Mesh
+View of the structured _gmsh_ mesh provided in the <dirname>constant/backup-polyMesh</dirname> folder (each 5th line is represented in each direction). It is aligned with the bow shock, has 120,000 hexahedra, and the first layer height is equal to 2 x 10<sup>-6</sup> m.
+
+#### 1.2 Case conditions
+
+The shock tube case introduced in the previous section is simulated again for a different set of initial left and right state conditions resulting in a supersonic flow:
+
+| **State** | **Normalised density** | **Normalised pressure** | **Mach number** |
+|---|:---:|:---:|:---:|
+| Left (L) | 1 | 1 | 0 |
+| Right (R) | 0.01 | 0.01 | 0 |
+
 &nbsp;
 ### 2. RUNNING 
 {: 2-running-superso}
@@ -198,6 +210,12 @@ The following commands will execute <i>blockMesh</i>, <i>checkMesh</i>, <i>setFi
 &nbsp;
 ### 3. SOLUTION
 {: 3-solution-superso}
+
+Because the left and right temperatures are equal, the normalised temperature is computed as
+
+<p style="text-align:center">
+    `T* = \frac{T - T_R}{T_R}`.
+</p>
 
 
 &nbsp;
