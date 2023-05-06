@@ -185,17 +185,25 @@ and
     `(a^&#8727;)^2 = \frac{2 (&#947; - 1)}{&#947; + 1} h`.
 </p>
 
-<p style="text-align:center">
-    `M_o^2 = min (1, max(\bar{M}^2, M_&infin;^2))`.
-</p>
-
 
 The scaling factor, <i>f<sub>a</sub></i>, can either be set to a value between 0 and 1 or according to the following formula:
 <p style="text-align:center">
     `f_a = M_o \left(2 - M_o\right)`.
 </p>
 
+where
+
+<p style="text-align:center">
+    `M_o^2 = min(1, max(\bar{M}^2, M_&infin;^2))`.
+</p>
+
 The interface Mach number, <i>Ma<sub>1&#8725;2</sub></i>, is expressed as
+
+<p style="text-align:center">
+    `Ma_{1&#8725;2} = \mathcal{M}_{(4)}^{+}(Ma_L) + \mathcal{M}_{(4)}^{-}(Ma_R) - \frac{K_p}{f_a} max (1 - σ \bar{M}^2)\mathcal{M}_{(4)}^{+} \frac{p_R - p_L}{ρ_{1&#8725;2}a_{1&#8725;2}^2}`,
+</p>
+
+where
 
 <p style="text-align:center">
     `\mathcal{M}_{(1)}^&plusmn;(M) = \frac{1}{2} (M &plusmn; |M|)`,
@@ -209,11 +217,7 @@ The interface Mach number, <i>Ma<sub>1&#8725;2</sub></i>, is expressed as
     `\mathcal{M}_{(4)}^&plusmn;(M) = \mathcal{M}_{(2)}^&plusmn; (1 &mnplus; 16 &#946; \mathcal{M}_{(2)}^&mnplus;)^2`,
 </p>
 
-<p style="text-align:center">
-    `Ma_{1&#8725;2} = \mathcal{M}_{(4)}^{+}(Ma_L) + \mathcal{M}_{(4)}^{-}(Ma_R) - \frac{K_p}{f_a} max (1 - σ \bar{M}^2)\mathcal{M}_{(4)}^{+} \frac{p_R - p_L}{ρ_{1&#8725;2}a_{1&#8725;2}^2}`.
-</p>
-
-with `σ &#8804; 1`
+and with `σ &#8804; 1`.
 
 <p style="text-align:center">
     `\dot{m}_{1&#8725;2} = a_{1&#8725;2} M_{1&#8725;2}` 
@@ -223,16 +227,18 @@ with `σ &#8804; 1`
 </ul>
 </p>
 
-<p style="text-align:center">
-    `\mathcal{P}_{(5)}^&plusmn;(M) = \mathcal{M}_{(2)}^&plusmn;  [ (&plusmn; 2 - M) &mnplus; 16 &#945; M \mathcal{M}_{(2)}^&mnplus; ]`
-</p>
 
 The pressure flux at the interface, <i>p<sub>1&#8725;2</sub></i>, can be written as
 
 <p style="text-align:center">
-    `p_{1&#8725;2} = \mathcal{P}_{(5)}^{+} p_L + \mathcal{P}_{(5)}^{-} p_R - K_u \mathcal{P}_{(5)}^{+} \mathcal{P}_{(5)}^{-} (f_a + a_{1&#8725;2}) \times (u_L + u_R)`.
+    `p_{1&#8725;2} = \mathcal{P}_{(5)}^{+} p_L + \mathcal{P}_{(5)}^{-} p_R - K_u \mathcal{P}_{(5)}^{+} \mathcal{P}_{(5)}^{-} (f_a + a_{1&#8725;2}) \times (u_L + u_R)`,
 </p>
 
+where
+
+<p style="text-align:center">
+    `\mathcal{P}_{(5)}^&plusmn;(M) = \mathcal{M}_{(2)}^&plusmn;  [ (&plusmn; 2 - M) &mnplus; 16 &#945; M \mathcal{M}_{(2)}^&mnplus; ].`
+</p>
 
 
 <p><img src="/docs/img/publis.png" width="40"> &nbsp; M.-S. Liou, "A Sequel to AUSM, Part II: AUSM<sup>+</sup>-up for All Speeds," <i>Journal of Computational Physics</i>, Vol. 214, No. 1, pp. 137-170, <b>2006</b> &nbsp; <a href="https://www.sciencedirect.com/science/article/abs/pii/S0021999105004274" style="color:red"> [ScienceDirect Portal→]</a></p>
