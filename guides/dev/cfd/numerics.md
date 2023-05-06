@@ -150,7 +150,7 @@ and
 fluxScheme            Tadmor;
 ``` 
 
-<!--<p><img src="/docs/img/publis.png" width="40"> &nbsp; E. Farbar, I. D. Boyd, M. Kim, and A. Martin, "Investigation of the Effects of Electron Translational Nonequilibrium on Numerical Predictions of Hypersonic Flow Fields," <i>42nd AIAA Thermophysics Conference</i> (Honolulu, Hawaii, US, 27-30 June 2011), AIAA Paper 2011-3136, <b>2011</b> &nbsp; <a href="https://arc.aiaa.org/doi/10.2514/6.2011-3136" style="color:red"> [AIAA Portal→]</a></p>-->
+<p><img src="/docs/img/publis.png" width="40"> &nbsp; A. Kurganov, S. Noelle, and G. Petrova, "Semi-Discrete Central-Upwind Scheme for Hyperbolic Conservation Laws and Hamilton-Jacobi Equations," <i>SIAM Journal on Scientific Computing</i>, Vol. 23, No. 3, pp. 707-740, <b>2001</b> &nbsp; <a href="https://doi.org/10.1137/S1064827500373413" style="color:red"> [SIAM Portal→]</a></p>
 
 &nbsp;
 
@@ -181,7 +181,7 @@ The left and right states Mach number is equal to
 
 
 
-<p><img src="/docs/img/publis.png" width="40"> &nbsp; M.-S. Liou, "A sequel to AUSM, Part II: AUSM<sup>+</sup>-up for all speeds," <i>Journal of Computational Physics</i>, Vol. 214, No. 1, pp. 137-170, <b>2006</b> &nbsp; <a href="https://www.sciencedirect.com/science/article/abs/pii/S0021999105004274" style="color:red"> [ScienceDirect Portal→]</a></p>
+<p><img src="/docs/img/publis.png" width="40"> &nbsp; M.-S. Liou, "A Sequel to AUSM, Part II: AUSM<sup>+</sup>-up for All Speeds," <i>Journal of Computational Physics</i>, Vol. 214, No. 1, pp. 137-170, <b>2006</b> &nbsp; <a href="https://www.sciencedirect.com/science/article/abs/pii/S0021999105004274" style="color:red"> [ScienceDirect Portal→]</a></p>
 
 <br>
 
