@@ -11,10 +11,16 @@ nav-short: true
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/"><center><img src="/docs/img/logos/hy2FoamLogo.png" width="60"></center></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/heatbath"><b>Adiabatic heat bath</b></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod" style="background-color:#FFCCCC"><b>Sod's shock tube</b></a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#1-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#2-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#3-solution" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Solution</a>
-  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#4-regression-testing" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 4. Regression testing</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#1-subsonic-case" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><center><u>Subsonic case</u></center></a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#11-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#12-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#13-solution" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Solution</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#14-regression-testing" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 4. Regression testing</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#2-subsonic-case" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px"><center><u>Supersonic case</u></center></a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#21-case-setup" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 1. Case setup</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#22-running" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 2. Running</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#23-solution" style="background-color:#FFE6E6; padding-top:4px; padding-bottom:4px">&nbsp;&nbsp; 3. Solution</a>
+  <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#24-regression-testing" style="background-color:#FFE6E6; padding-top:4px">&nbsp;&nbsp; 4. Regression testing</a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/bluntedcone"><b>Blunted cone</b></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/ramcii/"><b>RAM C-II spacecraft</b></a>
   <a href="https://hystrath.github.io/tutos/dev/hy2foam/toc/#5-nasa-msl-forebody"><b>NASA MSL forebody</b></a>
@@ -57,6 +63,8 @@ One-dimensional | AUSM<sup>+</sup>-up flux scheme
 
 <p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/sod"> here</a></p>
 
+
+## Subsonic case
 
 ### 1. CASE SETUP
 

@@ -4,8 +4,8 @@ title: Contact
 nav-short: true
 ---
 
-<!--**Enquiries: hystrath@gmail.com**    -->
-**Enquiries: mtscfd@gmail.com** 
+**Enquiries: hystrath@gmail.com**    
+<!--**Enquiries: mtscfd@gmail.com** -->
 
 This e-mail address may be used if
   - you would like to [contribute](https://hystrath.github.io/about/contributions/)
