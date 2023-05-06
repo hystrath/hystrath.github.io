@@ -182,7 +182,7 @@ with
 and
 
 <p style="text-align:center">
-    `{a^&#8727;}^2 = \frac{2 (&#947; - 1)}{&#947; + 1} h`.
+    `(a^&#8727;)^2 = \frac{2 (&#947; - 1)}{&#947; + 1} h`.
 </p>
 
 <p style="text-align:center">
