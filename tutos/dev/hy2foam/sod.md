@@ -159,19 +159,19 @@ Length, density, pressure, and temperature are normalised as follows:
 On the following graphs, the tutorial case results are given by the black solid lines:
 
 <p align="center">
-<img src="/docs/img/tutos/dev/hy2Foam/sod/dens-subso.png" width="400">  
+<img src="/docs/img/tutos/dev/hy2foam/sod/dens-subso.png" width="400">  
 </p>
 
 <p align="center">
-<img src="/docs/img/tutos/dev/hy2Foam/sod/pres-subso.png" width="400">  
+<img src="/docs/img/tutos/dev/hy2foam/sod/pres-subso.png" width="400">  
 </p>
 
 <p align="center">
-<img src="/docs/img/tutos/dev/hy2Foam/sod/temp-subso.png" width="400">  
+<img src="/docs/img/tutos/dev/hy2foam/sod/temp-subso.png" width="400">  
 </p>
 
 <p align="center">
-<img src="/docs/img/tutos/dev/hy2Foam/sod/mach-subso.png" width="400">  
+<img src="/docs/img/tutos/dev/hy2foam/sod/mach-subso.png" width="400">  
 </p>
 
 <!--Stagnation line data (a–c) and surface coefficients (d–f) along the blunted cone:<br>-->
@@ -227,25 +227,25 @@ The following commands will execute <i>blockMesh</i>, <i>checkMesh</i>, <i>setFi
 Because the left and right temperatures are equal, the normalised temperature is computed as
 
 <p style="text-align:center">
-    `T^&#42; = \frac{T - T_R}{T_R}`.
+    `T^&#128944; = \frac{T - T_R}{T_R}`.
 </p>
 
 On the following graphs, the tutorial case results are given by the black solid lines:
 
 <p align="center">
-<img src="/docs/img/tutos/dev/hy2Foam/sod/dens-superso.png" width="400">  
+<img src="/docs/img/tutos/dev/hy2foam/sod/dens-superso.png" width="400">  
 </p>
 
 <p align="center">
-<img src="/docs/img/tutos/dev/hy2Foam/sod/pres-superso.png" width="400">  
+<img src="/docs/img/tutos/dev/hy2foam/sod/pres-superso.png" width="400">  
 </p>
 
 <p align="center">
-<img src="/docs/img/tutos/dev/hy2Foam/sod/temp-superso.png" width="400">  
+<img src="/docs/img/tutos/dev/hy2foam/sod/temp-superso.png" width="400">  
 </p>
 
 <p align="center">
-<img src="/docs/img/tutos/dev/hy2Foam/sod/mach-superso.png" width="400">  
+<img src="/docs/img/tutos/dev/hy2foam/sod/mach-superso.png" width="400">  
 </p>
 
 
