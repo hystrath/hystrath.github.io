@@ -140,6 +140,28 @@ Check that the results are matching the solution stored in <dirname>gnuplot/solu
 
 <br>
 
+## Supersonic case
+
+### 1. CASE SETUP
+
+&nbsp;
+### 2. RUNNING 
+
+&nbsp;
+### 3. SOLUTION
+
+
+&nbsp;
+### 4. REGRESSION TESTING
+
+Check that the results are matching the solution stored in <dirname>gnuplot/solution/</dirname>:
+
+```sh
+./Alltest
+```   
+
+<br>
+
 ---  
 
 Contributor: Dr Vincent Casseau
