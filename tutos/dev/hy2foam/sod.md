@@ -159,19 +159,19 @@ Length, density, pressure, and temperature are normalised as follows:
 On the following graphs, the tutorial case results are given by the black solid lines:
 
 <p align="center">
-<img src="/docs/img/tutos/dev/hy2Foam/sod/dens-subso.png" width="400">  
+<img src="/docs/img/tutos/dev/hy2Foam/sod/dens-subso.eps" width="400">  
 </p>
 
 <p align="center">
-<img src="/docs/img/tutos/dev/hy2Foam/sod/pres-subso.png" width="400">  
+<img src="/docs/img/tutos/dev/hy2Foam/sod/pres-subso.eps" width="400">  
 </p>
 
 <p align="center">
-<img src="/docs/img/tutos/dev/hy2Foam/sod/temp-subso.png" width="400">  
+<img src="/docs/img/tutos/dev/hy2Foam/sod/temp-subso.eps" width="400">  
 </p>
 
 <p align="center">
-<img src="/docs/img/tutos/dev/hy2Foam/sod/mach-subso.png" width="400">  
+<img src="/docs/img/tutos/dev/hy2Foam/sod/mach-subso.eps" width="400">  
 </p>
 
 <!--Stagnation line data (a–c) and surface coefficients (d–f) along the blunted cone:<br>-->
@@ -233,19 +233,19 @@ Because the left and right temperatures are equal, the normalised temperature is
 On the following graphs, the tutorial case results are given by the black solid lines:
 
 <p align="center">
-<img src="/docs/img/tutos/dev/hy2Foam/sod/dens-superso.png" width="400">  
+<img src="/docs/img/tutos/dev/hy2Foam/sod/dens-superso.eps" width="400">  
 </p>
 
 <p align="center">
-<img src="/docs/img/tutos/dev/hy2Foam/sod/pres-superso.png" width="400">  
+<img src="/docs/img/tutos/dev/hy2Foam/sod/pres-superso.eps" width="400">  
 </p>
 
 <p align="center">
-<img src="/docs/img/tutos/dev/hy2Foam/sod/temp-superso.png" width="400">  
+<img src="/docs/img/tutos/dev/hy2Foam/sod/temp-superso.eps" width="400">  
 </p>
 
 <p align="center">
-<img src="/docs/img/tutos/dev/hy2Foam/sod/mach-superso.png" width="400">  
+<img src="/docs/img/tutos/dev/hy2Foam/sod/mach-superso.eps" width="400">  
 </p>
 
 
