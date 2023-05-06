@@ -156,6 +156,57 @@ fluxScheme            Tadmor;
 
 ### 2.2 AUSM+up
 
+The final algorithm given by Liou (2006) is recalled hereafter.
+The left and right states Mach number is equal to
+
+<p style="text-align:center">
+    `M_{L&#8725;R} = \frac{u_{L&#8725;R}}{a_{1&#8725;2}}`,
+</p>
+
+where `a_{1&#8725;2}` is the interface speed of sound defined as
+
+<p style="text-align:center">
+    `a_{1&#8725;2} = \text{min} \left(a&#770;_L, a&#770;_R\right)`,
+</p>
+
+with
+
+<p style="text-align:center">
+    `a&#770;_L = \frac{a^&#10033;}{max\left(a^&#10033;, u_L\right)}`,
+</p>
+
+
+
+
+The scaling factor, `f_a`, can either be set to a value between 0 and 1 or according to the following formula:
+<p style="text-align:center">
+    `f_a = M_o \left(2 - M_o\right)`.
+</p>
+
+The interface Mach number, `Ma_{1&#8725;2}`, is expressed as
+
+<!--\begin{equation}-->
+<!--\dot{m}_{1/2} = a_{1/2} M_{1/2} -->
+<!--    \begin{cases}-->
+<!--      \rho_L & \text{if $M_{1/2} > 0$}\\-->
+<!--      \rho_R & \text{otherwise}-->
+<!--    \end{cases}-->
+<!--\end{equation}-->
+
+<p style="text-align:center">
+    `\mathcal{P}^&plusmn; _{(5)}(M) = \mathcal{M}^&plusmn; _{(2)}\left [\left(&plusmn; 2 - M\right) &mnplus; 16 &#945; M \mathcal{M}^&mnplus;_{(2)} \right]`
+</p>
+
+The pressure flux at the interface, `p_{1&#8725;2}`, can be written as
+
+<p style="text-align:center">
+    `p_{1&#8725;2} = \mathcal{P}^+ _{(5)}\,p_L + \mathcal{P}^- _{(5)}\,p_R - K_u\,\mathcal{P}^+ _{(5)}\,\mathcal{P}^- _{(5)} \left(f_a + a_{1&#8725;2}\right) \times \left(u_L + u_R\right)`.
+</p>
+
+
+
+<p><img src="/docs/img/publis.png" width="40"> &nbsp; M.-S. Liou, "A Sequel to AUSM, Part II: AUSM<sup>+</sup>-up for All Speeds," <i>Journal of Computational Physics</i>, Vol. 214, No. 1, pp. 137-170, <b>2006</b> &nbsp; <a href="https://www.sciencedirect.com/science/article/abs/pii/S0021999105004274" style="color:red"> [ScienceDirect Portal→]</a></p>
+
 A flux scheme dictionary is created in <dirname>system/</dirname><dict>fvSchemes</dict> to store the AUSM<sup>+</sup>-up coefficients, whose default values are shown in the following listing
 
 ```c++
@@ -175,57 +226,6 @@ fluxSchemeCoefficients
     }
 }
 ```
-
-The final algorithm given by Liou (2006) is recalled hereafter.
-The left and right states Mach number is equal to
-
-<p style="text-align:center">
-    `M_{L\/R} = \frac{u_{L\/R}}{a_{1\/2}}`,
-</p>
-
-where `a_{1/2}` is the interface speed of sound defined as
-
-<p style="text-align:center">
-    `a_{1\/2} = \text{min} \left(a&#770;_L, a&#770;_R\right)`,
-</p>
-
-with
-
-<p style="text-align:center">
-    `a&#770;_L = \frac{a^&#10033;}{max\left(a^&#10033;, u_L\right)}`,
-</p>
-
-
-
-
-The scaling factor, `f_a`, can either be set to a value between 0 and 1 or according to the following formula:
-<p style="text-align:center">
-    `f_a = M_o \left(2 - M_o\right)`.
-</p>
-
-The interface Mach number, `Ma_{1/2}`, is expressed as
-
-<!--\begin{equation}-->
-<!--\dot{m}_{1/2} = a_{1/2} M_{1/2} -->
-<!--    \begin{cases}-->
-<!--      \rho_L & \text{if $M_{1/2} > 0$}\\-->
-<!--      \rho_R & \text{otherwise}-->
-<!--    \end{cases}-->
-<!--\end{equation}-->
-
-<p style="text-align:center">
-    `\mathcal{P}^&plusmn;_{(5)}(M) = \mathcal{M}^&plusmn;_{(2)}\left [\left(&plusmn; 2 - M\right) &mnplus; 16 &#945; M \mathcal{M}^&mnplus;_{(2)} \right]`
-</p>
-
-The pressure flux at the interface, `p_{1/2}`, can be written as
-
-<p style="text-align:center">
-    `p_{1/2} = \mathcal{P}^+_{(5)}\,p_L + \mathcal{P}^-_{(5)}\,p_R - K_u\,\mathcal{P}^+_{(5)}\,\mathcal{P}^-_{(5)} \left(f_a + a_{1/2}\right) \times \left(u_L + u_R\right)`.
-</p>
-
-
-
-<p><img src="/docs/img/publis.png" width="40"> &nbsp; M.-S. Liou, "A Sequel to AUSM, Part II: AUSM<sup>+</sup>-up for All Speeds," <i>Journal of Computational Physics</i>, Vol. 214, No. 1, pp. 137-170, <b>2006</b> &nbsp; <a href="https://www.sciencedirect.com/science/article/abs/pii/S0021999105004274" style="color:red"> [ScienceDirect Portal→]</a></p>
 
 <br>
 
