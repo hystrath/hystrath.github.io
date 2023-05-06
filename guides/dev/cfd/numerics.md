@@ -163,7 +163,7 @@ The left and right states Mach number is equal to
     `M_{L&#8725;R} = \frac{u_{L&#8725;R}}{a_{1&#8725;2}}`,
 </p>
 
-where `a_{1&#8725;2}` is the interface speed of sound defined as
+where <i>a<sub>1&#8725;2</sub></i> is the interface speed of sound defined as
 
 <p style="text-align:center">
     `a_{1&#8725;2} = \text{min} \left(a&#770;_L, a&#770;_R\right)`,
@@ -178,12 +178,14 @@ with
 
 
 
-The scaling factor, `f_a`, can either be set to a value between 0 and 1 or according to the following formula:
+
+
+The scaling factor, <i>f<sub>a</sub></i>, can either be set to a value between 0 and 1 or according to the following formula:
 <p style="text-align:center">
     `f_a = M_o \left(2 - M_o\right)`.
 </p>
 
-The interface Mach number, `Ma_{1&#8725;2}`, is expressed as
+The interface Mach number, <i>Ma<sub>1&#8725;2</sub></i>, is expressed as
 
 <!--\begin{equation}-->
 <!--\dot{m}_{1/2} = a_{1/2} M_{1/2} -->
@@ -194,13 +196,13 @@ The interface Mach number, `Ma_{1&#8725;2}`, is expressed as
 <!--\end{equation}-->
 
 <p style="text-align:center">
-    `\mathcal{P}^&plusmn_{(5)}(M) = \mathcal{M}^&plusmn; _{(2)} \left [ \left(&plusmn; 2 - M \right) &mnplus; 16 &#945; M \mathcal{M}^&mnplus;_{(2)} \right]`
+    `\mathcal{P}_{(5)}^&plusmn;(M) = \mathcal{M}_{(2)}^&plusmn; \left [ \left(&plusmn; 2 - M \right) &mnplus; 16 &#945; M \mathcal{M}^&mnplus;_{(2)} \right]`
 </p>
 
-The pressure flux at the interface, `p_{1&#8725;2}`, can be written as
+The pressure flux at the interface, <i>p<sub>1&#8725;2</sub></i>, can be written as
 
 <p style="text-align:center">
-    `p_{1&#8725;2} = \mathcal{P}^+\_{(5)}\,p_L + \mathcal{P}^-\_{(5)}\,p_R - K_u\,\mathcal{P}^+ _{(5)}\,\mathcal{P}^- _{(5)} \left(f_a + a_{1&#8725;2}\right) \times \left(u_L + u_R\right)`.
+    `p_{1&#8725;2} = \mathcal{P}_{(5)}^+\\,p_L + \mathcal{P}_{(5)}^- \,p_R - K_u\,\mathcal{P}_{(5)}^+ \,\mathcal{P}_{(5)}^- \left(f_a + a_{1&#8725;2}\right) \times \left(u_L + u_R\right)`.
 </p>
 
 
