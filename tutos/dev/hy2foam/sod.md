@@ -70,7 +70,8 @@ One-dimensional | AUSM<sup>+</sup>-up flux scheme
 {: 1-case-setup-subso}
 
 #### 1.1 Mesh
-View of the structured _gmsh_ mesh provided in the <dirname>constant/backup-polyMesh</dirname> folder (each 5th line is represented in each direction). It is aligned with the bow shock, has 120,000 hexahedra, and the first layer height is equal to 2 x 10<sup>-6</sup> m.
+{: 1-mesh-subso}
+The mesh is one-dimensional (`empty` patches for walls in the <i>y</i> and <i>z</i> directions) and a resolution of 10 mesh points per meter is used along <i>x</i>. 
 
 #### 1.2 Case conditions
 
@@ -156,7 +157,8 @@ Length, density, pressure, and temperature are normalised as follows:
     `T^&#10033; = \frac{T - T_R}{T_L - T_R}`.
 </p>
 
-On the following graphs, the tutorial case results for density, pressure, temperature and Mach are given by the black solid lines:
+On the following graphs, the tutorial case results for density, pressure, temperature and Mach are given by the red symbols.
+<i>hy2Foam</i>'s solution for the Kurganov-Noelle-Petrova (KNP) scheme is also shown as a reference.
 
 <p align="center">
 <img src="/docs/img/tutos/dev/hy2foam/sod/dens-subso.png" width="400">  
@@ -195,7 +197,7 @@ Check that the results are matching the solution stored in <dirname>gnuplot/solu
 {: 1-case-setup-superso}
 
 #### 1.1 Mesh
-View of the structured _gmsh_ mesh provided in the <dirname>constant/backup-polyMesh</dirname> folder (each 5th line is represented in each direction). It is aligned with the bow shock, has 120,000 hexahedra, and the first layer height is equal to 2 x 10<sup>-6</sup> m.
+The mesh is the same as that presented in #1-mesh-subso
 
 #### 1.2 Case conditions
 
@@ -227,7 +229,7 @@ Because the left and right temperatures are equal, the normalised temperature is
     `T^&#10033; = \frac{T - T_R}{T_R}`.
 </p>
 
-On the following graphs, the tutorial case results for density, pressure, temperature and Mach are given by the black solid lines:
+On the following graphs, the tutorial case results for density, pressure, temperature and Mach are given by the red symbols:
 
 <p align="center">
 <img src="/docs/img/tutos/dev/hy2foam/sod/dens-superso.png" width="400">  
