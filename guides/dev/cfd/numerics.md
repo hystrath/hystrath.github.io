@@ -248,7 +248,7 @@ where
 
 <p><img src="/docs/img/publis.png" width="40"> &nbsp; M.-S. Liou, "A Sequel to AUSM, Part II: AUSM<sup>+</sup>-up for All Speeds," <i>Journal of Computational Physics</i>, Vol. 214, No. 1, pp. 137-170, <b>2006</b> &nbsp; <a href="https://www.sciencedirect.com/science/article/abs/pii/S0021999105004274" style="color:red"> [ScienceDirect Portal→]</a></p>
 
-A flux scheme dictionary is created in <dirname>system/</dirname><dict>fvSchemes</dict> to store the AUSM<sup>+</sup>-up coefficients, whose default values are shown in the following listing
+A flux scheme dictionary is created in <dirname>system/</dirname><dict>fvSchemes</dict> to store the AUSM<sup>+</sup>-up scheme coefficients, whose default values are shown in the following listing
 
 ```c++
 fluxScheme            AUSM+up;
