@@ -66,11 +66,11 @@ One-dimensional | AUSM<sup>+</sup>-up flux scheme
 
 <p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/sod_subso"> here</a></p>
 
-### 1. CASE SETUP
 <a id="1-case-setup-subso"></a>
+### 1. CASE SETUP
 
-#### 1.1 Mesh
 <a id="11-mesh-subso"></a>
+#### 1.1 Mesh
 The mesh is one-dimensional (`empty` patches for walls in the <i>y</i> and <i>z</i> directions) and a resolution of 10 mesh points per meter is used along <i>x</i>. Zero-gradients boundary conditions are implemented at both ends of the tube.
 
 #### 1.2 Case conditions
@@ -84,9 +84,8 @@ A one-dimensional subsonic Sod tube of length <i>L</i> = 10 m is considered with
 
 The diaphragm located in the middle of the tube breaks at <i>t</i> = 0 s.
 
-
-#### 1.3 Thermo-chemical and transport models
 <a id="13-thermo-models-subso"></a>
+#### 1.3 Thermo-chemical and transport models
 This test case is using the following thermo-chemical and transport models:  
 
 * calorically-perfect nitrogen gas  
@@ -95,12 +94,12 @@ This test case is using the following thermo-chemical and transport models:
 * single-temperature model
 * laminar flow
 
-#### 1.4 Time controls
 <a id="14-time-controls-subso"></a>
+#### 1.4 Time controls
 The constant time-step is set to 1 µs and the simulation is run until <i>t</i> = 5 ms.
 
-#### 1.5 Time and flux schemes
 <a id="15-time-flux-schemes-subso"></a>
+#### 1.5 Time and flux schemes
 The temporal and flux schemes used are the first-order implicit Euler time scheme and the AUSM<sup>+</sup>-up flux scheme, respectively.
 The AUSM<sup>+</sup>-up model coefficients are given below.
 
@@ -123,8 +122,8 @@ fluxSchemeCoefficients
 ```
 
 &nbsp;
-### 2. RUNNING 
 <a id="2-running-subso"></a>
+### 2. RUNNING 
 The following commands will execute <i>blockMesh</i>, <i>checkMesh</i>, <i>setFields</i> and <i>hy2Foam</i> in serial
 
 ```sh
@@ -133,8 +132,8 @@ The following commands will execute <i>blockMesh</i>, <i>checkMesh</i>, <i>setFi
 ``` 
 
 &nbsp;
-### 3. SOLUTION
 <a id="3-solution-subso"></a>
+### 3. SOLUTION
 Length, density, pressure, and temperature are normalised as follows:
 
 <p style="text-align:center">
@@ -173,8 +172,8 @@ On the following graphs, the tutorial case results for density, pressure, temper
 </p>
 
 &nbsp;
-### 4. REGRESSION TESTING
 <a id="4-regression-testing-subso"></a>
+### 4. REGRESSION TESTING
 Check that the results are matching the solution stored in <dirname>gnuplot/solution/</dirname>:
 
 ```sh
@@ -188,8 +187,8 @@ Check that the results are matching the solution stored in <dirname>gnuplot/solu
 
 <p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/sod_superso"> here</a></p>
 
-### 1. CASE SETUP
 <a id="1-case-setup-superso"></a>
+### 1. CASE SETUP
 
 #### 1.1 Mesh
 See [subsonic case](#11-mesh-subso).  
@@ -212,8 +211,8 @@ See [subsonic case](#14-time-controls-subso).
 See [subsonic case](#15-time-flux-schemes-subso).  
 
 &nbsp;
-### 2. RUNNING 
 <a id="2-running-superso"></a>
+### 2. RUNNING 
 The following commands will execute <i>blockMesh</i>, <i>checkMesh</i>, <i>setFields</i> and <i>hy2Foam</i> in serial
 
 ```sh
@@ -222,8 +221,8 @@ The following commands will execute <i>blockMesh</i>, <i>checkMesh</i>, <i>setFi
 ``` 
 
 &nbsp;
-### 3. SOLUTION
 <a id="3-solution-superso"></a>
+### 3. SOLUTION
 Because the left and right temperatures are equal, the normalised temperature is computed as
 
 <p style="text-align:center">
@@ -250,8 +249,8 @@ On the following graphs, the tutorial case results for density, pressure, temper
 
 
 &nbsp;
-### 4. REGRESSION TESTING
 <a id="4-regression-testing-superso"></a>
+### 4. REGRESSION TESTING
 Check that the results are matching the solution stored in <dirname>gnuplot/solution/</dirname>:
 
 ```sh
