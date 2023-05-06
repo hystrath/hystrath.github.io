@@ -142,19 +142,19 @@ The following commands will execute <i>blockMesh</i>, <i>checkMesh</i>, <i>setFi
 Length, density, pressure, and temperature are normalised as follows:
 
 <p style="text-align:center">
-    `x^&#10033; = \frac{x}{L}`,
+    `x^&#8727; = \frac{x}{L}`,
 </p>
 
 <p style="text-align:center">
-    `ρ^&#10033; = \frac{ρ - ρ_R}{ρ_L - ρ_R}`,
+    `ρ^&#8727; = \frac{ρ - ρ_R}{ρ_L - ρ_R}`,
 </p>
 
 <p style="text-align:center">
-    `p^&#10033; = \frac{p - p_R}{p_L - p_R}`,
+    `p^&#8727; = \frac{p - p_R}{p_L - p_R}`,
 </p>
 
 <p style="text-align:center">
-    `T^&#10033; = \frac{T - T_R}{T_L - T_R}`.
+    `T^&#8727; = \frac{T - T_R}{T_L - T_R}`.
 </p>
 
 On the following graphs, the tutorial case results for density, pressure, temperature and Mach are given by the red symbols.
@@ -231,7 +231,7 @@ The following commands will execute <i>blockMesh</i>, <i>checkMesh</i>, <i>setFi
 Because the left and right temperatures are equal, the normalised temperature is computed as
 
 <p style="text-align:center">
-    `T^&#10033; = \frac{T - T_R}{T_R}`.
+    `T^&#8727; = \frac{T - T_R}{T_R}`.
 </p>
 
 On the following graphs, the tutorial case results for density, pressure, temperature and Mach are given by the red symbols:
