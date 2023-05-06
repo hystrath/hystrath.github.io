@@ -199,15 +199,7 @@ with
     `a&#770;_R = \frac{{a^&#10033;}^2}{max\left(a^&#10033;, -u_R\right)}`,
 </p>
 
-and
 
-<p style="text-align:center">
-    `{a^&#10033;}^2 = \frac{2 \left(&#947; - 1\right)}{&#947; + 1} h`.
-</p>
-
-<p style="text-align:center">
-    `M_o^2 = min \left(1, max\left(\bar{M}^2, M^2_&infin;\right)\right)`.
-</p>
 
 The scaling factor, `f_a`, can either be set to a value between 0 and 1 or according to the following formula:
 <p style="text-align:center">
