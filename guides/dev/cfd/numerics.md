@@ -210,7 +210,7 @@ The interface Mach number, <i>Ma<sub>1&#8725;2</sub></i>, is expressed as
 </p>
 
 <p style="text-align:center">
-    `Ma_{1&#8725;2} = \mathcal{M}_{(4)}^{+}(Ma_L) + \mathcal{M}_{(4)}^{-}(Ma_R) - \frac{K_p}{f_a} max (1 - σ \bar{M}^2)\mathcal{M}_{(4)}^{+}\,\frac{p_R - p_L}{ρ_{1&#8725;2}a_{1&#8725;2}^2}`.
+    `Ma_{1&#8725;2} = \mathcal{M}_{(4)}^{+}(Ma_L) + \mathcal{M}_{(4)}^{-}(Ma_R) - \frac{K_p}{f_a} max (1 - σ \bar{M}^2)\mathcal{M}_{(4)}^{+} \frac{p_R - p_L}{ρ_{1&#8725;2}a_{1&#8725;2}^2}`.
 </p>
 
 with `σ &#8804; 1`
