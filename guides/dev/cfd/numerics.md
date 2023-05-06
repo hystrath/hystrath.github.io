@@ -205,6 +205,24 @@ The scaling factor, `f_a`, can either be set to a value between 0 and 1 or accor
 
 The interface Mach number, `Ma_{1/2}`, is expressed as
 
+<!--\begin{equation}-->
+<!--\dot{m}_{1/2} = a_{1/2} M_{1/2} -->
+<!--    \begin{cases}-->
+<!--      \rho_L & \text{if $M_{1/2} > 0$}\\-->
+<!--      \rho_R & \text{otherwise}-->
+<!--    \end{cases}-->
+<!--\end{equation}-->
+
+<p style="text-align:center">
+    `\mathcal{P}^&plusmn;_{(5)}(M) = \mathcal{M}^&plusmn;_{(2)}\left [\left(&plusmn; 2 - M\right) &mnplus; 16 &#945; M \mathcal{M}^&mnplus;_{(2)} \right]`
+</p>
+
+The pressure flux at the interface, `p_{1/2}`, can be written as
+
+<p style="text-align:center">
+    `p_{1/2} = \mathcal{P}^+_{(5)}\,p_L + \mathcal{P}^-_{(5)}\,p_R - K_u\,\mathcal{P}^+_{(5)}\,\mathcal{P}^-_{(5)} \left(f_a + a_{1/2}\right) \times \left(u_L + u_R\right)`.
+</p>
+
 
 
 <p><img src="/docs/img/publis.png" width="40"> &nbsp; M.-S. Liou, "A Sequel to AUSM, Part II: AUSM<sup>+</sup>-up for All Speeds," <i>Journal of Computational Physics</i>, Vol. 214, No. 1, pp. 137-170, <b>2006</b> &nbsp; <a href="https://www.sciencedirect.com/science/article/abs/pii/S0021999105004274" style="color:red"> [ScienceDirect Portal→]</a></p>
