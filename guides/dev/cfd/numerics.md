@@ -187,11 +187,29 @@ The scaling factor, <i>f<sub>a</sub></i>, can either be set to a value between 0
 
 The interface Mach number, <i>Ma<sub>1&#8725;2</sub></i>, is expressed as
 
+<p style="text-align:center">
+    `\mathcal{M}_{(1)}^&plusmn;(M) = \frac{1}{2} (M &plusmn; |M|)`,
+</p>
+
+<p style="text-align:center">
+    `\mathcal{M}_{(2)}^&plusmn;(M) = &plusmn;\frac{1}{4}(M &plusmn; 1)^2`,
+</p>
+
+<p style="text-align:center">
+    `\mathcal{M}_{(4)}^&plusmn;(M) = \mathcal{M}_{(2)}^&plusmn; (1 &mnplus; 16 &#946; \mathcal{M}_{(2)}^&mnplus;)^2`,
+</p>
+
+<p style="text-align:center">
+    `Ma_{1/2} = \mathcal{M}_{(4)}^{+}(Ma_L) + \mathcal{M}_{(4)}^{-}(Ma_R) - \frac{K_p}{f_a} max (1 - σ \bar{M}^2)\mathcal{M}_{(4)}^{+}\,\frac{p_R - p_L}{ρ_{1/2}a^2_{1/2}}`.
+</p>
+
+with `σ &le; 1`
+
 <!--\begin{equation}-->
 <!--\dot{m}_{1/2} = a_{1/2} M_{1/2} -->
 <!--    \begin{cases}-->
-<!--      \rho_L & \text{if $M_{1/2} > 0$}\\-->
-<!--      \rho_R & \text{otherwise}-->
+<!--      ρ_L & \text{if $M_{1/2} > 0$}\\-->
+<!--      ρ_R & \text{otherwise}-->
 <!--    \end{cases}-->
 <!--\end{equation}-->
 
@@ -202,7 +220,7 @@ The interface Mach number, <i>Ma<sub>1&#8725;2</sub></i>, is expressed as
 The pressure flux at the interface, <i>p<sub>1&#8725;2</sub></i>, can be written as
 
 <p style="text-align:center">
-    `p_{1&#8725;2} = \mathcal{P}_{(5)}^+ p_L + \mathcal{P}_{(5)}^- p_R - K_u \mathcal{P}_{(5)}^+ \mathcal{P}_{(5)}^- (f_a + a_{1&#8725;2}) \times (u_L + u_R)`.
+    `p_{1&#8725;2} = \mathcal{P}_{(5)}^{+} p_L + \mathcal{P}_{(5)}^{-} p_R - K_u \mathcal{P}_{(5)}^{+} \mathcal{P}_{(5)}^{-} (f_a + a_{1&#8725;2}) \times (u_L + u_R)`.
 </p>
 
 
