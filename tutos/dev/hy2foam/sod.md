@@ -67,24 +67,22 @@ One-dimensional | AUSM<sup>+</sup>-up flux scheme
 <p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/sod_subso"> here</a></p>
 
 ### 1. CASE SETUP
-{: case-setup-subso}
+{: 1-case-setup-subso}
 
 #### 1.1 Mesh
 View of the structured _gmsh_ mesh provided in the <dirname>constant/backup-polyMesh</dirname> folder (each 5th line is represented in each direction). It is aligned with the bow shock, has 120,000 hexahedra, and the first layer height is equal to 2 x 10<sup>-6</sup> m.
 
 #### 1.2 Case conditions
 
-The blunted cone is a fully-diffuse surface set at a temperature of 297.2 K. The inert fluid is N<sub>2</sub> and the freestream conditions are given in <dirname>0/include/</dirname><dict>initialConditions</dict>:
-<ul>
-<li>Ma<sub>&#8734;</sub> = 11.3</li>
-<li>Kn<sub>ov</sub> = 0.002</li>
-<li><i>p</i><sub>&#8734;</sub> = 21.9 Pa</li>
-<li><i>T</i><sub>tr, &#8734;</sub> = 144.4 K</li>
-<li><i>T</i><sub>v, &#8734;</sub> = 144.4 K</li>
-<li><b><i>U</i></b><sub>&#8734;</sub> = (2764.5 0 0) m/s</li>
-</ul>
+A one-dimensional subsonic Sod tube of length `L` = 10 m is considered with initial conditions for the left (L) and right (R) states chosen to match the normalised values presented in the following Table. These conditions should yield from left to right an expansion wave (E), a contact discontinuity (C) and a shock wave (S).
 
-Smoluchowski temperature jump and Maxwell velocity slip boundary conditions are used.
+| **State** | **Normalised density** | **Normalised pressure** | **Mach number** |
+|---|:---:|:---:|:---:|
+| Left (L) | 1 | 1 | 0 |
+| Right (R) | 0.125 | 0.1 | 0 |
+
+The diaphragm located in the middle of the tube breaks at `t` = 0 s.
+
 
 #### 1.3 Thermo-chemical and transport models
 
@@ -100,17 +98,34 @@ This test case is using the following thermo-chemical and transport models:
 
 #### 1.4 Time controls
 
-The initial time-step is set to 1 x 10<sup>-10</sup> s and the maximum CFL number is 0.5.
-The simulation end time is equal to 0.0002 s.
+The constant time-step is set to 1 x 10<sup>-6</sup> s and the simulation is run until `t` = 5 ms.
 
 #### 1.5 Time and flux schemes
 
-The initial time-step is set to 1 x 10<sup>-10</sup> s and the maximum CFL number is 0.5.
-The simulation end time is equal to 0.0002 s.
+The temporal and flux schemes used are the first-order implicit Euler time scheme and the AUSM<sup>+</sup>-up, respectively.
+The AUSM<sup>+</sup>-up model coefficients are given below.
+
+```c++
+fluxScheme            AUSM+up;
+
+fluxSchemeCoefficients
+{
+    AUSM+upCoefficients
+    {
+        MachInf          1.0;
+        
+        alpha         0.1875;
+        beta           0.125;
+        sigma            1.0;
+        Kp              0.25;
+        Ku              0.75;
+    }
+}
+```
 
 &nbsp;
 ### 2. RUNNING 
-{: running-subso}
+{: 2-running-subso}
 
 The following commands will execute <i>blockMesh</i>, <i>checkMesh</i> and <i>hy2Foam</i> in serial
 
@@ -121,7 +136,25 @@ The following commands will execute <i>blockMesh</i>, <i>checkMesh</i> and <i>hy
 
 &nbsp;
 ### 3. SOLUTION
-{: solution-subso}
+{: 3-solution-subso}
+
+Length, density, pressure, and temperature are normalised as follows:
+
+<p style="text-align:center">
+    `x^* = \frac{x}{L}`
+</p>
+
+<p style="text-align:center">
+    \rho^* = \frac{\rho - \rho_R}{\rho_L - \rho_R}`,
+</p>
+
+<p style="text-align:center">
+    `p^* = \frac{p - p_R}{p_L - p_R}`,
+</p>
+
+<p style="text-align:center">
+    `T^* = \frac{T - T_R}{T_L - T_R}`.
+</p>
 
 On the following graphs, the tutorial case results are given by the black solid lines:
 
@@ -134,7 +167,7 @@ On the following graphs, the tutorial case results are given by the black solid 
 
 &nbsp;
 ### 4. REGRESSION TESTING
-{: regression-testing-subso}
+{: 4-regression-testing-subso}
 
 Check that the results are matching the solution stored in <dirname>gnuplot/solution/</dirname>:
 
@@ -149,20 +182,20 @@ Check that the results are matching the solution stored in <dirname>gnuplot/solu
 <p><img src="/docs/img/working_folder.png" width="40"> &nbsp; Working directory located <a href="https://github.com/hystrath/hyStrath/tree/OF-v2112/run/hyStrath/hy2Foam/sod_superso"> here</a></p>
 
 ### 1. CASE SETUP
-{: case-setup-superso}
+{: 1-case-setup-superso}
 
 &nbsp;
 ### 2. RUNNING 
-{: running-superso}
+{: 2-running-superso}
 
 &nbsp;
 ### 3. SOLUTION
-{: solution-superso}
+{: 3-solution-superso}
 
 
 &nbsp;
 ### 4. REGRESSION TESTING
-{: regression-testing-superso}
+{: 4-regression-testing-superso}
 
 Check that the results are matching the solution stored in <dirname>gnuplot/solution/</dirname>:
 
