@@ -156,7 +156,7 @@ Length, density, pressure, and temperature are normalised as follows:
     `T^&#42; = \frac{T - T_R}{T_L - T_R}`.
 </p>
 
-On the following graphs, the tutorial case results are given by the black solid lines:
+On the following graphs, the tutorial case results for density, pressure, temperature and Mach are given by the black solid lines:
 
 <p align="center">
 <img src="/docs/img/tutos/dev/hy2foam/sod/dens-subso.png" width="400">  
@@ -173,9 +173,6 @@ On the following graphs, the tutorial case results are given by the black solid 
 <p align="center">
 <img src="/docs/img/tutos/dev/hy2foam/sod/mach-subso.png" width="400">  
 </p>
-
-<!--Stagnation line data (a–c) and surface coefficients (d–f) along the blunted cone:<br>-->
-<!--(a) normalised temperature, (b) normalised mass density, (c) normalised velocity, (d) pressure coefficient, (e) friction coefficient, and (f) Stanton number.-->
 
 &nbsp;
 ### 4. REGRESSION TESTING
@@ -227,10 +224,10 @@ The following commands will execute <i>blockMesh</i>, <i>checkMesh</i>, <i>setFi
 Because the left and right temperatures are equal, the normalised temperature is computed as
 
 <p style="text-align:center">
-    `T^&#128944; = \frac{T - T_R}{T_R}`.
+    `T^&#10033; = \frac{T - T_R}{T_R}`.
 </p>
 
-On the following graphs, the tutorial case results are given by the black solid lines:
+On the following graphs, the tutorial case results for density, pressure, temperature and Mach are given by the black solid lines:
 
 <p align="center">
 <img src="/docs/img/tutos/dev/hy2foam/sod/dens-superso.png" width="400">  
