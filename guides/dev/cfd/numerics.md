@@ -268,6 +268,8 @@ fluxSchemeCoefficients
 }
 ```
 
+<br>
+
 > This flux scheme is used in [Sod's subsonic and supersonic shock tube tutorials](https://hystrath.github.io/tutos/dev/hy2foam/sod/).
 
 <br>
