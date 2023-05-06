@@ -157,7 +157,7 @@ fluxScheme            Tadmor;
 ### 2.2 AUSM+up
 
 The final AUSM<sup>+</sup>-up algorithm given by Liou (2006) is recalled hereafter.
-The left and right states Mach number is equal to
+The left and right Mach number states are equal to
 
 <p style="text-align:center">
     `M_{L&#8725;R} = \frac{u_{L&#8725;R}}{a_{1&#8725;2}}`,
@@ -200,7 +200,7 @@ The interface Mach number, <i>Ma<sub>1&#8725;2</sub></i>, is expressed as
 </p>
 
 <p style="text-align:center">
-    `Ma_{1/2} = \mathcal{M}_{(4)}^{+}(Ma_L) + \mathcal{M}_{(4)}^{-}(Ma_R) - \frac{K_p}{f_a} max (1 - σ \bar{M}^2)\mathcal{M}_{(4)}^{+}\,\frac{p_R - p_L}{ρ_{1/2}a^2_{1/2}}`.
+    `Ma_{1&#8725;2} = \mathcal{M}_{(4)}^{+}(Ma_L) + \mathcal{M}_{(4)}^{-}(Ma_R) - \frac{K_p}{f_a} max (1 - σ \bar{M}^2)\mathcal{M}_{(4)}^{+}\,\frac{p_R - p_L}{ρ_{1&#8725;2}a^2_{1&#8725;2}}`.
 </p>
 
 with `σ &le; 1`
