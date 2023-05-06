@@ -62,9 +62,7 @@ One-dimensional | AUSM<sup>+</sup>-up flux scheme
 </p>
 
 
-<p><img src="/docs/img/publis.png" width="40"> Reference</p>
-G. A. Sod, "A Survey of Several Finite Difference Methods for Systems of Nonlinear Hyperbolic
-Conservation Laws", J. Comput. Phys., vol. 27, pp. 1-31, <b>1978</b>.
+<p><img src="/docs/img/publis.png" width="40"> G. A. Sod, "A Survey of Several Finite Difference Methods for Systems of Nonlinear Hyperbolic Conservation Laws", J. Comput. Phys., vol. 27, pp. 1-31, <b>1978</b>.</p>
 
 
 ## Subsonic case
