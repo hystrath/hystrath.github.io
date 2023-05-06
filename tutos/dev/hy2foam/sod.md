@@ -141,7 +141,7 @@ The following commands will execute <i>blockMesh</i>, <i>checkMesh</i>, <i>setFi
 Length, density, pressure, and temperature are normalised as follows:
 
 <p style="text-align:center">
-    `x^\* = \frac{x}{L}`
+    `x^&#10033; = \frac{x}{L}`
 </p>
 
 <p style="text-align:center">
