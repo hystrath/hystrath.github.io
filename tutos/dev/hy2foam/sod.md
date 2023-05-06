@@ -192,10 +192,9 @@ Check that the results are matching the solution stored in <dirname>gnuplot/solu
 <a id="1-case-setup-superso"></a>
 
 #### 1.1 Mesh
-The mesh is the same as that presented in <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#11-mesh-subso">the subsonic case</a>.
+See [subsonic case](#11-mesh-subso).  
 
 #### 1.2 Case conditions
-
 The shock tube case introduced in the previous section is simulated again for a different set of initial left and right state conditions resulting in a supersonic flow:
 
 | **State** | **Normalised density** | **Normalised pressure** | **Mach number** |
@@ -204,13 +203,13 @@ The shock tube case introduced in the previous section is simulated again for a 
 | Right (R) | 0.01 | 0.01 | 0 |
 
 #### 1.3 Thermo-chemical and transport models
-See <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#13-thermo-models-subso">subsonic case</a>.
+See [subsonic case](#13-thermo-models-subso).  
 
 #### 1.4 Time controls
-See <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#14-time-controls-subso">subsonic case</a>.
+See [subsonic case](#14-time-controls-subso).  
 
 #### 1.5 Time and flux schemes
-See <a href="https://hystrath.github.io/tutos/dev/hy2foam/sod/#15-time-flux-schemes-subso">subsonic case</a>.
+See [subsonic case](#15-time-flux-schemes-subso).  
 
 &nbsp;
 ### 2. RUNNING 
