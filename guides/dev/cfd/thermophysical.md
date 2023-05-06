@@ -201,11 +201,11 @@ The following Table is listing the different keys present in the <subdict>specie
 </table>
 
 In the <subdict>thermodynamics</subdict> subdictionary, the first entry is a list of coefficients called <dictkey>decoupledCvCoeffs()</dictkey>. The heat capacity at constant volume, _Cv_, is decomposed into the contributions of the different energy modes that are translational (1st element), rotational (2nd element), vibrational (3rd element), electronic (4th element), and electron (5th element). For a planar molecule,   
-<p>
+<p style="text-align:center">
 `Cv_t = &#950;_t \times R_m = 1.5 \times R_m`
 </p>
 <p>and</p>
-<p>
+<p style="text-align:center">
 `Cv_r = &#950;_r \times R_m = 1.0 \times R_m`
 </p>
  
