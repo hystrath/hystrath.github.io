@@ -176,7 +176,7 @@ The following Table is listing the different keys present in the <subdict>specie
   <tr>
     <td align="center"><dictkey>eta_s</dictkey></td>
     <td align="center"> - </td>  
-    <td align="center">factor that enters in the calculation of the <a href="https://github.com/hystrath/hyStrath/commit/f036d74297d3f91fcbeb05fa531a1c07ba71bde1">vibrational thermal conductivity</a> (this key is optional and is equal to <dictval>1.2</dictval> by defaul) </td>
+    <td align="center">factor that enters in the calculation of the <a href="https://github.com/hystrath/hyStrath/commit/f036d74297d3f91fcbeb05fa531a1c07ba71bde1">vibrational thermal conductivity</a> (this key is optional and is equal to <dictval>1.2</dictval> by default) </td>
   </tr>
   <tr>
     <td align="center"><dictkey>noVibTemp</dictkey></td>
@@ -202,11 +202,11 @@ The following Table is listing the different keys present in the <subdict>specie
 
 In the <subdict>thermodynamics</subdict> subdictionary, the first entry is a list of coefficients called <dictkey>decoupledCvCoeffs()</dictkey>. The heat capacity at constant volume, _Cv_, is decomposed into the contributions of the different energy modes that are translational (1st element), rotational (2nd element), vibrational (3rd element), electronic (4th element), and electron (5th element). For a planar molecule,   
 <p style="text-align:center">
-`Cv_t = &#950;_t \times R_m = 1.5 \times R_m`
+`Cv_t = \frac{&#950;_t}{2} \times R_m = 1.5 \times R_m`
 </p>
 <p>and</p>
 <p style="text-align:center">
-`Cv_r = &#950;_r \times R_m = 1.0 \times R_m`
+`Cv_r = \frac{&#950;_r}{2} \times R_m = 1.0 \times R_m`
 </p>
  
 <p>where `R_m` is the specific gas constant of molecule `m`. Thus, the first two elements in the <dictkey>decoupledCvCoeffs()</dictkey> list are the coefficients by which `R_m` should be multiplied.</p>

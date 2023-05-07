@@ -7,9 +7,9 @@ nav-short: true
 **Enquiries: hystrath@gmail.com**    
 <!--**Enquiries: mtscfd@gmail.com** -->
 
-This e-mail address may be used if
-  - you would like to [contribute](https://hystrath.github.io/about/contributions/)
-  - you need support in the form of consulting services   
+<!--This e-mail address may be used if-->
+<!--  - you would like to [contribute](https://hystrath.github.io/about/contributions/)-->
+<!--  - you need support in the form of consulting services   -->
 
 This e-mail address should not be used to
   - report bugs, the [Issues](https://github.com/hystrath/hyStrath/issues) page is there for this purpose  
