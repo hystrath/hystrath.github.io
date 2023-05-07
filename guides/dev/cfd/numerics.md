@@ -236,7 +236,7 @@ The interface mass flux is given by
 The pressure flux at the interface, <i>p<sub>1&#8725;2</sub></i>, can be written as
 
 <p style="text-align:center">
-    `p_{1&#8725;2} = \mathcal{P}_{(5)}^{+} p_L + \mathcal{P}_{(5)}^{-} p_R - K_u \mathcal{P}_{(5)}^{+} \mathcal{P}_{(5)}^{-} (f_a + a_{1&#8725;2}) (u_L + u_R)`,
+    `p_{1&#8725;2} = \mathcal{P}_{(5)}^{+} p_L + \mathcal{P}_{(5)}^{-} p_R - K_u \mathcal{P}_{(5)}^{+} \mathcal{P}_{(5)}^{-} (ρ_L + ρ_R) (f_a \times a_{1&#8725;2}) (u_R - u_L)`,
 </p>
 
 where
