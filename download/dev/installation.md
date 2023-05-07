@@ -76,6 +76,9 @@ if (localStorage.getItem("show_sidenav")) openNav()
     </div>
 4. Install OpenFOAM    
     ```sh
+    echo -e "\n# OpenFOAM\nalias OF-v2112='source $HOME/OpenFOAM/OpenFOAM-v2112/etc/bashrc'" >> ~/.bashrc
+    source ~/.bashrc
+    OF-v2112
     cd $WM_PROJECT_DIR
     ./Allwmake
     ```
