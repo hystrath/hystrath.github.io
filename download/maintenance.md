@@ -66,7 +66,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
   <tr>
     <td >OF-v2112</td>
     <td style="text-align:center">OF-v2112</td>
-    <td style="text-align:center">Coming soon</td>
+    <td style="text-align:center">Cancelled</td>
     <td style="text-align:center" colspan="2"></td>
   </tr>
   <tr>
