@@ -72,6 +72,7 @@ if (localStorage.getItem("show_sidenav")) openNav()
   <tr>
     <td ><b>Master</b></td>
     <td style="text-align:center">OF-v1706</td>
-    <td style="text-align:center" colspan="3"> </td>
+    <td style="text-align:center" colspan="2"> </td>
+    <td style="text-align:center"><b>31 Dec 2022</b></td>
   </tr>
 </table>
